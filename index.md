@@ -126,3 +126,18 @@ In our Agile environment we use Jira to handle our sprints' workflow and Jenkins
 **Key Technologies used:**
 HTML5 semantic markup, CSS3 and SASS with Compass, jQuery, Underscore and Backbone, Grunt.js to automate all the front end flow
 
+---
+
+## Languages
+Italian, English, basic Spanish.
+
+## Education
+2002 - 2007: Degree in Telecommunications with the thesis: “AODV protocol modifications to include Link State metrics”
+
+## Interests
+
+Certified Level 3 Personal trainer and Level 2 Gym instructor, nutrition geek and biohacker. 
+
+Trained barista and coffee roaster. 
+
+Amateur photographer [500px.com/ricca509](https://500px.com/ricca509).

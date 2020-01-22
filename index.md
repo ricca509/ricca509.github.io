@@ -2,11 +2,13 @@
 layout: default
 ---
 
-## About Me ([hello@ricca509.me](hello@ricca509.me))
+## About Me
 
 <img class="profile-picture" src="me.jpeg">
 
-[GitHub: github.com/ricca509](https://github.com/ricca509)
+[hello@ricca509.me](hello@ricca509.me)
+
+[github.com/ricca509](https://github.com/ricca509)
 
 I’m a passionate, detail oriented Full Stack JavaScript developer who can easily and happily wear the DevOps hat.
 
@@ -74,12 +76,12 @@ _Oct 2015 - Oct 2016 in London, United Kingdom_
 
 As a senior developer, I joined the team to help shape a better agile process, help more junior developers to step up and ensure a more predictable, high quality development process. In pursuing the above, we:
 
-- stabilized the agile process by streamlining the ceremonies: the morning standup (quick and efficient), having more focused grooming and planning sessions (quick meetings make devs happy), and having a more productive retrospective. We removed all meetings that were unnecessary/long/without a clear intent
-- hired more junior members and turned them into mid-level engineer, fighting the increasingly difficult situation of hiring permanents
-- introduced cross-devices integration tests and removed all manual qa-ing, with the aim of increasing the team confidence and speeding up the release process
-- introduced bug hunts/manual discoveries, when the team would randomly test (almost monkey test) the app and come up with scenarios to be covered by integration tests
-- introduced a stricter code reviewing process, allowing the developers more time to review, discuss and deliver better code
-- worked across our projects with micro/macro refactorings to increase code quality and encourage reusability
-- worked alongside the HR hiring team to create a better hiring process (tech tests/on site interviews and whiteboard tests) that would fit our increased need in high quality developers
+- Stabilized the agile process by streamlining the ceremonies: the morning standup (quick and efficient), having more focused grooming and planning sessions (quick meetings make devs happy), and having a more productive retrospective. We removed all meetings that were unnecessary/long/without a clear intent
+- Hired more junior members and turned them into mid-level engineer, fighting the increasingly difficult situation of hiring permanents
+- Introduced cross-devices integration tests and removed all manual qa-ing, with the aim of increasing the team confidence and speeding up the release process
+- Introduced bug hunts/manual discoveries, when the team would randomly test (almost monkey test) the app and come up with scenarios to be covered by integration tests
+- Introduced a stricter code reviewing process, allowing the developers more time to review, discuss and deliver better code
+- Worked across our projects with micro/macro refactorings to increase code quality and encourage reusability
+- Worked alongside the HR hiring team to create a better hiring process (tech tests/on site interviews and whiteboard tests) that would fit our increased need in high quality developers
 
-All this resulted in a happier team and more frequent/better releases.
+This resulted in a happier team and more frequent/better releases.

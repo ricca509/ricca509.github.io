@@ -77,6 +77,8 @@ As a senior developer, I joined the team to help shape a better agile process, h
 
 This resulted in a happier team and more frequent/better releases.
 
+---
+
 ### lastminute.com
 
 **UI Tech Lead**
@@ -105,3 +107,22 @@ We work in a Kanban environment, following a TDD/BDD approach in teams with PO, 
 
 Marionette/Backbone/underscore, React.js, jQuery/Zepto, RequireJS and
 Browserify, Jasmine/Cucumber.js/WebDriverJS, SASS/Compass, Git, Jenkins.
+
+---
+
+### Faculty of 1000
+
+**Senior Front End Developer**
+
+_Sept 2013 - Apr 2014 [London, United Kingdom]_
+
+Responsible for the development and maintenance of our web applications: working closely with our team of business analysts, designers, backend developers and QAs in an Agile team, we aim to deliver perfect products at every iteration. My job involved writing JavaScript libraries to be used across the apps, turning PSD designs into well crafted, semantic HTML5 applications; adding complex interactions handled with the best JavaScript tools and frameworks, always creating modular and maintainable code even with tight schedules.
+
+I improved the front end workflow by introducing an automated flow for the development: with Grunt.js, we now automate the whole process. From a morning job that takes care of updating the local repository, builds and the deploys the app; to a watcher that lints, checks the coding style with jscs (I am still fine tuning it to find the best style), tests and concatenates + minify and deploy at every ctrl+s. I automated the documentation process creating a live styleguide with KSS. 
+
+With these improvements, we are cutting down times and avoid bugs.
+In our Agile environment we use Jira to handle our sprints' workflow and Jenkins to build, deploy and test our code.
+
+**Key Technologies used:**
+HTML5 semantic markup, CSS3 and SASS with Compass, jQuery, Underscore and Backbone, Grunt.js to automate all the front end flow
+

@@ -30,7 +30,7 @@ I ♥ what I do.
 
 **Lead Technical Consultant**
 
-_Jan 2019 - Present in London, United Kingdom_
+_Jan 2019 - Present [London, United Kingdom]_
 
 ---
 
@@ -38,7 +38,7 @@ _Jan 2019 - Present in London, United Kingdom_
 
 **Development Team Lead**
 
-_Nov 2016 - Dec 2018 in London, United Kingdom_
+_Nov 2016 - Dec 2018 [London, United Kingdom]_
 
 I was been promoted to Team Lead to focus on our complete re-platforming (going from monolithic .NET backend and React FE to .NET microservices and Node/React webapps). As part of the role I created a new team, made the required hiring and worked more with POs/BAs. I’ve kept my position strongly technical (at least 70% coding) as I believe the team lead should be part of the sprint as everyone else. My impact area widened, focusing on giving the team the stability and continuity that it needed to deliver high quality software respecting the company's deadline. Given the small size of the squad, this has been achieved by wearing different hats at different times, to ensure that all the required functions were present when needed:
 
@@ -72,7 +72,7 @@ I was been promoted to Team Lead to focus on our complete re-platforming (going 
 
 **Senior JavaScript Developer**
 
-_Oct 2015 - Oct 2016 in London, United Kingdom_
+_Oct 2015 - Oct 2016 [London, United Kingdom]_
 
 As a senior developer, I joined the team to help shape a better agile process, help more junior developers to step up and ensure a more predictable, high quality development process. In pursuing the above, we:
 
@@ -85,3 +85,32 @@ As a senior developer, I joined the team to help shape a better agile process, h
 - Worked alongside the HR hiring team to create a better hiring process (tech tests/on site interviews and whiteboard tests) that would fit our increased need in high quality developers
 
 This resulted in a happier team and more frequent/better releases.
+
+### lastminute.com
+
+**UI Tech Lead**
+
+_Jan 2015 - Oct 2015 [London, United Kingdom]_
+
+I was promoted to Tech Lead to give our UI teams a long term vision. Apart from developing (I still spend at least 70% of my time developing with the
+team) I am now investing more time on new technologies, best practices and patterns to use across our teams and improved ways of managing our workflows.
+Part of the improvements already in place include:
+
+- strict use of Git merge requests/code reviews (with auto merge request builder)
+- a fully automated cloud CI for all our four environments a "dockerized" version of our apps to make it easy to test and deploy everywhere
+- monthly meeting with back-end devs, tech ops and architect to give all developers a big picture of our projects.
+- hosting a Js meetup (http://www.meetup.com/js-monthly-london/) in our London office
+
+At the moment, I am leading UI teams in our London and Madrid offices. I am also involved in many social activities to bring developers together: I believe that good friends always make great teams.
+
+**Senior UI developer**
+
+_Apr 2014 - Dec 2014 [London, United Kingdom]_
+
+As a senior UI developer, I craft the new m.lastminute.com mobile application, support junior developers and spread the knowledge across the teams with tech meetings about good practices and new technologies to introduce in our workflow.
+We work in a Kanban environment, following a TDD/BDD approach in teams with PO, BAs, marketing people, QAs, UI designers, back end developers and front end developers. My focus is on the Backbone Mobile SPA application.
+
+**Key Technologies used:**
+
+Marionette/Backbone/underscore, React.js, jQuery/Zepto, RequireJS and
+Browserify, Jasmine/Cucumber.js/WebDriverJS, SASS/Compass, Git, Jenkins.

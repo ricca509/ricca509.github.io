@@ -3,24 +3,11 @@ layout: default
 is_contact: true
 ---
 
-- Email: [hello@ricca509.me](mailto:foo@xyz.com)
-
-- Phone: [+91-123123](tel:+91-123123)
-
----
-
-## Mailing Address
-
-> 221B, Baker Street
->
-> London
->
-> United Kingdom
+- Email: [hello@ricca509.me](hello@ricca509.me)
 
 ---
 
 ## Social
 
-1. [Facebook](#)
-2. [Twitter](#)
-3. [Google+](#)
+- [GitHub](https://github.com/ricca509)
+- [Twitter](https://twitter.com/onefiniteloop)

@@ -7,9 +7,9 @@ markdown: kramdown
 
 tracking_id: #
 
-footer: no
-footer_url: "https://github.com/ricca509"
-footer_text: "Page design by Ankit Sultana"
+footer: yes
+footer_url: "https://onefiniteloop.io"
+footer_text: "Finite Loop LTD"
 
 sass:
   style: compressed
@@ -18,7 +18,9 @@ sass:
 nav:
   - name: "About"
     link: "/"
-  - name: "Resume"
-    link: "resume.pdf"
+  # - name: "Resume"
+  #   link: "resume.pdf"
+  - name: "Blog"
+    link: "https://onefiniteloop.io"
   - name: "Contact"
     link: "contact"

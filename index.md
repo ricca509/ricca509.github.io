@@ -10,13 +10,13 @@ layout: default
 
 [github.com/ricca509](https://github.com/ricca509)
 
-I’m a passionate, detail oriented Full Stack JavaScript developer who can easily and happily wear the DevOps hat.
+I am a passionate, detail oriented Full Stack JavaScript developer who can easily and happily wear the DevOps hat.
 
 I have strong experience writing state of art web applications using best practices, design patterns and performance testing, strictly following a TDD/BDD approach.
 
-Team player, I have extensive, hands-on experience with Agile methodologies (Kanban/Scrum/XP/pair programming).
+Team player, I have extensive, hands-on experience with Agile methodologies (Kanban/Scrum/XP/pair programming), building cross-functional teams on site and in distributed environments ([onefiniteloop.io/embrace-distributed-teams-and-be-happy](https://www.onefiniteloop.io/embrace-distributed-teams-and-be-happy/)).
 
-I love challenging and creative environments where I can constantly share and learn, improve the projects I work on and craft code that others love to read and maintain.
+I love challenging and creative environments where I can support the growth of other developers, improve the projects I work on and craft code that others love to read and maintain.
 
 I regularly attend meetups in the London tech scene such as London Web, London React User Group and London Node User Group.
 

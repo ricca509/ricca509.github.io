@@ -30,7 +30,7 @@ I ♥ what I do.
 
 **Lead Technical Consultant**
 
-_Jan 2019 - Present | London, United Kingdom_
+_Jan 2019 - Present in London, United Kingdom_
 
 ---
 
@@ -38,7 +38,7 @@ _Jan 2019 - Present | London, United Kingdom_
 
 **Development Team Lead**
 
-_Nov 2016 - Dec 2018 | London, United Kingdom_
+_Nov 2016 - Dec 2018 in London, United Kingdom_
 
 I was been promoted to Team Lead to focus on our complete re-platforming (going
 from monolithic .NET backend and React FE to .NET microservices and Node/React
@@ -74,7 +74,7 @@ webapps). As part of the role I created a new team, made the required hiring and
 
 **Senior JavaScript Developer**
 
-_Oct 2015 - Oct 2016 | London, United Kingdom_
+_Oct 2015 - Oct 2016 in London, United Kingdom_
 
 As a senior developer, I joined the team to help shape a better agile process, help more junior developers to step up and ensure a more predictable, high quality development process. In pursuing the above, we:
 

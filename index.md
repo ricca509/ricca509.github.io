@@ -28,7 +28,7 @@ I ♥ what I do.
 
 ### Burberry
 
-**Lead Technical Consultant**
+**Lead Developer** (Consultant)
 
 _Jan 2019 - Present [London, United Kingdom]_
 

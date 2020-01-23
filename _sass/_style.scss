@@ -85,15 +85,13 @@ hr {
 
 @media (max-width: 800px) {
   .container {
-    max-width: $med-width;
+    margin-left: 20px;
+    margin-right: 20px;
     transition: 0.3s ease all;
   }
 }
 
 @media (max-width: 650px) {
-  .container {
-    max-width: 83%;
-  }
   .navbar-ul {
     margin-top: 5px;
   }
@@ -102,7 +100,7 @@ hr {
 @media (max-width: 500px) {
   .navbar {
     text-align: center;
-    padding: 50px 0px 0px 0px;
+    padding: 30px 0px 0px 0px;
   }
   #author-name {
     width: 100%;

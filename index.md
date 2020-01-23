@@ -32,6 +32,10 @@ I ♥ what I do.
 
 _Jan 2019 - Present [London, United Kingdom]_
 
+**Key Technologies used:**
+
+React, Redux, SASS, Styled components, redux-saga, Cypress, Node.js, Express, GitLab, GitLab CI, AWS
+
 ---
 
 ### Trainline
@@ -77,6 +81,10 @@ As a senior developer, I joined the team to help shape a better agile process, h
 
 This resulted in a happier team and more frequent/better releases.
 
+**Key Technologies used:**
+
+React, Redux, CSS-in-JS, redux-observable, Cypress, Node.js, Express, Helmet, GitHub, Teamcity, AWS
+
 ---
 
 ### lastminute.com
@@ -100,7 +108,7 @@ I lead UI teams in our London and Madrid offices and was also involved in variou
 
 _Apr 2014 - Dec 2014 [London, United Kingdom]_
 
-As a senior UI developer, I worked the [m.lastminute.com](https://m.lastminute.com) mobile application, supported junior developers and spread the knowledge across the teams with tech meetings about good practices and new technologies to introduce in our workflow.
+As a senior UI developer, I worked on the [m.lastminute.com](https://m.lastminute.com) mobile application, supported junior developers and spread the knowledge across the teams with tech meetings about good practices and new technologies to introduce in our workflow.
 We worked in a Kanban environment, following a TDD/BDD approach in teams with PO, BAs, marketing people, QAs, UI designers, back end developers and front end developers. My focus was on the Backbone Mobile SPA application.
 
 **Key Technologies used:**

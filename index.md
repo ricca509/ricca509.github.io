@@ -132,7 +132,7 @@ HTML5 semantic markup, CSS3 and SASS with Compass, jQuery, Underscore and Backbo
 
 **Senior Mobile Front End Developer**
 
-_2013 [IT]_
+_2013 [Italy]_
 
 I worked with KLM for the Unavolta project. Unavolta.net (http://unavolta.net) is a web application (both desktop and mobile versions available) designed to let people upload their travel photos (with a poetic message) in order to participate in a contest and win a flight. Additionally, every week (for eight weeks) a new video is published to inspire travellers. My responsibility for the project was to design and develop the mobile interface.
 
@@ -145,7 +145,7 @@ HAML templates, jQuery, jQuery Mobile, CSS, SASS styles, Git
 
 **Senior Engineer**
 
-_2013 - 2018 [IT]_
+_2013 - 2018 [Italy]_
 
 During my career at Prometeo I had the chance to work on a wide range of projects:
 from building a complete rack server to implementing a site crawler using the Selenium API (to automate a purchase process) to designing and developing web applications using several different technologies.
@@ -194,7 +194,7 @@ Italian, English, basic Spanish.
 
 ## Interests
 
-Certified Level 3 Personal trainer and Level 2 Gym instructor, nutrition geek and biohacker.
+Certified Level 3 Personal trainer and Level 2 Gym instructor, sport nutrition geek and biohacker.
 
 Trained barista and coffee roaster.
 

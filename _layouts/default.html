@@ -67,9 +67,7 @@
                     {% else %}
                         <li class="alignable pull-left nav-list"><a href="{{ x.link }}">{{ x.name }}</a>
                     {% endif %}
-                    {% if forloop.last == false %}
-                        /
-                    {% endif %}
+                    {% if forloop.last == false %}/{% endif %}
                         </li>
                 {% endfor %}
             </ul>

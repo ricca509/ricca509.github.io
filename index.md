@@ -85,23 +85,23 @@ This resulted in a happier team and more frequent/better releases.
 
 _Jan 2015 - Oct 2015 [London, United Kingdom]_
 
-I was promoted to Tech Lead to give our UI teams a long term vision. Apart from developing (I still spend at least 70% of my time developing with the
-team) I am now investing more time on new technologies, best practices and patterns to use across our teams and improved ways of managing our workflows.
-Part of the improvements already in place include:
+I was promoted to Tech Lead to give our UI teams a long term vision. Apart from developing (I still spend at least 70% of my time developing with the team) I then invested more time on new technologies, best practices and patterns to use across our teams and improved ways of managing our workflows.
+
+Part of the improvements put in place include:
 
 - strict use of Git merge requests/code reviews (with auto merge request builder)
 - a fully automated cloud CI for all our four environments a "dockerized" version of our apps to make it easy to test and deploy everywhere
 - monthly meeting with back-end devs, tech ops and architect to give all developers a big picture of our projects.
 - hosting a Js meetup (http://www.meetup.com/js-monthly-london/) in our London office
 
-At the moment, I am leading UI teams in our London and Madrid offices. I am also involved in many social activities to bring developers together: I believe that good friends always make great teams.
+I lead UI teams in our London and Madrid offices and was also involved in various social activities to bring developers together: brown bag sessions, meetups, team conference calls.
 
 **Senior UI developer**
 
 _Apr 2014 - Dec 2014 [London, United Kingdom]_
 
-As a senior UI developer, I craft the new m.lastminute.com mobile application, support junior developers and spread the knowledge across the teams with tech meetings about good practices and new technologies to introduce in our workflow.
-We work in a Kanban environment, following a TDD/BDD approach in teams with PO, BAs, marketing people, QAs, UI designers, back end developers and front end developers. My focus is on the Backbone Mobile SPA application.
+As a senior UI developer, I worked the [m.lastminute.com](https://m.lastminute.com) mobile application, supported junior developers and spread the knowledge across the teams with tech meetings about good practices and new technologies to introduce in our workflow.
+We worked in a Kanban environment, following a TDD/BDD approach in teams with PO, BAs, marketing people, QAs, UI designers, back end developers and front end developers. My focus was on the Backbone Mobile SPA application.
 
 **Key Technologies used:**
 
@@ -116,12 +116,11 @@ Browserify, Jasmine/Cucumber.js/WebDriverJS, SASS/Compass, Git, Jenkins.
 
 _Sept 2013 - Apr 2014 [London, United Kingdom]_
 
-Responsible for the development and maintenance of our web applications: working closely with our team of business analysts, designers, backend developers and QAs in an Agile team, we aim to deliver perfect products at every iteration. My job involved writing JavaScript libraries to be used across the apps, turning PSD designs into well crafted, semantic HTML5 applications; adding complex interactions handled with the best JavaScript tools and frameworks, always creating modular and maintainable code even with tight schedules.
+Responsible for the development and maintenance of our web applications: working closely with our team of business analysts, designers, backend developers and QAs in an Agile team. My job involved writing JavaScript libraries to be used across the apps, turning PSD designs into semantic HTML5 applications; adding complex interactions handled with the best JavaScript tools and frameworks, always creating modular and maintainable code even with tight schedules.
 
 I improved the front end workflow by introducing an automated flow for the development: with Grunt.js, we now automate the whole process. From a morning job that takes care of updating the local repository, builds and the deploys the app; to a watcher that lints, checks the coding style with jscs (I am still fine tuning it to find the best style), tests and concatenates + minify and deploy at every ctrl+s. I automated the documentation process creating a live styleguide with KSS.
 
-With these improvements, we are cutting down times and avoid bugs.
-In our Agile environment we use Jira to handle our sprints' workflow and Jenkins to build, deploy and test our code.
+In our Agile environment we used Jira to handle our sprints' workflow and Jenkins to build, deploy and test our code.
 
 **Key Technologies used:**
 HTML5 semantic markup, CSS3 and SASS with Compass, jQuery, Underscore and Backbone, Grunt.js to automate all the front end flow
@@ -182,7 +181,7 @@ My job included: gathering user requirements, choosing the right technologies to
 
 - 2012: TripTapp.com
 
-  I’m the co-founder of www.triptapp.com: after the development of the web application (the first MVP is currently online), I’m designing our mobile application. The webapp development involved social authentication, a NoSQL database (mongoDB), an API to interface with Google Maps, a client side app to handle data about places positions, like, etc and a REST API to handle AJAX calls. The new mobile app will use a REST API in Node.js as backend and HTML5 with Backbone.js (accessing the device’s features through Cordova/PhoneGap). Built using HTML5/CSS3, LESS, Backbone.js, jQuery, Twitter Bootstrap, Yii Framework (PHP), mongoDB. Integrated with Google Maps, Hosted on Windows Azure (Linux VM)
+  Co-founder of [triptapp.com](www.triptapp.com): after the development of the web application (the first MVP is currently online), I’m designing our mobile application. The webapp development involved social authentication, a NoSQL database (mongoDB), an API to interface with Google Maps, a client side app to handle data about places positions, like, etc and a REST API to handle AJAX calls. The new mobile app will use a REST API in Node.js as backend and HTML5 with Backbone.js (accessing the device’s features through Cordova/PhoneGap). Built using HTML5/CSS3, LESS, Backbone.js, jQuery, Twitter Bootstrap, Yii Framework (PHP), mongoDB. Integrated with Google Maps, Hosted on Windows Azure (Linux VM)
 
 ---
 

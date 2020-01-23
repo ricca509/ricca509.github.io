@@ -118,7 +118,7 @@ _Sept 2013 - Apr 2014 [London, United Kingdom]_
 
 Responsible for the development and maintenance of our web applications: working closely with our team of business analysts, designers, backend developers and QAs in an Agile team, we aim to deliver perfect products at every iteration. My job involved writing JavaScript libraries to be used across the apps, turning PSD designs into well crafted, semantic HTML5 applications; adding complex interactions handled with the best JavaScript tools and frameworks, always creating modular and maintainable code even with tight schedules.
 
-I improved the front end workflow by introducing an automated flow for the development: with Grunt.js, we now automate the whole process. From a morning job that takes care of updating the local repository, builds and the deploys the app; to a watcher that lints, checks the coding style with jscs (I am still fine tuning it to find the best style), tests and concatenates + minify and deploy at every ctrl+s. I automated the documentation process creating a live styleguide with KSS. 
+I improved the front end workflow by introducing an automated flow for the development: with Grunt.js, we now automate the whole process. From a morning job that takes care of updating the local repository, builds and the deploys the app; to a watcher that lints, checks the coding style with jscs (I am still fine tuning it to find the best style), tests and concatenates + minify and deploy at every ctrl+s. I automated the documentation process creating a live styleguide with KSS.
 
 With these improvements, we are cutting down times and avoid bugs.
 In our Agile environment we use Jira to handle our sprints' workflow and Jenkins to build, deploy and test our code.
@@ -128,16 +128,74 @@ HTML5 semantic markup, CSS3 and SASS with Compass, jQuery, Underscore and Backbo
 
 ---
 
+### KLM
+
+**Senior Mobile Front End Developer**
+
+_2013 [IT]_
+
+I worked with KLM for the Unavolta project. Unavolta.net (http://unavolta.net) is a web application (both desktop and mobile versions available) designed to let people upload their travel photos (with a poetic message) in order to participate in a contest and win a flight. Additionally, every week (for eight weeks) a new video is published to inspire travellers. My responsibility for the project was to design and develop the mobile interface.
+
+**Key Technologies used:**
+HAML templates, jQuery, jQuery Mobile, CSS, SASS styles, Git
+
+---
+
+### Prometeo
+
+**Senior Engineer**
+
+_2013 - 2018 [IT]_
+
+During my career at Prometeo I had the chance to work on a wide range of projects:
+from building a complete rack server to implementing a site crawler using the Selenium API (to automate a purchase process) to designing and developing web applications using several different technologies.
+My job included: gathering user requirements, choosing the right technologies to use, implementing server side and client side, testing and production deployment. I was involved in the R&D area too: building and testing new technologies for our next projects.
+
+**Key Technologies used:**
+.NET WebForms and WebAPI, Java, Javascript, HTML5, CSS/3 (basic), XML, RESTful APIs and SOAP web services, MS SQL Server, Linux administration, Bash scripting, Network administration
+
+---
+
+## Previous projects
+
+- 2015: Acidseed (Started in a hackaton, developed in my spare time)
+
+  A caching layer to cache any API/HTTP request. Written in Node.js using ES6
+  Harmony with persistence on Redis.
+
+- 2013: F.js (Spare time, https://github.com/ricca509/F)
+
+  A small library to be used in all those multiple pages (server side MVC) projects that
+  usually don’t have a structured js due to the fact that most of the job is done on the
+  server. It is “A small, modular library that helps writing structured, reusable, testable and namespaced JavaScript code. It also provides DOM helpers and a pub/sub
+  implementation”. Published in the Bower repository.
+
+- 2013: Phood mobile app
+
+  A small mobile application that uses the Yummly.com REST API to search recipes
+  and presents them to the user with a useful visual. Built using ES6 syntax with the Traceur compiler, HTML5/CSS3/SASS, Stylus templates, Nodejs/Express, Marionette.js/Backbonejs/underscorejs, Bower, jQuery, Bootstrap, Git
+
+- 2013: Siemens Healthcare
+
+  AlertIng: Frontend and backend dev. A Whatsapp-like application built to deliver real
+  time messages to employees. Built with Phonegap for Android devices. Built using HTML5/CSS3, Backbone.js, jQuery Mobile, Node.js, RabbitMQ, MySQL, PhoneGap
+
+- 2012: TripTapp.com
+
+  I’m the co-founder of www.triptapp.com: after the development of the web application (the first MVP is currently online), I’m designing our mobile application. The webapp development involved social authentication, a NoSQL database (mongoDB), an API to interface with Google Maps, a client side app to handle data about places positions, like, etc and a REST API to handle AJAX calls. The new mobile app will use a REST API in Node.js as backend and HTML5 with Backbone.js (accessing the device’s features through Cordova/PhoneGap). Built using HTML5/CSS3, LESS, Backbone.js, jQuery, Twitter Bootstrap, Yii Framework (PHP), mongoDB. Integrated with Google Maps, Hosted on Windows Azure (Linux VM)
+
 ## Languages
+
 Italian, English, basic Spanish.
 
 ## Education
+
 2002 - 2007: Degree in Telecommunications with the thesis: “AODV protocol modifications to include Link State metrics”
 
 ## Interests
 
-Certified Level 3 Personal trainer and Level 2 Gym instructor, nutrition geek and biohacker. 
+Certified Level 3 Personal trainer and Level 2 Gym instructor, nutrition geek and biohacker.
 
-Trained barista and coffee roaster. 
+Trained barista and coffee roaster.
 
 Amateur photographer [500px.com/ricca509](https://500px.com/ricca509).

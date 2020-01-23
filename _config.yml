@@ -4,7 +4,7 @@ baseurl: "/"
 
 markdown: kramdown
 
-tracking_id: #
+tracking_id: "UA-156846806-1"
 
 footer: yes
 footer_url: "https://onefiniteloop.io"

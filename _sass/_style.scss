@@ -126,5 +126,15 @@ hr {
   }
 }
 
+/*
+ * Print
+ */
+
+@media print {
+  hr {
+    display: none;
+  }
+}
+
 @import "typography";
 @import "tables";

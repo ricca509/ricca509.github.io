@@ -170,31 +170,25 @@ My job included: gathering user requirements, choosing the right technologies to
 
 ## Previous projects
 
-- 2015: Acidseed (Started in a hackaton, developed in my spare time)
+- *2015: Acidseed (Started in a hackaton, developed in my spare time)*
 
-  A caching layer to cache any API/HTTP request. Written in Node.js using ES6
-  Harmony with persistence on Redis.
+  A caching layer to cache any API/HTTP request. Written in Node.js using ES6 Harmony with persistence on Redis.
 
-- 2013: F.js (Spare time, https://github.com/ricca509/F)
+- *2013: F.js (Spare time, [github.com/ricca509/F](https://github.com/ricca509/F))*
 
-  A small library to be used in all those multiple pages (server side MVC) projects that
-  usually don’t have a structured js due to the fact that most of the job is done on the
-  server. It is “A small, modular library that helps writing structured, reusable, testable and namespaced JavaScript code. It also provides DOM helpers and a pub/sub
-  implementation”. Published in the Bower repository.
+  A small library to be used in all those multiple pages (server side MVC) projects that usually don’t have a structured js due to the fact that most of the job is done on the server. It is “A small, modular library that helps writing structured, reusable, testable and namespaced JavaScript code. It also provides DOM helpers and a pub/sub implementation”. Published in the Bower repository.
 
-- 2013: Phood mobile app
+- *2013: Phood mobile app*
 
-  A small mobile application that uses the Yummly.com REST API to search recipes
-  and presents them to the user with a useful visual. Built using ES6 syntax with the Traceur compiler, HTML5/CSS3/SASS, Stylus templates, Nodejs/Express, Marionette.js/Backbonejs/underscorejs, Bower, jQuery, Bootstrap, Git
+  A small mobile application that uses the Yummly.com REST API to search recipes and presents them to the user with a useful visual. Built using ES6 syntax with the Traceur compiler, HTML5/CSS3/SASS, Stylus templates, Nodejs/Express, Marionette.js/Backbonejs/underscorejs, Bower, jQuery, Bootstrap, Git
 
-- 2013: Siemens Healthcare
+- *2013: Siemens Healthcare*
 
-  AlertIng: Frontend and backend dev. A Whatsapp-like application built to deliver real
-  time messages to employees. Built with Phonegap for Android devices. Built using HTML5/CSS3, Backbone.js, jQuery Mobile, Node.js, RabbitMQ, MySQL, PhoneGap
+  AlertIng: Frontend and backend dev. A Whatsapp-like application built to deliver real time messages to employees. Built with Phonegap for Android devices. Built using HTML5/CSS3, Backbone.js, jQuery Mobile, Node.js, RabbitMQ, MySQL, PhoneGap
 
-- 2012: TripTapp.com
+- *2012: TripTapp.com*
 
-  Co-founder of [triptapp.com](www.triptapp.com): after the development of the web application (the first MVP is currently online), I’m designing our mobile application. The webapp development involved social authentication, a NoSQL database (mongoDB), an API to interface with Google Maps, a client side app to handle data about places positions, like, etc and a REST API to handle AJAX calls. The new mobile app will use a REST API in Node.js as backend and HTML5 with Backbone.js (accessing the device’s features through Cordova/PhoneGap). Built using HTML5/CSS3, LESS, Backbone.js, jQuery, Twitter Bootstrap, Yii Framework (PHP), mongoDB. Integrated with Google Maps, Hosted on Windows Azure (Linux VM)
+  Co-founder of [triptapp.com](https://www.triptapp.com): we developed the web application and designed the mobile application. The webapp development involved social authentication, a NoSQL database (mongoDB), an API to interface with Google Maps, a client side app to handle data about places positions, like, etc and a REST API to handle AJAX calls. The mobile app used a REST API in Node.js as backend and HTML5 with Backbone.js (accessing the device’s features through Cordova/PhoneGap). Built using HTML5/CSS3, LESS, Backbone.js, jQuery, Twitter Bootstrap, Yii Framework (PHP), mongoDB. Integrated with Google Maps, Hosted on Windows Azure (Linux VM).
 
 ---
 

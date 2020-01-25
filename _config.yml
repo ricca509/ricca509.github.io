@@ -7,8 +7,15 @@ markdown: kramdown
 tracking_id: "UA-156846806-1"
 
 footer: yes
-footer_url: "https://onefiniteloop.io"
-footer_text: "Finite Loop LTD"
+footer_nav:
+  - text: "Finite Loop LTD"
+    link: "https://onefiniteloop.io"
+  - text: "Blog"
+    link: "https://onefiniteloop.io"
+  - text: "Email me"
+    link: "mailto:hello@ricca509.me"
+  - text: "GitHub"
+    link: "https://github.com/ricca509"
 
 sass:
   style: compressed

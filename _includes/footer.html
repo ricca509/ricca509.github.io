@@ -3,6 +3,7 @@
   <p style="text-align: center; margin-bottom: 10px">
     {% for x in site.footer_nav %}
     <a href="{{ x.link }}"><small>{{ x.text }}</small></a>
+    {% if forloop.last == false %} | {% endif %}
     {% endfor %}
   </p>
 </footer>

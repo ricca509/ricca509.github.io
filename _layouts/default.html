@@ -55,7 +55,7 @@
 </head>
 <body>
     <div class="wrapper">
-        <div class="navbar container">
+        <nav class="navbar container">
             {% if site.ins_logo %}
                 <img id="ins-logo" src="{{ site.ins_logo }}" />
             {% endif %}
@@ -65,13 +65,18 @@
                 {% if x.name == "Resume" %}
                 <li class="alignable pull-left nav-list"><a target="_blank" href="{{ x.link }}">{{ x.name }}</a>
                 {% else %}
-                <li class="alignable pull-left nav-list"><a href="{{ x.link }}">{{ x.name }}</a>
+                <li class="alignable pull-left nav-list">
+                    {% if x.link == page.url %}
+                    <strong>{{ x.name }}</strong>
+                    {% else %}
+                    <a href="{{ x.link }}">{{ x.name }}</a>
+                    {% endif %}                    
                 {% endif %}
                 {% if forloop.last == false %}/{% endif %}
                 </li>
             {% endfor %}
             </ul>
-        </div>
+        </nav>
         <div style="clear:both"></div>
         <hr>
         {% if page.is_contact == true %}

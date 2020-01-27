@@ -1,9 +1,8 @@
 <footer>
   <hr />
-  <p style="text-align: center; margin-bottom: 10px">
+  <p class="footer">
     {% for x in site.footer_nav %}
-    <a href="{{ x.link }}" target="_blank"><small>{{ x.text }}</small></a>
-    {% if forloop.last == false %} | {% endif %}
-    {% endfor %}
+    <a href="{{ x.link }}" target="_blank">{{ x.text }}</a>
+    {% if forloop.last == false %} | {% endif %} {% endfor %}
   </p>
 </footer>

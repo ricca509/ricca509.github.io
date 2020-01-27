@@ -57,7 +57,7 @@
     <div class="wrapper">
         <nav class="navbar container">
             {% if site.ins_logo %}
-                <img id="ins-logo" src="{{ site.ins_logo }}" />
+            <img id="ins-logo" src="{{ site.ins_logo }}" />
             {% endif %}
             <a id="author-name" class="alignable pull-left" href="{{ site.baseurl }}">{{ site.title }}</a>
             <ul id="navlist" class="alignable pull-right navbar-ul">
@@ -67,7 +67,7 @@
                 {% else %}
                 <li class="alignable pull-left nav-list">
                     {% if x.link == page.url %}
-                    <strong>{{ x.name }}</strong>
+                    <span>{{ x.name }}</span>
                     {% else %}
                     <a href="{{ x.link }}">{{ x.name }}</a>
                     {% endif %}                    
@@ -86,6 +86,7 @@
         {% endif %}
             {{ content }}                
         </div> 
+    </div>
     {% if site.footer == true %}
     {% include footer.html %}
     {% endif %}

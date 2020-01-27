@@ -8,8 +8,6 @@ layout: default
 
 [hello@ricca509.me](hello@ricca509.me)
 
-[github.com/ricca509](https://github.com/ricca509)
-
 I am a passionate, detail oriented Full Stack JavaScript developer who can easily wear the DevOps hat.
 
 I have strong experience writing state of art web applications using best practices, design patterns and performance testing, following a TDD/BDD approach.
@@ -35,7 +33,6 @@ _Jan 2019 - Present [London, United Kingdom]_
 I was hired to help shape the new micro front end architecture, part of the wider re-platforming of Burberry's ecom. During my contract I led two of our distributed teams of developers, located in Minsk and Shanghai, while working with stakeholders and designers in-house. Day to day activities with the team included working on stories, mentoring other team members, reviewing merge requests, working with the BA to review stories and prepare sprint goals and working with the designers to make sure all the edge cases were included.
 
 Particular focus was also put on working with all teams overseas to agree on high level solutions and create a consistent workflow that all our teams could follow. Consistency and simplicity were key, to ensure that the cognitive load was kept to a minimun and the code produced would follow our standards regardless of where it was produced.
-
 
 **Key Technologies used:**
 
@@ -170,23 +167,23 @@ My job included: gathering user requirements, choosing the right technologies to
 
 ## Previous projects
 
-- *2015: Acidseed (Started in a hackaton, developed in my spare time)*
+- _2015: Acidseed (Started in a hackaton, developed in my spare time)_
 
   A caching layer to cache any API/HTTP request. Written in Node.js using ES6 Harmony with persistence on Redis.
 
-- *2013: F.js (Spare time, [github.com/ricca509/F](https://github.com/ricca509/F))*
+- _2013: F.js (Spare time, [github.com/ricca509/F](https://github.com/ricca509/F))_
 
   A small library to be used in all those multiple pages (server side MVC) projects that usually don’t have a structured js due to the fact that most of the job is done on the server. It is “A small, modular library that helps writing structured, reusable, testable and namespaced JavaScript code. It also provides DOM helpers and a pub/sub implementation”. Published in the Bower repository.
 
-- *2013: Phood mobile app*
+- _2013: Phood mobile app_
 
   A small mobile application that uses the Yummly.com REST API to search recipes and presents them to the user with a useful visual. Built using ES6 syntax with the Traceur compiler, HTML5/CSS3/SASS, Stylus templates, Nodejs/Express, Marionette.js/Backbonejs/underscorejs, Bower, jQuery, Bootstrap, Git
 
-- *2013: Siemens Healthcare*
+- _2013: Siemens Healthcare_
 
   AlertIng: Frontend and backend dev. A Whatsapp-like application built to deliver real time messages to employees. Built with Phonegap for Android devices. Built using HTML5/CSS3, Backbone.js, jQuery Mobile, Node.js, RabbitMQ, MySQL, PhoneGap
 
-- *2012: TripTapp.com*
+- _2012: TripTapp.com_
 
   Co-founder of [triptapp.com](https://www.triptapp.com): we developed the web application and designed the mobile application. The webapp development involved social authentication, a NoSQL database (mongoDB), an API to interface with Google Maps, a client side app to handle data about places positions, like, etc and a REST API to handle AJAX calls. The mobile app used a REST API in Node.js as backend and HTML5 with Backbone.js (accessing the device’s features through Cordova/PhoneGap). Built using HTML5/CSS3, LESS, Backbone.js, jQuery, Twitter Bootstrap, Yii Framework (PHP), mongoDB. Integrated with Google Maps, Hosted on Windows Azure (Linux VM).
 

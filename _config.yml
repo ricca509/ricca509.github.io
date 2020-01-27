@@ -24,7 +24,9 @@ sass:
 nav:
   - name: "About"
     link: "/"
-  # - name: "Resume"
-  #   link: "resume.pdf"
   - name: "Blog"
     link: "https://onefiniteloop.io"
+  - name: "GitHub"
+    link: "https://github.com/ricca509"
+  - name: "Finite Loop LTD"
+    link: "https://www.onefiniteloop.io/finite-loop-ltd/"

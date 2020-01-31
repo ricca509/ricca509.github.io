@@ -22,11 +22,11 @@ sass:
   sass_dir: _sass
 
 nav:
-  - name: "About"
+  - text: "About"
     link: "/"
-  - name: "Blog"
+  - text: "Blog"
     link: "https://onefiniteloop.io"
-  - name: "GitHub"
+  - text: "GitHub"
     link: "https://github.com/ricca509"
-  - name: "Finite Loop LTD"
+  - text: "Finite Loop LTD"
     link: "https://www.onefiniteloop.io/finite-loop-ltd/"

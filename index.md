@@ -169,15 +169,15 @@ My job included: gathering user requirements, choosing the right technologies to
 
 ## Previous projects
 
-- _2015: Acidseed (Started in a hackaton, developed in my spare time)_
+- _2015: Acidseed (Started in a hackaton, developed as side project)_
 
   A caching layer to cache any API/HTTP request. Written in Node.js using ES6 Harmony with persistence on Redis.
 
-- _2013: F.js (Spare time, [github.com/ricca509/F](https://github.com/ricca509/F))_
+- _2013: F.js (Side project, [github.com/ricca509/F](https://github.com/ricca509/F))_
 
   A small library to be used in all those multiple pages (server side MVC) projects that usually don’t have a structured js due to the fact that most of the job is done on the server. It is “A small, modular library that helps writing structured, reusable, testable and namespaced JavaScript code. It also provides DOM helpers and a pub/sub implementation”. Published in the Bower repository.
 
-- _2013: Phood mobile app_
+- _2013: Phood mobile app (Side project)_
 
   A small mobile application that uses the Yummly.com REST API to search recipes and presents them to the user with a useful visual. Built using ES6 syntax with the Traceur compiler, HTML5/CSS3/SASS, Stylus templates, Nodejs/Express, Marionette.js/Backbonejs/underscorejs, Bower, jQuery, Bootstrap, Git
 

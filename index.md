@@ -38,7 +38,7 @@ As part of my assignment, I also helped build the company's design system: from 
 
 **Key Technologies used:**
 
-React, Redux, SASS, Styled components, redux-saga, Cypress, Node.js, Express, GitLab, GitLab CI, AWS
+React, Redux, SASS, [Backpack](https://github.com/Skyscanner/backpack), [style-dictionary](https://github.com/amzn/style-dictionary), Styled components, redux-saga, Cypress, Node.js, Express, GitLab, GitLab CI, AWS
 
 ---
 

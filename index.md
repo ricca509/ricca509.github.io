@@ -34,7 +34,7 @@ I was hired to help shape the new micro front end architecture, part of the wide
 
 Particular focus was also put on working with all teams overseas to agree on high level solutions and create a consistent workflow that all our teams could follow. Consistency and simplicity were key, to ensure that the cognitive load was kept to a minimun and the code produced would follow our standards regardless of where it was produced.
 
-As part of my assignment, I also worked closely with the desing team to help build the company's design system: from defining the key strategy and technologies to use to building a set of design tokens to be used across web, email and native apps.
+As part of my assignment, I also worked closely with the design team to help build the company's design system: from defining the key strategy and technologies to use to building a set of design tokens to be used across web, email and native apps.
 
 **Key Technologies used:**
 

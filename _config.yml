@@ -9,7 +9,7 @@ tracking_id: "UA-156846806-1"
 footer: yes
 footer_nav:
   - text: "Finite Loop LTD"
-    link: "https://www.onefiniteloop.io/finite-loop-ltd/"
+    link: "https://www.onefiniteloop.io/services/"
   - text: "Blog"
     link: "https://onefiniteloop.io"
   - text: "Email me at hello@ricca509.me"
@@ -29,4 +29,4 @@ nav:
   - text: "GitHub"
     link: "https://github.com/ricca509"
   - text: "Finite Loop LTD"
-    link: "https://www.onefiniteloop.io/finite-loop-ltd/"
+    link: "https://www.onefiniteloop.io/services/"

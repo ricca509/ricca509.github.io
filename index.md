@@ -18,7 +18,7 @@ I love challenging and creative environments where I can support the growth of o
 
 I regularly attend meetups in the London tech scene such as London Web, London React User Group and London Node User Group.
 
-Increasingly interested in blockchain technologies and their applications to solve real orld scenarios and improve people lives.
+Increasingly interested in blockchain technologies and their applications to solve real world scenarios and improve people lives.
 
 I ♥ what I do.
 
@@ -169,7 +169,7 @@ My job included: gathering user requirements, choosing the right technologies to
 
 ## Previous projects
 
-- _2015: Acidseed (Started in a hackaton, developed as side project)_
+- _2015: Acidseed (Side project [github.com/ricca509/acidseed](https://github.com/ricca509/acidseed))_
 
   A caching layer to cache any API/HTTP request. Written in Node.js using ES6 Harmony with persistence on Redis.
 
@@ -197,7 +197,7 @@ Italian, English, basic Spanish.
 
 ## Education
 
-2002 - 2007: Degree in Telecommunications with the thesis: “AODV protocol modifications to include Link State metrics”
+2002 - 2007: Degree in Telecommunications Engineering with the thesis: “AODV protocol modifications to include Link State metrics”
 
 ## Interests
 

@@ -201,7 +201,9 @@ Italian, English, basic Spanish.
 
 ## Interests
 
-Certified Level 3 Personal trainer and Level 2 Gym instructor, sport nutrition geek and biohacker.
+I blog about development, agile methodologies, psychology of teamwork and other boring topics at [onefiniteloop.io](https://www.onefiniteloop.io/).
+
+Certified Level 3 Personal trainer and Level 2 Gym instructor; sport nutrition geek and biohacker at [improvedhumans.com](https://www.improvedhumans.com/).
 
 Trained barista and coffee roaster.
 

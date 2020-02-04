@@ -38,7 +38,7 @@ As part of my assignment, I also worked closely with the design team to help bui
 
 **Key Technologies used:**
 
-React, Redux, SASS, [Backpack](https://github.com/Skyscanner/backpack), [style-dictionary](https://github.com/amzn/style-dictionary), Styled components, redux-saga, Cypress, Node.js, Express, GitLab, GitLab CI, AWS
+React, Redux, redux-saga, Next.js, Gatsby, SASS, Styled components, [Backpack](https://github.com/Skyscanner/backpack), [style-dictionary](https://github.com/amzn/style-dictionary), Cypress, GitLab, GitLab CI, AWS
 
 ---
 

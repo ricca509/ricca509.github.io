@@ -106,7 +106,7 @@ Part of the improvements put in place include:
 - monthly meeting with back-end devs, tech ops and architect to give all developers a big picture of our projects.
 - hosting a Js meetup (http://www.meetup.com/js-monthly-london/) in our London office
 
-I lead UI teams in our London and Madrid offices and was also involved in various social activities to bring developers together: brown bag sessions, meetups, team conference calls.
+I led UI teams in our London and Madrid offices and was also involved in various social activities to bring developers together: brown bag sessions, meetups, team conference calls.
 
 **Senior UI developer**
 
@@ -130,7 +130,7 @@ _Sept 2013 - Apr 2014 [London, United Kingdom]_
 
 Responsible for the development and maintenance of our web applications: working closely with our team of business analysts, designers, backend developers and QAs in an Agile team. My job involved writing JavaScript libraries to be used across the apps, turning PSD designs into semantic HTML5 applications; adding complex interactions handled with the best JavaScript tools and frameworks, always creating modular and maintainable code even with tight schedules.
 
-I improved the front end workflow by introducing an automated flow for the development: with Grunt.js, we now automate the whole process. From a morning job that takes care of updating the local repository, builds and the deploys the app; to a watcher that lints, checks the coding style with jscs (I am still fine tuning it to find the best style), tests and concatenates + minify and deploy at every ctrl+s. I automated the documentation process creating a live styleguide with KSS.
+I improved the front end workflow by introducing an automated flow for the development: with Grunt.js, we now automate the whole process. From a morning job that takes care of updating the local repository, builds and the deploys the app; to a watcher that lints, checks the coding style with jscs, tests and concatenates + minify and deploy at every file save. I automated the documentation process creating a live styleguide with KSS.
 
 In our Agile environment we used Jira to handle our sprints' workflow and Jenkins to build, deploy and test our code.
 

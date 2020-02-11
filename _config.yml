@@ -1,6 +1,7 @@
 title: Riccardo Coppola
 url: "https://riccardocoppola.me"
 baseurl: "/"
+favicon: yes
 favicon_location: "/favicon.png"
 
 markdown: kramdown

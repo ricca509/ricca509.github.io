@@ -1,9 +1,6 @@
 name: Gatsby Publish
 
-on:
-  push:
-    branches:
-      - gatsby
+on: [push]
 
 jobs:
   build:

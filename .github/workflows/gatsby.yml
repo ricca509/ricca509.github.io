@@ -1,6 +1,9 @@
 name: Gatsby Publish
 
-on: [push]
+on:
+  push:
+    branches:
+      - dev
 
 jobs:
   build:
@@ -11,4 +14,3 @@ jobs:
       - uses: enriikke/gatsby-gh-pages-action@v2.1.1
         with:
           access-token: ${{ secrets.ACCESS_TOKEN }}
-          deploy-branch: gh-pages

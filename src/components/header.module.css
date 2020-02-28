@@ -1,0 +1,10 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  margin: 40px 0;
+}
+
+.author {
+  font-size: 30px;
+  color: #272727;
+}

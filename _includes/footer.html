@@ -1,8 +1,0 @@
-<footer>
-  <hr />
-  <p class="footer">
-    {% for x in site.footer_nav %}
-    <a href="{{ x.link }}" target="_blank">{{ x.text }}</a>
-    {% if forloop.last == false %} | {% endif %} {% endfor %}
-  </p>
-</footer>

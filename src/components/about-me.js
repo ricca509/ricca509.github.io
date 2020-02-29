@@ -4,7 +4,9 @@ import Img from "gatsby-image";
 import Markdown from "markdown-to-jsx";
 
 const description = `
-[hello@ricca509.me](hello@ricca509.me)
+#Hello,
+
+#my name is [Riccardo Coppola](mailto:hello@ricca509.me)
 
 I am a passionate, detail oriented Full Stack JavaScript developer who can easily wear the DevOps hat.
 
@@ -24,7 +26,6 @@ I ♥ what I do.
 const AboutMe = ({ data }) => {
   return (
     <>
-      <h2>About Me</h2>
       {/* <Img
         imgStyle={{
           height: "85px",

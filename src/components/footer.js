@@ -1,10 +1,31 @@
 import React from "react";
 import { StaticQuery, graphql } from "gatsby";
+import Img from "gatsby-image";
 import styles from "./footer.module.css";
 
 const Footer = ({ data }) => {
+  const logos = data.allFile.edges;
+  const links = [
+    "https://www.onefiniteloop.io",
+    "https://www.improvedhumans.com",
+  ];
+
   return (
     <footer className={styles.footer}>
+      <div style={{ display: "flex", justifyContent: "center" }}>
+        {logos.map((logo, idx) => {
+          return (
+            <a target="blank" href={links[idx]}>
+              <Img
+                style={{
+                  marginRight: 20,
+                }}
+                fixed={logo.node.childImageSharp.fixed}
+              />
+            </a>
+          );
+        })}
+      </div>
       <div>© {new Date().getFullYear()} Finite Loop LTD</div>
       <div>
         This application is built with{" "}
@@ -29,10 +50,20 @@ export default props => (
   <StaticQuery
     query={graphql`
       query {
-        file(relativePath: { eq: "github.png" }) {
-          childImageSharp {
-            fixed(width: 64, height: 64) {
-              ...GatsbyImageSharpFixed
+        allFile(
+          filter: {
+            relativePath: {
+              in: ["finiteloop-icon.png", "improvedhumans-icon.png"]
+            }
+          }
+        ) {
+          edges {
+            node {
+              childImageSharp {
+                fixed(width: 40, height: 40) {
+                  ...GatsbyImageSharpFixed
+                }
+              }
             }
           }
         }

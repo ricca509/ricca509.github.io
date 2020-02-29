@@ -5,7 +5,6 @@ import styles from "./header.module.css";
 
 const Header = ({ siteTitle }) => (
   <header className={styles.container}>
-    <h1 className={styles.author}>Riccardo Coppola</h1>
     <nav>
       <HeaderNavigation
         links={[

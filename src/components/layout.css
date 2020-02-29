@@ -1,11 +1,22 @@
 body {
-  font-family: "Inconsolata", monospace;
+  font-family: "Inconsolata", sans-serif;
+  font-weight: 400;
   font-size: 18px;
+  line-height: 1.5;
   max-width: 800px;
   margin: auto;
   text-align: justify;
   line-height: 24px;
   color: #292f33;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Poppins", monospace;
+  font-weight: 400;
 }
 
 a {

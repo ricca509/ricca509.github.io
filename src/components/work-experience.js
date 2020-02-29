@@ -1,5 +1,6 @@
-import React from "react"
-import Markdown from "markdown-to-jsx"
+import React from "react";
+import Markdown from "markdown-to-jsx";
+import styles from "./work-experience.module.css";
 
 const WorkExperience = ({
   company,
@@ -9,7 +10,7 @@ const WorkExperience = ({
   technologiesArray,
 }) => {
   return (
-    <>
+    <div className={styles.container}>
       <h3>{company}</h3>
       <p>
         <strong>{role}</strong>
@@ -24,8 +25,8 @@ const WorkExperience = ({
           <p>{technologiesArray.join(", ")}</p>
         </div>
       )}
-    </>
-  )
-}
+    </div>
+  );
+};
 
-export default WorkExperience
+export default WorkExperience;

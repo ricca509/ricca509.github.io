@@ -1,7 +1,7 @@
 .nav-element {
   list-style-type: none;
   display: inline;
-  padding: 0 10px;
+  padding-right: 10px;
 }
 
 .nav-element a {

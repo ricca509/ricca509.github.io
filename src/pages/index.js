@@ -92,7 +92,7 @@ const lastminuteLead = {
   company: "lastminute.com",
   role: "UI Tech Lead",
   dates: "Jan 2015 - Oct 2015 [London, United Kingdom]",
-  description: `I was promoted to Tech Lead to give our UI teams a long term vision. Apart from developing (I still spend at least 70% of my time developing with the team) I then invested more time on new technologies, best practices and patterns to use across our teams and improved ways of managing our workflows.
+  description: `I was promoted to Tech Lead to give our UI teams a long term vision. Apart from developing (I spent at least 70% of my time developing with the team) I then invested more time on new technologies, best practices and patterns to use across our teams and improved ways of managing our workflows.
 
 Part of the improvements put in place include:
 

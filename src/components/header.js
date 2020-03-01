@@ -8,12 +8,12 @@ const Header = ({ siteTitle }) => (
     <nav>
       <HeaderNavigation
         links={[
-          { text: "Blog", link: "https://onefiniteloop.io" },
-          { text: "GitHub", link: "https://github.com/ricca509" },
-          {
-            text: "Finite Loop LTD",
-            link: "https://www.onefiniteloop.io/services/",
-          },
+          "https://github.com/ricca509",
+          "https://www.instagram.com/ricca509/",
+          "https://twitter.com/onefiniteloop",
+          "https://www.linkedin.com/in/riccardocoppola/",
+          "https://onefiniteloop.io",
+          "mailto:riccardo@onefiniteloop.io",
         ]}
       />
     </nav>

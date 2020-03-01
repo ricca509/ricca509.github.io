@@ -7,7 +7,3 @@
 .nav-element:last-child {
   padding-right: 0;
 }
-
-.nav-element a {
-  text-decoration: none;
-}

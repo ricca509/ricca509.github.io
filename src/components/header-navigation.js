@@ -1,21 +1,22 @@
-import React from "react"
-import styles from "./header-navigation.module.css"
-
-console.log(styles)
+import React from "react";
+import { SocialIcon } from "react-social-icons";
+import styles from "./header-navigation.module.css";
 
 const renderNavigationElements = links =>
-  links.map(({ text, link }) => {
+  links.map(link => {
     return (
       <li className={styles.navElement} key={link}>
-        <a href={link} alt={text}>
-          {text}
-        </a>
+        <SocialIcon
+          url={link}
+          bgColor="#aaa"
+          style={{ height: 35, width: 35 }}
+        />
       </li>
-    )
-  })
+    );
+  });
 
 const HeaderNavigation = ({ links }) => {
-  return <ul>{renderNavigationElements(links)}</ul>
-}
+  return <ul>{renderNavigationElements(links)}</ul>;
+};
 
-export default HeaderNavigation
+export default HeaderNavigation;

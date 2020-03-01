@@ -48,8 +48,8 @@ const AboutMe = ({ data }) => {
           },
         }}
       >
-        #👋 my name is [Riccardo Coppola](mailto:hello@ricca509.me) and I write
-        code
+        #👋 my name is [Riccardo Coppola](mailto:riccardo@onefiniteloop.io) - I
+        write code
       </Markdown>
       <Markdown>{description}</Markdown>
     </div>

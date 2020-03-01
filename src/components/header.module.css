@@ -1,6 +1,6 @@
 .container {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   margin: 0;
 }
 
@@ -8,15 +8,11 @@ nav ul {
   padding-inline-start: 0;
 }
 
-@media (min-width: 425px) {
-  .container {
-    margin: 20px 0;
-  }
-}
-
 @media (min-width: 768px) {
   .container {
     flex-direction: row;
+    justify-content: flex-end;
+    margin: 20px 0;
   }
 }
 

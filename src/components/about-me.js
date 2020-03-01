@@ -9,7 +9,7 @@ const TitleComponent = ({ children }) => {
 };
 
 const description = `
-I am a passionate, detail oriented **Team Lead** and **Full Stack JavaScript developer** who can easily wear the DevOps hat.
+I am a passionate, detail oriented **Team Lead** and **Full Stack JavaScript developer** with extensive knowledge of SevOps practices and Agile methodologies.
 
 I have strong experience writing state of art web applications using best practices, design patterns and performance testing, following a TDD/BDD approach.
 
@@ -46,7 +46,7 @@ const AboutMe = ({ data }) => {
           },
         }}
       >
-        #👋 my name is [Riccardo Coppola](mailto:riccardo@onefiniteloop.io) - I
+        #👋 my name is [Riccardo Coppola](mailto:riccardo@onefiniteloop.io). I
         write code
       </Markdown>
       <Markdown>{description}</Markdown>

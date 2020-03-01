@@ -2,13 +2,14 @@ import React from "react";
 import { StaticQuery, graphql } from "gatsby";
 import Img from "gatsby-image";
 import Markdown from "markdown-to-jsx";
+import style from "./about-me.module.css";
+
+const TitleComponent = ({ children }) => {
+  return <h1 className={style.title}>{children}</h1>;
+};
 
 const description = `
-#Hello,
-
-#my name is [Riccardo Coppola](mailto:hello@ricca509.me)
-
-I am a passionate, detail oriented Full Stack JavaScript developer who can easily wear the DevOps hat.
+I am a passionate, detail oriented **Team Lead** and **Full Stack JavaScript developer** who can easily wear the DevOps hat.
 
 I have strong experience writing state of art web applications using best practices, design patterns and performance testing, following a TDD/BDD approach.
 
@@ -25,20 +26,33 @@ I ♥ what I do.
 
 const AboutMe = ({ data }) => {
   return (
-    <>
-      {/* <Img
+    <div
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+      }}
+    >
+      <Img
         imgStyle={{
-          height: "85px",
-          width: "85px",
-          position: "relative",
-          margin: "-10px 0 0 15px",
-          float: "right",
           borderRadius: "50%",
         }}
         fixed={data.file.childImageSharp.fixed}
-      /> */}
+      />
+      <Markdown
+        options={{
+          overrides: {
+            h1: {
+              component: TitleComponent,
+            },
+          },
+        }}
+      >
+        #👋 my name is [Riccardo Coppola](mailto:hello@ricca509.me) and I write
+        code
+      </Markdown>
       <Markdown>{description}</Markdown>
-    </>
+    </div>
   );
 };
 

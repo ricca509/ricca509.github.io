@@ -8,7 +8,6 @@ const Header = ({ siteTitle }) => (
     <nav>
       <HeaderNavigation
         links={[
-          { text: "About", link: "/" },
           { text: "Blog", link: "https://onefiniteloop.io" },
           { text: "GitHub", link: "https://github.com/ricca509" },
           {

@@ -216,7 +216,12 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <AboutMe />
-    <h2>Experience 💼</h2>
+    <h2>
+      Experience{" "}
+      <span role="img" aria-label="experience">
+        💼
+      </span>
+    </h2>
     <WorkExperience {...burberry} />
     <WorkExperience {...trainlineLead} />
     <WorkExperience {...trainlineSenior} />

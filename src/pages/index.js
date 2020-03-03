@@ -22,6 +22,7 @@ const burberry = {
     "redux-saga",
     "Next.js",
     "Gatsby",
+    "JAMStack",
     "SASS",
     "Styled components",
     "Backpack",

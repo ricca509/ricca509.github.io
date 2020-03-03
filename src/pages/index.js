@@ -219,14 +219,12 @@ const IndexPage = ({ data }) => (
     <AboutMe
       title={`#👋 my name is [Riccardo Coppola](mailto:riccardo@onefiniteloop.io). I write code`}
       body={`
-I am a passionate, detail oriented **Team Lead** and **Full Stack JavaScript developer** with extensive knowledge of DevOps practices and Agile methodologies.
+I am a passionate, detail oriented **Team Lead** and **Full Stack JavaScript developer** with over 10 years industry experience, extensive knowledge of DevOps practices and Agile methodologies.
 
-I have strong experience writing state of art, highly maintainable web applications using best practices, design patterns and performance testing, following a TDD/BDD approach.
+Passionate about testing, workflow automation, code reusability and team dynamics; I focus on writing state of art, highly maintainable web applications using best practices, design patterns and performance testing, following a TDD/BDD approach.
 
-I have hands-on experience with Agile methodologies (Kanban/Scrum/XP/pair programming) and building cross-functional teams on site and in [distributed environments](https://www.onefiniteloop.io/embrace-distributed-teams-and-be-happy/). 
+I have hands-on experience in building cross-functional teams on site and in [distributed environments](https://www.onefiniteloop.io/embrace-distributed-teams-and-be-happy/). 
 Strong believer in the value of productivity as a result of highly efficient workflows, I can happily act as **developer advocate** to help remove obstacles and enable developers to increase velocity.
-
-I love challenging and creative environments where I can support the growth of other developers.
 
 I regularly attend meetups in the London tech scene such as London React User Group and London Node User Group.
 

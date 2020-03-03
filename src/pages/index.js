@@ -1,4 +1,5 @@
 import React from "react";
+import { StaticQuery, graphql } from "gatsby";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import AboutMe from "../components/about-me";
@@ -10,9 +11,9 @@ const burberry = {
   company: "Burberry",
   role: "Lead Developer (Consultant)",
   dates: "Jan 2019 - Present [London, United Kingdom]",
-  description: `I was hired to help shape the new micro front end architecture, part of the wider re-platforming of Burberry’s ecom. During my contract I led two of our distributed teams of developers, located in Minsk and Shanghai, while working with stakeholders and designers in-house. Day to day activities with the team included working on stories, mentoring other team members, reviewing merge requests, working with the BA to review stories and prepare sprint goals and working with the designers to make sure all the edge cases were included.
+  description: `I joined to help shape the new micro front end architecture, part of the wider re-platforming of Burberry’s ecom. During my contract I led two of our distributed teams of developers, located in Minsk and Shanghai, while working with stakeholders and designers in-house. Day to day activities with the team included working on stories, mentoring other team members, reviewing merge requests, working with the BA to review stories and prepare sprint goals and working with the designers to make sure all the edge cases were included.
 
-  Particular focus was also put on working with all teams overseas to agree on high level solutions and create a consistent workflow that all our teams could follow. Consistency and simplicity were key, to ensure that the cognitive load was kept to a minimun and the code produced would follow our standards regardless of where it was produced.
+  Particular focus was also put on working with all teams overseas to agree on high level solutions and create a consistent workflow that all our teams could follow. Consistency and simplicity were key, to ensure that the cognitive load was kept to a minimum and the code produced would follow our standards regardless of where it was produced.
   
   As part of my assignment, I also worked closely with the design team to help build the company’s design system: from defining the key strategy and technologies to use to building a set of design tokens to be used across web, email and native apps.`,
   technologiesArray: [
@@ -212,10 +213,27 @@ const triptapp = {
   description: `Co-founder of [triptapp.com](https://www.triptapp.com): we developed the web application and designed the mobile application. The webapp development involved social authentication, a NoSQL database (mongoDB), an API to interface with Google Maps, a client side app to handle data about places positions, like, etc and a REST API to handle AJAX calls. The mobile app used a REST API in Node.js as backend and HTML5 with Backbone.js (accessing the device’s features through Cordova/PhoneGap). Built using HTML5/CSS3, LESS, Backbone.js, jQuery, Twitter Bootstrap, Yii Framework (PHP), mongoDB. Integrated with Google Maps, Hosted on Windows Azure (Linux VM).`,
 };
 
-const IndexPage = () => (
+const IndexPage = ({ data }) => (
   <Layout>
     <SEO title="Home" />
-    <AboutMe />
+    <AboutMe
+      title={`#👋 my name is [Riccardo Coppola](mailto:riccardo@onefiniteloop.io). I write code`}
+      body={`
+I am a passionate, detail oriented **Team Lead** and **Full Stack JavaScript developer** with extensive knowledge of DevOps practices and Agile methodologies.
+
+I have strong experience writing state of art, highly maintainable web applications using best practices, design patterns and performance testing, following a TDD/BDD approach.
+
+I have hands-on experience with Agile methodologies (Kanban/Scrum/XP/pair programming) and building cross-functional teams on site and in [distributed environments](https://www.onefiniteloop.io/embrace-distributed-teams-and-be-happy/). 
+Strong believer in the value of productivity as a result of highly efficient workflows, I can happily act as **developer advocate** to help remove obstacles and enable developers to increase velocity.
+
+I love challenging and creative environments where I can support the growth of other developers.
+
+I regularly attend meetups in the London tech scene such as London React User Group and London Node User Group.
+
+**I ♥ what I do**
+      `}
+      image={data.file.childImageSharp.fixed}
+    />
     <h2>
       Experience{" "}
       <span role="img" aria-label="experience">
@@ -256,4 +274,19 @@ Amateur photographer [500px.com/ricca509](https://500px.com/ricca509).`}
   </Layout>
 );
 
-export default IndexPage;
+export default props => (
+  <StaticQuery
+    query={graphql`
+      query {
+        file(relativePath: { eq: "me.jpeg" }) {
+          childImageSharp {
+            fixed(width: 100, height: 100) {
+              ...GatsbyImageSharpFixed
+            }
+          }
+        }
+      }
+    `}
+    render={data => <IndexPage data={data} {...props} />}
+  />
+);

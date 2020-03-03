@@ -8,21 +8,7 @@ const TitleComponent = ({ children }) => {
   return <h1 className={style.title}>{children}</h1>;
 };
 
-const description = `
-I am a passionate, detail oriented **Team Lead** and **Full Stack JavaScript developer** with extensive knowledge of DevOps practices and Agile methodologies.
-
-I have strong experience writing state of art, highly maintainable web applications using best practices, design patterns and performance testing, following a TDD/BDD approach.
-
-Team player, I have extensive, hands-on experience with Agile methodologies (Kanban/Scrum/XP/pair programming), building cross-functional teams on site and in [distributed environments](https://www.onefiniteloop.io/embrace-distributed-teams-and-be-happy/). Strong believer in the value of productivity as a result of highly efficient workflows, I can happily act as **developer advocate** to help remove obstacles and enable developers to increase velocity.
-
-I love challenging and creative environments where I can support the growth of other developers.
-
-I regularly attend meetups in the London tech scene such as London React User Group and London Node User Group.
-
-**I ♥ what I do**
-`;
-
-const AboutMe = ({ data }) => {
+const AboutMe = ({ title, body, image }) => {
   return (
     <div
       style={{
@@ -35,7 +21,7 @@ const AboutMe = ({ data }) => {
         imgStyle={{
           borderRadius: "50%",
         }}
-        fixed={data.file.childImageSharp.fixed}
+        fixed={image}
       />
       <Markdown
         options={{
@@ -46,27 +32,11 @@ const AboutMe = ({ data }) => {
           },
         }}
       >
-        #👋 my name is [Riccardo Coppola](mailto:riccardo@onefiniteloop.io). I
-        write code
+        {title}
       </Markdown>
-      <Markdown>{description}</Markdown>
+      <Markdown>{body}</Markdown>
     </div>
   );
 };
 
-export default props => (
-  <StaticQuery
-    query={graphql`
-      query {
-        file(relativePath: { eq: "me.jpeg" }) {
-          childImageSharp {
-            fixed(width: 100, height: 100) {
-              ...GatsbyImageSharpFixed
-            }
-          }
-        }
-      }
-    `}
-    render={data => <AboutMe data={data} {...props} />}
-  />
-);
+export default AboutMe;

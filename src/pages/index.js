@@ -213,12 +213,13 @@ const triptapp = {
   description: `Co-founder of [triptapp.com](https://www.triptapp.com): we developed the web application and designed the mobile application. The webapp development involved social authentication, a NoSQL database (mongoDB), an API to interface with Google Maps, a client side app to handle data about places positions, like, etc and a REST API to handle AJAX calls. The mobile app used a REST API in Node.js as backend and HTML5 with Backbone.js (accessing the device’s features through Cordova/PhoneGap). Built using HTML5/CSS3, LESS, Backbone.js, jQuery, Twitter Bootstrap, Yii Framework (PHP), mongoDB. Integrated with Google Maps, Hosted on Windows Azure (Linux VM).`,
 };
 
-const IndexPage = ({ data }) => (
-  <Layout>
-    <SEO title="Home" />
-    <AboutMe
-      title={`#👋 my name is [Riccardo Coppola](mailto:riccardo@onefiniteloop.io). I write code`}
-      body={`
+const IndexPage = ({ data }) => {
+  return (
+    <Layout>
+      <SEO title="Home" />
+      <AboutMe
+        title={`#👋 my name is [Riccardo Coppola](mailto:riccardo@onefiniteloop.io). I write code`}
+        body={`
 I am a passionate, detail oriented **Team Lead** and **Full Stack JavaScript developer** with over 10 years industry experience, extensive knowledge of DevOps practices and Agile methodologies.
 
 Passionate about testing, workflow automation, code reusability and team dynamics; I focus on writing state of art, highly maintainable web applications using best practices, design patterns and performance testing, following a TDD/BDD approach.
@@ -230,47 +231,59 @@ I regularly attend meetups in the London tech scene such as London React User Gr
 
 **I ♥ what I do**
       `}
-      image={data.file.childImageSharp.fixed}
-    />
-    <h2>
-      Experience{" "}
-      <span role="img" aria-label="experience">
-        💼
-      </span>
-    </h2>
-    <WorkExperience {...burberry} />
-    <WorkExperience {...trainlineLead} />
-    <WorkExperience {...trainlineSenior} />
-    <WorkExperience {...lastminuteLead} />
-    <WorkExperience {...lastminuteSenior} />
-    <WorkExperience {...f1000} />
-    <WorkExperience {...klm} />
-    <WorkExperience {...prometeo} />
-    <h2>Previous projects</h2>
-    <FormerExperience {...acidSeed} />
-    <FormerExperience {...f} />
-    <FormerExperience {...phood} />
-    <FormerExperience {...siemens} />
-    <FormerExperience {...triptapp} />
-    <h2>Spoken languages</h2>
-    <p>Italian, English, basic Spanish.</p>
-    <h2>Education</h2>
-    <p>
-      2002 - 2007: Degree in Telecommunications Engineering with the thesis:
-      “AODV protocol modifications to include Link State metrics”
-    </p>
-    <h2>Interests</h2>
-    <Markdown>
-      {`I blog about development, agile methodologies, psychology of teamwork and other boring topics at [onefiniteloop.io](https://www.onefiniteloop.io/).
+        image={data.file.childImageSharp.fixed}
+      />
+      <h2>
+        Experience{" "}
+        <span role="img" aria-label="experience">
+          💼
+        </span>
+      </h2>
+      {data.allMdx.edges.map(({ node }) => {
+        return (
+          <WorkExperience
+            key={node.id}
+            company={node.frontmatter.company}
+            role={node.frontmatter.role}
+            dates={`${node.frontmatter.from_date} - ${node.frontmatter.to_date}`}
+            description={node.body}
+          />
+        );
+      })}
+      {/* <WorkExperience {...burberry} />
+      <WorkExperience {...trainlineLead} />
+      <WorkExperience {...trainlineSenior} />
+      <WorkExperience {...lastminuteLead} />
+      <WorkExperience {...lastminuteSenior} />
+      <WorkExperience {...f1000} />
+      <WorkExperience {...klm} />
+      <WorkExperience {...prometeo} /> */}
+      <h2>Previous projects</h2>
+      <FormerExperience {...acidSeed} />
+      <FormerExperience {...f} />
+      <FormerExperience {...phood} />
+      <FormerExperience {...siemens} />
+      <FormerExperience {...triptapp} />
+      <h2>Spoken languages</h2>
+      <p>Italian, English, basic Spanish.</p>
+      <h2>Education</h2>
+      <p>
+        2002 - 2007: Degree in Telecommunications Engineering with the thesis:
+        “AODV protocol modifications to include Link State metrics”
+      </p>
+      <h2>Interests</h2>
+      <Markdown>
+        {`I blog about development, agile methodologies, psychology of teamwork and other boring topics at [onefiniteloop.io](https://www.onefiniteloop.io/).
 
 Certified Level 3 Personal trainer and Level 2 Gym instructor; sport nutrition geek and biohacker at [improvedhumans.com](https://www.improvedhumans.com/).
 
 Trained barista and coffee roaster.
 
 Amateur photographer [500px.com/ricca509](https://500px.com/ricca509).`}
-    </Markdown>
-  </Layout>
-);
+      </Markdown>
+    </Layout>
+  );
+};
 
 export default props => (
   <StaticQuery
@@ -280,6 +293,20 @@ export default props => (
           childImageSharp {
             fixed(width: 100, height: 100) {
               ...GatsbyImageSharpFixed
+            }
+          }
+        }
+        allMdx(sort: { order: DESC, fields: frontmatter___to_date }) {
+          edges {
+            node {
+              frontmatter {
+                company
+                role
+                location
+                from_date(formatString: "MMM YYYY")
+                to_date(formatString: "MMM YYYY")
+              }
+              body
             }
           }
         }

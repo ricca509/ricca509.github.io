@@ -1,5 +1,6 @@
 import React from "react";
-import Markdown from "markdown-to-jsx";
+import { MDXTag } from "@mdx-js/tag";
+import { MDXRenderer } from "gatsby-plugin-mdx";
 import styles from "./work-experience.module.css";
 
 const WorkExperience = ({
@@ -18,7 +19,7 @@ const WorkExperience = ({
       <p>
         <em>{dates}</em>
       </p>
-      <Markdown>{description}</Markdown>
+      <MDXRenderer scope={{ React, MDXTag }}>{description}</MDXRenderer>
       {technologiesArray && (
         <div>
           <strong>Key Technologies used:</strong>

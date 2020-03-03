@@ -4,7 +4,7 @@ import Layout from "../components/layout";
 import SEO from "../components/seo";
 import AboutMe from "../components/about-me";
 import WorkExperience from "../components/work-experience";
-import FormerExperience from "../components/former-experience";
+import SideProject from "../components/side-project";
 import Markdown from "markdown-to-jsx";
 
 const burberry = {
@@ -186,26 +186,20 @@ const prometeo = {
 
 const acidSeed = {
   year: "2015",
-  title: `Acidseed (Side project [github.com/ricca509/acidseed](https://github.com/ricca509/acidseed))`,
+  title: `Acidseed [github.com/ricca509/acidseed](https://github.com/ricca509/acidseed)`,
   description: `A caching layer to cache any API/HTTP request. Written in Node.js using ES6 Harmony with persistence on Redis.`,
 };
 
 const f = {
   year: "2013",
-  title: `F.js (Side project, [github.com/ricca509/F](https://github.com/ricca509/F))`,
+  title: `F.js [github.com/ricca509/F](https://github.com/ricca509/F)`,
   description: `A small library to be used in all those multiple pages (server side MVC) projects that usually don’t have a structured js due to the fact that most of the job is done on the server. It is “A small, modular library that helps writing structured, reusable, testable and namespaced JavaScript code. It also provides DOM helpers and a pub/sub implementation”. Published in the Bower repository.`,
 };
 
 const phood = {
   year: "2013",
-  title: `Phood mobile app (Side project)`,
+  title: `Phood mobile app`,
   description: `A small mobile application that uses the Yummly.com REST API to search recipes and presents them to the user with a useful visual. Built using ES6 syntax with the Traceur compiler, HTML5/CSS3/SASS, Stylus templates, Nodejs/Express, Marionette.js/Backbonejs/underscorejs, Bower, jQuery, Bootstrap, Git.`,
-};
-
-const siemens = {
-  year: "2013",
-  title: `Siemens Healthcare`,
-  description: `AlertIng: Frontend and backend dev. A Whatsapp-like application built to deliver real time messages to employees. Built with Phonegap for Android devices. Built using HTML5/CSS3, Backbone.js, jQuery Mobile, Node.js, RabbitMQ, MySQL, PhoneGap.`,
 };
 
 const triptapp = {
@@ -247,12 +241,11 @@ I regularly attend meetups in the London tech scene such as London React User Gr
     <WorkExperience {...f1000} />
     <WorkExperience {...klm} />
     <WorkExperience {...prometeo} />
-    <h2>Previous projects</h2>
-    <FormerExperience {...acidSeed} />
-    <FormerExperience {...f} />
-    <FormerExperience {...phood} />
-    <FormerExperience {...siemens} />
-    <FormerExperience {...triptapp} />
+    <h2>Side projects</h2>
+    <SideProject {...acidSeed} />
+    <SideProject {...f} />
+    <SideProject {...phood} />
+    <SideProject {...triptapp} />
     <h2>Spoken languages</h2>
     <p>Italian, English, basic Spanish.</p>
     <h2>Education</h2>

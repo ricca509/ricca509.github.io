@@ -1,5 +1,4 @@
 import React from "react";
-import { StaticQuery, graphql } from "gatsby";
 import Img from "gatsby-image";
 import Markdown from "markdown-to-jsx";
 import style from "./about-me.module.css";

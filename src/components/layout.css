@@ -6,7 +6,7 @@ body {
   max-width: 800px;
   margin: auto;
   line-height: 24px;
-  color: #243342;
+  color: var(--main-font-color);
 }
 
 h1,
@@ -29,7 +29,7 @@ h1 {
 }
 
 a {
-  color: #d03a84;
+  color: var(--pink);
 }
 
 .container {

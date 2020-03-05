@@ -6,13 +6,14 @@ import AboutMe from "../components/about-me";
 import WorkExperience from "../components/work-experience";
 import SideProject from "../components/side-project";
 import GenericSection from "../components/generic-section";
-import Markdown from "markdown-to-jsx";
 
 const IndexPage = ({ data }) => {
   return (
     <Layout>
       <SEO title="Home" />
-      <AboutMe body={data.about.html} image={data.file.childImageSharp.fixed} />
+      <AboutMe image={data.file.childImageSharp.fixed}>
+        {data.about.html}
+      </AboutMe>
       <h2>
         Experience{" "}
         <span role="img" aria-label="experience">
@@ -26,9 +27,10 @@ const IndexPage = ({ data }) => {
             company={node.frontmatter.company}
             role={node.frontmatter.role}
             dates={`${node.frontmatter.from_date} - ${node.frontmatter.to_date}`}
-            description={node.html}
             technologies={node.frontmatter.technologies}
-          />
+          >
+            {node.html}
+          </WorkExperience>
         );
       })}
       <h2>Side projects</h2>
@@ -38,8 +40,9 @@ const IndexPage = ({ data }) => {
             key={node.id}
             title={node.frontmatter.title}
             link={node.frontmatter.link}
-            description={node.html}
-          />
+          >
+            {node.html}
+          </SideProject>
         );
       })}
       {data.otherSections.edges.map(({ node }) => {

@@ -1,7 +1,7 @@
 import React from "react";
 import style from "./side-project.module.css";
 
-const SideProject = ({ title, link, description }) => {
+const SideProject = ({ title, link, children }) => {
   return (
     <li>
       <em>
@@ -15,7 +15,7 @@ const SideProject = ({ title, link, description }) => {
       </em>
       <p
         className={style.description}
-        dangerouslySetInnerHTML={{ __html: description }}
+        dangerouslySetInnerHTML={{ __html: children }}
       />
     </li>
   );

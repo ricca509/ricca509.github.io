@@ -1,13 +1,7 @@
 import React from "react";
 import styles from "./work-experience.module.css";
 
-const WorkExperience = ({
-  company,
-  role,
-  dates,
-  description,
-  technologies,
-}) => {
+const WorkExperience = ({ company, role, dates, technologies, children }) => {
   return (
     <div className={styles.container}>
       <h3>{company}</h3>
@@ -17,7 +11,7 @@ const WorkExperience = ({
       <p>
         <em>{dates}</em>
       </p>
-      <div dangerouslySetInnerHTML={{ __html: description }} />
+      <div dangerouslySetInnerHTML={{ __html: children }} />
       {technologies && (
         <div>
           <strong>Key Technologies used:</strong>

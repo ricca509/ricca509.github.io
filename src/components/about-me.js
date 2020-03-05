@@ -2,7 +2,7 @@ import React from "react";
 import Img from "gatsby-image";
 import style from "./about-me.module.css";
 
-const AboutMe = ({ body, image }) => {
+const AboutMe = ({ children, image }) => {
   return (
     <div className={style.container}>
       <Img
@@ -11,7 +11,7 @@ const AboutMe = ({ body, image }) => {
         }}
         fixed={image}
       />
-      <p dangerouslySetInnerHTML={{ __html: body }} />
+      <p dangerouslySetInnerHTML={{ __html: children }} />
     </div>
   );
 };

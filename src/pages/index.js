@@ -5,6 +5,7 @@ import SEO from "../components/seo";
 import AboutMe from "../components/about-me";
 import WorkExperience from "../components/work-experience";
 import SideProject from "../components/side-project";
+import GenericSection from "../components/generic-section";
 import Markdown from "markdown-to-jsx";
 
 const IndexPage = ({ data }) => {
@@ -41,23 +42,13 @@ const IndexPage = ({ data }) => {
           />
         );
       })}
-      <h2>Spoken languages</h2>
-      <p>Italian, English, basic Spanish.</p>
-      <h2>Education</h2>
-      <p>
-        2002 - 2007: Degree in Telecommunications Engineering with the thesis:
-        “AODV protocol modifications to include Link State metrics”
-      </p>
-      <h2>Interests</h2>
-      <Markdown>
-        {`I blog about development, agile methodologies, psychology of teamwork and other boring topics at [onefiniteloop.io](https://www.onefiniteloop.io/).
-
-Certified Level 3 Personal trainer and Level 2 Gym instructor; sport nutrition geek and biohacker at [improvedhumans.com](https://www.improvedhumans.com/).
-
-Trained barista and coffee roaster.
-
-Amateur photographer [500px.com/ricca509](https://500px.com/ricca509).`}
-      </Markdown>
+      {data.otherSections.edges.map(({ node }) => {
+        return (
+          <GenericSection title={node.frontmatter.title}>
+            {node.html}
+          </GenericSection>
+        );
+      })}
     </Layout>
   );
 };
@@ -94,7 +85,6 @@ export default props => (
           }
         }
         sideProjects: allMarkdownRemark(
-          sort: { order: DESC, fields: frontmatter___to_date }
           filter: {
             fileAbsolutePath: { glob: "**/content/resume/side-projects/*" }
           }
@@ -104,6 +94,20 @@ export default props => (
               frontmatter {
                 title
                 link
+              }
+              html
+            }
+          }
+        }
+        otherSections: allMarkdownRemark(
+          filter: {
+            fileAbsolutePath: { glob: "**/content/resume/other-sections/*" }
+          }
+        ) {
+          edges {
+            node {
+              frontmatter {
+                title
               }
               html
             }

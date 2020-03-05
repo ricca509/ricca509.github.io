@@ -19,5 +19,5 @@ technologies:
 ---
 
 During my career at Prometeo I had the chance to work on a wide range of projects:
-from building a complete rack server to implementing a site crawler using the Selenium API (to automate a purchase process) to designing and developing web applications using several different technologies.
-My job included: gathering user requirements, choosing the right technologies to use, implementing server side and client side, testing and production deployment. I was involved in the R&D area too: building and testing new technologies for our next projects.
+from building a complete server rack to implementing a site crawler using the Selenium API to designing and developing web applications using multiple different technologies.
+My responsibilities included: gathering user requirements, choosing the right technologies to use, implementing server and client side code, testing and production deployment. I was involved in the R&D area too: building and testing new technologies for upcoming projects.

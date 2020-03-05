@@ -18,7 +18,7 @@ technologies:
   - AWS
 ---
 
-As a senior developer, I joined the team to help shape a better agile process, help more junior developers to step up and ensure a more predictable, high quality development process. In pursuing the above, we:
+I joined to help shape a better agile process, help junior developers to step up and ensure a more predictable, high quality development process. In pursuing the above, we:
 
 - Stabilized the agile process by streamlining the ceremonies: the morning standup (quick and efficient), having more focused grooming and planning sessions (quick meetings make devs happy), and having a more productive retrospective. We removed all meetings that were unnecessary/long/without a clear intent
 - Hired more junior members and turned them into mid-level engineer, fighting the increasingly difficult situation of hiring permanents
@@ -28,4 +28,4 @@ As a senior developer, I joined the team to help shape a better agile process, h
 - Worked across our projects with micro/macro refactorings to increase code quality and encourage reusability
 - Worked alongside the HR hiring team to create a better hiring process (tech tests/on site interviews and whiteboard tests) that would fit our increased need in high quality developers
 
-This resulted in a happier team and more frequent/better releases.
+This resulted in more frequent/better releases.

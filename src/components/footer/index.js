@@ -10,7 +10,7 @@ const Footer = ({ data }) => {
         <SocialNavigation />
       </div>
       <div>
-        <p>© {new Date().getFullYear()} Finite Loop LTD</p>
+        <p>© {new Date().getFullYear()} Riccardo Coppola</p>
         <p>
           This application is built with{" "}
           <a href="https://www.gatsbyjs.org/" alt="Gatsby link">

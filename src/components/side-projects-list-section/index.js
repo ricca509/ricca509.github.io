@@ -1,5 +1,5 @@
 import React from "react";
-import SideProject from "../side-project/side-project";
+import SideProject from "../side-project";
 
 const SideProjectsListSection = ({ sideProjectsList }) => {
   return (

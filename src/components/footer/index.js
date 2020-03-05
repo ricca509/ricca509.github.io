@@ -1,7 +1,7 @@
 import React from "react";
 import { StaticQuery, graphql } from "gatsby";
 import Img from "gatsby-image";
-import SocialNavigation from "../social-navigation/social-navigation";
+import SocialNavigation from "../social-navigation";
 import styles from "./footer.module.css";
 
 const Footer = ({ data }) => {

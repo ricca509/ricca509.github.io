@@ -9,4 +9,7 @@
   --orange-2: #f47a61;
 
   --main-font-color: var(--grey-1);
+
+  --body-font-family: "Inconsolata", sans-serif;
+  --title-font-family: "Poppins", monospace;
 }

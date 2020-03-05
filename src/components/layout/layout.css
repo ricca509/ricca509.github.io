@@ -1,5 +1,5 @@
 body {
-  font-family: "Inconsolata", sans-serif;
+  font-family: var(--body-font-family);
   font-weight: 400;
   font-size: 18px;
   line-height: 1.5;
@@ -14,7 +14,7 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: "Poppins", monospace;
+  font-family: var(--title-font-family);
   font-weight: 400;
 }
 

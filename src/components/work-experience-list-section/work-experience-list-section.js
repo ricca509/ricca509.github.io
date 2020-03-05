@@ -1,5 +1,5 @@
 import React from "react";
-import WorkExperience from "./work-experience";
+import WorkExperience from "../work-experience/work-experience";
 
 const WorkExperienceListSection = ({ experienceList }) => {
   return (

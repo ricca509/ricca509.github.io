@@ -1,5 +1,5 @@
 import React from "react";
-import GenericSection from "../components/generic-section";
+import GenericSection from "../generic-section/generic-section";
 
 const OtherSectionsList = ({ sectionList }) => {
   return sectionList.map(({ node }) => {

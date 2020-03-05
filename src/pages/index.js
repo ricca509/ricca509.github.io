@@ -1,11 +1,11 @@
 import React from "react";
 import { StaticQuery, graphql } from "gatsby";
-import Layout from "../components/layout";
-import SEO from "../components/seo";
-import AboutMe from "../components/about-me";
-import SideProjectsListSection from "../components/side-projects-list-section";
-import WorkExperienceListSection from "../components/work-experience-list-section";
-import OtherSectionsList from "../components/other-sections-list";
+import Layout from "../components/layout/layout";
+import SEO from "../components/seo/seo";
+import AboutMe from "../components/about-me/about-me";
+import SideProjectsListSection from "../components/side-projects-list-section/side-projects-list-section";
+import WorkExperienceListSection from "../components/work-experience-list-section/work-experience-list-section";
+import OtherSectionsList from "../components/other-sections-list/other-sections-list";
 
 const IndexPage = ({ data }) => {
   return (

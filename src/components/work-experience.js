@@ -1,6 +1,4 @@
 import React from "react";
-import { MDXTag } from "@mdx-js/tag";
-import { MDXRenderer } from "gatsby-plugin-mdx";
 import styles from "./work-experience.module.css";
 
 const WorkExperience = ({
@@ -8,7 +6,7 @@ const WorkExperience = ({
   role,
   dates,
   description,
-  technologiesArray,
+  technologies,
 }) => {
   return (
     <div className={styles.container}>
@@ -19,11 +17,11 @@ const WorkExperience = ({
       <p>
         <em>{dates}</em>
       </p>
-      <MDXRenderer scope={{ React, MDXTag }}>{description}</MDXRenderer>
-      {technologiesArray && (
+      <div dangerouslySetInnerHTML={{ __html: description }} />
+      {technologies && (
         <div>
           <strong>Key Technologies used:</strong>
-          <p>{technologiesArray.join(", ")}</p>
+          <p>{technologies.join(", ")}</p>
         </div>
       )}
     </div>

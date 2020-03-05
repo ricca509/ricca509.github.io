@@ -17,10 +17,9 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `mdx`,
-        path: `${__dirname}/content/mdx`,
+        path: `${__dirname}/content/resume`,
       },
     },
-    `gatsby-plugin-mdx`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {

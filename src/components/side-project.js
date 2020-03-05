@@ -1,15 +1,22 @@
 import React from "react";
-import Markdown from "markdown-to-jsx";
+import style from "./side-project.module.css";
 
-const SideProject = ({ title, description }) => {
+const SideProject = ({ title, link, children }) => {
   return (
     <li>
       <em>
-        <Markdown>{title}</Markdown>
+        {link ? (
+          <a alt={title} href={link}>
+            {title}
+          </a>
+        ) : (
+          { title }
+        )}
       </em>
-      <p>
-        <Markdown>{description}</Markdown>
-      </p>
+      <p
+        className={style.description}
+        dangerouslySetInnerHTML={{ __html: children }}
+      />
     </li>
   );
 };

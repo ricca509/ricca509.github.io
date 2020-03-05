@@ -27,7 +27,7 @@ const renderNavigationElements = () => {
 };
 
 const HeaderNavigation = () => {
-  return <ul class={styles.container}>{renderNavigationElements()}</ul>;
+  return <ul className={styles.container}>{renderNavigationElements()}</ul>;
 };
 
 export default HeaderNavigation;

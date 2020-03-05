@@ -13,6 +13,13 @@ module.exports = {
         path: `${__dirname}/content/assets`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `mdx`,
+        path: `${__dirname}/content/resume`,
+      },
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {

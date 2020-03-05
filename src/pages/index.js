@@ -7,26 +7,6 @@ import WorkExperience from "../components/work-experience";
 import SideProject from "../components/side-project";
 import Markdown from "markdown-to-jsx";
 
-const acidSeed = {
-  title: `Acidseed [github.com/ricca509/acidseed](https://github.com/ricca509/acidseed)`,
-  description: `A caching layer to cache any API/HTTP request. Written in Node.js using ES6 Harmony with persistence on Redis.`,
-};
-
-const f = {
-  title: `F.js [github.com/ricca509/F](https://github.com/ricca509/F)`,
-  description: `A small library to be used in all those multiple pages (server side MVC) projects that usually don’t have a structured js due to the fact that most of the job is done on the server. It is “A small, modular library that helps writing structured, reusable, testable and namespaced JavaScript code. It also provides DOM helpers and a pub/sub implementation”. Published in the Bower repository.`,
-};
-
-const phood = {
-  title: `Phood mobile app`,
-  description: `A small mobile application that uses the Yummly.com REST API to search recipes and presents them to the user with a useful visual. Built using ES6 syntax with the Traceur compiler, HTML5/CSS3/SASS, Stylus templates, Nodejs/Express, Marionette.js/Backbonejs/underscorejs, Bower, jQuery, Bootstrap, Git.`,
-};
-
-const triptapp = {
-  title: `TripTapp.com`,
-  description: `Co-founder of [triptapp.com](https://www.triptapp.com): we developed the web application and designed the mobile application. The webapp development involved social authentication, a NoSQL database (mongoDB), an API to interface with Google Maps, a client side app to handle data about places positions, like, etc and a REST API to handle AJAX calls. The mobile app used a REST API in Node.js as backend and HTML5 with Backbone.js (accessing the device’s features through Cordova/PhoneGap). Built using HTML5/CSS3, LESS, Backbone.js, jQuery, Twitter Bootstrap, Yii Framework (PHP), mongoDB. Integrated with Google Maps, Hosted on Windows Azure (Linux VM).`,
-};
-
 const IndexPage = ({ data }) => {
   return (
     <Layout>
@@ -51,10 +31,16 @@ const IndexPage = ({ data }) => {
         );
       })}
       <h2>Side projects</h2>
-      <SideProject {...acidSeed} />
-      <SideProject {...f} />
-      <SideProject {...phood} />
-      <SideProject {...triptapp} />
+      {data.sideProjects.edges.map(({ node }) => {
+        return (
+          <SideProject
+            key={node.id}
+            title={node.frontmatter.title}
+            link={node.frontmatter.link}
+            description={node.html}
+          />
+        );
+      })}
       <h2>Spoken languages</h2>
       <p>Italian, English, basic Spanish.</p>
       <h2>Education</h2>
@@ -102,6 +88,22 @@ export default props => (
                 from_date(formatString: "MMM YYYY")
                 to_date(formatString: "MMM YYYY")
                 technologies
+              }
+              html
+            }
+          }
+        }
+        sideProjects: allMarkdownRemark(
+          sort: { order: DESC, fields: frontmatter___to_date }
+          filter: {
+            fileAbsolutePath: { glob: "**/content/resume/side-projects/*" }
+          }
+        ) {
+          edges {
+            node {
+              frontmatter {
+                title
+                link
               }
               html
             }

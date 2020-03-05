@@ -11,7 +11,7 @@ const AboutMe = ({ children, image }) => {
         }}
         fixed={image}
       />
-      <p dangerouslySetInnerHTML={{ __html: children }} />
+      <div dangerouslySetInnerHTML={{ __html: children }} />
     </div>
   );
 };

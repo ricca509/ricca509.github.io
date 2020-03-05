@@ -13,7 +13,7 @@ const SideProject = ({ title, link, children }) => {
           { title }
         )}
       </em>
-      <p
+      <div
         className={style.description}
         dangerouslySetInnerHTML={{ __html: children }}
       />

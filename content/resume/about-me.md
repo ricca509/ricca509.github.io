@@ -7,6 +7,8 @@ Passionate about testing, workflow automation, code reusability and team dynamic
 I have hands-on experience in building cross-functional teams on site and in [distributed environments](https://www.onefiniteloop.io/embrace-distributed-teams-and-be-happy/).
 Strong believer in the value of productivity as a result of highly efficient workflows, I can happily act as **developer advocate** to help remove obstacles and enable developers to increase velocity.
 
-I regularly attend meetups in the London tech scene such as London React User Group and London Node User Group.
+You can usually find me at the [React London Meetup](https://meetup.react.london/) or the [London Node User Group](https://lnug.org/).
+
+I also blog about development, testing, agile methodologies, psychology of teamwork and other boring topics at [onefiniteloop.io](https://www.onefiniteloop.io/).
 
 **I ♥ what I do**

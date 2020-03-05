@@ -3,9 +3,9 @@ import { StaticQuery, graphql } from "gatsby";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import AboutMe from "../components/about-me";
-import WorkExperience from "../components/work-experience";
-import SideProject from "../components/side-project";
-import GenericSection from "../components/generic-section";
+import SideProjectsListSection from "../components/side-projects-list-section";
+import WorkExperienceListSection from "../components/work-experience-list-section";
+import OtherSectionsList from "../components/other-sections-list";
 
 const IndexPage = ({ data }) => {
   return (
@@ -14,44 +14,9 @@ const IndexPage = ({ data }) => {
       <AboutMe image={data.file.childImageSharp.fixed}>
         {data.about.html}
       </AboutMe>
-      <h2>
-        Experience{" "}
-        <span role="img" aria-label="experience">
-          💼
-        </span>
-      </h2>
-      {data.experience.edges.map(({ node }) => {
-        return (
-          <WorkExperience
-            key={node.id}
-            company={node.frontmatter.company}
-            role={node.frontmatter.role}
-            dates={`${node.frontmatter.from_date} - ${node.frontmatter.to_date}`}
-            technologies={node.frontmatter.technologies}
-          >
-            {node.html}
-          </WorkExperience>
-        );
-      })}
-      <h2>Side projects</h2>
-      {data.sideProjects.edges.map(({ node }) => {
-        return (
-          <SideProject
-            key={node.id}
-            title={node.frontmatter.title}
-            link={node.frontmatter.link}
-          >
-            {node.html}
-          </SideProject>
-        );
-      })}
-      {data.otherSections.edges.map(({ node }) => {
-        return (
-          <GenericSection title={node.frontmatter.title}>
-            {node.html}
-          </GenericSection>
-        );
-      })}
+      <WorkExperienceListSection experienceList={data.experience.edges} />
+      <SideProjectsListSection sideProjectsList={data.sideProjects.edges} />
+      <OtherSectionsList sectionList={data.otherSections.edges} />
     </Layout>
   );
 };

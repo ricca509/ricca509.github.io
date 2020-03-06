@@ -26,7 +26,10 @@ const WorkExperience = ({ company, role, dates, technologies, children }) => {
           <ExpandButton onClick={onClick} isInCollapsedState={isCollapsed} />
         )}
       >
-        <div dangerouslySetInnerHTML={{ __html: children }} />
+        <div
+          className={style.content}
+          dangerouslySetInnerHTML={{ __html: children }}
+        />
       </Collapsible>
     </div>
   );

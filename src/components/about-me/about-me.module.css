@@ -7,3 +7,7 @@
 .container h1 {
   text-align: center;
 }
+
+.content p {
+  color: var(--grey-2);
+}

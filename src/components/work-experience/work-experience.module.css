@@ -8,3 +8,7 @@
 .container ul {
   padding-inline-start: 20px;
 }
+
+.content {
+  color: var(--grey-2);
+}

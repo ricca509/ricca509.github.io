@@ -5,9 +5,9 @@ import styles from "./social-navigation.module.css";
 const renderNavigationElements = () => {
   const links = [
     "https://github.com/ricca509",
-    "https://www.instagram.com/ricca509/",
-    "https://twitter.com/onefiniteloop",
     "https://www.linkedin.com/in/riccardocoppola/",
+    "https://twitter.com/onefiniteloop",
+    "https://www.instagram.com/ricca509/",
     "https://onefiniteloop.io",
     "mailto:riccardo@onefiniteloop.io",
   ];

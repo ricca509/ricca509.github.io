@@ -1,0 +1,9 @@
+.button {
+  background-color: transparent;
+  border: none;
+  font-size: 14px;
+  padding: 10px 0;
+  cursor: pointer;
+  color: var(--pink);
+  text-transform: uppercase;
+}

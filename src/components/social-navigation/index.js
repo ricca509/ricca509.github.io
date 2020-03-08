@@ -18,7 +18,7 @@ const renderNavigationElements = () => {
         <SocialIcon
           url={link}
           bgColor="#fff"
-          fgColor="#aaa"
+          fgColor="#6c7888"
           style={{ height: 35, width: 35 }}
         />
       </li>

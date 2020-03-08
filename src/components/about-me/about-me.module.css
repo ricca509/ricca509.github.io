@@ -11,3 +11,7 @@
 .content p {
   color: var(--grey-2);
 }
+
+.img {
+  border-radius: 50%;
+}

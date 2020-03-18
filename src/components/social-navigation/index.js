@@ -4,18 +4,20 @@ import styles from "./social-navigation.module.css";
 
 const renderNavigationElements = () => {
   const links = [
-    "https://github.com/ricca509",
-    "https://www.linkedin.com/in/riccardocoppola/",
-    "https://twitter.com/onefiniteloop",
-    "https://www.instagram.com/ricca509/",
-    "https://onefiniteloop.io",
-    "mailto:riccardo@onefiniteloop.io",
+    ["github", "https://github.com/ricca509"],
+    ["linkedin", "https://www.linkedin.com/in/riccardocoppola/"],
+    ["twitter", "https://twitter.com/onefiniteloop"],
+    ["instagram", "https://www.instagram.com/ricca509/"],
+    ["fivehundredpix", "https://500px.com/ricca509"],
+    ["rss", "https://onefiniteloop.io"],
+    ["mailto", "mailto:riccardo@onefiniteloop.io"],
   ];
 
-  return links.map(link => {
+  return links.map(([network, link]) => {
     return (
       <li className={styles.navElement} key={link}>
         <SocialIcon
+          network={network}
           url={link}
           bgColor="#fff"
           fgColor="#6c7888"

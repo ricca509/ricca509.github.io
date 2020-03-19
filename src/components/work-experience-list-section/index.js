@@ -1,16 +1,11 @@
 import React from "react";
 import WorkExperience from "../work-experience";
+import SectionTitle from "../section-title";
 
 const WorkExperienceListSection = ({ experienceList }) => {
   return (
     <>
-      <h2>
-        Experience{" "}
-        <span role="img" aria-label="experience">
-          💼
-        </span>
-      </h2>
-
+      <SectionTitle>Experience</SectionTitle>
       {experienceList.map(({ node }) => {
         return (
           <WorkExperience

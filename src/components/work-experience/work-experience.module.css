@@ -1,14 +1,42 @@
 .container {
-  margin-bottom: 10px;
-  background-color: #f8f8f8;
-  padding: 1px 10px;
-  border-radius: 10px;
+  border-bottom: 1px solid var(--grey-5);
+  padding: 0 5px;
+}
+
+.container:hover {
+  background-color: var(--grey-4);
 }
 
 .container ul {
   padding-inline-start: 20px;
 }
 
+.head {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .head {
+    flex-direction: row;
+  }
+}
+
 .content {
   color: var(--grey-2);
+}
+
+.title {
+  font-size: 16px;
+  color: var(--pink);
+  text-transform: uppercase;
+}
+
+.dates {
+  color: var(--grey-3);
+}
+
+.expandSection {
+  text-align: center;
 }

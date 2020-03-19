@@ -1,9 +1,10 @@
 .button {
   background-color: transparent;
   border: none;
-  font-size: 14px;
-  padding: 10px 0;
+  font-size: 25px;
+  padding: 0 0 15px 0;
   cursor: pointer;
-  color: var(--pink);
-  text-transform: uppercase;
+  color: var(--grey-3);
+  width: 100%;
+  outline: none;
 }

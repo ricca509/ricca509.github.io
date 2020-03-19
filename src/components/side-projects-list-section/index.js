@@ -1,11 +1,12 @@
 import React from "react";
 import SideProject from "../side-project";
+import SectionTitle from "../section-title";
 import style from "./side-projects-list-section.module.css";
 
 const SideProjectsListSection = ({ sideProjectsList }) => {
   return (
     <>
-      <h2>Side projects</h2>
+      <SectionTitle>Side projects</SectionTitle>
       <ul className={style.list}>
         {sideProjectsList.map(({ node }) => {
           return (

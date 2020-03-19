@@ -4,7 +4,7 @@ import GenericSection from "../generic-section";
 const OtherSectionsList = ({ sectionList }) => {
   return sectionList.map(({ node }) => {
     return (
-      <GenericSection title={node.frontmatter.title}>
+      <GenericSection key={node.id} title={node.frontmatter.title}>
         {node.html}
       </GenericSection>
     );

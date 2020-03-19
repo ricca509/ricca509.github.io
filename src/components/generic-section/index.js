@@ -1,9 +1,10 @@
 import React from "react";
+import SectionTitle from "../section-title";
 
 const GenericSection = ({ title, children }) => {
   return (
     <>
-      <h2>{title}</h2>
+      <SectionTitle>{title}</SectionTitle>
       <div dangerouslySetInnerHTML={{ __html: children }} />
     </>
   );

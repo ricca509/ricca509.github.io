@@ -10,8 +10,6 @@ nav ul {
 
 @media (min-width: 768px) {
   .container {
-    flex-direction: row;
-    justify-content: flex-end;
     margin: 20px 0;
   }
 }

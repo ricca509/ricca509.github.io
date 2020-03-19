@@ -4,14 +4,13 @@ import style from "./about-me.module.css";
 
 const AboutMe = ({ children, image }) => {
   return (
-    <div className={style.container}>
+    <section className={style.container}>
       <Img className={style.img} fixed={image} />
-
-      <div
+      <article
         className={style.content}
         dangerouslySetInnerHTML={{ __html: children }}
       />
-    </div>
+    </section>
   );
 };
 

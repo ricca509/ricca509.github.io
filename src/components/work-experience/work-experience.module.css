@@ -19,7 +19,8 @@
 
 @media (min-width: 768px) {
   .head {
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 25% 55% 20%;
   }
 }
 

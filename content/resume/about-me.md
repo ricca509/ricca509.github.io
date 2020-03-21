@@ -11,4 +11,4 @@ You can usually find me at the [React London Meetup](https://meetup.react.london
 
 I also blog about development, testing, agile methodologies, psychology of teamwork and other rather boring topics at [onefiniteloop.io](https://www.onefiniteloop.io/) and [dev.to](https://dev.to/ricca509).
 
-**I ♥ what I do**
+**I ❤️ what I do**

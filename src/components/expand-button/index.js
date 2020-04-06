@@ -4,7 +4,17 @@ import style from "./expand-button.module.css";
 const ExpandButton = ({ onClick, isInCollapsedState }) => {
   return (
     <button className={style.button} onClick={onClick}>
-      {isInCollapsedState ? <span>&#8964;</span> : <span>&#8963;</span>}
+      {isInCollapsedState ? (
+        <div
+          className={[style.arrow, style.arrowDown].join(" ")}
+          aria-role="arrow down"
+        ></div>
+      ) : (
+        <div
+          className={[style.arrow, style.arrowUp].join(" ")}
+          aria-role="arrow down"
+        ></div>
+      )}
     </button>
   );
 };

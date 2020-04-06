@@ -7,3 +7,9 @@
   padding-top: 20px;
   text-align: center;
 }
+
+@media print {
+  .footer {
+    display: none;
+  }
+}

@@ -7,12 +7,12 @@ const ExpandButton = ({ onClick, isInCollapsedState }) => {
       {isInCollapsedState ? (
         <div
           className={[style.arrow, style.arrowDown].join(" ")}
-          aria-role="arrow down"
+          role="arrow down"
         ></div>
       ) : (
         <div
           className={[style.arrow, style.arrowUp].join(" ")}
-          aria-role="arrow down"
+          role="arrow up"
         ></div>
       )}
     </button>

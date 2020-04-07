@@ -4,9 +4,26 @@ import ExpandButton from "../expand-button";
 import style from "./work-experience.module.css";
 
 const WorkExperience = ({ company, role, dates, technologies, children }) => {
+  const workExperienceContent = (
+    <>
+      {technologies && (
+        <div>
+          <strong>Key Technologies used:</strong>
+          <p>
+            <em>{technologies.join(", ")}</em>
+          </p>
+        </div>
+      )}
+      <div
+        className={style.content}
+        dangerouslySetInnerHTML={{ __html: children }}
+      />
+    </>
+  );
+
   return (
-    <div className={style.container}>
-      <div className={style.head}>
+    <article className={style.container}>
+      <header className={style.head}>
         <h3 className={style.title}>{company}</h3>
         <p>
           <strong>{role}</strong>
@@ -14,8 +31,9 @@ const WorkExperience = ({ company, role, dates, technologies, children }) => {
         <p className={style.dates}>
           <em>{dates}</em>
         </p>
-      </div>
-      <div className={style.additionalContent}>
+      </header>
+      <div className={style.printContent}>{workExperienceContent}</div>
+      <div className={style.screenContent}>
         <Collapsible
           render={({ onClick, isCollapsed }) => (
             <div className={style.expandSection}>
@@ -26,21 +44,10 @@ const WorkExperience = ({ company, role, dates, technologies, children }) => {
             </div>
           )}
         >
-          {technologies && (
-            <div>
-              <strong>Key Technologies used:</strong>
-              <p>
-                <em>{technologies.join(", ")}</em>
-              </p>
-            </div>
-          )}
-          <div
-            className={style.content}
-            dangerouslySetInnerHTML={{ __html: children }}
-          />
+          {workExperienceContent}
         </Collapsible>
       </div>
-    </div>
+    </article>
   );
 };
 

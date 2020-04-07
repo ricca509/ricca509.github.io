@@ -10,7 +10,7 @@ technologies:
   - redux-saga
   - Next.js
   - Gatsby
-  - JAMStack
+  - JAMstack
   - SASS
   - Styled components
   - Backpack

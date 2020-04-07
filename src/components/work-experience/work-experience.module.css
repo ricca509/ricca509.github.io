@@ -17,10 +17,33 @@
   flex-direction: column;
 }
 
+.printContent {
+  display: none;
+}
+
+.screenContent {
+  display: inherit;
+}
+
 @media (min-width: 768px) {
   .head {
     display: grid;
     grid-template-columns: 25% 55% 20%;
+  }
+}
+
+@media print {
+  .head {
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+  }
+
+  .printContent {
+    display: inherit;
+  }
+
+  .screenContent {
+    display: none;
   }
 }
 

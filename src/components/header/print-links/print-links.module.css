@@ -1,0 +1,14 @@
+.container {
+  padding-inline-start: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.container > li {
+  display: inline;
+  padding-right: 15px;
+}
+
+.container > li:last-of-type {
+  padding-right: 0;
+}

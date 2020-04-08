@@ -1,6 +1,6 @@
 import React from "react";
-import Collapsible from "../collapsible";
-import ExpandButton from "../expand-button";
+import Collapsible from "../../../../components/collapsible";
+import ExpandButton from "../../../../components/expand-button";
 import style from "./work-experience.module.css";
 
 const WorkExperience = ({ company, role, dates, technologies, children }) => {

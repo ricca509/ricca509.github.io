@@ -1,11 +1,10 @@
 .container {
   display: flex;
-  justify-content: center;
   margin: 0;
 }
 
-nav ul {
-  padding-inline-start: 0;
+.container nav {
+  width: 100%;
 }
 
 @media (min-width: 768px) {

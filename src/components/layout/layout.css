@@ -28,9 +28,7 @@
  */
 
 @media print {
-  footer,
-  hr,
-  nav {
+  hr {
     display: none;
   }
 }

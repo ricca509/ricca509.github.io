@@ -29,10 +29,3 @@ h1 {
 a {
   color: var(--pink);
 }
-
-@media print {
-  a {
-    color: var(--main-font-color);
-    text-decoration: none;
-  }
-}

@@ -1,6 +1,6 @@
 import React from "react";
-import WorkExperience from "../work-experience";
-import SectionTitle from "../section-title";
+import WorkExperience from "./work-experience";
+import SectionTitle from "../../../components/section-title";
 
 const WorkExperienceListSection = ({ experienceList }) => {
   return (

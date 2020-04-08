@@ -2,10 +2,10 @@ import React from "react";
 import { StaticQuery, graphql } from "gatsby";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
-import AboutMe from "../components/about-me";
-import SideProjectsListSection from "../components/side-projects-list-section";
-import WorkExperienceListSection from "../components/work-experience-list-section";
-import OtherSectionsList from "../components/other-sections-list";
+import AboutMe from "../domain/resume/about-me";
+import SideProjectsListSection from "../domain/resume/side-projects-list-section";
+import WorkExperienceListSection from "../domain/resume/work-experience-list-section";
+import OtherSectionsList from "../domain/resume/other-sections-list";
 
 const IndexPage = ({ data }) => {
   return (

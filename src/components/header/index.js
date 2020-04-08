@@ -1,22 +1,20 @@
-import PropTypes from "prop-types";
 import React from "react";
-import SocialNavigation from "../social-navigation";
+import SocialNavigation from "./social-navigation";
+import PrintLinks from "./print-links";
+import useIsPrinting from "../../hooks/useIsPrinting";
 import styles from "./header.module.css";
 
-const Header = () => (
-  <header className={styles.container}>
-    <nav>
-      <SocialNavigation />
-    </nav>
-  </header>
-);
+const Header = () => {
+  const isPrinting = useIsPrinting();
 
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-};
-
-Header.defaultProps = {
-  siteTitle: ``,
+  return (
+    <header className={styles.container}>
+      <nav>
+        {isPrinting && <PrintLinks />}
+        {!isPrinting && <SocialNavigation />}
+      </nav>
+    </header>
+  );
 };
 
 export default Header;

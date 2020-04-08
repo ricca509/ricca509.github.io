@@ -1,5 +1,5 @@
 import React from "react";
-import SocialNavigation from "./social-navigation";
+import SocialNavigation from "../social-navigation";
 import PrintLinks from "./print-links";
 import useIsPrinting from "../../hooks/useIsPrinting";
 import styles from "./header.module.css";

@@ -1,9 +1,10 @@
 const puppeteer = require("puppeteer");
 
 (async () => {
+  const cvUrl = process.env.cvurl || "http://localhost:8000";
   const browser = await puppeteer.launch();
   const page = await browser.newPage();
-  await page.goto("http://localhost:8000", {
+  await page.goto(cvUrl, {
     waitUntil: "networkidle2",
   });
   await page.pdf({

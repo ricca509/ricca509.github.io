@@ -6,7 +6,6 @@
   "author": "Riccardo Coppola <ricca509@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "prebuild": "npm run generate-resume",
     "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",

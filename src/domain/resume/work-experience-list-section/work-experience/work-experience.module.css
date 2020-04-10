@@ -3,10 +3,6 @@
   padding: 0 5px;
 }
 
-.container:hover {
-  background-color: var(--grey-4);
-}
-
 .container ul {
   padding-inline-start: 20px;
 }
@@ -25,7 +21,7 @@
   display: inherit;
 }
 
-@media (min-width: 768px) {
+@media only screen and (min-width: 768px) {
   .head {
     display: grid;
     grid-template-columns: 25% 55% 20%;
@@ -33,9 +29,14 @@
 }
 
 @media print {
+  .container {
+    border-bottom: none;
+  }
+
   .head {
     display: grid;
     grid-template-columns: 25% 50% 25%;
+    page-break-after: avoid;
   }
 
   .printContent {

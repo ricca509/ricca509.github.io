@@ -8,7 +8,7 @@ const WorkExperience = ({ company, role, dates, technologies, children }) => {
     <>
       {technologies && (
         <div>
-          <strong>Key Technologies used:</strong>
+          <strong>Key tools used:</strong>
           <p>
             <em>{technologies.join(", ")}</em>
           </p>

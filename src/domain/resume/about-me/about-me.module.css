@@ -12,3 +12,9 @@
 .img {
   border-radius: 50%;
 }
+
+@media print {
+  .getCv {
+    display: none;
+  }
+}

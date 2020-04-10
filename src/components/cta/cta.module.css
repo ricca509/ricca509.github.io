@@ -1,0 +1,10 @@
+.button {
+  font-family: var(--title-font-family);
+  border-radius: 2px;
+  border: 0;
+  background-color: var(--pink);
+  font-size: 14px;
+  padding: 5px 10px;
+  color: var(--white);
+  text-decoration: none;
+}

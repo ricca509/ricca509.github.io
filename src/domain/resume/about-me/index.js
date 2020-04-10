@@ -1,5 +1,6 @@
 import React from "react";
 import Img from "gatsby-image";
+import Cta from "../../../components/cta";
 import style from "./about-me.module.css";
 
 const AboutMe = ({ children, image }) => {
@@ -10,6 +11,11 @@ const AboutMe = ({ children, image }) => {
         className={style.content}
         dangerouslySetInnerHTML={{ __html: children }}
       />
+      <div className={style.getCv}>
+        <Cta type={Cta.types.link} href="/riccardo-coppola-cv.pdf">
+          Get my CV
+        </Cta>
+      </div>
     </section>
   );
 };

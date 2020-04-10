@@ -2,9 +2,17 @@
   font-family: var(--title-font-family);
   border-radius: 2px;
   border: 0;
-  background-color: var(--pink);
+  background: linear-gradient(to right, var(--purple) 50%, var(--pink) 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: background 0.4s ease-out;
   font-size: 14px;
   padding: 5px 10px;
   color: var(--white);
   text-decoration: none;
+}
+
+.button:hover {
+  color: var(--white);
+  background-position: left bottom;
 }

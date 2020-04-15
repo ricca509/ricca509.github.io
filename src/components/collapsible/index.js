@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const Collapsible = ({ children, render }) => {
+const Collapsible = ({ children, renderTrigger }) => {
   const [isCollapsed, setIsCollapsed] = useState(true);
 
   const expandCollapse = e => {
@@ -11,7 +11,7 @@ const Collapsible = ({ children, render }) => {
   return (
     <>
       {!isCollapsed && children}
-      {render({ onClick: expandCollapse, isCollapsed })}
+      {renderTrigger({ onClick: expandCollapse, isCollapsed })}
     </>
   );
 };

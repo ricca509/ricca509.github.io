@@ -5,9 +5,7 @@ import styles from "./footer.module.css";
 const Footer = () => {
   return (
     <footer className={styles.footer}>
-      <div className={styles.social}>
-        <SocialNavigation />
-      </div>
+      <SocialNavigation />
       <div>
         <p>© {new Date().getFullYear()} Riccardo Coppola</p>
         <p>

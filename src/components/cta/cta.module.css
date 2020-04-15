@@ -7,6 +7,7 @@
   background-position: right bottom;
   transition: background 0.4s ease-out;
   font-size: 14px;
+  font-weight: 400;
   padding: 5px 10px;
   color: var(--white);
   text-decoration: none;

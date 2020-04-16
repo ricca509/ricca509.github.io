@@ -18,11 +18,23 @@ module.exports = ({ config }) => {
     require.resolve("babel-plugin-remove-graphql-queries"),
   ];
 
-  // CSS modules
-  config.module.rules[2].use[1].options = {
-    importLoaders: 1,
-    modules: true,
-  };
+  // Excludes css modules from css loading
+  config.module.rules[2].exclude = /\.module\.css$/;
+
+  // Adds css modules
+  config.module.rules.push({
+    test: /\.module\.css$/,
+    use: [
+      "style-loader",
+      {
+        loader: "css-loader",
+        options: {
+          importLoaders: 1,
+          modules: true,
+        },
+      },
+    ],
+  });
 
   // Prefer Gatsby ES6 entrypoint (module) over commonjs (main) entrypoint
   config.resolve.mainFields = ["browser", "module", "main"];

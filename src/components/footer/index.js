@@ -1,14 +1,11 @@
 import React from "react";
-import { StaticQuery, graphql } from "gatsby";
 import SocialNavigation from "../social-navigation";
 import styles from "./footer.module.css";
 
-const Footer = ({ data }) => {
+const Footer = () => {
   return (
     <footer className={styles.footer}>
-      <div className={styles.social}>
-        <SocialNavigation />
-      </div>
+      <SocialNavigation />
       <div>
         <p>© {new Date().getFullYear()} Riccardo Coppola</p>
         <p>
@@ -31,29 +28,4 @@ const Footer = ({ data }) => {
   );
 };
 
-export default props => (
-  <StaticQuery
-    query={graphql`
-      query {
-        allFile(
-          filter: {
-            relativePath: {
-              in: ["finiteloop-icon.png", "improvedhumans-icon.png"]
-            }
-          }
-        ) {
-          edges {
-            node {
-              childImageSharp {
-                fixed(width: 40, height: 40) {
-                  ...GatsbyImageSharpFixed
-                }
-              }
-            }
-          }
-        }
-      }
-    `}
-    render={data => <Footer data={data} {...props} />}
-  />
-);
+export default Footer;

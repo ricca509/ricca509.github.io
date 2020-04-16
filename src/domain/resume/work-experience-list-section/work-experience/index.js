@@ -35,7 +35,7 @@ const WorkExperience = ({ company, role, dates, technologies, children }) => {
       <div className={style.printContent}>{workExperienceContent}</div>
       <div className={style.screenContent}>
         <Collapsible
-          render={({ onClick, isCollapsed }) => (
+          renderTrigger={({ onClick, isCollapsed }) => (
             <div className={style.expandSection}>
               <ExpandButton
                 onClick={onClick}

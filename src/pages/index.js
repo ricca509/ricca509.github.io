@@ -52,6 +52,7 @@ export const query = graphql`
       filter: {
         fileAbsolutePath: { glob: "**/content/resume/side-projects/*" }
       }
+      sort: { fields: frontmatter___order, order: ASC }
     ) {
       edges {
         node {
@@ -67,6 +68,7 @@ export const query = graphql`
       filter: {
         fileAbsolutePath: { glob: "**/content/resume/other-sections/*" }
       }
+      sort: { fields: frontmatter___order, order: ASC }
     ) {
       edges {
         node {

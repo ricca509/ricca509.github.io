@@ -1,6 +1,7 @@
 ---
 title: ricca509.github.io
 link: https://github.com/ricca509/ricca509.github.io
+order: 1
 ---
 
 My [personal website](https://www.riccardocoppola.me/): a web application built with [Gatsby.js](https://www.gatsbyjs.org/), [GraphQL](https://graphql.org/), using [Markdown](https://www.npmjs.com/package/gatsby-transformer-remark) files as data source for the content.

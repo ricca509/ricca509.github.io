@@ -1,6 +1,7 @@
 ---
-title: Triptapp
+title: Triptapp [Closed]
 link: https://triptapp.com
+order: 4
 ---
 
 Co-founder of triptapp: we developed the web application and designed the mobile application. The webapp development involved social authentication, a NoSQL database (mongoDB), an API to interface with Google Maps, a client side app to handle data about places positions, like, etc and a REST API to handle AJAX calls. The mobile app used a REST API in Node.js as backend and HTML5 with Backbone.js (accessing the device’s features through Cordova/PhoneGap).

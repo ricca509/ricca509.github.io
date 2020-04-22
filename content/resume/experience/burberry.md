@@ -16,6 +16,8 @@ technologies:
   - Styled components
   - Backpack
   - style-dictionary
+  - Docker
+  - Terraform
   - Cypress
   - GitLab
   - GitLab CI

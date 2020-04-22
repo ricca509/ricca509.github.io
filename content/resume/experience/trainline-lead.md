@@ -14,6 +14,7 @@ technologies:
   - Node.js
   - Express
   - Helmet
+  - Docker
   - GitHub
   - Teamcity
   - AWS

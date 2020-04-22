@@ -5,6 +5,7 @@ from_date: 2015-10
 to_date: 2016-10
 location: London, UK
 technologies:
+  - Typescript
   - React
   - Redux
   - CSS-in-JS

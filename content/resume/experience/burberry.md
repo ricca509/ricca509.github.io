@@ -5,6 +5,7 @@ from_date: 2019-01
 to_date: 2020-01
 location: London, UK
 technologies:
+  - Typescript
   - React
   - Redux
   - redux-saga

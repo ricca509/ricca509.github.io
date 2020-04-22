@@ -4,6 +4,19 @@ role: Development Team Lead
 from_date: 2016-11
 to_date: 2018-12
 location: London, UK
+technologies:
+  - Typescript
+  - React
+  - Redux
+  - CSS-in-JS
+  - redux-observable
+  - Cypress
+  - Node.js
+  - Express
+  - Helmet
+  - GitHub
+  - Teamcity
+  - AWS
 ---
 
 I was promoted to Team Lead to focus on our re-platforming (going from monolithic .NET backend and React FE to .NET microservices and Node/React micro-frontends). As part of the role I helped creating a new team, made the required hiring and worked more with POs/BAs. I kept my position strongly technical (at least 70% coding).

@@ -21,4 +21,8 @@
   .getCv {
     display: none;
   }
+
+  h1 {
+    font-size: 20px;
+  }
 }

@@ -20,14 +20,8 @@ technologies:
   - AWS
 ---
 
-I joined to help shape a better agile process, help junior developers to step up and ensure a more predictable, high quality development process. In pursuing the above, we:
+I joined to help shape a better agile process, help junior developers to step up and ensure a more predictable, high-quality development process.
 
-- Stabilized the agile process by streamlining the ceremonies: the morning standup (quick and efficient), having more focused grooming and planning sessions (quick meetings make devs happy), and having a more productive retrospective. We removed all meetings that were unnecessary/long/without a clear intent
-- Hired more junior members and turned them into mid-level engineer, fighting the increasingly difficult situation of hiring permanents
-- Introduced cross-devices integration tests and removed all manual qa-ing, with the aim of increasing the team confidence and speeding up the release process
-- Introduced bug hunts/manual discoveries, when the team would randomly test (almost monkey test) the app and come up with scenarios to be covered by integration tests
-- Introduced a stricter code reviewing process, allowing the developers more time to review, discuss and deliver better code
-- Worked across our projects with micro/macro refactorings to increase code quality and encourage reusability
-- Worked alongside the HR hiring team to create a better hiring process (tech tests/on site interviews and whiteboard tests) that would fit our increased need in high quality developers
+In pursuing the above, we stabilized the agile process by streamlining the ceremonies, hired more junior members and turned them into mid-level engineer, introduced cross-device integration tests and removed all manual QA-ing, introduced bug hunts/manual discoveries, improved the code reviewing process, allowing the developers more time to review, discuss and deliver better code.
 
-This resulted in more frequent/better releases.
+I also worked across our projects with micro/macro refactorings to increase code quality and encourage reusability and helped the HR hiring team to create a better tech hiring process.

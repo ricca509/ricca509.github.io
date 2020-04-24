@@ -8,7 +8,7 @@ technologies:
   - Marionette
   - Backbone
   - underscore
-  - React.js
+  - React
   - jQuery/Zepto
   - RequireJS
   - Browserify

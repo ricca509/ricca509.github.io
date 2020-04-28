@@ -6,7 +6,7 @@ to_date: 2015-10
 location: London, UK
 ---
 
-I was promoted to Tech Lead to give our UI teams a long term vision. Apart from developing (I spent at least 70% of my time developing with the team) I then invested more time on new technologies, best practices and patterns to use across our teams and improved ways of managing our workflows.
+As Team Lead my goal was to give our UI teams a long term vision. Apart from developing (I spent at least 70% of my time developing with the team) I then invested more time on new technologies, best practices and patterns to use across our teams and improved ways of managing our workflows.
 
 Part of the improvements put in place include:
 

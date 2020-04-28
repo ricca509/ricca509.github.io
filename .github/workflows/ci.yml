@@ -1,9 +1,6 @@
 name: CI
 
-on:
-  push:
-    branches:
-      - dev
+on: push
 
 jobs:
   test:
@@ -30,7 +27,8 @@ jobs:
 
   deploy:
     runs-on: ubuntu-latest
-
+    if: github.ref == 'refs/heads/dev'
+    needs: test
     steps:
       - uses: actions/checkout@v2
       - uses: enriikke/gatsby-gh-pages-action@v2.1.1

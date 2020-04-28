@@ -17,7 +17,7 @@
     "storybook": "NODE_ENV=production start-storybook -s public",
     "build-storybook": "NODE_ENV=production build-storybook -s public",
     "integration:dev": "start-server-and-test 'npm run develop' 8000 'cypress open'",
-    "integration": "CYPRESS_BASE_URL=http://localhost:9000 start-server-and-test 'npm run build && npm run serve' 9000 'cypress run'",
+    "integration": "CYPRESS_BASE_URL=http://localhost:9000 start-server-and-test 'npm run build && npm run serve' 9000 'cypress run'"
   },
   "husky": {
     "hooks": {}

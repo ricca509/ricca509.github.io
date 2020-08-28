@@ -1,6 +1,6 @@
 ---
 company: Trainline
-role: Senior JavaScript Developer
+role: Senior JavaScript developer
 from_date: 2015-10
 to_date: 2016-10
 location: London, UK

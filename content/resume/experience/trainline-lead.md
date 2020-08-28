@@ -1,6 +1,6 @@
 ---
 company: Trainline
-role: Development Team Lead
+role: Lead Developer
 from_date: 2016-11
 to_date: 2018-12
 location: London, UK

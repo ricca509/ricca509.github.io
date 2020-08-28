@@ -1,6 +1,6 @@
 ---
 company: Lastminute.com
-role: Development Team Lead
+role: Lead Developer
 from_date: 2015-01
 to_date: 2015-10
 location: London, UK

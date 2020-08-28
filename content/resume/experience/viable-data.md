@@ -18,3 +18,4 @@ technologies:
   - AWS
 ---
 
+At Viable Data I looked after a range of JavaScript applications for the Home Office, helped with technical direction for new features and mentored more junior developers.

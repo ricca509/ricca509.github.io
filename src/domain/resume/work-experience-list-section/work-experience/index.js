@@ -3,7 +3,14 @@ import Collapsible from "../../../../components/collapsible";
 import ExpandButton from "../../../../components/expand-button";
 import style from "./work-experience.module.css";
 
-const WorkExperience = ({ company, role, dates, technologies, children }) => {
+const WorkExperience = ({
+  company,
+  role,
+  fromDate,
+  toDate = "present",
+  technologies,
+  children,
+}) => {
   const workExperienceContent = (
     <>
       {technologies && (
@@ -29,7 +36,7 @@ const WorkExperience = ({ company, role, dates, technologies, children }) => {
           <strong>{role}</strong>
         </p>
         <p className={style.dates}>
-          <em>{dates}</em>
+          <em>{`${fromDate} - ${toDate}`}</em>
         </p>
       </header>
       <div className={style.printContent}>{workExperienceContent}</div>

@@ -1,0 +1,161 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`The work-experience component renders a work experience 1`] = `
+<article
+  className="container"
+>
+  <header
+    className="head"
+  >
+    <h3
+      className="title"
+    >
+      Company A
+    </h3>
+    <p>
+      <strong>
+        Senior Fullstack Developer
+      </strong>
+    </p>
+    <p
+      className="dates"
+    >
+      <em>
+        Mar 2020 - Sep 2020
+      </em>
+    </p>
+  </header>
+  <div
+    className="printContent"
+  >
+    <div>
+      <strong>
+        Key tools used:
+      </strong>
+      <p>
+        <em>
+          Node.js, React
+        </em>
+      </p>
+    </div>
+    <div
+      className="content"
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": <p>
+            Some html here
+          </p>,
+        }
+      }
+    />
+  </div>
+  <div
+    className="screenContent"
+  >
+    <Collapsible
+      renderTrigger={[Function]}
+    >
+      <div>
+        <strong>
+          Key tools used:
+        </strong>
+        <p>
+          <em>
+            Node.js, React
+          </em>
+        </p>
+      </div>
+      <div
+        className="content"
+        dangerouslySetInnerHTML={
+          Object {
+            "__html": <p>
+              Some html here
+            </p>,
+          }
+        }
+      />
+    </Collapsible>
+  </div>
+</article>
+`;
+
+exports[`The work-experience component when there is no end date for a work experience renders a work experience with an end date of 'present' 1`] = `
+<article
+  className="container"
+>
+  <header
+    className="head"
+  >
+    <h3
+      className="title"
+    >
+      Company A
+    </h3>
+    <p>
+      <strong>
+        Senior Fullstack Developer
+      </strong>
+    </p>
+    <p
+      className="dates"
+    >
+      <em>
+        Mar 2020 - present
+      </em>
+    </p>
+  </header>
+  <div
+    className="printContent"
+  >
+    <div>
+      <strong>
+        Key tools used:
+      </strong>
+      <p>
+        <em>
+          Node.js, React
+        </em>
+      </p>
+    </div>
+    <div
+      className="content"
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": <p>
+            Some html here
+          </p>,
+        }
+      }
+    />
+  </div>
+  <div
+    className="screenContent"
+  >
+    <Collapsible
+      renderTrigger={[Function]}
+    >
+      <div>
+        <strong>
+          Key tools used:
+        </strong>
+        <p>
+          <em>
+            Node.js, React
+          </em>
+        </p>
+      </div>
+      <div
+        className="content"
+        dangerouslySetInnerHTML={
+          Object {
+            "__html": <p>
+              Some html here
+            </p>,
+          }
+        }
+      />
+    </Collapsible>
+  </div>
+</article>
+`;

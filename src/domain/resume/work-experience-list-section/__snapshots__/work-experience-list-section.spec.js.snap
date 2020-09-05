@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`The work-experience-list-section component renders a list of work experiences and a title 1`] = `
+<Fragment>
+  <SectionTitle>
+    Experience
+  </SectionTitle>
+  <WorkExperience
+    company="Company A"
+    fromDate="Mar 2020"
+    key="aaabbb123"
+    role="Senior Fullstack Developer"
+    technologies={
+      Array [
+        "Node.js",
+        "React",
+      ]
+    }
+    toDate="Sep 2020"
+  >
+    &lt;p&gt;Some html here&lt;/p&gt;
+  </WorkExperience>
+  <WorkExperience
+    company="Company B"
+    fromDate="Mar 2019"
+    key="aaabbb1234"
+    role="Senior Fullstack Developer"
+    technologies={
+      Array [
+        "Node.js",
+        "React",
+      ]
+    }
+    toDate="Sep 2021"
+  >
+    &lt;p&gt;Some other html here&lt;/p&gt;
+  </WorkExperience>
+</Fragment>
+`;

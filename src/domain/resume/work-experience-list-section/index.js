@@ -12,7 +12,8 @@ const WorkExperienceListSection = ({ experienceList }) => {
             key={node.id}
             company={node.frontmatter.company}
             role={node.frontmatter.role}
-            dates={`${node.frontmatter.from_date} - ${node.frontmatter.to_date}`}
+            fromDate={node.frontmatter.from_date}
+            toDate={node.frontmatter.to_date}
             technologies={node.frontmatter.technologies}
           >
             {node.html}

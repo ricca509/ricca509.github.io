@@ -36,6 +36,7 @@ export const query = graphql`
     ) {
       edges {
         node {
+          id
           frontmatter {
             company
             location
@@ -56,6 +57,7 @@ export const query = graphql`
     ) {
       edges {
         node {
+          id
           frontmatter {
             title
             link
@@ -72,6 +74,7 @@ export const query = graphql`
     ) {
       edges {
         node {
+          id
           frontmatter {
             title
           }

@@ -41,17 +41,6 @@ module.exports = {
       },
     },
     `gatsby-transformer-remark`,
-    {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
-      options: {
-        fonts: [
-          {
-            family: `Poppins`,
-            variants: [`400`, `700`],
-          },
-          { family: `Inconsolata`, variants: [`400`, `700`] },
-        ],
-      },
-    },
+    `gatsby-plugin-preload-fonts`
   ],
 };

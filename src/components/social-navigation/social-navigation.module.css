@@ -1,4 +1,10 @@
 .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;  
+}
+
+.list {
   padding-inline-start: 0;
   text-align: center;
 }

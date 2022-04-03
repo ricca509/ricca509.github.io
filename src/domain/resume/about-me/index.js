@@ -1,17 +1,17 @@
 import React from "react";
-import Img from "gatsby-image";
+import { GatsbyImage } from "gatsby-plugin-image"
 import Cta from "../../../components/cta";
-import style from "./about-me.module.css";
+import { container, img, content, getCv } from "./about-me.module.css";
 
 const AboutMe = ({ children, image }) => {
   return (
-    <section className={style.container}>
-      <Img className={style.img} fixed={image} />
+    <section className={container}>
+      <GatsbyImage alt="Me" className={img} image={image} />
       <article
-        className={style.content}
+        className={content}
         dangerouslySetInnerHTML={{ __html: children }}
       />
-      <div className={style.getCv}>
+      <div className={getCv}>
         <Cta
           type={Cta.types.link}
           target="_blank"

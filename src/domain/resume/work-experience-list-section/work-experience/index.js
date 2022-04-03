@@ -1,7 +1,7 @@
 import React from "react";
 import Collapsible from "../../../../components/collapsible";
 import ExpandButton from "../../../../components/expand-button";
-import style from "./work-experience.module.css";
+import * as style from "./work-experience.module.css";
 
 const WorkExperience = ({
   company,
@@ -12,7 +12,7 @@ const WorkExperience = ({
   children,
 }) => {
   const workExperienceContent = (
-    <>
+    <React.Fragment>
       {technologies && (
         <div>
           <strong>Key tools used:</strong>
@@ -25,7 +25,7 @@ const WorkExperience = ({
         className={style.content}
         dangerouslySetInnerHTML={{ __html: children }}
       />
-    </>
+    </React.Fragment>
   );
 
   return (

@@ -1,5 +1,5 @@
 import React from "react";
-import style from "./side-project.module.css";
+import { description } from "./side-project.module.css";
 
 const SideProject = ({ title, link, children }) => {
   return (
@@ -14,7 +14,7 @@ const SideProject = ({ title, link, children }) => {
         )}
       </em>
       <div
-        className={style.description}
+        className={description}
         dangerouslySetInnerHTML={{ __html: children }}
       />
     </li>

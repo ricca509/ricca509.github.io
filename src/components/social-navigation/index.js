@@ -1,6 +1,6 @@
-import React from "react";
-import { SocialIcon } from "react-social-icons";
-import styles from "./social-navigation.module.css";
+import React from "react"
+import { SocialIcon } from "react-social-icons"
+import { container, navElement, list } from "./social-navigation.module.css"
 
 const links = [
   ["github", "https://github.com/ricca509"],
@@ -10,24 +10,34 @@ const links = [
   ["fivehundredpix", "https://500px.com/ricca509"],
   ["rss", "https://onefiniteloop.io"],
   ["mailto", "mailto:riccardo@onefiniteloop.io"],
-];
+]
 
-const HeaderNavigation = () => {
+export const HeaderNavigation = () => {
   return (
-    <ul className={styles.container}>
-      {links.map(([network, link]) => (
-        <li className={styles.navElement} key={link}>
-          <SocialIcon
-            network={network}
-            url={link}
-            bgColor="#fff"
-            fgColor="#6c7888"
-            style={{ height: 30, width: 30 }}
-          />
+    <div className={container}>
+      <ul className={list}>
+        <li className={navElement}>
+          <a href="/">Home</a>
         </li>
-      ))}
-    </ul>
-  );
-};
+        <li className={navElement}>
+          <a href="/blog">Blog</a>
+        </li>
+      </ul>
+      <ul className={list}>
+        {links.map(([network, link]) => (
+          <li className={navElement} key={link}>
+            <SocialIcon
+              network={network}
+              url={link}
+              bgColor="#fff"
+              fgColor="#6c7888"
+              style={{ height: 30, width: 30 }}
+            />
+          </li>
+        ))}
+      </ul>
+    </div>
+  )
+}
 
-export default HeaderNavigation;
+export default HeaderNavigation

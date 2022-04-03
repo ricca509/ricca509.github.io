@@ -1,5 +1,5 @@
 import React from "react";
-import style from "./cta.module.css";
+import { button } from "./cta.module.css";
 
 const types = Object.freeze({
   link: "a",
@@ -10,7 +10,7 @@ const Cta = ({ type = types.link, children, ...props }) => {
   const Element = types[type] || types.link;
 
   return (
-    <Element {...props} className={style.button}>
+    <Element {...props} className={button}>
       {children}
     </Element>
   );

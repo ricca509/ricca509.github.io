@@ -1,4 +1,4 @@
-#👋 I'm [Riccardo Coppola](mailto:riccardo@onefiniteloop.io). I write code
+# 👋 I'm [Riccardo Coppola](mailto:riccardo@onefiniteloop.io). I write code
 
 I am a passionate, detail oriented **Team Lead** and **Full Stack JavaScript developer** with over 10 years industry experience, extensive knowledge of DevOps practices and Agile methodologies.
 

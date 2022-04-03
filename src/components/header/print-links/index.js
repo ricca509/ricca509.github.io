@@ -1,9 +1,9 @@
 import React from "react";
-import style from "./print-links.module.css";
+import { container } from "./print-links.module.css";
 
 const PrintLinks = () => {
   return (
-    <ul className={style.container}>
+    <ul className={container}>
       <li>
         <a href="mailto:riccardo@onefiniteloop.io">riccardo@onefiniteloop.io</a>
       </li>

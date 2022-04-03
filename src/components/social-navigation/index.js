@@ -1,6 +1,6 @@
-import React from "react"
-import { SocialIcon } from "react-social-icons"
-import { container, navElement, list } from "./social-navigation.module.css"
+import React from "react";
+import { SocialIcon } from "react-social-icons";
+import { container, navElement, list } from "./social-navigation.module.css";
 
 const links = [
   ["github", "https://github.com/ricca509"],
@@ -10,17 +10,17 @@ const links = [
   ["fivehundredpix", "https://500px.com/ricca509"],
   ["rss", "https://onefiniteloop.io"],
   ["mailto", "mailto:riccardo@onefiniteloop.io"],
-]
+];
 
 export const HeaderNavigation = () => {
   return (
     <div className={container}>
       <ul className={list}>
         <li className={navElement}>
-          <a href="/">Home</a>
+          <a href="/blog">Blog</a>
         </li>
         <li className={navElement}>
-          <a href="/blog">Blog</a>
+          <a href="/">CV</a>
         </li>
       </ul>
       <ul className={list}>
@@ -37,7 +37,7 @@ export const HeaderNavigation = () => {
         ))}
       </ul>
     </div>
-  )
-}
+  );
+};
 
-export default HeaderNavigation
+export default HeaderNavigation;

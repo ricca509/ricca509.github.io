@@ -1,5 +1,4 @@
 import React from "react"
-import SocialNavigation from "../social-navigation"
 import { footer } from "./footer.module.css"
 
 const Footer = () => {

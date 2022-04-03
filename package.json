@@ -30,7 +30,8 @@
     "react-social-icons": "^5.13.0"
   },
   "devDependencies": {
-    "prettier": "^2.6.0"
+    "prettier": "^2.6.0",
+    "puppeteer": "^13.5.2"
   },
   "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
   "keywords": [
@@ -49,6 +50,7 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
-    "preload-fonts": "gatsby-preload-fonts"
+    "preload-fonts": "gatsby-preload-fonts",
+    "generate-resume": "npx start-server-and-test 'npm run clean && npm run build && npm run serve' http://localhost:9000/ 'cvurl=http://localhost:9000/ node ./src/services/printCv.js'"
   }
 }

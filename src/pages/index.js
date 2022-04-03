@@ -30,7 +30,7 @@ export const query = graphql`
     }
     experience: allMarkdownRemark(
       sort: { order: DESC, fields: frontmatter___to_date }
-      filter:{ fileAbsolutePath: { glob: "**/content/resume/experience/*" } }
+      filter: { fileAbsolutePath: { glob: "**/content/resume/experience/*" } }
     ) {
       edges {
         node {

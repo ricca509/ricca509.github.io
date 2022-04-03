@@ -5,15 +5,9 @@ const ExpandButton = ({ onClick, isInCollapsedState }) => {
   return (
     <button className={button} onClick={onClick}>
       {isInCollapsedState ? (
-        <div
-          className={[arrow, arrowDown].join(" ")}
-          role="img"
-        ></div>
+        <div className={[arrow, arrowDown].join(" ")} role="img"></div>
       ) : (
-        <div
-          className={[arrow, arrowUp].join(" ")}
-          role="img"
-        ></div>
+        <div className={[arrow, arrowUp].join(" ")} role="img"></div>
       )}
     </button>
   );

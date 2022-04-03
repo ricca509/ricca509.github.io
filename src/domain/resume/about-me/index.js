@@ -1,5 +1,5 @@
 import React from "react";
-import { GatsbyImage } from "gatsby-plugin-image"
+import { GatsbyImage } from "gatsby-plugin-image";
 import Cta from "../../../components/cta";
 import { container, img, content, getCv } from "./about-me.module.css";
 

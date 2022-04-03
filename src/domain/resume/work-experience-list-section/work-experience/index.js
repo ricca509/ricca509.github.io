@@ -36,7 +36,7 @@ const WorkExperience = ({
           <strong>{role}</strong>
         </p>
         <p className={style.dates}>
-          <em>{`${fromDate} - ${toDate || 'present'}`}</em>
+          <em>{`${fromDate} - ${toDate || "present"}`}</em>
         </p>
       </header>
       <div className={style.printContent}>{workExperienceContent}</div>

@@ -1,6 +1,11 @@
 .postTitle {
-  font-size: 24px;
-  margin-bottom: 0;
+  font-size: 22px;
+  margin-bottom: 20px;
+  margin-top: 0;
+}
+
+.date {  
+  color: var(--grey-3);
 }
 
 .postDescription {

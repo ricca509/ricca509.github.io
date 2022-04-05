@@ -4,7 +4,7 @@ import { Link, graphql } from "gatsby";
 import Bio from "../components/bio";
 import Layout from "../components/layout";
 import Seo from "../components/seo";
-import { container } from "./blog-post.module.css";
+import { container, title, date } from "./blog-post.module.css";
 
 const BlogPostTemplate = ({ data, location }) => {
   const post = data.markdownRemark;
@@ -23,8 +23,8 @@ const BlogPostTemplate = ({ data, location }) => {
         itemType="http://schema.org/Article"
       >
         <header>
-          <h1 itemProp="headline">{post.frontmatter.title}</h1>
-          <p>{post.frontmatter.date}</p>
+          <h1 className={title} itemProp="headline">{post.frontmatter.title}</h1>
+          <p className={date}>{post.frontmatter.date}</p>
         </header>
         <section
           dangerouslySetInnerHTML={{ __html: post.html }}

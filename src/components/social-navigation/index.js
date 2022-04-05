@@ -20,7 +20,7 @@ export const HeaderNavigation = () => {
           <a href="/blog">Blog</a>
         </li>
         <li className={navElement}>
-          <a href="/">CV</a>
+          <a href="/">Profile</a>
         </li>
       </ul>
       <ul className={list}>

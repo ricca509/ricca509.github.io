@@ -4,7 +4,9 @@ module.exports = {
     description: `About me`,
     author: {
       name: `Riccardo Coppola`,
-      summary: `who lives and works in San Francisco building useful things.`,
+      summary: `I help companies with creating better web applications. 
+
+      Certified Level 3 Personal trainer, nutrition geek and biohacker, trained barista and (very) amateur photographer.`,
     },
     siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,
   },

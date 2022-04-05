@@ -2,6 +2,7 @@
 title: "Replace Redux with React Hooks and the Context API: how to and code"
 date: "2020-03-13T10:30:00Z"
 description: "Is it possible to use the new React Context API and hooks to completely replace Redux? Is it worth it? Does it yield the same results and is the solution as easy to use as Redux + React-redux?"
+publication_status: published
 ---
 
 _Is it possible to use the new React Context API and hooks to completely replace Redux? Is it worth it? Does it yield the same results and is the solution as easy to use as Redux + React-redux?_
@@ -169,7 +170,7 @@ It also uses `mapDispatchToProps` to pass actions wrapped by the dispatch method
 
 I wanted to support those methods too, so this is an improved version, that also support the component's own props:
 
-```
+```javascript
 export const connect = (
   mapStateToProps = () => ({}),
   mapDispatchToProps = () => ({})

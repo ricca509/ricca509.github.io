@@ -15,14 +15,14 @@ const links = [
 export const HeaderNavigation = () => {
   return (
     <div className={container}>
-      <ul className={list}>
+      {/* <ul className={list}>
         <li className={navElement}>
           <a href="/blog">Blog</a>
         </li>
         <li className={navElement}>
           <a href="/">Profile</a>
         </li>
-      </ul>
+      </ul> */}
       <ul className={list}>
         {links.map(([network, link]) => (
           <li className={navElement} key={link}>

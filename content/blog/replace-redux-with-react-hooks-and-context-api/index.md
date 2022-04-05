@@ -171,17 +171,17 @@ It also uses `mapDispatchToProps` to pass actions wrapped by the dispatch method
 I wanted to support those methods too, so this is an improved version, that also support the component's own props:
 
 ```javascript
-export const connect = (
-  mapStateToProps = () => ({}),
-  mapDispatchToProps = () => ({})
-) => Component => ownProps => {
-  const { getState, dispatch } = useContext(Context);
-  const stateProps = mapStateToProps(getState(), ownProps);
-  const dispatchProps = mapDispatchToProps(dispatch, ownProps);
-  const props = { ...ownProps, ...stateProps, ...dispatchProps, dispatch };
+export const connect =
+  (mapStateToProps = () => ({}), mapDispatchToProps = () => ({})) =>
+  (Component) =>
+  (ownProps) => {
+    const { getState, dispatch } = useContext(Context);
+    const stateProps = mapStateToProps(getState(), ownProps);
+    const dispatchProps = mapDispatchToProps(dispatch, ownProps);
+    const props = { ...ownProps, ...stateProps, ...dispatchProps, dispatch };
 
-  return createElement(Component, props, null);
-};
+    return createElement(Component, props, null);
+  };
 ```
 
 So here I added support for `mapStateToProps` and `mapDispatchToProps`, providing a default value that returns an empty object in case those arguments are not provided. I then added the `dispatch` method so that the component can use it to dispatch actions.

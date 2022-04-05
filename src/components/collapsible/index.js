@@ -3,7 +3,7 @@ import React, { useState } from "react";
 const Collapsible = ({ children, renderTrigger }) => {
   const [isCollapsed, setIsCollapsed] = useState(true);
 
-  const expandCollapse = e => {
+  const expandCollapse = (e) => {
     e.preventDefault();
     setIsCollapsed(!isCollapsed);
   };

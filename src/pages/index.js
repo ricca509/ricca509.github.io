@@ -1,7 +1,7 @@
 import React from "react";
 import { graphql } from "gatsby";
 import Layout from "../components/layout";
-import SEO from "../components/seo";
+import Seo from "../components/seo";
 import AboutMe from "../domain/resume/about-me";
 import SideProjectsListSection from "../domain/resume/side-projects-list-section";
 import WorkExperienceListSection from "../domain/resume/work-experience-list-section";
@@ -10,8 +10,8 @@ import OtherSectionsList from "../domain/resume/other-sections-list";
 const IndexPage = ({ data }) => {
   return (
     <Layout>
-      <SEO title="Home" />
-      <AboutMe image={data.file.childImageSharp.fixed}>
+      <Seo title="Home" />
+      <AboutMe image={data.file.childImageSharp.gatsbyImageData}>
         {data.about.html}
       </AboutMe>
       <WorkExperienceListSection experienceList={data.experience.edges} />
@@ -25,9 +25,7 @@ export const query = graphql`
   query {
     file(relativePath: { eq: "me.jpeg" }) {
       childImageSharp {
-        fixed(width: 100, height: 100) {
-          ...GatsbyImageSharpFixed
-        }
+        gatsbyImageData(layout: FIXED, width: 100, height: 100)
       }
     }
     experience: allMarkdownRemark(

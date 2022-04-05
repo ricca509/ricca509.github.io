@@ -1,13 +1,13 @@
 import React from "react";
 import SideProject from "./side-project";
 import SectionTitle from "../../../components/section-title";
-import style from "./side-projects-list-section.module.css";
+import { list } from "./side-projects-list-section.module.css";
 
 const SideProjectsListSection = ({ sideProjectsList }) => {
   return (
     <>
       <SectionTitle>Side projects</SectionTitle>
-      <ul className={style.list}>
+      <ul className={list}>
         {sideProjectsList.map(({ node }) => {
           return (
             <SideProject

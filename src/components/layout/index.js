@@ -2,11 +2,11 @@ import React from "react";
 import PropTypes from "prop-types";
 import Header from "../header";
 import Footer from "../footer";
-import "./layout.css";
+import { container } from "./layout.module.css";
 
-const Layout = ({ children }) => {
+const Layout = ({ children, className }) => {
   return (
-    <div className="container">
+    <div className={[container, className].join(" ")}>
       <Header />
       <div>
         <main>{children}</main>

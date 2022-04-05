@@ -1,6 +1,6 @@
 import React from "react";
 import { SocialIcon } from "react-social-icons";
-import styles from "./social-navigation.module.css";
+import { container, navElement, list } from "./social-navigation.module.css";
 
 const links = [
   ["github", "https://github.com/ricca509"],
@@ -12,21 +12,31 @@ const links = [
   ["mailto", "mailto:riccardo@onefiniteloop.io"],
 ];
 
-const HeaderNavigation = () => {
+export const HeaderNavigation = () => {
   return (
-    <ul className={styles.container}>
-      {links.map(([network, link]) => (
-        <li className={styles.navElement} key={link}>
-          <SocialIcon
-            network={network}
-            url={link}
-            bgColor="#fff"
-            fgColor="#6c7888"
-            style={{ height: 30, width: 30 }}
-          />
+    <div className={container}>
+      {/* <ul className={list}>
+        <li className={navElement}>
+          <a href="/blog">Blog</a>
         </li>
-      ))}
-    </ul>
+        <li className={navElement}>
+          <a href="/">Profile</a>
+        </li>
+      </ul> */}
+      <ul className={list}>
+        {links.map(([network, link]) => (
+          <li className={navElement} key={link}>
+            <SocialIcon
+              network={network}
+              url={link}
+              bgColor="#fff"
+              fgColor="#6c7888"
+              style={{ height: 30, width: 30 }}
+            />
+          </li>
+        ))}
+      </ul>
+    </div>
   );
 };
 

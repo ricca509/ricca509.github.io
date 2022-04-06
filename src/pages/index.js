@@ -10,7 +10,7 @@ import OtherSectionsList from "../domain/resume/other-sections-list";
 const IndexPage = ({ data }) => {
   return (
     <Layout>
-      <Seo title="Home" />
+      <Seo title="Profile" />
       <AboutMe image={data.file.childImageSharp.gatsbyImageData}>
         {data.about.html}
       </AboutMe>

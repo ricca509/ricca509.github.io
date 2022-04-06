@@ -2,6 +2,7 @@
 title: "Build feature flags in React using the Context API: how to"
 date: "2020-03-29T09:30:00Z"
 description: "Learn how to build and leverage feature flags (or feature toggles) in React to improve both the development/release workflow and the user experience."
+publication_status: published
 ---
 
 _One of the tenets of lean development is "deliver fast, deliver often"._

@@ -2,7 +2,6 @@ body {
   font-family: var(--body-font-family);
   font-weight: 400;
   font-size: 20px;
-  line-height: 1.5;
   line-height: 26px;
   color: var(--main-font-color);
 }
@@ -32,7 +31,8 @@ a {
 }
 
 a:hover {
-  color: var(--purple);
+  color: var(--white);
+  background-color: var(--purple);
 }
 
 pre {

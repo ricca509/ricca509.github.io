@@ -9,4 +9,6 @@ Strong believer in the value of productivity as a result of highly efficient wor
 
 You can usually find me at the [React London Meetup](https://meetup.react.london/) or the [London Node User Group](https://lnug.org/).
 
+Oh, I also sometimes [blog](/blog) about development, testing, agile methodologies, psychology of teamwork and other rather boring topics
+
 **I ❤️ what I do**

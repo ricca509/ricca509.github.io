@@ -12,7 +12,12 @@ const BlogPostTemplate = ({ data, location }) => {
   const { previous, next } = data;
 
   return (
-    <Layout location={location} title={siteTitle} className={container}>
+    <Layout
+      showName
+      location={location}
+      title={siteTitle}
+      className={container}
+    >
       <Seo
         title={post.frontmatter.title}
         description={post.frontmatter.description || post.excerpt}

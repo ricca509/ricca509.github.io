@@ -1,6 +1,7 @@
 .container {
   display: flex;
   margin: 0;
+  flex-direction: column;
 }
 
 .container nav {
@@ -14,6 +15,17 @@
 }
 
 .author {
+  margin: 0;
+}
+
+.author a {
   font-size: 30px;
   color: var(--grey-1);
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-decoration: none;
+}
+
+.author a:hover {
+  color: var(--white);
 }

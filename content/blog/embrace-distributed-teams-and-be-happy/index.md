@@ -19,9 +19,9 @@ Hewlett-Packard (HP) uses these teams to meet the demands of local economies acr
 
 _“No Borders” 2005, p. 37_
 
-![](https://images.unsplash.com/photo-1537907510278-cb33191816f0?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=2000&fit=max&ixid=eyJhcHBfaWQiOjExNzczfQ)
+![](./images/photo-1537907510278-cb33191816f0.jpeg)
 
-Photo by [Isaiah Rustad](https://unsplash.com/@isaiahrustad?utm_source=ghost&utm_medium=referral&utm_campaign=api-credit) / [Unsplash](https://unsplash.com/?utm_source=ghost&utm_medium=referral&utm_campaign=api-credit)
+Photo by [Isaiah Rustad](https://unsplash.com/@isaiahrustad) / [Unsplash](https://unsplash.com)
 
 _While having remote teams usually brings down the cost considerably, it comes with its own set of everyday challenges that can outweigh the benefits if not properly handled._
 
@@ -53,9 +53,9 @@ Whether people sit in the same office or not, **you need a tool to organise and 
 
 Make sure you invest in **good headsets:** I found [Sennheiser PC 5 CHAT](https://en-uk.sennheiser.com/pc-5-chat) to be cheap and work perfectly for internet calls.
 
-![vintage telephone on the wall.](https://images.unsplash.com/uploads/1413222992504f1b734a6/1928e537?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=2000&fit=max&ixid=eyJhcHBfaWQiOjExNzczfQ)
+![vintage telephone on the wall](./images/vintage_telephone_on_the_wall.jpeg)
 
-Photo by [Pavan Trikutam](https://unsplash.com/@ptrikutam?utm_source=ghost&utm_medium=referral&utm_campaign=api-credit) / [Unsplash](https://unsplash.com/?utm_source=ghost&utm_medium=referral&utm_campaign=api-credit)
+Photo by [Pavan Trikutam](https://unsplash.com/@ptrikutam) / [Unsplash](https://unsplash.com)
 
 Buy the **right hardware for your meeting rooms:** if you work with Macs, I found [Apple TV](https://www.apple.com/uk/tv/) to be very helpful when it comes to sharing your screen/audio during a call. Another option may be to use [Chromecast](https://store.google.com/gb/product/chromecast). Also related to setting up your rooms, having a **conference speakerphone** can really make a difference when many people are sat around a table and far from the laptop: [Jabra Speak 410](https://www.jabra.co.uk/business/speakerphones/jabra-speak-series/jabra-speak-410#/#100-43000000-40) proved to be effective for this in my experience. And don't forget a good 1080p webcam!
 
@@ -111,9 +111,9 @@ Use the comments, update stories/cards often and use your product management too
 
 Multinational multicultural distributed teams present opportunities and challenges to organisations: having teams working in different time zones is usually seen as a problem because people have a hard time organising meetings where everyone can attend and issues are resolved slowly because of lack of quick communication.
 
-![Tomada en mi oficina Monterrey](https://images.unsplash.com/photo-1525562929550-63ef340cfe1d?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=2000&fit=max&ixid=eyJhcHBfaWQiOjExNzczfQ)
+![Tomada en mi oficina Monterrey](./images/tomada_en_mi_oficina_monterrey.jpeg)
 
-Photo by [Luis Cortes](https://unsplash.com/@luiscortestamez?utm_source=ghost&utm_medium=referral&utm_campaign=api-credit) / [Unsplash](https://unsplash.com/?utm_source=ghost&utm_medium=referral&utm_campaign=api-credit)
+Photo by [Luis Cortes](https://unsplash.com/@luiscortestamez) / [Unsplash](https://unsplash.com)
 
 Although this definitely represents a challenge, it can also represent an opportunity to prolong the work cycle and increase velocity. In such an environment, blockers can be passed to a fresh pair of eyes at the end of the day and possibly get resolved by next morning, something that would be impossible when following the same working hours.
 
@@ -142,9 +142,9 @@ I always make it a priority to get to know and experience their culture as much 
 
 Knowing people personalities, habits and needs will help you with the daily organisation of work in a way that can improve productivity and boost team morale: people that see their culture respected will inevitably be happier when working with you. This may mean adjusting your communication patterns to use/avoid words or phrases that may be offensive, moving meetings to avoid specific parts of their day.
 
-![party fans raised their hands](https://images.unsplash.com/photo-1429962714451-bb934ecdc4ec?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=2000&fit=max&ixid=eyJhcHBfaWQiOjExNzczfQ)
+![party fans raised their hands](./images/party_fans_raised_their_hands.jpeg)
 
-Photo by [Anthony DELANOIX](https://unsplash.com/@anthonydelanoix?utm_source=ghost&utm_medium=referral&utm_campaign=api-credit) / [Unsplash](https://unsplash.com/?utm_source=ghost&utm_medium=referral&utm_campaign=api-credit)
+Photo by [Anthony DELANOIX](https://unsplash.com/@anthonydelanoix) / [Unsplash](https://unsplash.com)
 
 If you're interested in finding out more, [Managing Cultural Differences in Your Distributed Team](https://www.infoq.com/articles/culture-distributed-team/) is a good read.
 

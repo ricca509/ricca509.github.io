@@ -1,7 +1,10 @@
 import React from "react";
 import { footer } from "./footer.module.css";
+import { ComponentProps } from "@Typings/component";
 
-const Footer = () => {
+interface FooterProps extends ComponentProps {}
+
+export const Footer: React.FC<FooterProps> = () => {
   return (
     <footer className={footer}>
       <p>© {new Date().getFullYear()} Riccardo Coppola</p>

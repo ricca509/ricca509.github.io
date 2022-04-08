@@ -28,7 +28,7 @@ export const Post: React.FC<PostProps> = ({ post, title }) => {
         <header>
           <small className={date}>{post?.frontmatter?.date}</small>
           <h2 className={postTitle}>
-            <Link to={post?.fields?.slug} itemProp="url">
+            <Link to={post?.fields?.slug || '/blog'} itemProp="url">
               <span itemProp="headline">{title}</span>
             </Link>
           </h2>

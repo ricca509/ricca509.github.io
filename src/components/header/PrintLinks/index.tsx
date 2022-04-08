@@ -1,7 +1,10 @@
 import React from "react";
 import { container } from "./print-links.module.css";
+import { ComponentProps } from "@Typings/component";
 
-const PrintLinks = () => {
+interface PrintLinkProps extends ComponentProps {}
+
+export const PrintLinks: React.FC<PrintLinkProps> = () => {
   return (
     <ul className={container}>
       <li>

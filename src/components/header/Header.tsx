@@ -1,6 +1,6 @@
 import React from "react";
 import { HeaderNavigation } from "../HeaderNavigation/HeaderNavigation";
-import PrintLinks from "./print-links";
+import {PrintLinks} from "./PrintLinks";
 import useIsPrinting from "../../hooks/useIsPrinting";
 import { container, author } from "./header.module.css";
 import { ComponentProps } from "@Typings/component";

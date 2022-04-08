@@ -16,7 +16,12 @@ interface SeoProps {
   title: string;
 }
 
-export const Seo: React.FC<SeoProps> = ({ description, lang = 'en', meta = [], title }) => {
+export const Seo: React.FC<SeoProps> = ({
+  description,
+  lang = "en",
+  meta = [],
+  title,
+}) => {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -79,7 +84,11 @@ export const Seo: React.FC<SeoProps> = ({ description, lang = 'en', meta = [], t
       ].concat(meta)}
     >
       <link rel="preconnect" href="https://fonts.googleapis.com" />
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossOrigin="anonymous"
+      />
       <link
         href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400&family=Merriweather:wght@300&family=Poppins:wght@300&display=swap"
         rel="stylesheet"

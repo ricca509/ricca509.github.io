@@ -1,18 +1,19 @@
 import React from "react";
-import { graphql } from "gatsby";
-import Layout from "../components/Layout";
-import Seo from "../components/Seo";
-import AboutMe from "../domain/resume/about-me";
+import { graphql, PageProps } from "gatsby";
+import { Layout } from "../components/Layout/Layout";
+import { Seo } from "../components/Seo/Seo";
+import { AboutMe } from "../domain/resume/AboutMe/AboutMe";
 import SideProjectsListSection from "../domain/resume/side-projects-list-section";
-import WorkExperienceListSection from "../domain/resume/work-experience-list-section";
+import WorkExperienceListSection from "../domain/resume/WorkExperienceListSection/WorkExperienceListSection";
 import OtherSectionsList from "../domain/resume/other-sections-list";
+import { ProfileQuery } from "../../graphql-types";
 
-const IndexPage = ({ data }) => {
+const IndexPage: React.FC<PageProps<ProfileQuery>> = ({ data }) => {
   return (
     <Layout>
       <Seo title="Profile" />
-      <AboutMe image={data.file.childImageSharp.gatsbyImageData}>
-        {data.about.html}
+      <AboutMe image={data?.file?.childImageSharp?.gatsbyImageData}>
+        {data?.about?.html}
       </AboutMe>
       <WorkExperienceListSection experienceList={data.experience.edges} />
       <SideProjectsListSection sideProjectsList={data.sideProjects.edges} />
@@ -22,7 +23,7 @@ const IndexPage = ({ data }) => {
 };
 
 export const query = graphql`
-  query {
+  query Profile {
     file(relativePath: { eq: "me.jpeg" }) {
       childImageSharp {
         gatsbyImageData(layout: FIXED, width: 100, height: 100)

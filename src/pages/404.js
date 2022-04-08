@@ -1,8 +1,8 @@
 import * as React from "react";
 import { graphql } from "gatsby";
 
-import Layout from "../components/Layout";
-import Seo from "../components/Seo";
+import { Layout } from "../components/Layout/Layout";
+import Seo from "../components/Seo/Seo";
 
 const NotFoundPage = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata.title;

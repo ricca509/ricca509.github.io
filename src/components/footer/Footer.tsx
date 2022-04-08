@@ -1,5 +1,5 @@
 import React from "react";
-import { footer } from "./footer.module.css";
+import { footer } from "./Footer.module.css";
 import { ComponentProps } from "@Typings/component";
 
 interface FooterProps extends ComponentProps {}

@@ -6,7 +6,7 @@
  */
 
 import * as React from "react";
-import { container } from "./bio.module.css";
+import { container } from "./Bio.module.css";
 
 const Bio = () => {
   return (

@@ -1,8 +1,8 @@
 import React from "react";
 import { HeaderNavigation } from "../HeaderNavigation/HeaderNavigation";
-import {PrintLinks} from "./PrintLinks";
+import { PrintLinks } from "./PrintLinks/PrintLinks";
 import useIsPrinting from "../../hooks/useIsPrinting";
-import { container, author } from "./header.module.css";
+import { container, author } from "./Header.module.css";
 import { ComponentProps } from "@Typings/component";
 
 interface HeaderProps extends ComponentProps {

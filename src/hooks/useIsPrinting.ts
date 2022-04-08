@@ -11,9 +11,11 @@ const useIsPrinting = () => {
       setIsPrinting(printModeMq && Boolean(printModeMq.matches));
     };
 
+    // @ts-ignore
     printModeMq.addListener(handlePrintModeChange);
 
     return () => {
+      // @ts-ignore
       printModeMq.removeListener(handlePrintModeChange);
     };
   });

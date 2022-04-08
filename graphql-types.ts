@@ -3489,6 +3489,11 @@ export type BlogIndexQueryVariables = Exact<{ [key: string]: never; }>;
 
 export type BlogIndexQuery = { site?: { siteMetadata?: { title?: string | null } | null } | null, allMarkdownRemark: { nodes: Array<{ excerpt?: string | null, fields?: { slug?: string | null } | null, frontmatter?: { date?: any | null, title?: string | null, description?: string | null } | null }> } };
 
+export type ProfileQueryVariables = Exact<{ [key: string]: never; }>;
+
+
+export type ProfileQuery = { file?: { childImageSharp?: { gatsbyImageData: any } | null } | null, experience: { edges: Array<{ node: { id: string, html?: string | null, frontmatter?: { company?: string | null, location?: string | null, role?: string | null, from_date?: any | null, to_date?: any | null, technologies?: Array<string | null> | null } | null } }> }, sideProjects: { edges: Array<{ node: { id: string, html?: string | null, frontmatter?: { title?: string | null, link?: string | null } | null } }> }, otherSections: { edges: Array<{ node: { id: string, html?: string | null, frontmatter?: { title?: string | null } | null } }> }, about?: { html?: string | null } | null };
+
 export type Unnamed_2_QueryVariables = Exact<{ [key: string]: never; }>;
 
 

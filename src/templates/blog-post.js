@@ -2,8 +2,8 @@ import * as React from "react";
 import { Link, graphql } from "gatsby";
 
 import Bio from "../components/Bio";
-import Layout from "../components/Layout";
-import Seo from "../components/Seo";
+import { Layout } from "../components/Layout/Layout";
+import Seo from "../components/Seo/Seo";
 import { container, title, date } from "./blog-post.module.css";
 
 const BlogPostTemplate = ({ data, location }) => {

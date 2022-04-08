@@ -1,6 +1,6 @@
 import React from "react";
 import SideProject from "./side-project";
-import SectionTitle from "../../../components/section-title";
+import SectionTitle from "@Components/SectionTitle/SectionTitle";
 import { list } from "./side-projects-list-section.module.css";
 
 const SideProjectsListSection = ({ sideProjectsList }) => {

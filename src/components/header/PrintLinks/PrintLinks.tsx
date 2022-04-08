@@ -1,5 +1,5 @@
 import React from "react";
-import { container } from "./print-links.module.css";
+import { container } from "./PrintLinks.module.css";
 import { ComponentProps } from "@Typings/component";
 
 interface PrintLinkProps extends ComponentProps {}

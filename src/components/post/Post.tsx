@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "gatsby";
-import { postTitle, date } from "./post.module.css";
+import { postTitle, date } from "./Post.module.css";
 
 interface Post {
   excerpt?: string | null;
@@ -28,7 +28,7 @@ export const Post: React.FC<PostProps> = ({ post, title }) => {
         <header>
           <small className={date}>{post?.frontmatter?.date}</small>
           <h2 className={postTitle}>
-            <Link to={post?.fields?.slug || '/blog'} itemProp="url">
+            <Link to={post?.fields?.slug || "/blog"} itemProp="url">
               <span itemProp="headline">{title}</span>
             </Link>
           </h2>

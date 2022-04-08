@@ -3,8 +3,8 @@ import { graphql, PageProps } from "gatsby";
 import { BlogIndexQuery } from "../../graphql-types";
 
 import Bio from "../components/Bio";
-import Layout from "../components/Layout";
-import { Seo } from "../components/Seo";
+import { Layout } from "../components/Layout/Layout";
+import { Seo } from "../components/Seo/Seo";
 import { Post } from "../components/Post/Post";
 import { list } from "./blog.module.css";
 
@@ -18,9 +18,7 @@ const BlogIndex: React.FC<PageProps<BlogIndexQuery>> = ({ data, location }) => {
         <Seo title="Blog" />
         <Bio />
         <p>
-          No blog posts found. Add markdown posts to "content/blog" (or the
-          directory you specified for the "gatsby-source-filesystem" plugin in
-          gatsby-config.js).
+          Oops, No blog posts found!
         </p>
       </Layout>
     );
@@ -34,7 +32,7 @@ const BlogIndex: React.FC<PageProps<BlogIndexQuery>> = ({ data, location }) => {
         {posts.map((post) => {
           const title = post?.frontmatter?.title || post?.fields?.slug;
 
-          return <Post post={post} title={title || ''} />;
+          return <Post post={post} title={title || ""} />;
         })}
       </ol>
     </Layout>

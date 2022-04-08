@@ -6,7 +6,6 @@
  */
 
 import * as React from "react";
-import { useStaticQuery, graphql } from "gatsby";
 import { container } from "./bio.module.css";
 
 const Bio = () => {

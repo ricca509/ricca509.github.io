@@ -1,14 +1,15 @@
 import * as React from "react";
-import { graphql } from "gatsby";
+import { graphql, PageProps } from "gatsby";
+import { BlogIndexQuery } from "../../graphql-types";
 
-import Bio from "../components/bio";
-import Layout from "../components/layout";
-import Seo from "../components/seo";
-import { Post } from "../components/post/Post";
+import Bio from "../components/Bio";
+import Layout from "../components/Layout";
+import { Seo } from "../components/Seo";
+import { Post } from "../components/Post/Post";
 import { list } from "./blog.module.css";
 
-const BlogIndex = ({ data, location }) => {
-  const siteTitle = data.site.siteMetadata?.title || `Title`;
+const BlogIndex: React.FC<PageProps<BlogIndexQuery>> = ({ data, location }) => {
+  const siteTitle = data?.site?.siteMetadata?.title || `Blog`;
   const posts = data.allMarkdownRemark.nodes;
 
   if (posts.length === 0) {
@@ -31,7 +32,7 @@ const BlogIndex = ({ data, location }) => {
       <Bio />
       <ol className={list}>
         {posts.map((post) => {
-          const title = post.frontmatter.title || post.fields.slug;
+          const title = post?.frontmatter?.title || post?.fields?.slug;
 
           return <Post post={post} title={title} />;
         })}
@@ -43,7 +44,7 @@ const BlogIndex = ({ data, location }) => {
 export default BlogIndex;
 
 export const pageQuery = graphql`
-  query {
+  query BlogIndex {
     site {
       siteMetadata {
         title

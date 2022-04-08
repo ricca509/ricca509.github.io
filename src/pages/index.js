@@ -1,7 +1,7 @@
 import React from "react";
 import { graphql } from "gatsby";
-import Layout from "../components/layout";
-import Seo from "../components/seo";
+import Layout from "../components/Layout";
+import Seo from "../components/Seo";
 import AboutMe from "../domain/resume/about-me";
 import SideProjectsListSection from "../domain/resume/side-projects-list-section";
 import WorkExperienceListSection from "../domain/resume/work-experience-list-section";

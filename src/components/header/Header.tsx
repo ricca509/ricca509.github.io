@@ -1,10 +1,15 @@
 import React from "react";
-import SocialNavigation from "../social-navigation";
+import { HeaderNavigation } from "../HeaderNavigation/HeaderNavigation";
 import PrintLinks from "./print-links";
 import useIsPrinting from "../../hooks/useIsPrinting";
 import { container, author } from "./header.module.css";
+import { ComponentProps } from "@Typings/component";
 
-const Header = ({ showName = false }) => {
+interface HeaderProps extends ComponentProps {
+  showName?: boolean;
+}
+
+export const Header: React.FC<HeaderProps> = ({ showName = false }) => {
   const isPrinting = useIsPrinting();
 
   return (
@@ -16,7 +21,7 @@ const Header = ({ showName = false }) => {
       )}
       <nav>
         {isPrinting && <PrintLinks />}
-        {!isPrinting && <SocialNavigation />}
+        {!isPrinting && <HeaderNavigation />}
       </nav>
     </header>
   );

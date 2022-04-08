@@ -1,6 +1,6 @@
 import React from "react";
 import { SocialIcon } from "react-social-icons";
-import { container, navElement, list } from "./social-navigation.module.css";
+import { container, navElement, list } from "./header-navigation.module.css";
 
 const links = [
   ["github", "https://github.com/ricca509"],

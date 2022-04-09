@@ -3484,6 +3484,11 @@ export type Unnamed_1_QueryVariables = Exact<{ [key: string]: never; }>;
 
 export type Unnamed_1_Query = { site?: { siteMetadata?: { title?: string | null, description?: string | null, social?: { twitter?: string | null } | null } | null } | null };
 
+export type NotFoundPageQueryVariables = Exact<{ [key: string]: never; }>;
+
+
+export type NotFoundPageQuery = { site?: { siteMetadata?: { title?: string | null } | null } | null };
+
 export type BlogIndexQueryVariables = Exact<{ [key: string]: never; }>;
 
 

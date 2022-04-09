@@ -1,5 +1,5 @@
 import React from "react";
-import GenericSection from "./";
+import GenericSection from "./GenericSection";
 
 export default { title: "GenericSection" };
 

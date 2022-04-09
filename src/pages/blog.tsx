@@ -32,7 +32,7 @@ const BlogIndex: React.FC<PageProps<BlogIndexQuery>> = ({ data, location }) => {
         {posts.map((post) => {
           const title = post?.frontmatter?.title || post?.fields?.slug;
 
-          return <Post post={post} title={title || ""} />;
+          return <Post post={post} title={title || ""} key={post.fields?.slug} />;
         })}
       </ol>
     </Layout>

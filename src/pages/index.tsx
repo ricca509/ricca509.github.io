@@ -3,9 +3,9 @@ import { graphql, PageProps } from "gatsby";
 import { Layout } from "../components/Layout/Layout";
 import { Seo } from "../components/Seo/Seo";
 import { AboutMe } from "../domain/resume/AboutMe/AboutMe";
-import SideProjectsListSection from "../domain/resume/side-projects-list-section";
-import WorkExperienceListSection from "../domain/resume/WorkExperienceListSection/WorkExperienceListSection";
-import OtherSectionsList from "../domain/resume/other-sections-list";
+import { SideProjectsListSection } from "../domain/resume/SideProjectsListSection/SideProjectsListSection";
+import { WorkExperienceListSection } from "../domain/resume/WorkExperienceListSection/WorkExperienceListSection";
+import { OtherSectionsList } from "../domain/resume/OtherSectionsList/OtherSectionsList";
 import { ProfileQuery } from "../../graphql-types";
 
 const IndexPage: React.FC<PageProps<ProfileQuery>> = ({ data }) => {

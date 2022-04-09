@@ -1,4 +1,7 @@
-module.exports = {
+import type { GatsbyConfig } from "gatsby"
+import path from "path"
+
+const config: GatsbyConfig = {
   siteMetadata: {
     title: `Riccardo Coppola`,
     description: `About me`,
@@ -15,7 +18,7 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/content`,
+        path: path.resolve(`content`),
         name: `markdown`,
       },
     },
@@ -23,7 +26,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `${__dirname}/src/images`,
+        path: path.resolve(`src/images`),
       },
     },
     {
@@ -73,8 +76,8 @@ module.exports = {
         `,
         feeds: [
           {
-            serialize: ({ query: { site, allMarkdownRemark } }) => {
-              return allMarkdownRemark.nodes.map((node) => {
+            serialize: ({ query: { site, allMarkdownRemark } }: any) => {
+              return allMarkdownRemark.nodes.map((node: any) => {
                 return Object.assign({}, node.frontmatter, {
                   description: node.excerpt,
                   date: node.frontmatter.date,
@@ -131,3 +134,5 @@ module.exports = {
     `gatsby-plugin-graphql-codegen`,
   ],
 };
+
+export default config;

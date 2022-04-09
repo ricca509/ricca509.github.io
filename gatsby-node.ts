@@ -16,13 +16,17 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   const { createPage } = actions;
 
   // Define a template for blog post
-  const blogPost = path.resolve(`./src/templates/blog-post.js`);
+  const blogPost = path.resolve(`./src/templates/BlogPost.tsx`);
 
   // Get all markdown blog posts sorted by date
   const result = await graphql(
     `
       {
         allMarkdownRemark(
+          filter: {
+            fields: { slug: { glob: "**/blog/*" } }
+            frontmatter: { publication_status: { eq: "published" } }
+          }
           sort: { fields: [frontmatter___date], order: ASC }
           limit: 1000
         ) {

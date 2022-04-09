@@ -1,12 +1,13 @@
 import * as React from "react";
-import { Link, graphql } from "gatsby";
+import { Link, graphql, PageProps } from "gatsby";
 
-import Bio from "../components/Bio";
-import { Layout } from "../components/Layout/Layout";
-import Seo from "../components/Seo/Seo";
-import { container, title, date } from "./blog-post.module.css";
+import Bio from "@Components/Bio";
+import { Layout } from "@Components/Layout/Layout";
+import Seo from "@Components/Seo/Seo";
+import { container, title, date } from "./BlogPost.module.css";
+import { BlogPostBySlugQuery } from "../../graphql-types";
 
-const BlogPostTemplate = ({ data, location }) => {
+const BlogPostTemplate: React.FC<PageProps<BlogPostBySlugQuery>> = ({ data, location }: any) => {
   const post = data.markdownRemark;
   const siteTitle = data.site.siteMetadata?.title || `Title`;
   const { previous, next } = data;

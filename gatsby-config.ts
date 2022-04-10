@@ -14,6 +14,7 @@ const config: GatsbyConfig = {
     siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,
   },
   plugins: [
+    `gatsby-plugin-tsconfig-paths`,
     `gatsby-plugin-image`,
     {
       resolve: `gatsby-source-filesystem`,

@@ -1,9 +1,9 @@
 import * as React from "react";
 import { Link, graphql, PageProps } from "gatsby";
 
-import Bio from "../components/Bio";
-import { Layout } from "../components/Layout/Layout";
-import { Seo } from "../components/Seo/Seo";
+import Bio from "@Components/Bio";
+import { Layout } from "@Components/Layout/Layout";
+import { Seo } from "@Components/Seo/Seo";
 import { container, title, date } from "./BlogPost.module.css";
 import { BlogPostBySlugQuery } from "../../graphql-types";
 

@@ -6,7 +6,10 @@ interface GenericSectionProps extends ComponentProps {
   title: string;
 }
 
-export const GenericSection: React.FC<GenericSectionProps> = ({ title, children }) => {
+export const GenericSection: React.FC<GenericSectionProps> = ({
+  title,
+  children,
+}) => {
   return (
     <>
       <SectionTitle>{title}</SectionTitle>

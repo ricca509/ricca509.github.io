@@ -1,11 +1,17 @@
 import React, { useState } from "react";
-import { ComponentProps} from "@Typings/component";
+import { ComponentProps } from "@Typings/component";
 
 interface CollapsibleProps extends ComponentProps {
-  renderTrigger: (props: { onClick: (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => void; isCollapsed: boolean }) => React.ReactNode;
+  renderTrigger: (props: {
+    onClick: (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => void;
+    isCollapsed: boolean;
+  }) => React.ReactNode;
 }
 
-export const Collapsible: React.FC<CollapsibleProps> = ({ children, renderTrigger }) => {
+export const Collapsible: React.FC<CollapsibleProps> = ({
+  children,
+  renderTrigger,
+}) => {
   const [isCollapsed, setIsCollapsed] = useState(true);
 
   const expandCollapse = (e: React.MouseEvent) => {

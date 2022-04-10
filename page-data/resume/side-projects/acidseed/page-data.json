@@ -1,5 +1,0 @@
-{
-    "componentChunkName": "component---src-templates-blog-post-js",
-    "path": "/resume/side-projects/acidseed/",
-    "result": {"data":{"site":{"siteMetadata":{"title":"Riccardo Coppola"}},"markdownRemark":{"id":"e6cb22d2-ddcd-53c3-b8f8-50e0a41ad93a","excerpt":"A caching layer to cache any API/HTTP request. Written in Node.js using ES6 Harmony with persistence on Redis.","html":"<p>A caching layer to cache any API/HTTP request. Written in Node.js using ES6 Harmony with persistence on Redis.</p>","frontmatter":{"title":"Acidseed","date":null,"description":null}},"previous":{"fields":{"slug":"/resume/other-sections/languages/"},"frontmatter":{"title":"Spoken languages"}},"next":{"fields":{"slug":"/resume/side-projects/f/"},"frontmatter":{"title":"F"}}},"pageContext":{"id":"e6cb22d2-ddcd-53c3-b8f8-50e0a41ad93a","previousPostId":"d953987f-6818-59c0-9e76-3dd776d872bd","nextPostId":"7ab122ce-8dbc-5aad-b109-04da065f4099"}},
-    "staticQueryHashes": ["2841359383"]}

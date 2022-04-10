@@ -1,5 +1,0 @@
-{
-    "componentChunkName": "component---src-templates-blog-post-js",
-    "path": "/resume/experience/viable-data/",
-    "result": {"data":{"site":{"siteMetadata":{"title":"Riccardo Coppola"}},"markdownRemark":{"id":"0d4978ea-45f9-5e75-838b-e3e4c2badfda","excerpt":"At Viable Data I looked after a range of JavaScript applications for the Home Office, helped with technical direction for new features and mentored more junior…","html":"<p>At Viable Data I looked after a range of JavaScript applications for the Home Office, helped with technical direction for new features and mentored more junior developers.</p>","frontmatter":{"title":"","date":null,"description":null}},"previous":{"fields":{"slug":"/resume/experience/trainline-senior/"},"frontmatter":{"title":""}},"next":{"fields":{"slug":"/resume/other-sections/education/"},"frontmatter":{"title":"Education"}}},"pageContext":{"id":"0d4978ea-45f9-5e75-838b-e3e4c2badfda","previousPostId":"1c640889-1ff8-561a-8985-54e6c780cef4","nextPostId":"e5f89777-01e3-54bf-b53c-2f58090d57b7"}},
-    "staticQueryHashes": ["2841359383"]}

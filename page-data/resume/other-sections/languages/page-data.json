@@ -1,5 +1,0 @@
-{
-    "componentChunkName": "component---src-templates-blog-post-js",
-    "path": "/resume/other-sections/languages/",
-    "result": {"data":{"site":{"siteMetadata":{"title":"Riccardo Coppola"}},"markdownRemark":{"id":"d953987f-6818-59c0-9e76-3dd776d872bd","excerpt":"Italian, English, basic Spanish.","html":"<p>Italian, English, basic Spanish.</p>","frontmatter":{"title":"Spoken languages","date":null,"description":null}},"previous":{"fields":{"slug":"/resume/other-sections/interests/"},"frontmatter":{"title":"Interests"}},"next":{"fields":{"slug":"/resume/side-projects/acidseed/"},"frontmatter":{"title":"Acidseed"}}},"pageContext":{"id":"d953987f-6818-59c0-9e76-3dd776d872bd","previousPostId":"23aa616b-f193-5ded-969e-faad04a3197a","nextPostId":"e6cb22d2-ddcd-53c3-b8f8-50e0a41ad93a"}},
-    "staticQueryHashes": ["2841359383"]}

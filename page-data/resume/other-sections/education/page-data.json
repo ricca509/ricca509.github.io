@@ -1,5 +1,0 @@
-{
-    "componentChunkName": "component---src-templates-blog-post-js",
-    "path": "/resume/other-sections/education/",
-    "result": {"data":{"site":{"siteMetadata":{"title":"Riccardo Coppola"}},"markdownRemark":{"id":"e5f89777-01e3-54bf-b53c-2f58090d57b7","excerpt":"2002 - 2007: Degree in Telecommunications Engineering with the thesis:\n“AODV protocol modifications to include Link State metrics”","html":"<p>2002 - 2007: Degree in Telecommunications Engineering with the thesis:\n“AODV protocol modifications to include Link State metrics”</p>","frontmatter":{"title":"Education","date":null,"description":null}},"previous":{"fields":{"slug":"/resume/experience/viable-data/"},"frontmatter":{"title":""}},"next":{"fields":{"slug":"/resume/other-sections/interests/"},"frontmatter":{"title":"Interests"}}},"pageContext":{"id":"e5f89777-01e3-54bf-b53c-2f58090d57b7","previousPostId":"0d4978ea-45f9-5e75-838b-e3e4c2badfda","nextPostId":"23aa616b-f193-5ded-969e-faad04a3197a"}},
-    "staticQueryHashes": ["2841359383"]}

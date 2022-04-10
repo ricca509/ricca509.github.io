@@ -1,6 +1,6 @@
 import React from "react";
 import { SocialIcon } from "react-social-icons";
-import { container, navElement, list } from "./HeaderNavigation.module.css";
+import { container, navElement, list, textLinks } from "./HeaderNavigation.module.css";
 
 const links = [
   ["github", "https://github.com/ricca509"],
@@ -12,7 +12,7 @@ const links = [
 export const HeaderNavigation = () => {
   return (
     <div className={container}>
-      <ul className={list}>
+      <ul className={[list, textLinks].join(' ')}>
         <li className={navElement}>
           <a href="/blog">Blog</a>
         </li>

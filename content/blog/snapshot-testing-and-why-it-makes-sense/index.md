@@ -30,11 +30,51 @@ Unit testing is all about isolating the system under test and checking that at e
 As an example, we'll use a `parseDate` function that takes a Date object in input and returns a different object containing day, month and year.  
 The implementation is not important, just to have something to get going:
 
+```javascript
+export function parseDate (date) {
+  return {
+    day: date.getDate(),
+    month: date.getMonth() + 1,
+    year: date.getFullYear()
+  };
+}
+```
+
 This function can be easily tested by passing different dates in input and checking that the output is the expected object (boooring!)
+
+```javascript
+import { parseDate } from '..';
+
+describe('parseDate', () => {
+  it('parses a Date object', () => {
+    const expectedResult = {
+      day: 13,
+      month: 2,
+      year: 2017
+    };
+    const result = parseDate(2017, 1, 13);
+
+    expect(result).toEqual(expectedResult);
+  });
+});
+```
 
 If the expected object was big enough, you could decide to store it in a file, read that file at the beginning of your test and use that as expected result.
 
 In a very similar fashion you can test API endpoint handlers: using a json file for the expected result that the endpoint should return:
+
+```javascript
+import handler from '../handler';
+import expectedUserJson from '../mocks/user';
+
+describe('the user handler', () => {
+  it('returns the user information given its id', () => {    
+    const response = handler('35409DJFJ48');
+
+    expect(response).toEqual(expectedUserJson);
+  });
+});
+```
 
 This ensures that the response looks 100% like the json that you want: you usually don't test just a small part of it.
 
@@ -59,6 +99,29 @@ The DOM dependency is now out of the equation (because of the [shallow renderer]
 - Do I have a list with 10 elements?
 - Do I have an element with class "header"?
 - Does it contain the text "Buy now"?
+
+```javascript
+// BuyNow.jsx
+const BuyNow = ({ price, text }) => (<div>
+  <span className="price">£{price}</span>
+  <button className="btn-primary">{text}</button>
+</div>);
+
+// BuyNow.test.jsx
+import { shallow } from 'enzyme';
+import BuyNow from '../BuyNow';
+
+describe('The BuyNow component', () => {
+  it('renders with the right price', () => {    
+    const props = { price: 25 };
+    const tree = shallow(<BuyNow {...props} />);
+
+    expect(tree.find('span').length()).toEqual(1);
+    expect(tree.find('span').text()).toEqual('£25');
+    expect(tree.find('span').hasClass('price')).toBe(true);
+  });
+});
+```
 
 Different from comparing the output of your render with an expected result, but React allows us to test the UI in a more function-like fashion.
 
@@ -87,7 +150,39 @@ No dependency on the DOM and we are comparing the whole output with an expected 
 
 A simple example on how to snapshot test a component and what gets generated follows:
 
+```javascript
+// BuyNow.test.jsx
+import { shallow } from 'enzyme';  
+import toJson from 'enzyme-to-json';  
+import BuyNow from '../BuyNow';
+
+describe('The BuyNow component', () => {  
+  it('renders the right price and button', () => {    
+    const props = { price: 25, text: 'Buy now' };
+    const tree = shallow(<BuyNow {...props} />);
+
+    expect(toJson(tree)).toMatchSnapshot();
+  });
+});
+```
+
 This test generates the following snapshot:
+
+```
+exports[`The BuyNow component renders the right price and button 1`] = `
+<div>
+  <span
+    className="price">
+    £
+    25
+  </span>
+  <button
+    className="btn-primary">
+    Buy now
+  </button>
+</div>
+`;
+```
 
 _The use of `toJson` from the [enzyme-to-json](https://www.npmjs.com/package/enzyme-to-json) package is needed to convert the result of the shallow renderer to a serializable value (more on this later). This can be avoided, though, by adding [jest-serializer-enzyme](https://github.com/rogeliog/jest-serializer-enzyme) as a `snapshotSerializers` in the Jest config._
 
@@ -119,6 +214,48 @@ Snapshots are an invaluable tool when it comes to UI testing, but their use is n
 To make it useful, of course, the serialised value needs to retain its meaning so that it can be tested: there's not much value in serialising a function into `[Function]`.
 
 A few examples follow, along with the generated snapshots:
+
+```javascript
+describe('Snapshot tests', () => {
+  it('work with objects', () => {
+    expect({
+      a: 234,
+      b: 'test',
+      c: null,
+      d: undefined,
+    }).toMatchSnapshot();
+  });
+
+  it('work with strings', () => {
+    expect('This is a test').toMatchSnapshot();
+  });
+
+  it('work with arrays', () => {
+    expect(['a', 5, () => 3]).toMatchSnapshot();
+  });
+});
+```
+
+```
+exports[`Snapshot tests work with arrays 1`] = `
+Array [
+  "a",
+  5,
+  [Function],
+]
+`;
+
+exports[`Snapshot tests work with objects 1`] = `
+Object {
+  "a": 234,
+  "b": "test",
+  "c": null,
+  "d": undefined,
+}
+`;
+
+exports[`Snapshot tests work with strings 1`] = `"This is a test"`;
+```
 
 While it's definitely possible to test API responses and other structures using snapshots, I still feel that setting expectations beforehand for completely defined modules is a better choice.  
 Snapshots may be a nice addition when a module is stable, to prevent any unwanted change to happen, but I still see them as an addition, not a replacement for these cases.

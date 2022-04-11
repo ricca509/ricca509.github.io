@@ -14,13 +14,13 @@ Of course not every tool or library will add value to the code, but many of them
 
 Selecting the right tools is key.
 
-### Jest, yet another tool
+## Jest, yet another tool
 
 [Jest](https://facebook.github.io/jest/) is the best testing tool that I've been using lately.  
 It is built on top of Jasmine and developed by Facebook. Like Jasmine, it offers a test runner, assertion and mock methods.  
 Its API is very similar to what the combo Mocha/chai offers, so the switch is easy and painless. Among other useful features, Jest offers an advanced system for mocking external dependencies (automatically or manually) and a new concept for testing React components called Snapshot testing.
 
-### Back to basics: unit testing a function
+## Back to basics: unit testing a function
 
 Unit testing is all about isolating the system under test and checking that at every given input corresponds a given, predictable output: what is easier to test than a well thought function?
 
@@ -38,7 +38,7 @@ In a very similar fashion you can test API endpoint handlers: using a json file 
 
 This ensures that the response looks 100% like the json that you want: you usually don't test just a small part of it.
 
-### Unit testing UI views and React components (and choosing what to test)
+## Unit testing UI views and React components (and choosing what to test)
 
 Testing the UI has alway been different from function testing:
 
@@ -64,7 +64,7 @@ Different from comparing the output of your render with an expected result, but 
 
 UI testing, with all its moving parts, forces the developer to decide between partial testing (testing only the parts related to the UI logic, that are less likely to change) or go for deep testing: checking element types, classes and copy. When going for the second approach, tests become more brittle and need more maintenance: this is where snapshot testing comes into play.
 
-### Unit testing with snapshots
+## Unit testing with snapshots
 
 From the [Jest website](https://facebook.github.io/jest/docs/snapshot-testing.html):
 
@@ -95,7 +95,7 @@ Since the whole output is captured by the snapshot, it is good practice to eithe
 
 Snapshot testing gives you a completely different view of your component, showing all the generated tree, every time. It implicitly tests 100% of the generated markup, forcing you to accept or reject every small change.
 
-### It still feels like TDD
+## It still feels like TDD
 
 Snapshot testing differs from the usual TDD approach but, for UI testing, it's even better.
 
@@ -113,7 +113,7 @@ Now consider the following workflow:
 
 Although when using snapshot testing the concept of test-driven development is slightly different, this workflow ensures that you always have to review every small code change that reflects into a UI change and never implicitly accept an unwanted change.
 
-### Snapshots are not only for components
+## Snapshots are not only for components
 
 Snapshots are an invaluable tool when it comes to UI testing, but their use is not only limited to it: technically _every serialisable value can be captured_.  
 To make it useful, of course, the serialised value needs to retain its meaning so that it can be tested: there's not much value in serialising a function into `[Function]`.
@@ -123,7 +123,7 @@ A few examples follow, along with the generated snapshots:
 While it's definitely possible to test API responses and other structures using snapshots, I still feel that setting expectations beforehand for completely defined modules is a better choice.  
 Snapshots may be a nice addition when a module is stable, to prevent any unwanted change to happen, but I still see them as an addition, not a replacement for these cases.
 
-### More time spent on testing scenarios
+## More time spent on testing scenarios
 
 Since writing the actual expectation for a snapshot test is trivial, you can spend more time on creating more scenarios to make your component more robust: the following is just a small list.
 
@@ -136,13 +136,13 @@ Since writing the actual expectation for a snapshot test is trivial, you can spe
 Spending time on more scenarios means more resilient, robust code.  
 Also, since the actual assertions when using snapshots don't communicate the intended behaviour well, it becomes essential to write better test cases (more on this later).
 
-### The value of code reviews
+## The value of code reviews
 
 In addition to "spec" files, we now get to review snapshot files. These are important files that should be reviewed with care, as they represent the UI markup the gets generated and the reviewer should take extra time to ensure that that markup is correct.
 
 Since there are no specific expectations in code, test descriptions also become more important as they should clearly explain what that test is there for. Try to run the tests and read the output of the command line reporter: if it doesn't communicate the intentions of the tests and the expected behaviour, work on the descriptions and make sure the tests represent your best documentation.
 
-### Keeping an open mind
+## Keeping an open mind
 
 Snapshots introduce a new, different way of testing where we don't set expectations _beforehand_ but we get to accept/refuse the _outcome_ of a test.  
 It can feel uncomfortable at the beginning and it has to be used with an open mind, judging the results rather than the approach.

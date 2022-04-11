@@ -19,92 +19,94 @@ But it is not enough: we get all sort of useless files when we download our libr
 
 So, it is clear that Bower alone is not enough, so I put together a very simple yet powerful workflow to get all these points sorted.
 
-### Step 1: Bower
+## Step 1: Bower
 
 > A package manager for the web
 
 Use Bower as you always do, saving your dependencies into the `bower.json` file with the `--save` and `--save-dev` flags.
 
-### Step 2: `grunt-bowercopy`
+## Step 2: `grunt-bowercopy`
 
 > Consistently positions your dependencies where you want them in your repository
 
 Once you have all your dependencies in your `bower_components` folder, it is time to move them into specific folders (e.g. `/publis/js/vendor/` and `/publis/css/vendor/`): [grunt-bowercopy](https://github.com/timmywil/grunt-bowercopy) is the tool for you.
 
-Install the plugin:
-
-    npm install grunt-bowercopy --save-dev
+Install the plugin: `npm install grunt-bowercopy --save-dev`
 
 Now create a Grunt task for it. In your `grunt` folder (you are using [load-grunt-config](https://github.com/firstandthird/load-grunt-config), right?), create a new file: `bowercopy.js`.
 
 The following is just an example. Notice that you don't need to specify the `bower_components` folder in your configuration: grunt-bowercopy will read your `.bowerrc` and will prepend the right folder name for you.
 
-    'use strict';
+```javascript
+"use strict";
 
-    module.exports = function () {
-        return {
-            js: {
-                options: {
-                    destPrefix: 'public/js/vendor'
-                },
-                files: {
-                    'jquery.js': 'jquery/jquery.js',
-                    'require.js': 'requirejs/require.js'
-                }
-            },
-            sass: {
-                options: {
-                    destPrefix: 'public/css/vendor'
-                },
-                files: {
-                    'bootstrap': 'bootstrap-sass-official/bootstrap.js'
-                }
-            }
-        };
-    };
+module.exports = function () {
+  return {
+    js: {
+      options: {
+        destPrefix: "public/js/vendor",
+      },
+      files: {
+        "jquery.js": "jquery/jquery.js",
+        "require.js": "requirejs/require.js",
+      },
+    },
+    sass: {
+      options: {
+        destPrefix: "public/css/vendor",
+      },
+      files: {
+        bootstrap: "bootstrap-sass-official/bootstrap.js",
+      },
+    },
+  };
+};
+```
 
 If you now run `grunt bowercopy`, it will run `bower install` for you, then will copy the files in the right place: points 1, 2, 3 sorted!
 
-### Step 3: `grunt-contrib-clean`
+## Step 3: `grunt-contrib-clean`
 
 > Clean files and folders.
 
 Ok, now that we have everything in place, we want to make sure that our vendor folders don't grow, so we'll clean them every time we commit!
 
-Install the plugin:
-
-    npm install grunt-contrib-clean --save-dev
+Install the plugin: `npm install grunt-contrib-clean --save-dev`
 
 Now in your `grunt` folder, create a new file: `clean.js`.
 
-    'use strict';
+```javascript
+'use strict';
 
-    module.exports = function () {
-        return {
-    		{
-    			vendor: ['public/css/vendor/*', 'public/js/vendor/*']
-    		}
-    	};
-    };
+module.exports = function () {
+  return {
+    {
+      vendor: ['public/css/vendor/*', 'public/js/vendor/*']
+    }
+  };
+};
+```
 
 Running `grunt clean:vendor` will now delete everything beneath the two vendor folders: points 4 and 5 sorted!
 
-### Everything together
+## Everything together
 
 It's time to create an alias an put all this task at work, together!
 
 in your `grunt` folder, add to your `aliases.js`:
 
-    'use strict';
+```javascript
+'use strict';
 
-    module.exports = function () {
-        return {
-            {
-                vendor: ['clean:vendor', 'bowercopy'],
-                precommit: ['vendor']
-            }
-        };
-    };
+module.exports = function () {
+  return {
+    {
+      vendor: ['clean:vendor', 'bowercopy'],
+      precommit: ['vendor']
+    }
+  };
+};
+```
 
 That's it!  
 In your `precommit` task, when you lint your files, run your tests and coverage and so on, make sure to include the `vendor` task and your vendor folders will always be clean and lightweight!

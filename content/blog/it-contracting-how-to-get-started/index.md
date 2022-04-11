@@ -15,9 +15,7 @@ I won't touch on the reasons why becoming a contractor may or may not be the bes
 
 Getting ready to being able to sign a contract doesn't require a massive amount of time or effort, but there are a few things that need to be done correctly in order to set you up for success: following are the steps I wish I had followed when I decided to go contracting.
 
-(adsbygoogle = window.adsbygoogle || \[\]).push({});
-
-## ? Incorporating an LTD company
+## Incorporating an LTD company
 
 The first step to get into contracting is to open your own limited company.
 
@@ -50,7 +48,7 @@ Also, all official government mail (from Companies House, HMRC and Government Ga
 
 This is also useful if your rental property agreement doesn't allow business use.
 
-## ? Getting insured
+## Getting insured
 
 The second thing I needed to be able to sign my first contract was an indemnity insurance.
 
@@ -68,7 +66,7 @@ I decided to go for [Crunch](https://www.crunch.co.uk/what-we-do/small-business-
 
 With the LTD and insurance ready, and about £330 invested, I was able to sign my first contract and start working.
 
-## ? Finding an accountant
+## Finding an accountant
 
 As I was starting from scratch in the contracting world with pretty much no idea of what I was doing or what I had to do, finding an accountant was both an important and intimidating task.
 
@@ -87,7 +85,7 @@ The process of setting up the account with them was to go through the company de
 
 You'll have to fill a few forms and send them to HMRC to authorise Crunch to [deal with them on your behalf](https://www.gov.uk/appoint-tax-agent) for all your VAT and tax affairs.
 
-## ? Opening a bank account
+## Opening a bank account
 
 Although not necessarily needed before you sign your first contract, a bank account will be needed as soon as the first invoice is raised (your client/agency will need to know where to send the money).
 

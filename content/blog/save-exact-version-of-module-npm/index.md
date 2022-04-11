@@ -16,8 +16,10 @@ What I'd like it to do every time I install a dependency is:
 
 Typing this everytime is annoying, but with the use of `~/.npmrc` this behaviour can become a default:
 
-    $ npm config set save=true
-    $ npm config set save-exact=true
+```shell
+$ npm config set save=true
+$ npm config set save-exact=true
+```
 
 This will do the trick, and now every time you `npm install myModule`, it will install the exact version (no `^`) and save it in `package.json`.
 

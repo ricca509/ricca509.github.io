@@ -1,7 +1,7 @@
 ---
 title: "Dockerize your tests to run everywhere - Part II"
 date: "2018-12-01T22:53:00.000Z"
-description: "? Dockerize your tests to run everywhere - Part II"
+description: "Dockerize your tests to run everywhere - Part II"
 publication_status: published
 ---
 
@@ -16,64 +16,74 @@ There are a few improvements than can be made:
 - Stop the containers when the tests are completed
 - Report the right exit code to the CI when the Docker container ends its execution, in order to correctly mark the build
 
-### Prebuild the Docker image
+## Prebuild the Docker image
 
 This is what the [docker-compose.yml](https://github.com/ricca509/dockerize-webdriverio/blob/master/docker-compose.yml) file looked like in [part I](/dockerize-your-selenium-tests-to-run-everywhere/):
 
-    app.local:
-      build: .
-      command: npm test -- --host selenium
-      links:
-        - selenium
+```yaml
+app.local:
+  build: .
+  command: npm test -- --host selenium
+  links:
+    - selenium
+```
 
 I am changing the tests to point to a locally running application, so it needs to be running alongside the tests:
 
-    # package.json
+```json
+# package.json
 
-    ...
-    "scripts": {
-      "start: "node src/index.js",
-      "test": "wdio wdio.conf"
-    },
-    ...
+...
+"scripts": {
+  "start: "node src/index.js",
+  "test": "wdio wdio.conf"
+},
+...
+```
 
 To run it, another container can be added to the `docker-compose.yml` file:
 
-    app.local:
-      build: .
-      command: npm start
+```yaml
+app.local:
+  build: .
+  command: npm start
 
-    tests:
-      build: .
-      command: npm test -- --host selenium
-      ...
+tests:
+  build: .
+  command: npm test -- --host selenium
+  ...
+```
 
 Here I basically want to run two different commands from the same Docker image, but _it is being built twice now_.  
 The solution to this problem is to pre-build the image and then run commands from it. This also makes the `docker-compose` file cleaner.
 
 To do this I'm going to use a small shell scripts that builds the image and then starts `docker-compose`:
 
-    #!/usr/bin/env bash
+```shell
+#!/usr/bin/env bash
 
-    echo "Starting Docker build"
+echo "Starting Docker build"
 
-    DOCKER_IMAGE="integration-tests:${BUILD_COUNTER:-0}"
+DOCKER_IMAGE="integration-tests:${BUILD_COUNTER:-0}"
 
-    docker build --rm -t ${DOCKER_IMAGE} . && docker-compose up
+docker build --rm -t ${DOCKER_IMAGE} . && docker-compose up
+```
 
 1.  I am declaring what the name of the image will be (note that I'm assuming that a `BUILD_COUNTER` env variable is available, in case it's not it'll fallback to zero).
 2.  I'm building the image, tagging it with the name chosen in point 1. If the build is succesfull, the stack is started.
 
 With the image being built outside our Docker compose orchestration, the `docker-compose.yml` file can be updated:
 
-    app.local:
-      image: integration-tests:${BUILD_COUNTER:-0}
-      command: npm start
+```yaml
+app.local:
+  image: integration-tests:${BUILD_COUNTER:-0}
+  command: npm start
 
-    tests:
-      image: integration-tests:${BUILD_COUNTER:-0}
-      command: npm test -- --host selenium
-      ...
+tests:
+  image: integration-tests:${BUILD_COUNTER:-0}
+  command: npm test -- --host selenium
+  ...
+```
 
 _NOTE: The `${BUILDCOUNTER:-0}` syntax allows to refer to an environment variable (`BUILDCOUNTER`) and in case it is not defined, Docker will fall back to `0`. Find more information about environment variables interpolation on the [Docker website](https://docs.docker.com/compose/environment-variables/)._
 
@@ -81,23 +91,25 @@ Now two isolated containers are using the same image to run different commands.
 
 This is the `docker-compose.yml` file so far:
 
-    app.local:
-      image: integration-tests:${BUILD_COUNTER:-0}
-      command: npm start
-      expose:
-        - "3000"
+```yaml
+app.local:
+  image: integration-tests:${BUILD_COUNTER:-0}
+  command: npm start
+  expose:
+    - "3000"
 
-    tests:
-      image: integration-tests:${BUILD_COUNTER:-0}
-      command: npm test -- --host selenium
+tests:
+  image: integration-tests:${BUILD_COUNTER:-0}
+  command: npm test -- --host selenium
 
-    selenium:
-      image: selenium/standalone-chrome
-      expose:
-        - "4444"
-      log_driver: "none"
+selenium:
+  image: selenium/standalone-chrome
+  expose:
+    - "4444"
+  log_driver: "none"
+```
 
-### Specify dependencies between the containers
+## Specify dependencies between the containers
 
 Another subtle problem that can arise as the number of independent containers increases, is managing the dependencies among them: what if the tests start before the Selenium server is ready, or before the mock server is listening?  
 This may not happen every time, but it's a problem that can seriously undermine the stability of our tests, and in turn our confidence in them.
@@ -122,24 +134,26 @@ but also
 
 With this in mind, the configuration can be improved like this:
 
-    app.local:
-      image: integration-tests:${BUILD_COUNTER:-0}
-      command: npm start
-      expose:
-        - "3000"
+```yaml
+app.local:
+  image: integration-tests:${BUILD_COUNTER:-0}
+  command: npm start
+  expose:
+    - "3000"
 
-    tests:
-      image: integration-tests:${BUILD_COUNTER:-0}
-      command: npm test -- --host selenium
-      depends_on:
-        - selenium
-        - app.local
+tests:
+  image: integration-tests:${BUILD_COUNTER:-0}
+  command: npm test -- --host selenium
+  depends_on:
+    - selenium
+    - app.local
 
-    selenium:
-      image: selenium/standalone-chrome
-      expose:
-        - "4444"
-      log_driver: "none"
+selenium:
+  image: selenium/standalone-chrome
+  expose:
+    - "4444"
+  log_driver: "none"
+```
 
 Now the `tests` container will wait until `app.local` and `selenium` have been started.
 
@@ -149,17 +163,19 @@ This, though, doesn't mean that the services are ready and listening. The "readi
 
 With `wait-for-it` the `docker-compose.yml` becomes:
 
-    tests:
-        image: integration-tests:${BUILD_COUNTER:-0}
-        command: ["./wait-for-it.sh", "selenium:4444", "--", "npm", "test", "--", "--hostname", "selenium"]
-        depends_on:
-          - selenium
-          - app.local
+```yaml
+tests:
+    image: integration-tests:${BUILD_COUNTER:-0}
+    command: ["./wait-for-it.sh", "selenium:4444", "--", "npm", "test", "--", "--hostname", "selenium"]
+    depends_on:
+      - selenium
+      - app.local
+```
 
 _**Note**: This setup is only waiting for selenium to be "ready" as it's the slowest of the two services.  
 Waiting on a condition like the above for multiple services (for example selenium on port 4444 and app.local on port 3000) is a problem for which I haven't found an elegant solution yet, so there's a tradeoff here (although a possible workaround can be found on [github](https://github.com/vishnubob/wait-for-it/issues/2#issuecomment-193334505))._
 
-### Choose a specific browser/browser version
+## Choose a specific browser/browser version
 
 Usually, tests need to target a specific browser version/make.
 
@@ -177,30 +193,34 @@ With the grid, we need at least one node (browser) that will connect to it and e
 
 The configuration for Selenium looks like this at the moment:
 
-    selenium:
-      image: selenium/standalone-chrome
-      expose:
-        - "4444"
-      log_driver: "none"
+```yaml
+selenium:
+  image: selenium/standalone-chrome
+  expose:
+    - "4444"
+  log_driver: "none"
+```
 
 The new configuration, a bit more verbose:
 
-      selenium-hub:
-        image: selenium/hub:3.141.59-neon
-        container_name: selenium-hub
-        expose:
-          - "4444"
-      chrome:
-        image: selenium/node-chrome:3.141.59-neon
-        volumes:
-          - /dev/shm:/dev/shm
-        depends_on:
-          - selenium-hub
-          - app.local
-        environment:
-          - HUB_HOST=selenium-hub
-          - HUB_PORT=4444
-          - CHROME_VERSION=62.0.3202.94
+```yaml
+selenium-hub:
+  image: selenium/hub:3.141.59-neon
+  container_name: selenium-hub
+  expose:
+    - "4444"
+chrome:
+  image: selenium/node-chrome:3.141.59-neon
+  volumes:
+    - /dev/shm:/dev/shm
+  depends_on:
+    - selenium-hub
+    - app.local
+  environment:
+    - HUB_HOST=selenium-hub
+    - HUB_PORT=4444
+    - CHROME_VERSION=62.0.3202.94
+```
 
 The `selenium-hub` container will accept connections from the nodes.  
 The `chrome` container depends on `selenium-hub`.  
@@ -209,43 +229,45 @@ The grid's hostname and port can be specified through environment variables (`HU
 
 The new `docker-compose` file, including all the improvements so far:
 
-    version: "3"
-    services:
-      app.local:
-        image: integration-tests:${BUILD_COUNTER:-0}
-        command: npm start
-        expose:
-          - "3000"
+```yaml
+version: "3"
+services:
+app.local:
+  image: integration-tests:${BUILD_COUNTER:-0}
+  command: npm start
+  expose:
+    - "3000"
 
-      tests:
-        image: integration-tests:${BUILD_COUNTER:-0}
-        command: ["./wait-for-it.sh", "selenium-hub:4444", "--", "npm", "test", "--", "--hostname", "selenium-hub"]
-        depends_on:
-          - selenium-hub
-          - app.local
+tests:
+  image: integration-tests:${BUILD_COUNTER:-0}
+  command: ["./wait-for-it.sh", "selenium-hub:4444", "--", "npm", "test", "--", "--hostname", "selenium-hub"]
+  depends_on:
+    - selenium-hub
+    - app.local
 
-      selenium-hub:
-        image: selenium/hub:3.141.59-neon
-        container_name: selenium-hub
-        expose:
-          - "4444"
+selenium-hub:
+  image: selenium/hub:3.141.59-neon
+  container_name: selenium-hub
+  expose:
+    - "4444"
 
-      chrome:
-        image: selenium/node-chrome:3.141.59-neon
-        volumes:
-          - /dev/shm:/dev/shm
-        depends_on:
-          - selenium-hub
-          - app.local
-        environment:
-          - HUB_HOST=selenium-hub
-          - HUB_PORT=4444
-          - CHROME_VERSION=google-chrome-stable
+chrome:
+  image: selenium/node-chrome:3.141.59-neon
+  volumes:
+    - /dev/shm:/dev/shm
+  depends_on:
+    - selenium-hub
+    - app.local
+  environment:
+    - HUB_HOST=selenium-hub
+    - HUB_PORT=4444
+    - CHROME_VERSION=google-chrome-stable
+```
 
 _**Note**: I added versions to the docker images to make sure new releases don't break the example :)  
 Also note that the name `app.local` was chosen because Chrome tends to redirect non-local domains to https. To prevent this from happening I added the `.local` domain to the dns name._
 
-### Stop the container when the tests are completed and report the right exit code to CI
+## Stop the container when the tests are completed and report the right exit code to CI
 
 The current configuration starts up all the containers in order, runs the tests with a specific browser, but never stops the container because `selenium-hub` and `app.local` are long running processes that listen on a port forever.  
 Regardless of when the tests are completed, these services will keep listening and never return: **the CI process will therefore never complete**.
@@ -259,21 +281,23 @@ All the containers need to be stopped when the tests are completed, the exit cod
 
 The bash script can be now modified to include these two options:
 
-    #!/usr/bin/env bash
+```shell
+#!/usr/bin/env bash
 
-    echo "Starting Docker build"
+echo "Starting Docker build"
 
-    DOCKER_IMAGE="integration-tests:${BUILD_COUNTER:-0}"
+DOCKER_IMAGE="integration-tests:${BUILD_COUNTER:-0}"
 
-    echo DOCKER_IMAGE: ${DOCKER_IMAGE}
+echo DOCKER_IMAGE: ${DOCKER_IMAGE}
 
-    docker build --rm -t ${DOCKER_IMAGE} .
-    docker-compose up --exit-code-from tests
-    docker-compose down
+docker build --rm -t ${DOCKER_IMAGE} .
+docker-compose up --exit-code-from tests
+docker-compose down
+```
 
 _**Note**: I added `docker-compose down` to cleanup after everything's done._
 
-### Conclusions
+## Conclusions
 
 Making the tests execution more reliable and flexible helps a lot with achieving that confidence that is so needed when it comes to functional/e2e tests being used as gatekeepers to production.
 

@@ -5,7 +5,7 @@ description: "Chrome: Allow Cross-domain requests [OSX and Win]"
 publication_status: published
 ---
 
-#### Problem
+## Problem
 
 During the development process of an application, we are often required to call services from domains different to the one our application is being served from, using AJAX requests.
 
@@ -13,7 +13,7 @@ This is not possible, as outlined on [Wikipedia](https://en.wikipedia.org/wiki/S
 
 > In computing, the same-origin policy is an important concept in the web application security model. Under the policy, a web browser permits scripts contained in a first web page to access data in a second web page, but only if both web pages have the same origin. An origin is defined as a combination of URI scheme, hostname, and port number.
 
-#### Solution
+## Solution
 
 In that case, you need to instruct your browser to "disable" the same-origin-policy check.
 

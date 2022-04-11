@@ -1,7 +1,7 @@
 ---
 title: "Dockerize your tests to run everywhere"
 date: "2016-09-05T09:30:00.000Z"
-description: "? Dockerize your tests to run everywhere"
+description: "Dockerize your tests to run everywhere"
 publication_status: published
 ---
 
@@ -26,51 +26,55 @@ It is such a clean way of dealing with (or not dealing with, even better) OS com
 
 Let's apply it to a simple test case: running the webdriverIO example.
 
-    const assert = require('assert');
+```javascript
+const assert = require('assert');
 
-    describe('webdriver.io page', () => {
-      it('should have the right title', () => {
-        browser.url('http://webdriver.io');
-        const title = browser.getTitle();
-        assert.equal(title, 'WebdriverIO · Next-gen WebDriver test framework for Node.js');
-      });
-    });
+describe('webdriver.io page', () => {
+  it('should have the right title', () => {
+    browser.url('http://webdriver.io');
+    const title = browser.getTitle();
+    assert.equal(title, 'WebdriverIO · Next-gen WebDriver test framework for Node.js');
+  });
+});
+```
 
 Of course, our application will also have its own `package.json` with all the dependencies listed there and a `wdio.conf` with all the WebdriverIO configuration, but hey, we all know that!
 
-    ├── Dockerfile
-    ├── README.md
-    ├── docker-compose.yml
-    ├── package.json
-    ├── test
-    │   └── index.spec.js
-    └── wdio.conf.js
+```
+├── Dockerfile
+├── README.md
+├── docker-compose.yml
+├── package.json
+├── test
+│   └── index.spec.js
+└── wdio.conf.js
+```
 
 Our package.json defines a test script like this: `"test: wdio wdio.conf"`.
 
 To run the tests we need to install the npm dependencies and run the npm command:
 
-    $ npm i
-    $ npm test
+```shell
+$ npm i
+$ npm test
+```
 
 ### Building the app
 
 No need to install node.js, no need to install npm. Just Docker and a Dockerfile, like this:
 
-    FROM node:8
-    ADD . /app
-    WORKDIR /app
-    RUN npm i
+```docker
+FROM node:8
+ADD . /app
+WORKDIR /app
+RUN npm i
+```
 
-This is just a definition of what we want, a recipe. To build an image from it, we need some Docker magic ([docker build](https://docs.docker.com/v1.8/reference/commandline/build/)):
-
-    docker build -t webdriverapp .
+This is just a definition of what we want, a recipe. To build an image from it, we need some Docker magic ([docker build](https://docs.docker.com/v1.8/reference/commandline/build/)): `docker build -t webdriverapp .`
 
 In plain English: "Build the Dockerfile in this folder and name the result 'webdriverapp'". The result of a build is an image.
 
-To run the image, and create a container, we need some more Docker magic ([docker run](https://docs.docker.com/engine/reference/run/)):
-
-    docker run --rm -ti webdriverapp npm test
+To run the image, and create a container, we need some more Docker magic ([docker run](https://docs.docker.com/engine/reference/run/)): `docker run --rm -ti webdriverapp npm test`
 
 In plain English: "Run the command `npm test` from the image named "webdriverapp" in interactive mode (`-ti`) and remove the container afterwards (`--rm`).
 
@@ -82,7 +86,7 @@ We definitely need more than just a containerized version of our app: we need a 
 
 [Docker Hub](https://hub.docker.com/) is like npm for Docker, you can find all sorts of pre-built images there. Turns out, the Selenium guys published a dockerized version of a standalone Selenium, [selenium/standalone-chrome](https://hub.docker.com/r/selenium/standalone-chrome/). Running it with docker will create a container with a selenium server listening on the default port 4444 (always remember that when you run a container that listens on a port, you have to map that port on your host).
 
-    docker run -p 4444:4444 selenium/standalone-chrome
+`docker run -p 4444:4444 selenium/standalone-chrome`
 
 **What we want now is to compose an architecture where the Selenium server is listening and our app is started and connects to it.**
 
@@ -90,17 +94,19 @@ We definitely need more than just a containerized version of our app: we need a 
 It lets us create a file (`docker-compose.yml`) where we define our stack and how different applications interact with each other.  
 Easier done than said:
 
-    app:
-      build: .
-      command: npm test -- --host selenium
-      links:
-        - selenium
+```dockerfile
+app:
+  build: .
+  command: npm test -- --host selenium
+  links:
+    - selenium
 
-    selenium:
-      image: selenium/standalone-chrome
-      expose:
-        - "4444"
-      log_driver: "none"
+selenium:
+  image: selenium/standalone-chrome
+  expose:
+    - "4444"
+  log_driver: "none"
+  ```
 
 The file defines two applications: `app` and `selenium`:
 
@@ -111,13 +117,9 @@ The file defines two applications: `app` and `selenium`:
 
 _Note that docker-compose creates a host for every application that exposes a port, and the hostname is the application name: `selenium` in this case._ This is why we pass the option `--host selenium` to WebdriverIO: to tell it where the server is listening.
 
-Time to build the stack:
+Time to build the stack: `docker-compose build .`
 
-    docker-compose build .
-
-And run it:
-
-    docker-compose up .
+And run it: `docker-compose up .`
 
 Done!
 

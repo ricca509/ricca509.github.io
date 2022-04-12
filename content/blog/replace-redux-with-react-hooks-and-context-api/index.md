@@ -64,8 +64,6 @@ The part using the `Context.Consumer` looks a bit more complex than I'd like, bu
 
 Now that we have a way to "inject" data into an app, let's see how we can leverage hooks to build the additional features required to replace Redux.
 
-(adsbygoogle = window.adsbygoogle || \[\]).push({});
-
 ## Hooks
 
 Hooks were introduced in React 16.8.0 to tackle different classes of problems:
@@ -75,7 +73,7 @@ Hooks were introduced in React 16.8.0 to tackle different classes of problems:
 - Making more use of [ahead-of-time compilation](https://en.wikipedia.org/wiki/Ahead-of-time_compilation) to create optimised code (and classes can encourage patterns that make it difficult)
 - Probably other reasons, which I am not aware of 😇
 
-Among all the [hooks](https://reactjs.org/docs/hooks-overview.html) that come with React, `[useContext](https://reactjs.org/docs/hooks-reference.html#usecontext)` and `[useReducer](https://reactjs.org/docs/hooks-reference.html#usereducer)` are the ones that can help build a Redux-like library in React.
+Among all the [hooks](https://reactjs.org/docs/hooks-overview.html) that come with React, [useContext](https://reactjs.org/docs/hooks-reference.html#usecontext) and [useReducer](https://reactjs.org/docs/hooks-reference.html#usereducer) are the ones that can help build a Redux-like library in React.
 
 **useContext**
 
@@ -201,6 +199,33 @@ export const useStore = (reducer, initialState = {}) => {
 ```
 
 The following code puts it all together in the same file to make it easier to read and understand:
+
+```javascript
+import { createElement, createContext, useReducer, useContext } from "react";
+
+const Context = createContext();
+export const ContextProvider = Context.Provider;
+
+export const useStore = (reducer, initialState = {}) => {
+  const [state, dispatch] = useReducer(reducer, initialState);
+
+  const getState = () => state;
+
+  return { getState, dispatch };
+};
+
+export const connect = (
+  mapStateToProps = () => ({}),
+  mapDispatchToProps = () => ({})
+) => Component => ownProps => {
+  const { getState, dispatch } = useContext(Context);
+  const stateProps = mapStateToProps(getState(), ownProps);
+  const dispatchProps = mapDispatchToProps(dispatch, ownProps);
+  const props = { ...ownProps, ...stateProps, ...dispatchProps, dispatch };
+
+  return createElement(Component, props, null);
+};
+```
 
 ## A working example
 

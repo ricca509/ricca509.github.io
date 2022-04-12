@@ -686,6 +686,7 @@ export type Frontmatter = {
   title?: Maybe<Scalars['String']>;
   description?: Maybe<Scalars['String']>;
   date?: Maybe<Scalars['Date']>;
+  publication_status?: Maybe<Scalars['String']>;
   company?: Maybe<Scalars['String']>;
   role?: Maybe<Scalars['String']>;
   from_date?: Maybe<Scalars['Date']>;
@@ -693,7 +694,6 @@ export type Frontmatter = {
   location?: Maybe<Scalars['String']>;
   technologies?: Maybe<Array<Maybe<Scalars['String']>>>;
   order?: Maybe<Scalars['Int']>;
-  publication_status?: Maybe<Scalars['String']>;
   link?: Maybe<Scalars['String']>;
 };
 
@@ -1077,6 +1077,7 @@ export type FrontmatterFilterInput = {
   title?: InputMaybe<StringQueryOperatorInput>;
   description?: InputMaybe<StringQueryOperatorInput>;
   date?: InputMaybe<DateQueryOperatorInput>;
+  publication_status?: InputMaybe<StringQueryOperatorInput>;
   company?: InputMaybe<StringQueryOperatorInput>;
   role?: InputMaybe<StringQueryOperatorInput>;
   from_date?: InputMaybe<DateQueryOperatorInput>;
@@ -1084,7 +1085,6 @@ export type FrontmatterFilterInput = {
   location?: InputMaybe<StringQueryOperatorInput>;
   technologies?: InputMaybe<StringQueryOperatorInput>;
   order?: InputMaybe<IntQueryOperatorInput>;
-  publication_status?: InputMaybe<StringQueryOperatorInput>;
   link?: InputMaybe<StringQueryOperatorInput>;
 };
 
@@ -1300,6 +1300,7 @@ export type FileFieldsEnum =
   | 'childrenMarkdownRemark___frontmatter___title'
   | 'childrenMarkdownRemark___frontmatter___description'
   | 'childrenMarkdownRemark___frontmatter___date'
+  | 'childrenMarkdownRemark___frontmatter___publication_status'
   | 'childrenMarkdownRemark___frontmatter___company'
   | 'childrenMarkdownRemark___frontmatter___role'
   | 'childrenMarkdownRemark___frontmatter___from_date'
@@ -1307,7 +1308,6 @@ export type FileFieldsEnum =
   | 'childrenMarkdownRemark___frontmatter___location'
   | 'childrenMarkdownRemark___frontmatter___technologies'
   | 'childrenMarkdownRemark___frontmatter___order'
-  | 'childrenMarkdownRemark___frontmatter___publication_status'
   | 'childrenMarkdownRemark___frontmatter___link'
   | 'childrenMarkdownRemark___fields___slug'
   | 'childrenMarkdownRemark___excerpt'
@@ -1366,6 +1366,7 @@ export type FileFieldsEnum =
   | 'childMarkdownRemark___frontmatter___title'
   | 'childMarkdownRemark___frontmatter___description'
   | 'childMarkdownRemark___frontmatter___date'
+  | 'childMarkdownRemark___frontmatter___publication_status'
   | 'childMarkdownRemark___frontmatter___company'
   | 'childMarkdownRemark___frontmatter___role'
   | 'childMarkdownRemark___frontmatter___from_date'
@@ -1373,7 +1374,6 @@ export type FileFieldsEnum =
   | 'childMarkdownRemark___frontmatter___location'
   | 'childMarkdownRemark___frontmatter___technologies'
   | 'childMarkdownRemark___frontmatter___order'
-  | 'childMarkdownRemark___frontmatter___publication_status'
   | 'childMarkdownRemark___frontmatter___link'
   | 'childMarkdownRemark___fields___slug'
   | 'childMarkdownRemark___excerpt'
@@ -3111,6 +3111,7 @@ export type MarkdownRemarkFieldsEnum =
   | 'frontmatter___title'
   | 'frontmatter___description'
   | 'frontmatter___date'
+  | 'frontmatter___publication_status'
   | 'frontmatter___company'
   | 'frontmatter___role'
   | 'frontmatter___from_date'
@@ -3118,7 +3119,6 @@ export type MarkdownRemarkFieldsEnum =
   | 'frontmatter___location'
   | 'frontmatter___technologies'
   | 'frontmatter___order'
-  | 'frontmatter___publication_status'
   | 'frontmatter___link'
   | 'fields___slug'
   | 'excerpt'

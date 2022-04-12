@@ -27,11 +27,9 @@ _While having remote teams usually brings down the cost considerably, it comes w
 
 Distributed teams are the subject of active [research](https://pdfs.semanticscholar.org/e3b9/57e8c1f6a286ce3b8876c12701a073a8f0c5.pdf) that questions the extent to which face-to-face and in-person communication is necessary for distributed teams to function effectively and why: empirical tests shows that the answer may depend on which team processes and outcomes one is exploring and how distance is measured (Geographical? Cultural? Time zone?).
 
-(adsbygoogle = window.adsbygoogle || \[\]).push({});
-
 Essentially, the challenges of distributed teams fall in one of the following categories: _degree of virtuality, degree of distribution, history of the team, degree of (im)permanence, degree of task complexity_. Following are a few points that I found helpful in my experience with working with multinational multicultural (MNMC) distributed teams and that directly or indirectly address the aforementioned categories.
 
-### Listen, listen, listen. Then act
+## Listen, listen, listen. Then act
 
 Communication in a co-located team happens as a result of people sharing the same room at the same time: a side effect of sitting together is feeling more comfortable in sharing ideas and raising issues.
 
@@ -41,7 +39,7 @@ The key point in this scenario is to make everyone feel empowered to report prob
 
 If the microphone is not working during a meeting and it is being reported by the people on the call, stop and fix it, change it, or change room. Do not resume the discussion until the problem is fixed: losing input from a whole part of the team is much worse than stopping the meeting for a few minutes (or even moving it to a different time).
 
-### Choose your communication tools wisely
+## Choose your communication tools wisely
 
 The first step in setting up to work within a distributed environment is to have the right tools in place.
 
@@ -66,13 +64,13 @@ If your employees are not co-located, then treat every meeting as remote and str
 - _frequent communication_: frequent, spontaneous communications mitigates the effect of distribution on both interpersonal and task conflict and is also linked to highest trust
 - _face-to-face communication_: perceived as critical early on in a team’s development and seen as a behaviour that will enhance MNMC team effectiveness (although as time goes on and team members become more familiar with each other, non face-to-face communication don't seem to hinder team's dynamics)
 
-### Communicate early, communicate often
+## Communicate early, communicate often
 
 With distributed teams, it is important to learn the value of **over-communicating**: when decisions are made, they need to be communicated immediately to **everyone**, along with the reason behind the decision. It's important that everyone have a vision of what is going on in the organisation and the role they can play in making that vision become a reality.
 
 The risk of teams around the globe working on outdated/wrong information is too high to delay the communication process: make sure everyone always have the latest updates and can adjust their job based on that.
 
-### Hire a developer advocate
+## Hire a developer advocate
 
 A developer advocate is someone who makes other developers' lives easier: too often developers are busy shipping feature and can't spend time improving their development experience, that's when a developer advocate comes in.
 
@@ -93,13 +91,13 @@ The above points become much more important with distributed teams: given that f
 
 In general, embrace simplicity and automate whatever possible: the simpler your projects are and the easier it is to work with them, the more productive developers will be. You want to keep the [cognitive load](https://en.wikipedia.org/wiki/Cognitive_load) as low as possible: co-locate documentation with code, create standards for all teams to follow, enforce and document them and let everyone know, organise workshops and "sell" these concepts to everyone.
 
-### Clearly define and document roles
+## Clearly define and document roles
 
 You can expect people from different teams to have never worked together before so it is important that everyone in every teams know exactly the complete hierarchy with names, photos and ways of getting in touch. This way everyone will always know who to get in touch with depending on the issue they're having or the information they're seeking.
 
 This diagram would also outline a clear \***\*escalation path\*\*** if an issue arises.
 
-### Write everything down, always
+## Write everything down, always
 
 This is a rule that everyone should follow, whatever the team nature, but it becomes vital when people are not co-located.
 
@@ -107,7 +105,7 @@ Important discussions don't (can't) always happen during conference calls, decis
 
 Use the comments, update stories/cards often and use your product management tool as source of truth for everyone.
 
-### Enjoy the pleasures and pains of time zone differences
+## Enjoy the pleasures and pains of time zone differences
 
 Multinational multicultural distributed teams present opportunities and challenges to organisations: having teams working in different time zones is usually seen as a problem because people have a hard time organising meetings where everyone can attend and issues are resolved slowly because of lack of quick communication.
 
@@ -130,7 +128,7 @@ To remove all possible issues and blockers, make sure you:
 - Alternate time zones: if you need to have meetings at inconvenient times, make sure you make it "inconvenient" for a different team each month
 - have people from different teams having informal 1:1 once a week: this helps building relationships and trust, making it easier in the future for everyone to communicate issues and blockers without fear. Make a rule to not cancel them because of a "more" important meeting
 
-### Respect and embrace cultural differences
+## Respect and embrace cultural differences
 
 > Globally distributed teams will be effective vehicles for knowledge sharing in an organisation as long as individuals learn the cultural logic of others’ divergent beliefs. If not, culture is constructed as something which divides individuals.
 
@@ -148,9 +146,7 @@ Photo by [Anthony DELANOIX](https://unsplash.com/@anthonydelanoix) / [Unsplash](
 
 If you're interested in finding out more, [Managing Cultural Differences in Your Distributed Team](https://www.infoq.com/articles/culture-distributed-team/) is a good read.
 
-(adsbygoogle = window.adsbygoogle || \[\]).push({});
-
-### Experience their culture in person whenever you can, aka invest in airfare
+## Experience their culture in person whenever you can, aka invest in airfare
 
 There is something unique in meeting someone in person and breaking that electronic barrier.
 
@@ -160,7 +156,7 @@ The simple act of tapping someone on the shoulder [releases oxytocin](https://ww
 
 Make sure to budget for travel and you'll experience an increased productivity from day one.
 
-### It's not all about work
+## It's not all about work
 
 _Thanks to [Hugo Raymond](https://www.linkedin.com/in/hugoraymond/) for the help on this paragraph._
 
@@ -172,7 +168,7 @@ Another way, that can work every day and build lasting rapports is to use your c
 
 To some this may seem like "organised fun" but you only need a few passionate champions for those who are interested in the social part, to engage, for it to then become a success.
 
-### If you read until here, may as well watch this!
+## If you read until here, may as well watch this!
 
 Jilanna Wilson keeps the love light burning for a team that is spread across 5 continents and 8 time zones and shares some of her knowledge in this video from the DesignOps Summit 2019:
 

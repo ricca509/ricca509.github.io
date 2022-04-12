@@ -4,7 +4,10 @@ import { Layout } from "@Components/Layout/Layout";
 import Seo from "@Components/Seo/Seo";
 import { NotFoundPageQuery } from "../../graphql-types";
 
-const NotFoundPage: React.FC<PageProps<NotFoundPageQuery>> = ({ data, location }) => {
+const NotFoundPage: React.FC<PageProps<NotFoundPageQuery>> = ({
+  data,
+  location,
+}) => {
   const siteTitle = data?.site?.siteMetadata?.title;
 
   return (

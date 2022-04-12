@@ -14,7 +14,7 @@ export const OtherSectionsList: React.FC<OtherSectionsListProps> = ({
     <React.Fragment>
       {sectionList.map(({ node }) => {
         return (
-          <GenericSection key={node.id} title={node?.frontmatter?.title || ''}>
+          <GenericSection key={node.id} title={node?.frontmatter?.title || ""}>
             {node.html}
           </GenericSection>
         );

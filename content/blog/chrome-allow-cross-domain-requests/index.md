@@ -22,6 +22,18 @@ Two possible ways:
 - install a Chrome extension: [Allow-Control-Allow-Origin: \*](https://chrome.google.com/webstore/detail/allow-control-allow-origi/nlfbmbojpeacfghkpbjhddihlkkiljbi?hl=en)
 - start a new instance of Chrome with the right flags
 
+```shell
+REM Windows
+
+start chrome --disable-web-security --user-data-dir="C:/temp/chrome_dev"
+```
+
+```shell
+// OSX
+
+open -na Google\ Chrome --args --disable-web-security --user-data-dir="/tmp/chrome_dev"
+```
+
 **Note** From Chrome version 22+ you will get an error message that says:
 
     You are using an unsupported command-line flag: --disable-web-security. Stability and security will suffer.

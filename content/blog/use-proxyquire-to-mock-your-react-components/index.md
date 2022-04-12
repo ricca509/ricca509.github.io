@@ -14,6 +14,32 @@ How do we handle those dependencies to keep our unit tests free from dependencie
 
 ## A HomePage component example
 
+```javascript
+import React from 'react';
+import Header from './Header';
+import Sidebar from './Sidebar';
+import Footer from './Footer';
+import { Oops } from './Oops'; // Importing a non-default export
+
+export default function HomePage({ data, error }) {
+  let component = (
+    <div>
+      <Header links={data.headerLinks} />
+      <Sidebar />
+      <Footer links={data.footerLinks} />
+    </div>
+  );
+  
+  if (error) {
+    component = (
+      <Oops message={error.message} />
+    );
+  }
+  
+  return component;
+}
+```
+
 The example renders `Header`, `Footer` and `Sidebar` if there is no error, `Oops` otherwise.
 
 ### Testing the HomePage component
@@ -81,6 +107,62 @@ This test is importing the real `Header`, `Footer`, `Sidebar` and `Oops` compone
 
 This is how it comes to our rescue:
 
+```javascript
+import React from 'react';
+import { shallow } from 'enzyme';
+import proxyquire from 'proxyquire';
+
+proxyquire.noCallThru();
+
+const Header = () => <div></div>; // stub component
+const Sidebar = () => <div></div>; // stub component
+const Footer = () => <div></div>; // stub component
+const Oops = () => <div></div>; // stub component
+
+// Require the component to test (HomePage) through proxyquire
+// and pass it the stubbed dependencies
+const HomePage = proxyquire('../components/HomePage', {
+  './Header': Header,
+  './Sidebar': Sidebar,
+  './Footer': Footer,
+  './Oops': { Oops }
+}).default;
+
+describe('The HomePage component', function () {
+  describe('when there is no error', function () {
+    it('should render the page', function () {
+      const props = {
+        data: {
+          links: ''
+        }
+      };
+      const output = shallow(<HomePage {...props} />);
+      
+      expect(output.find(Header)).to.have.lengthOf(1);
+      expect(output.find(Sidebar)).to.have.lengthOf(1);
+      expect(output.find(Footer)).to.have.lengthOf(1);
+      expect(output.find(Oops)).to.have.lengthOf(0);
+    });
+  });
+  
+  describe('when there is an error', function () {
+    it('should render the Oops', function () {
+      const props = {
+        error: {
+          message: 'blown up'
+        }
+      };
+      const output = shallow(<HomePage {...props} />);
+      
+      expect(output.find(Header)).to.have.lengthOf(0);
+      expect(output.find(Sidebar)).to.have.lengthOf(0);
+      expect(output.find(Footer)).to.have.lengthOf(0);
+      expect(output.find(Oops)).to.have.lengthOf(1);
+    });
+  });
+});
+```
+
 **Code analysis:**
 
 - On line 5:
@@ -106,6 +188,22 @@ import { Oops } from './Oops';
 ```
 
 The first line is importing a _default_ export (`export default function () { ··· }`), the second is importing a _named_ export (`export function Footer () {...}`);
+
+```javascript
+// math.js
+export function sum(a, b) {
+  return a + b;
+}
+
+export default function sub(a, b) {
+  return a - b;
+}
+
+// main.js
+
+import sub from './math';
+import { sum } from './math'; // or const sum = require('./math').sum;
+```
 
 Given the code above, the result of the exports is an object that looks like this:
 

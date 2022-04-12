@@ -7,7 +7,11 @@ interface SideProjectProps extends ComponentProps {
   link: string;
 }
 
-export const SideProject: React.FC<SideProjectProps> = ({ title, link, children }) => {
+export const SideProject: React.FC<SideProjectProps> = ({
+  title,
+  link,
+  children,
+}) => {
   return (
     <li>
       <em>

@@ -90,7 +90,7 @@ export const Seo: React.FC<SeoProps> = ({
         crossOrigin="anonymous"
       />
       <link
-        href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400&family=Merriweather:wght@300&family=Poppins:wght@300&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;700&family=Merriweather:wght@300&family=Poppins:wght@300;400&display=swap"
         rel="stylesheet"
       />
     </Helmet>

@@ -17,9 +17,7 @@ const BlogIndex: React.FC<PageProps<BlogIndexQuery>> = ({ data, location }) => {
       <Layout location={location} title={siteTitle}>
         <Seo title="Blog" />
         <Bio />
-        <p>
-          Oops, No blog posts found!
-        </p>
+        <p>Oops, No blog posts found!</p>
       </Layout>
     );
   }
@@ -32,7 +30,9 @@ const BlogIndex: React.FC<PageProps<BlogIndexQuery>> = ({ data, location }) => {
         {posts.map((post) => {
           const title = post?.frontmatter?.title || post?.fields?.slug;
 
-          return <Post post={post} title={title || ""} key={post.fields?.slug} />;
+          return (
+            <Post post={post} title={title || ""} key={post.fields?.slug} />
+          );
         })}
       </ol>
     </Layout>

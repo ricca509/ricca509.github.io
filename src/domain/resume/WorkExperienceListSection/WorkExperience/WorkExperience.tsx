@@ -1,6 +1,6 @@
 import React from "react";
-import {Collapsible} from "@Components/Collapsible/Collapsible";
-import {ExpandButton} from "@Components/ExpandButton/ExpandButton";
+import { Collapsible } from "@Components/Collapsible/Collapsible";
+import { ExpandButton } from "@Components/ExpandButton/ExpandButton";
 import * as style from "./WorkExperience.module.css";
 import { ComponentProps } from "@Typings/component";
 

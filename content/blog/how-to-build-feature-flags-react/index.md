@@ -11,7 +11,7 @@ _Now, this can become tricky when you have to add new, big features to an applic
 
 _How can we build (and leverage) [feature flags (or feature toggles)](https://martinfowler.com/articles/feature-toggles.html) to improve both the development/release workflow and the user experience?_
 
-# The case for releasing features "in the dark"
+## The case for releasing features "in the dark"
 
 Suppose you have a successful, high traffic blog built in React and you want to add a list of featured posts at the top. The first step would be to break this feature or epic down into smaller stories with your team.
 
@@ -54,7 +54,7 @@ const HomePage = ({ features }) => {
 So the idea behind feature flags is to ship code "in the dark", without the user seeing it.  
 This way you can keep your big feature within your normal development/delivery flow, just hidden from the final users.
 
-# React implementation
+## React implementation
 
 I want to create a small component to wrap content with so that I can decide whether or not to render it based on the value of a feature flag.
 
@@ -126,7 +126,7 @@ const App = () => {
 };
 ```
 
-# Adding MVT (MultiVariate Testing) support
+## Adding MVT (MultiVariate Testing) support
 
 The use case for MVT is when you want to try out different variations of the same feature (e.g. trying out three different colors for call to action buttons) to see which one is the best performer.
 
@@ -148,9 +148,7 @@ export const Feature = ({ name, variation, children }) => {
 
 In the code above, if we don't receive a `variation`, we treat the flag as a `Boolean` otherwise we only render the correct variation.
 
-# Demo
-
-# Thoughts on deployment environments
+## Thoughts on deployment environments
 
 Many projects are deployed through a series of environments (dev, staging, pre-prod, _add your name here_) before being released to production.
 
@@ -158,7 +156,7 @@ This can allow for additional levels of testing, usually E2E tests, to be carrie
 
 This way you have the confidence of having well-tested features and the ability to keep them hidden until it's release time.
 
-# Feature flags and technical debt
+## Feature flags and technical debt
 
 Technical debt is a reality in every application we build. It can be kept under control, but real-life scenarios call for technical debt to be created in order to deliver faster in some periods or accommodate for temporary business requirements.
 

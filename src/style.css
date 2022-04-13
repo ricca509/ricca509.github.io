@@ -50,6 +50,21 @@ a.anchor:hover {
   background-color: transparent;
 }
 
+blockquote {
+  padding: 0 1em;
+  color: var(--grey-3);
+  border-left: 0.25em solid var(--grey-5);
+  margin: 0;
+}
+
+hr {
+  height: 0.25em;
+  padding: 0;
+  margin: 24px 0;
+  background-color: var(--grey-5);
+  border: 0;
+}
+
 /* Prims overrides */
 
 code[class*="language-"], pre[class*="language-"] {

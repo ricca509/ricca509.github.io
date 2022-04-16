@@ -20,10 +20,8 @@ export const Layout: React.FC<LayoutProps> = ({
   return (
     <div className={["ml-3 mr-3 text-base md:m-auto md:max-w-2xl lg:max-w-4xl", className].join(" ")}>
       <Header showName={showName} />
-      <div>
-        <main>{children}</main>
-        <Footer />
-      </div>
+      <main>{children}</main>
+      <Footer />
     </div>
   );
 };

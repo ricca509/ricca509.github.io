@@ -20,7 +20,7 @@ const BlogPostTemplate: React.FC<PageProps<BlogPostBySlugQuery>> = ({
       showName
       location={location}
       title={siteTitle}
-      className={container}
+      className="text-lg"
     >
       <Seo
         title={post.frontmatter.title}

@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-normal;
+    @apply text-xl;
+  }
+  h1 {
+    @apply text-4xl;
+    @apply my-6;
+  }
+  h2 {
+    @apply text-3xl;
+    @apply my-5;
+  }
+  h3 {
+    @apply text-2xl;
+    @apply my-4;
+  }
+}

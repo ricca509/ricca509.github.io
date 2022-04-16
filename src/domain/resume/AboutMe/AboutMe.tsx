@@ -10,10 +10,9 @@ interface AboutMeProps extends ComponentProps {
 
 export const AboutMe: React.FC<AboutMeProps> = ({ children, image }) => {
   return (
-    <section className={container}>
+    <section className="flex flex-col items-center text-center">
       <GatsbyImage alt="Me" className={img} image={image} />
-      <article
-        className={content}
+      <article        
         dangerouslySetInnerHTML={{ __html: children as string }}
       />
       <div className={getCv}>

@@ -1,5 +1,8 @@
+// Tailwind
+import './src/global.css'
+
 // normalize CSS across browsers
-import "./src/normalize.css";
+// import "./src/normalize.css";
 
 // normalize CSS across browsers
 import "./src/variables.css";

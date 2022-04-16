@@ -18,7 +18,7 @@ export const Layout: React.FC<LayoutProps> = ({
   showName = false,
 }) => {
   return (
-    <div className={[container, className].join(" ")}>
+    <div className={["ml-3 mr-3 text-base md:m-auto md:max-w-2xl lg:max-w-4xl", className].join(" ")}>
       <Header showName={showName} />
       <div>
         <main>{children}</main>
@@ -26,10 +26,6 @@ export const Layout: React.FC<LayoutProps> = ({
       </div>
     </div>
   );
-};
-
-Layout.propTypes = {
-  children: PropTypes.node.isRequired,
 };
 
 export default Layout;

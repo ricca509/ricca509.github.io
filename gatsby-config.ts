@@ -114,7 +114,7 @@ const config: GatsbyConfig = {
               }
             `,
             output: "/rss.xml",
-            title: "Gatsby Starter Blog RSS Feed",
+            title: "Riccardo Coppola Blog RSS Feed",
           },
         ],
       },
@@ -133,6 +133,7 @@ const config: GatsbyConfig = {
         icon: `src/images/finiteloop-icon.png`, // This path is relative to the root of the site.
       },
     },
+    `gatsby-plugin-postcss`,
     `gatsby-plugin-preload-fonts`,
     `gatsby-plugin-react-helmet`,
     // this (optional) plugin enables Progressive Web App + Offline functionality

@@ -20,16 +20,10 @@ export const Layout: React.FC<LayoutProps> = ({
   return (
     <div className={[container, className].join(" ")}>
       <Header showName={showName} />
-      <div>
-        <main>{children}</main>
-        <Footer />
-      </div>
+      <main>{children}</main>
+      <Footer />
     </div>
   );
-};
-
-Layout.propTypes = {
-  children: PropTypes.node.isRequired,
 };
 
 export default Layout;

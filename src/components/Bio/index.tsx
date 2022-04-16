@@ -10,11 +10,9 @@ import { container } from "./Bio.module.css";
 
 const Bio = () => {
   return (
-    <React.Fragment>
-      <div className={container}>
-        Notes on web development, life, learning and the world.
-      </div>
-    </React.Fragment>
+    <div className={container}>
+      Notes on web development, life, learning and the world.
+    </div>
   );
 };
 

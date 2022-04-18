@@ -1,11 +1,5 @@
 import React from "react";
 import { SocialIcon } from "react-social-icons";
-import {
-  container,
-  navElement,
-  list,
-  textLinks,
-} from "./HeaderNavigation.module.css";
 
 const links = [
   ["github", "https://github.com/ricca509"],
@@ -16,18 +10,18 @@ const links = [
 
 export const HeaderNavigation = () => {
   return (
-    <div className={container}>
-      <ul className={[list, textLinks].join(" ")}>
-        <li className={navElement}>
+    <div className="flex items-center flex-row justify-between">
+      <ul className="text-lg list-none text-center">
+        <li className="list-none inline pr-5">
           <a href="/blog">Blog</a>
         </li>
-        <li className={navElement}>
+        <li className="list-none inline pr-5">
           <a href="/">Profile</a>
         </li>
       </ul>
-      <ul className={list}>
+      <ul className="list-none inline pr-5">
         {links.map(([network, link]) => (
-          <li className={navElement} key={link}>
+          <li className="list-none inline pr-5" key={link}>
             <SocialIcon
               network={network}
               url={link}

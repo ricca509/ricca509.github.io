@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "gatsby";
-import { postTitle, date } from "./Post.module.css";
 
 interface Post {
   excerpt?: string | null;
@@ -26,8 +25,8 @@ export const Post: React.FC<PostProps> = ({ post, title }) => {
         itemType="http://schema.org/Article"
       >
         <header>
-          <small className={date}>{post?.frontmatter?.date}</small>
-          <h2 className={postTitle}>
+          <small className="text-gray-500">{post?.frontmatter?.date}</small>
+          <h2 className="font-light text-xl mt-0 mb-5">
             <Link to={post?.fields?.slug || "/blog"} itemProp="url">
               <span itemProp="headline">{title}</span>
             </Link>

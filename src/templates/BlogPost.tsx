@@ -4,7 +4,6 @@ import { Link, graphql, PageProps } from "gatsby";
 import Bio from "@Components/Bio";
 import { Layout } from "@Components/Layout/Layout";
 import { Seo } from "@Components/Seo/Seo";
-import { container, title, date } from "./BlogPost.module.css";
 import { BlogPostBySlugQuery } from "../../graphql-types";
 
 const BlogPostTemplate: React.FC<PageProps<BlogPostBySlugQuery>> = ({
@@ -20,7 +19,7 @@ const BlogPostTemplate: React.FC<PageProps<BlogPostBySlugQuery>> = ({
       showName
       location={location}
       title={siteTitle}
-      className="text-lg"
+      className="text-lg font-body"
     >
       <Seo
         title={post.frontmatter.title}
@@ -32,12 +31,13 @@ const BlogPostTemplate: React.FC<PageProps<BlogPostBySlugQuery>> = ({
         itemType="http://schema.org/Article"
       >
         <header>
-          <h1 className={title} itemProp="headline">
+          <h1 className="bg-fl-purple text-white p-1" itemProp="headline">
             {post.frontmatter.title}
           </h1>
-          <p className={date}>{post.frontmatter.date}</p>
+          <p className="text-gray-500 text-base">{post.frontmatter.date}</p>
         </header>
         <section
+          className="text-lg"
           dangerouslySetInnerHTML={{ __html: post.html }}
           itemProp="articleBody"
         />

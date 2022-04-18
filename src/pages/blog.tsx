@@ -6,7 +6,6 @@ import Bio from "../components/Bio";
 import { Layout } from "../components/Layout/Layout";
 import { Seo } from "../components/Seo/Seo";
 import { Post } from "../components/Post/Post";
-import { list } from "./blog.module.css";
 
 const BlogIndex: React.FC<PageProps<BlogIndexQuery>> = ({ data, location }) => {
   const siteTitle = data?.site?.siteMetadata?.title || `Blog`;
@@ -26,7 +25,7 @@ const BlogIndex: React.FC<PageProps<BlogIndexQuery>> = ({ data, location }) => {
     <Layout showName location={location} title={siteTitle}>
       <Seo title="Blog" />
       <Bio />
-      <ol className={list}>
+      <ol className="list-none p-0 m-0">
         {posts.map((post) => {
           const title = post?.frontmatter?.title || post?.fields?.slug;
 

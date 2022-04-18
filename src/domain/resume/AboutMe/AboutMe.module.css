@@ -9,13 +9,13 @@
   color: var(--grey-2);
 }
 
-.img {
+/* .img {
   border-radius: 50%;
-}
+} */
 
-.getCv {
+/* .getCv {
   margin-top: 15px;
-}
+} */
 
 @media print {
   .getCv {

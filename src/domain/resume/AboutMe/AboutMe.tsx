@@ -1,7 +1,6 @@
 import React from "react";
 import { GatsbyImage, GatsbyImageProps } from "gatsby-plugin-image";
 import Cta from "@Components/Cta/Cta";
-import { container, img, content, getCv } from "./AboutMe.module.css";
 import { ComponentProps } from "@Typings/component";
 
 interface AboutMeProps extends ComponentProps {
@@ -10,12 +9,13 @@ interface AboutMeProps extends ComponentProps {
 
 export const AboutMe: React.FC<AboutMeProps> = ({ children, image }) => {
   return (
-    <section className="flex flex-col items-center text-center">
-      <GatsbyImage alt="Me" className={img} image={image} />
-      <article        
+    <section className="font-body flex flex-col items-center text-center">
+      <GatsbyImage alt="Me" className="rounded-full" image={image} />
+      <article    
+        className="text-xl text-gray-700"
         dangerouslySetInnerHTML={{ __html: children as string }}
       />
-      <div className={getCv}>
+      <div className="mt-4">
         <Cta
           type="a"
           // @ts-ignore TODO: fix this

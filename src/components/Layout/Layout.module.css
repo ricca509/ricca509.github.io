@@ -1,9 +1,0 @@
-/*
- * Print
- */
-
-@media print {
-  hr {
-    display: none;
-  }
-}

@@ -6,11 +6,10 @@
  */
 
 import * as React from "react";
-import { container } from "./Bio.module.css";
 
 const Bio = () => {
   return (
-    <div className={container}>
+    <div className="font-light text-lg my-10 italic">
       Notes on web development, life, learning and the world.
     </div>
   );

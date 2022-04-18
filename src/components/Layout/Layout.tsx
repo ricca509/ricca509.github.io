@@ -1,8 +1,6 @@
 import React from "react";
-import PropTypes from "prop-types";
 import { Header } from "../Header/Header";
 import { Footer } from "../Footer/Footer";
-import { container } from "./Layout.module.css";
 import { ComponentProps } from "@Typings/component";
 import { PageProps } from "gatsby";
 
@@ -18,7 +16,7 @@ export const Layout: React.FC<LayoutProps> = ({
   showName = false,
 }) => {
   return (
-    <div className={["ml-3 mr-3 text-base md:m-auto md:max-w-2xl lg:max-w-4xl", className].join(" ")}>
+    <div className={["container mx-auto px-5 max-w-4xl text-base", className].join(" ")}>
       <Header showName={showName} />
       <main>{children}</main>
       <Footer />

@@ -1,5 +1,4 @@
 import React from "react";
-import { description } from "./SideProject.module.css";
 import { ComponentProps } from "@Typings/component";
 
 interface SideProjectProps extends ComponentProps {
@@ -20,11 +19,11 @@ export const SideProject: React.FC<SideProjectProps> = ({
             {title}
           </a>
         ) : (
-          { title }
+          {title}
         )}
       </em>
       <div
-        className={description}
+        className="ml-5"
         dangerouslySetInnerHTML={{ __html: children as string }}
       />
     </li>

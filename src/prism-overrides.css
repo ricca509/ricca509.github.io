@@ -1,0 +1,10 @@
+/* Prims overrides */
+
+code[class*="language-"], pre[class*="language-"] {
+  border-radius: 6px;
+  font-family: var(--monospace-font-family) !important;
+}
+
+:not(pre) > code[class*="language-"] {
+  padding: 3px 5px !important;
+}

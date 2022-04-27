@@ -31,7 +31,7 @@ a {
 }
 
 a:hover {
-  color: var(--white);
+  color: #ffffff;
   background-color: var(--purple);
 }
 
@@ -44,7 +44,6 @@ a.anchor > svg {
   width: 1em;
   height: 1em;
 }
-
 
 a.anchor:hover {
   background-color: transparent;
@@ -65,13 +64,3 @@ hr {
   border: 0;
 }
 
-/* Prims overrides */
-
-code[class*="language-"], pre[class*="language-"] {
-  border-radius: 6px;
-  font-family: var(--monospace-font-family) !important;
-}
-
-:not(pre) > code[class*="language-"] {
-  padding: 3px 5px !important;
-}

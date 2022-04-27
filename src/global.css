@@ -8,11 +8,13 @@
     @apply my-6;
     @apply font-title;
   }
+
   h2 {
     @apply text-3xl;
     @apply my-5;
     @apply font-title;
   }
+
   h3 {
     @apply text-2xl;
     @apply my-4;

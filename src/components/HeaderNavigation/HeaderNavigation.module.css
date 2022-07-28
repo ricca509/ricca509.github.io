@@ -27,6 +27,10 @@
   padding-right: 20px;
 }
 
+.navElement a:hover {
+  background-color: transparent;
+}
+
 .navElement:last-child {
   padding-right: 0;
 }

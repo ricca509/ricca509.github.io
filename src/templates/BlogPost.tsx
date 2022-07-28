@@ -4,7 +4,7 @@ import { Link, graphql, PageProps } from "gatsby";
 import Bio from "@Components/Bio";
 import { Layout } from "@Components/Layout/Layout";
 import { Seo } from "@Components/Seo/Seo";
-import { container, title, date } from "./BlogPost.module.css";
+import { container, date } from "./BlogPost.module.css";
 import { BlogPostBySlugQuery } from "../../graphql-types";
 
 const BlogPostTemplate: React.FC<PageProps<BlogPostBySlugQuery>> = ({
@@ -32,7 +32,7 @@ const BlogPostTemplate: React.FC<PageProps<BlogPostBySlugQuery>> = ({
         itemType="http://schema.org/Article"
       >
         <header>
-          <h1 className={title} itemProp="headline">
+          <h1 itemProp="headline">
             {post.frontmatter.title}
           </h1>
           <p className={date}>{post.frontmatter.date}</p>

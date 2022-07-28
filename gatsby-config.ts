@@ -9,7 +9,7 @@ const config: GatsbyConfig = {
       name: `Riccardo Coppola`,
       summary: `I help companies with creating better web applications. 
 
-      Certified Level 3 Personal trainer, nutrition geek and biohacker, trained barista and (very) amateur photographer.`,
+      Certified Level 3 Personal trainer, nutrition geek, trained barista and (very) amateur photographer.`,
     },
     siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,
   },
@@ -37,7 +37,7 @@ const config: GatsbyConfig = {
           {
             resolve: `gatsby-remark-images`,
             options: {
-              maxWidth: 960,
+              maxWidth: 900,
             },
           },
           {

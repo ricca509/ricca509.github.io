@@ -4,6 +4,8 @@ body {
   font-size: 20px;
   line-height: 26px;
   color: var(--main-font-color);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
 }
 
 h1,
@@ -12,7 +14,7 @@ h3,
 h4,
 h5 {
   font-family: var(--title-font-family);
-  font-weight: 400;
+  font-weight: 700;
   line-height: 2rem;
 }
 

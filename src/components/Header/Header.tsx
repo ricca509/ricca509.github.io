@@ -15,9 +15,9 @@ export const Header: React.FC<HeaderProps> = ({ showName = false }) => {
   return (
     <header className={container}>
       {showName && (
-        <h1 className={author}>
+        <h2 className={author}>
           <a href="/blog">Riccardo Coppola</a>
-        </h1>
+        </h2>
       )}
       <nav>
         {isPrinting && <PrintLinks />}

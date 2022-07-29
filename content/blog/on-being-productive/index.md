@@ -48,9 +48,7 @@ After a few rounds of trial and error I came up with a 4-columns layout that ser
 - **Rejected/Failed**: When reviewing the Incoming column I may decide that some actions are not needed after all, or after trying to work on the I may realise that it was a mistake: in that case I'd just drop them into this column
 - **Done**: The most satisfactory column: whenever something is done, drag it all the way to the end. This is the reason Done is the last column
 
-![My Trello board](./images/Personal___Trello.png)
-
-The simple 4-columns layout
+![The simple 4-columns layout](./images/Personal___Trello.png)
 
 If you wanted to keep things even easier, you could combine the last two columns into one: **Rejected || Done** and switch to a 3-columns layout. I've had this for a while and worked great too.
 

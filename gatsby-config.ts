@@ -38,6 +38,8 @@ const config: GatsbyConfig = {
             resolve: `gatsby-remark-images`,
             options: {
               maxWidth: 900,
+              showCaptions: true,
+              markdownCaptions: true,
             },
           },
           {

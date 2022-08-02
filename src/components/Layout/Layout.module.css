@@ -3,7 +3,7 @@
   margin: auto;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 787px) {
   .container {
     margin-left: 10px;
     margin-right: 10px;
@@ -12,14 +12,9 @@
   }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 788px) {
   .container {
-    max-width: 720px;
-  }
-}
-@media only screen and (min-width: 992px) {
-  .container {
-    max-width: 900px;
+    max-width: 768px;
   }
 }
 

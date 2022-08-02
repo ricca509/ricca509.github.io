@@ -7,7 +7,7 @@ const config: GatsbyConfig = {
     description: `About me`,
     author: {
       name: `Riccardo Coppola`,
-      summary: `I help companies with creating better web applications. 
+      summary: `I help companies to create better web applications. 
 
       Certified Level 3 Personal trainer, nutrition geek, trained barista and (very) amateur photographer.`,
     },

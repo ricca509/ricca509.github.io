@@ -1,6 +1,8 @@
 import type { GatsbyConfig } from "gatsby";
 import path from "path";
 
+const siteUrl = process.env.URL || "https://www.riccardocoppola.me";
+
 const config: GatsbyConfig = {
   siteMetadata: {
     title: `Riccardo Coppola`,
@@ -11,10 +13,65 @@ const config: GatsbyConfig = {
 
       Certified Level 3 Personal trainer, nutrition geek, trained barista and (very) amateur photographer.`,
     },
-    siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,
+    siteUrl,
   },
   plugins: [
     `gatsby-plugin-tsconfig-paths`,
+    {
+      resolve: "gatsby-plugin-sitemap",
+      options: {
+        query: `
+        {
+          allSitePage {
+            nodes {
+              path
+            }
+          }
+          allMarkdownRemark(
+            filter: {fields: {slug: {glob: "**/blog/*"}}, frontmatter: {publication_status: {eq: "published"}}}
+            sort: {fields: [frontmatter___date], order: ASC}
+            limit: 1000
+          ) {
+            nodes {
+              frontmatter {
+                date
+              }
+              fields {
+                slug
+              }
+            }
+          }
+        }        
+        `,
+        resolveSiteUrl: () => siteUrl,
+        resolvePages: ({
+          allSitePage: { nodes: allPages },
+          allMarkdownRemark: { nodes: allMarkdownRemark },
+        }) => {
+          const markdownPages = allMarkdownRemark.reduce((acc, node) => {
+            const { fields } = node;
+            acc[fields.slug] = node;
+
+            return acc;
+          }, {});
+
+          const res = allPages.map((page) => {
+            return { ...page, ...markdownPages[page.path] };
+          });
+
+          // console.log(JSON.stringify(res), 'ressss')
+
+          return res;
+        },
+        serialize: ({ path, ...rest }) => {
+          const blogPage = JSON.parse(JSON.stringify(rest));
+          return {
+            url: path,
+            lastmod: blogPage?.frontmatter?.date,
+          };
+        },
+      },
+    },
     `gatsby-plugin-image`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -26,7 +83,7 @@ const config: GatsbyConfig = {
     {
       resolve: `gatsby-plugin-canonical-urls`,
       options: {
-        siteUrl: `https://www.riccardocoppola.me`,
+        siteUrl,
       },
     },
     {
@@ -67,7 +124,7 @@ const config: GatsbyConfig = {
       },
     },
     `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,    
+    `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-google-gtag`,
       options: {
@@ -77,7 +134,7 @@ const config: GatsbyConfig = {
         ],
         pluginConfig: {
           // Puts tracking script in the head instead of the body
-          head: true,         
+          head: true,
         },
       },
     },

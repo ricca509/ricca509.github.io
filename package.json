@@ -6,6 +6,7 @@
   "author": "Riccardo Coppola <hello@ricca059.me>",
   "dependencies": {
     "gatsby": "^4.10.3",
+    "gatsby-plugin-canonical-urls": "^4.20.0",
     "gatsby-plugin-feed": "^4.10.2",
     "gatsby-plugin-gatsby-cloud": "^4.10.1",
     "gatsby-plugin-google-gtag": "^4.12.1",

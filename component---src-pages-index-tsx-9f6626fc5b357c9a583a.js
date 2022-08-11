@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkricca509_github_io=self.webpackChunkricca509_github_io||[]).push([[691],{6854:function(u,c,i){i.r(c);var n=i(7294),t=i(1597);c.default=function(){return(0,n.useEffect)((function(){(0,t.navigate)("/blog/")}),[]),null}}}]);
+//# sourceMappingURL=component---src-pages-index-tsx-9f6626fc5b357c9a583a.js.map

@@ -24,7 +24,7 @@ const AboutPage: React.FC<PageProps<ProfileQuery>> = ({ data }) => {
 
 export const query = graphql`
   query Profile {
-    file(relativePath: { eq: "me.jpeg" }) {
+    file(relativePath: { eq: "me.png" }) {
       childImageSharp {
         gatsbyImageData(layout: FIXED, width: 100, height: 100)
       }

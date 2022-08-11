@@ -1,7 +1,7 @@
 const path = require(`path`);
 const { createFilePath } = require(`gatsby-source-filesystem`);
 
-exports.createPages = async ({ graphql, actions, reporter }) => {
+const createBlogPages = async ({ graphql, actions, reporter }) => {
   const { createPage } = actions;
 
   // Define a template for blog post
@@ -10,24 +10,24 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   // Get all markdown blog posts sorted by date
   const result = await graphql(
     `
-      {
-        allMarkdownRemark(
-          filter: {
-            fields: { slug: { glob: "**/blog/*" } }
-            frontmatter: { publication_status: { eq: "published" } }
-          }
-          sort: { fields: [frontmatter___date], order: ASC }
-          limit: 1000
-        ) {
-          nodes {
-            id
-            fields {
-              slug
-            }
-          }
-        }
-      }
-    `
+     {
+       allMarkdownRemark(
+         filter: {
+           fields: { slug: { glob: "**/blog/*" } }
+           frontmatter: { publication_status: { eq: "published" } }
+         }
+         sort: { fields: [frontmatter___date], order: ASC }
+         limit: 1000
+       ) {
+         nodes {
+           id
+           fields {
+             slug
+           }
+         }
+       }
+     }
+   `
   );
 
   if (result.errors) {
@@ -61,6 +61,10 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
       });
     });
   }
+}
+
+exports.createPages = async ({ graphql, actions, reporter }) => {
+  await createBlogPages({ graphql, actions, reporter });
 };
 
 exports.onCreateNode = ({ node, actions, getNode }) => {

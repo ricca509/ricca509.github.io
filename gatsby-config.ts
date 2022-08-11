@@ -6,7 +6,7 @@ const siteUrl = process.env.URL || "https://www.riccardocoppola.me";
 const config: GatsbyConfig = {
   siteMetadata: {
     title: `Riccardo Coppola`,
-    description: `About me`,
+    description: `Notes on web development, life, learning and the world.`,
     author: {
       name: `Riccardo Coppola`,
       summary: `I help companies to create better web applications. 
@@ -27,7 +27,7 @@ const config: GatsbyConfig = {
               path
             }
           }
-          allMarkdownRemark(
+          blogPages: allMarkdownRemark(
             filter: {fields: {slug: {glob: "**/blog/*"}}, frontmatter: {publication_status: {eq: "published"}}}
             sort: {fields: [frontmatter___date], order: ASC}
             limit: 1000
@@ -41,14 +41,24 @@ const config: GatsbyConfig = {
               }
             }
           }
-        }        
+          aboutMePages: allMarkdownRemark(
+            filter: {fields: {slug: {glob: "**/resume/*"}}}
+          ) {
+            nodes {              
+              fields {
+                slug
+              }
+            }
+          }
+        }               
         `,
         resolveSiteUrl: () => siteUrl,
         resolvePages: ({
           allSitePage: { nodes: allPages },
-          allMarkdownRemark: { nodes: allMarkdownRemark },
+          blogPages: { nodes: blogPages },
+          aboutMePages: { nodes: aboutMePages },
         }) => {
-          const markdownPages = allMarkdownRemark.reduce((acc, node) => {
+          const pages = [...blogPages, ...aboutMePages].reduce((acc, node) => {
             const { fields } = node;
             acc[fields.slug] = node;
 
@@ -56,7 +66,7 @@ const config: GatsbyConfig = {
           }, {});
 
           const res = allPages.map((page) => {
-            return { ...page, ...markdownPages[page.path] };
+            return { ...page, ...pages[page.path] };
           });
 
           // console.log(JSON.stringify(res), 'ressss')
@@ -64,10 +74,10 @@ const config: GatsbyConfig = {
           return res;
         },
         serialize: ({ path, ...rest }) => {
-          const blogPage = JSON.parse(JSON.stringify(rest));
+          const page = JSON.parse(JSON.stringify(rest));
           return {
             url: path,
-            lastmod: blogPage?.frontmatter?.date,
+            lastmod: page?.frontmatter?.date || new Date().toISOString(),
           };
         },
       },

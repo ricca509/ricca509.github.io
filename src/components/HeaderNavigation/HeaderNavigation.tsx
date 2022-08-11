@@ -5,6 +5,7 @@ import {
   navElement,
   list,
   textLinks,
+  iconLinks,
 } from "./HeaderNavigation.module.css";
 
 const links = [
@@ -22,10 +23,10 @@ export const HeaderNavigation = () => {
           <a href="/blog">Blog</a>
         </li>
         <li className={navElement}>
-          <a href="/">Profile</a>
+          <a href="/">About me</a>
         </li>
       </ul>
-      <ul className={list}>
+      <ul className={list, iconLinks}>
         {links.map(([network, link]) => (
           <li className={navElement} key={link}>
             <SocialIcon

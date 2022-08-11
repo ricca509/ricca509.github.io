@@ -7,6 +7,7 @@ import {
   textLinks,
   iconLinks,
 } from "./HeaderNavigation.module.css";
+import { Link } from "gatsby";
 
 const links = [
   ["github", "https://github.com/ricca509"],
@@ -20,13 +21,13 @@ export const HeaderNavigation = () => {
     <div className={container}>
       <ul className={[list, textLinks].join(" ")}>
         <li className={navElement}>
-          <a href="/blog">Blog</a>
+          <Link to="/blog">Blog</Link>
         </li>
         <li className={navElement}>
-          <a href="/">About me</a>
+          <Link to="/about">About me</Link>
         </li>
       </ul>
-      <ul className={list, iconLinks}>
+      <ul className={[list, iconLinks].join(" ")}>
         {links.map(([network, link]) => (
           <li className={navElement} key={link}>
             <SocialIcon

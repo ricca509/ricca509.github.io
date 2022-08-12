@@ -82,17 +82,7 @@ export const Seo: React.FC<SeoProps> = ({
           content: metaDescription,
         },
       ].concat(meta)}
-    >
-      {/* <link rel="preconnect" href="https://fonts.googleapis.com" />
-      <link
-        rel="preconnect"
-        href="https://fonts.gstatic.com"
-        crossOrigin="anonymous"
-      />
-      <link
-        href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&family=Poppins:wght@300;400;700&family=Roboto&display=swap"
-        rel="stylesheet"
-      /> */}
+    >    
     </Helmet>
   );
 };

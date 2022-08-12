@@ -5,6 +5,9 @@
   "version": "0.1.0",
   "author": "Riccardo Coppola <hello@ricca059.me>",
   "dependencies": {
+    "@fontsource/inconsolata": "^4.5.7",
+    "@fontsource/poppins": "^4.5.9",
+    "@fontsource/roboto": "^4.5.8",
     "gatsby": "^4.10.3",
     "gatsby-plugin-canonical-urls": "^4.20.0",
     "gatsby-plugin-feed": "^4.10.2",

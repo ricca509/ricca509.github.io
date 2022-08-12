@@ -693,8 +693,8 @@ export type Frontmatter = {
   to_date?: Maybe<Scalars['Date']>;
   location?: Maybe<Scalars['String']>;
   technologies?: Maybe<Array<Maybe<Scalars['String']>>>;
+  photo?: Maybe<File>;
   order?: Maybe<Scalars['Int']>;
-  photo?: Maybe<Scalars['String']>;
   link?: Maybe<Scalars['String']>;
 };
 
@@ -1085,67 +1085,54 @@ export type FrontmatterFilterInput = {
   to_date?: InputMaybe<DateQueryOperatorInput>;
   location?: InputMaybe<StringQueryOperatorInput>;
   technologies?: InputMaybe<StringQueryOperatorInput>;
+  photo?: InputMaybe<FileFilterInput>;
   order?: InputMaybe<IntQueryOperatorInput>;
-  photo?: InputMaybe<StringQueryOperatorInput>;
   link?: InputMaybe<StringQueryOperatorInput>;
 };
 
-export type FieldsFilterInput = {
-  slug?: InputMaybe<StringQueryOperatorInput>;
-};
-
-export type JsonQueryOperatorInput = {
-  eq?: InputMaybe<Scalars['JSON']>;
-  ne?: InputMaybe<Scalars['JSON']>;
-  in?: InputMaybe<Array<InputMaybe<Scalars['JSON']>>>;
-  nin?: InputMaybe<Array<InputMaybe<Scalars['JSON']>>>;
-  regex?: InputMaybe<Scalars['JSON']>;
-  glob?: InputMaybe<Scalars['JSON']>;
-};
-
-export type MarkdownHeadingFilterListInput = {
-  elemMatch?: InputMaybe<MarkdownHeadingFilterInput>;
-};
-
-export type MarkdownHeadingFilterInput = {
-  id?: InputMaybe<StringQueryOperatorInput>;
-  value?: InputMaybe<StringQueryOperatorInput>;
-  depth?: InputMaybe<IntQueryOperatorInput>;
-};
-
-export type MarkdownWordCountFilterInput = {
-  paragraphs?: InputMaybe<IntQueryOperatorInput>;
-  sentences?: InputMaybe<IntQueryOperatorInput>;
-  words?: InputMaybe<IntQueryOperatorInput>;
-};
-
-export type NodeFilterInput = {
+export type FileFilterInput = {
+  sourceInstanceName?: InputMaybe<StringQueryOperatorInput>;
+  absolutePath?: InputMaybe<StringQueryOperatorInput>;
+  relativePath?: InputMaybe<StringQueryOperatorInput>;
+  extension?: InputMaybe<StringQueryOperatorInput>;
+  size?: InputMaybe<IntQueryOperatorInput>;
+  prettySize?: InputMaybe<StringQueryOperatorInput>;
+  modifiedTime?: InputMaybe<DateQueryOperatorInput>;
+  accessTime?: InputMaybe<DateQueryOperatorInput>;
+  changeTime?: InputMaybe<DateQueryOperatorInput>;
+  birthTime?: InputMaybe<DateQueryOperatorInput>;
+  root?: InputMaybe<StringQueryOperatorInput>;
+  dir?: InputMaybe<StringQueryOperatorInput>;
+  base?: InputMaybe<StringQueryOperatorInput>;
+  ext?: InputMaybe<StringQueryOperatorInput>;
+  name?: InputMaybe<StringQueryOperatorInput>;
+  relativeDirectory?: InputMaybe<StringQueryOperatorInput>;
+  dev?: InputMaybe<IntQueryOperatorInput>;
+  mode?: InputMaybe<IntQueryOperatorInput>;
+  nlink?: InputMaybe<IntQueryOperatorInput>;
+  uid?: InputMaybe<IntQueryOperatorInput>;
+  gid?: InputMaybe<IntQueryOperatorInput>;
+  rdev?: InputMaybe<IntQueryOperatorInput>;
+  ino?: InputMaybe<FloatQueryOperatorInput>;
+  atimeMs?: InputMaybe<FloatQueryOperatorInput>;
+  mtimeMs?: InputMaybe<FloatQueryOperatorInput>;
+  ctimeMs?: InputMaybe<FloatQueryOperatorInput>;
+  atime?: InputMaybe<DateQueryOperatorInput>;
+  mtime?: InputMaybe<DateQueryOperatorInput>;
+  ctime?: InputMaybe<DateQueryOperatorInput>;
+  birthtime?: InputMaybe<DateQueryOperatorInput>;
+  birthtimeMs?: InputMaybe<FloatQueryOperatorInput>;
+  blksize?: InputMaybe<IntQueryOperatorInput>;
+  blocks?: InputMaybe<IntQueryOperatorInput>;
+  publicURL?: InputMaybe<StringQueryOperatorInput>;
+  childrenMarkdownRemark?: InputMaybe<MarkdownRemarkFilterListInput>;
+  childMarkdownRemark?: InputMaybe<MarkdownRemarkFilterInput>;
+  childrenImageSharp?: InputMaybe<ImageSharpFilterListInput>;
+  childImageSharp?: InputMaybe<ImageSharpFilterInput>;
   id?: InputMaybe<StringQueryOperatorInput>;
   parent?: InputMaybe<NodeFilterInput>;
   children?: InputMaybe<NodeFilterListInput>;
   internal?: InputMaybe<InternalFilterInput>;
-};
-
-export type NodeFilterListInput = {
-  elemMatch?: InputMaybe<NodeFilterInput>;
-};
-
-export type InternalFilterInput = {
-  content?: InputMaybe<StringQueryOperatorInput>;
-  contentDigest?: InputMaybe<StringQueryOperatorInput>;
-  description?: InputMaybe<StringQueryOperatorInput>;
-  fieldOwners?: InputMaybe<StringQueryOperatorInput>;
-  ignoreType?: InputMaybe<BooleanQueryOperatorInput>;
-  mediaType?: InputMaybe<StringQueryOperatorInput>;
-  owner?: InputMaybe<StringQueryOperatorInput>;
-  type?: InputMaybe<StringQueryOperatorInput>;
-};
-
-export type BooleanQueryOperatorInput = {
-  eq?: InputMaybe<Scalars['Boolean']>;
-  ne?: InputMaybe<Scalars['Boolean']>;
-  in?: InputMaybe<Array<InputMaybe<Scalars['Boolean']>>>;
-  nin?: InputMaybe<Array<InputMaybe<Scalars['Boolean']>>>;
 };
 
 export type ImageSharpFilterListInput = {
@@ -1192,6 +1179,15 @@ export type ImageSharpFluidFilterInput = {
   presentationHeight?: InputMaybe<IntQueryOperatorInput>;
 };
 
+export type JsonQueryOperatorInput = {
+  eq?: InputMaybe<Scalars['JSON']>;
+  ne?: InputMaybe<Scalars['JSON']>;
+  in?: InputMaybe<Array<InputMaybe<Scalars['JSON']>>>;
+  nin?: InputMaybe<Array<InputMaybe<Scalars['JSON']>>>;
+  regex?: InputMaybe<Scalars['JSON']>;
+  glob?: InputMaybe<Scalars['JSON']>;
+};
+
 export type ImageSharpOriginalFilterInput = {
   width?: InputMaybe<FloatQueryOperatorInput>;
   height?: InputMaybe<FloatQueryOperatorInput>;
@@ -1205,6 +1201,55 @@ export type ImageSharpResizeFilterInput = {
   height?: InputMaybe<IntQueryOperatorInput>;
   aspectRatio?: InputMaybe<FloatQueryOperatorInput>;
   originalName?: InputMaybe<StringQueryOperatorInput>;
+};
+
+export type NodeFilterInput = {
+  id?: InputMaybe<StringQueryOperatorInput>;
+  parent?: InputMaybe<NodeFilterInput>;
+  children?: InputMaybe<NodeFilterListInput>;
+  internal?: InputMaybe<InternalFilterInput>;
+};
+
+export type NodeFilterListInput = {
+  elemMatch?: InputMaybe<NodeFilterInput>;
+};
+
+export type InternalFilterInput = {
+  content?: InputMaybe<StringQueryOperatorInput>;
+  contentDigest?: InputMaybe<StringQueryOperatorInput>;
+  description?: InputMaybe<StringQueryOperatorInput>;
+  fieldOwners?: InputMaybe<StringQueryOperatorInput>;
+  ignoreType?: InputMaybe<BooleanQueryOperatorInput>;
+  mediaType?: InputMaybe<StringQueryOperatorInput>;
+  owner?: InputMaybe<StringQueryOperatorInput>;
+  type?: InputMaybe<StringQueryOperatorInput>;
+};
+
+export type BooleanQueryOperatorInput = {
+  eq?: InputMaybe<Scalars['Boolean']>;
+  ne?: InputMaybe<Scalars['Boolean']>;
+  in?: InputMaybe<Array<InputMaybe<Scalars['Boolean']>>>;
+  nin?: InputMaybe<Array<InputMaybe<Scalars['Boolean']>>>;
+};
+
+export type FieldsFilterInput = {
+  slug?: InputMaybe<StringQueryOperatorInput>;
+};
+
+export type MarkdownHeadingFilterListInput = {
+  elemMatch?: InputMaybe<MarkdownHeadingFilterInput>;
+};
+
+export type MarkdownHeadingFilterInput = {
+  id?: InputMaybe<StringQueryOperatorInput>;
+  value?: InputMaybe<StringQueryOperatorInput>;
+  depth?: InputMaybe<IntQueryOperatorInput>;
+};
+
+export type MarkdownWordCountFilterInput = {
+  paragraphs?: InputMaybe<IntQueryOperatorInput>;
+  sentences?: InputMaybe<IntQueryOperatorInput>;
+  words?: InputMaybe<IntQueryOperatorInput>;
 };
 
 export type FileConnection = {
@@ -1309,8 +1354,45 @@ export type FileFieldsEnum =
   | 'childrenMarkdownRemark___frontmatter___to_date'
   | 'childrenMarkdownRemark___frontmatter___location'
   | 'childrenMarkdownRemark___frontmatter___technologies'
+  | 'childrenMarkdownRemark___frontmatter___photo___sourceInstanceName'
+  | 'childrenMarkdownRemark___frontmatter___photo___absolutePath'
+  | 'childrenMarkdownRemark___frontmatter___photo___relativePath'
+  | 'childrenMarkdownRemark___frontmatter___photo___extension'
+  | 'childrenMarkdownRemark___frontmatter___photo___size'
+  | 'childrenMarkdownRemark___frontmatter___photo___prettySize'
+  | 'childrenMarkdownRemark___frontmatter___photo___modifiedTime'
+  | 'childrenMarkdownRemark___frontmatter___photo___accessTime'
+  | 'childrenMarkdownRemark___frontmatter___photo___changeTime'
+  | 'childrenMarkdownRemark___frontmatter___photo___birthTime'
+  | 'childrenMarkdownRemark___frontmatter___photo___root'
+  | 'childrenMarkdownRemark___frontmatter___photo___dir'
+  | 'childrenMarkdownRemark___frontmatter___photo___base'
+  | 'childrenMarkdownRemark___frontmatter___photo___ext'
+  | 'childrenMarkdownRemark___frontmatter___photo___name'
+  | 'childrenMarkdownRemark___frontmatter___photo___relativeDirectory'
+  | 'childrenMarkdownRemark___frontmatter___photo___dev'
+  | 'childrenMarkdownRemark___frontmatter___photo___mode'
+  | 'childrenMarkdownRemark___frontmatter___photo___nlink'
+  | 'childrenMarkdownRemark___frontmatter___photo___uid'
+  | 'childrenMarkdownRemark___frontmatter___photo___gid'
+  | 'childrenMarkdownRemark___frontmatter___photo___rdev'
+  | 'childrenMarkdownRemark___frontmatter___photo___ino'
+  | 'childrenMarkdownRemark___frontmatter___photo___atimeMs'
+  | 'childrenMarkdownRemark___frontmatter___photo___mtimeMs'
+  | 'childrenMarkdownRemark___frontmatter___photo___ctimeMs'
+  | 'childrenMarkdownRemark___frontmatter___photo___atime'
+  | 'childrenMarkdownRemark___frontmatter___photo___mtime'
+  | 'childrenMarkdownRemark___frontmatter___photo___ctime'
+  | 'childrenMarkdownRemark___frontmatter___photo___birthtime'
+  | 'childrenMarkdownRemark___frontmatter___photo___birthtimeMs'
+  | 'childrenMarkdownRemark___frontmatter___photo___blksize'
+  | 'childrenMarkdownRemark___frontmatter___photo___blocks'
+  | 'childrenMarkdownRemark___frontmatter___photo___publicURL'
+  | 'childrenMarkdownRemark___frontmatter___photo___childrenMarkdownRemark'
+  | 'childrenMarkdownRemark___frontmatter___photo___childrenImageSharp'
+  | 'childrenMarkdownRemark___frontmatter___photo___id'
+  | 'childrenMarkdownRemark___frontmatter___photo___children'
   | 'childrenMarkdownRemark___frontmatter___order'
-  | 'childrenMarkdownRemark___frontmatter___photo'
   | 'childrenMarkdownRemark___frontmatter___link'
   | 'childrenMarkdownRemark___fields___slug'
   | 'childrenMarkdownRemark___excerpt'
@@ -1376,8 +1458,45 @@ export type FileFieldsEnum =
   | 'childMarkdownRemark___frontmatter___to_date'
   | 'childMarkdownRemark___frontmatter___location'
   | 'childMarkdownRemark___frontmatter___technologies'
+  | 'childMarkdownRemark___frontmatter___photo___sourceInstanceName'
+  | 'childMarkdownRemark___frontmatter___photo___absolutePath'
+  | 'childMarkdownRemark___frontmatter___photo___relativePath'
+  | 'childMarkdownRemark___frontmatter___photo___extension'
+  | 'childMarkdownRemark___frontmatter___photo___size'
+  | 'childMarkdownRemark___frontmatter___photo___prettySize'
+  | 'childMarkdownRemark___frontmatter___photo___modifiedTime'
+  | 'childMarkdownRemark___frontmatter___photo___accessTime'
+  | 'childMarkdownRemark___frontmatter___photo___changeTime'
+  | 'childMarkdownRemark___frontmatter___photo___birthTime'
+  | 'childMarkdownRemark___frontmatter___photo___root'
+  | 'childMarkdownRemark___frontmatter___photo___dir'
+  | 'childMarkdownRemark___frontmatter___photo___base'
+  | 'childMarkdownRemark___frontmatter___photo___ext'
+  | 'childMarkdownRemark___frontmatter___photo___name'
+  | 'childMarkdownRemark___frontmatter___photo___relativeDirectory'
+  | 'childMarkdownRemark___frontmatter___photo___dev'
+  | 'childMarkdownRemark___frontmatter___photo___mode'
+  | 'childMarkdownRemark___frontmatter___photo___nlink'
+  | 'childMarkdownRemark___frontmatter___photo___uid'
+  | 'childMarkdownRemark___frontmatter___photo___gid'
+  | 'childMarkdownRemark___frontmatter___photo___rdev'
+  | 'childMarkdownRemark___frontmatter___photo___ino'
+  | 'childMarkdownRemark___frontmatter___photo___atimeMs'
+  | 'childMarkdownRemark___frontmatter___photo___mtimeMs'
+  | 'childMarkdownRemark___frontmatter___photo___ctimeMs'
+  | 'childMarkdownRemark___frontmatter___photo___atime'
+  | 'childMarkdownRemark___frontmatter___photo___mtime'
+  | 'childMarkdownRemark___frontmatter___photo___ctime'
+  | 'childMarkdownRemark___frontmatter___photo___birthtime'
+  | 'childMarkdownRemark___frontmatter___photo___birthtimeMs'
+  | 'childMarkdownRemark___frontmatter___photo___blksize'
+  | 'childMarkdownRemark___frontmatter___photo___blocks'
+  | 'childMarkdownRemark___frontmatter___photo___publicURL'
+  | 'childMarkdownRemark___frontmatter___photo___childrenMarkdownRemark'
+  | 'childMarkdownRemark___frontmatter___photo___childrenImageSharp'
+  | 'childMarkdownRemark___frontmatter___photo___id'
+  | 'childMarkdownRemark___frontmatter___photo___children'
   | 'childMarkdownRemark___frontmatter___order'
-  | 'childMarkdownRemark___frontmatter___photo'
   | 'childMarkdownRemark___frontmatter___link'
   | 'childMarkdownRemark___fields___slug'
   | 'childMarkdownRemark___excerpt'
@@ -1699,51 +1818,6 @@ export type FileGroupConnectionGroupArgs = {
   skip?: InputMaybe<Scalars['Int']>;
   limit?: InputMaybe<Scalars['Int']>;
   field: FileFieldsEnum;
-};
-
-export type FileFilterInput = {
-  sourceInstanceName?: InputMaybe<StringQueryOperatorInput>;
-  absolutePath?: InputMaybe<StringQueryOperatorInput>;
-  relativePath?: InputMaybe<StringQueryOperatorInput>;
-  extension?: InputMaybe<StringQueryOperatorInput>;
-  size?: InputMaybe<IntQueryOperatorInput>;
-  prettySize?: InputMaybe<StringQueryOperatorInput>;
-  modifiedTime?: InputMaybe<DateQueryOperatorInput>;
-  accessTime?: InputMaybe<DateQueryOperatorInput>;
-  changeTime?: InputMaybe<DateQueryOperatorInput>;
-  birthTime?: InputMaybe<DateQueryOperatorInput>;
-  root?: InputMaybe<StringQueryOperatorInput>;
-  dir?: InputMaybe<StringQueryOperatorInput>;
-  base?: InputMaybe<StringQueryOperatorInput>;
-  ext?: InputMaybe<StringQueryOperatorInput>;
-  name?: InputMaybe<StringQueryOperatorInput>;
-  relativeDirectory?: InputMaybe<StringQueryOperatorInput>;
-  dev?: InputMaybe<IntQueryOperatorInput>;
-  mode?: InputMaybe<IntQueryOperatorInput>;
-  nlink?: InputMaybe<IntQueryOperatorInput>;
-  uid?: InputMaybe<IntQueryOperatorInput>;
-  gid?: InputMaybe<IntQueryOperatorInput>;
-  rdev?: InputMaybe<IntQueryOperatorInput>;
-  ino?: InputMaybe<FloatQueryOperatorInput>;
-  atimeMs?: InputMaybe<FloatQueryOperatorInput>;
-  mtimeMs?: InputMaybe<FloatQueryOperatorInput>;
-  ctimeMs?: InputMaybe<FloatQueryOperatorInput>;
-  atime?: InputMaybe<DateQueryOperatorInput>;
-  mtime?: InputMaybe<DateQueryOperatorInput>;
-  ctime?: InputMaybe<DateQueryOperatorInput>;
-  birthtime?: InputMaybe<DateQueryOperatorInput>;
-  birthtimeMs?: InputMaybe<FloatQueryOperatorInput>;
-  blksize?: InputMaybe<IntQueryOperatorInput>;
-  blocks?: InputMaybe<IntQueryOperatorInput>;
-  publicURL?: InputMaybe<StringQueryOperatorInput>;
-  childrenMarkdownRemark?: InputMaybe<MarkdownRemarkFilterListInput>;
-  childMarkdownRemark?: InputMaybe<MarkdownRemarkFilterInput>;
-  childrenImageSharp?: InputMaybe<ImageSharpFilterListInput>;
-  childImageSharp?: InputMaybe<ImageSharpFilterInput>;
-  id?: InputMaybe<StringQueryOperatorInput>;
-  parent?: InputMaybe<NodeFilterInput>;
-  children?: InputMaybe<NodeFilterListInput>;
-  internal?: InputMaybe<InternalFilterInput>;
 };
 
 export type FileSortInput = {
@@ -3122,8 +3196,85 @@ export type MarkdownRemarkFieldsEnum =
   | 'frontmatter___to_date'
   | 'frontmatter___location'
   | 'frontmatter___technologies'
+  | 'frontmatter___photo___sourceInstanceName'
+  | 'frontmatter___photo___absolutePath'
+  | 'frontmatter___photo___relativePath'
+  | 'frontmatter___photo___extension'
+  | 'frontmatter___photo___size'
+  | 'frontmatter___photo___prettySize'
+  | 'frontmatter___photo___modifiedTime'
+  | 'frontmatter___photo___accessTime'
+  | 'frontmatter___photo___changeTime'
+  | 'frontmatter___photo___birthTime'
+  | 'frontmatter___photo___root'
+  | 'frontmatter___photo___dir'
+  | 'frontmatter___photo___base'
+  | 'frontmatter___photo___ext'
+  | 'frontmatter___photo___name'
+  | 'frontmatter___photo___relativeDirectory'
+  | 'frontmatter___photo___dev'
+  | 'frontmatter___photo___mode'
+  | 'frontmatter___photo___nlink'
+  | 'frontmatter___photo___uid'
+  | 'frontmatter___photo___gid'
+  | 'frontmatter___photo___rdev'
+  | 'frontmatter___photo___ino'
+  | 'frontmatter___photo___atimeMs'
+  | 'frontmatter___photo___mtimeMs'
+  | 'frontmatter___photo___ctimeMs'
+  | 'frontmatter___photo___atime'
+  | 'frontmatter___photo___mtime'
+  | 'frontmatter___photo___ctime'
+  | 'frontmatter___photo___birthtime'
+  | 'frontmatter___photo___birthtimeMs'
+  | 'frontmatter___photo___blksize'
+  | 'frontmatter___photo___blocks'
+  | 'frontmatter___photo___publicURL'
+  | 'frontmatter___photo___childrenMarkdownRemark'
+  | 'frontmatter___photo___childrenMarkdownRemark___id'
+  | 'frontmatter___photo___childrenMarkdownRemark___excerpt'
+  | 'frontmatter___photo___childrenMarkdownRemark___rawMarkdownBody'
+  | 'frontmatter___photo___childrenMarkdownRemark___fileAbsolutePath'
+  | 'frontmatter___photo___childrenMarkdownRemark___html'
+  | 'frontmatter___photo___childrenMarkdownRemark___htmlAst'
+  | 'frontmatter___photo___childrenMarkdownRemark___excerptAst'
+  | 'frontmatter___photo___childrenMarkdownRemark___headings'
+  | 'frontmatter___photo___childrenMarkdownRemark___timeToRead'
+  | 'frontmatter___photo___childrenMarkdownRemark___tableOfContents'
+  | 'frontmatter___photo___childrenMarkdownRemark___children'
+  | 'frontmatter___photo___childMarkdownRemark___id'
+  | 'frontmatter___photo___childMarkdownRemark___excerpt'
+  | 'frontmatter___photo___childMarkdownRemark___rawMarkdownBody'
+  | 'frontmatter___photo___childMarkdownRemark___fileAbsolutePath'
+  | 'frontmatter___photo___childMarkdownRemark___html'
+  | 'frontmatter___photo___childMarkdownRemark___htmlAst'
+  | 'frontmatter___photo___childMarkdownRemark___excerptAst'
+  | 'frontmatter___photo___childMarkdownRemark___headings'
+  | 'frontmatter___photo___childMarkdownRemark___timeToRead'
+  | 'frontmatter___photo___childMarkdownRemark___tableOfContents'
+  | 'frontmatter___photo___childMarkdownRemark___children'
+  | 'frontmatter___photo___childrenImageSharp'
+  | 'frontmatter___photo___childrenImageSharp___gatsbyImageData'
+  | 'frontmatter___photo___childrenImageSharp___id'
+  | 'frontmatter___photo___childrenImageSharp___children'
+  | 'frontmatter___photo___childImageSharp___gatsbyImageData'
+  | 'frontmatter___photo___childImageSharp___id'
+  | 'frontmatter___photo___childImageSharp___children'
+  | 'frontmatter___photo___id'
+  | 'frontmatter___photo___parent___id'
+  | 'frontmatter___photo___parent___children'
+  | 'frontmatter___photo___children'
+  | 'frontmatter___photo___children___id'
+  | 'frontmatter___photo___children___children'
+  | 'frontmatter___photo___internal___content'
+  | 'frontmatter___photo___internal___contentDigest'
+  | 'frontmatter___photo___internal___description'
+  | 'frontmatter___photo___internal___fieldOwners'
+  | 'frontmatter___photo___internal___ignoreType'
+  | 'frontmatter___photo___internal___mediaType'
+  | 'frontmatter___photo___internal___owner'
+  | 'frontmatter___photo___internal___type'
   | 'frontmatter___order'
-  | 'frontmatter___photo'
   | 'frontmatter___link'
   | 'fields___slug'
   | 'excerpt'
@@ -3503,6 +3654,11 @@ export type BlogIndexQueryVariables = Exact<{ [key: string]: never; }>;
 
 
 export type BlogIndexQuery = { site?: { siteMetadata?: { title?: string | null } | null } | null, allMarkdownRemark: { nodes: Array<{ excerpt?: string | null, fields?: { slug?: string | null } | null, frontmatter?: { date?: any | null, title?: string | null, description?: string | null } | null }> } };
+
+export type PhotographyIndexQueryVariables = Exact<{ [key: string]: never; }>;
+
+
+export type PhotographyIndexQuery = { site?: { siteMetadata?: { title?: string | null } | null } | null, photos: { nodes: Array<{ frontmatter?: { title?: string | null, date?: any | null, description?: string | null, publication_status?: string | null, photo?: { childImageSharp?: { gatsbyImageData: any } | null } | null } | null, fields?: { slug?: string | null } | null }> } };
 
 export type BlogPostBySlugQueryVariables = Exact<{
   id: Scalars['String'];

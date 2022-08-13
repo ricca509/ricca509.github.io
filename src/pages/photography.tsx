@@ -1,25 +1,16 @@
 import * as React from "react";
 import { graphql, PageProps } from "gatsby";
 import { PhotographyIndexQuery } from "../../graphql-types";
-
+import { PhotoPreview } from '../components/PhotoPreview/PhotoPreview';
 import Bio from "../components/Bio";
 import { Layout } from "../components/Layout/Layout";
 import { Seo } from "../components/Seo/Seo";
-import { GatsbyImage, getImage } from "gatsby-plugin-image"
+import { list } from './photography.module.css'
 
-const Photo = ({ photo }) => {
-  const image = getImage(photo?.frontmatter?.photo);
-  const title = photo?.frontmatter?.title || photo?.fields?.slug;
-
-  return (
-    <li key={photo.fields.slug}>
-      <GatsbyImage image={image} alt={title} />
-      <label>{title}</label>
-    </li>
-  );
-}
-
-const PhotographyIndex: React.FC<PageProps<PhotographyIndexQuery>> = ({ data, location }) => {
+const PhotographyIndex: React.FC<PageProps<PhotographyIndexQuery>> = ({
+  data,
+  location,
+}) => {
   const siteTitle = data?.site?.siteMetadata?.title || `Photography`;
   const photos = data.photos.nodes;
 
@@ -36,9 +27,13 @@ const PhotographyIndex: React.FC<PageProps<PhotographyIndexQuery>> = ({ data, lo
   return (
     <Layout showName location={location} title={siteTitle}>
       <Seo title="Photography" />
-      <ul>
+      <ul className={list}>
         {photos.map((photo) => {
-          return <Photo photo={photo} />;
+          return <PhotoPreview
+            imagePreview={photo?.frontmatter?.photo}
+            slug={photo.fields?.slug!}
+            title={photo?.frontmatter?.title!}
+          />;
         })}
       </ul>
     </Layout>
@@ -55,8 +50,11 @@ export const pageQuery = graphql`
       }
     }
     photos: allMarkdownRemark(
-      filter: {fields: {slug: {glob: "**/photography/*"}}, frontmatter: {publication_status: {eq: "published"}}}
-      sort: {fields: [frontmatter___date], order: ASC}
+      filter: {
+        fields: { slug: { glob: "**/photography/*" } }
+        frontmatter: { publication_status: { eq: "published" } }
+      }
+      sort: { fields: [frontmatter___date], order: ASC }
       limit: 1000
     ) {
       nodes {
@@ -67,7 +65,13 @@ export const pageQuery = graphql`
           publication_status
           photo {
             childImageSharp {
-              gatsbyImageData(width: 800)
+              gatsbyImageData(
+                width: 300
+                height: 300
+                aspectRatio: 1
+                transformOptions: { fit: COVER }
+                placeholder: BLURRED
+              )
             }
           }
         }

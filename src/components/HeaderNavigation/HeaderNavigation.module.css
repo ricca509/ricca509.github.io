@@ -1,11 +1,12 @@
 .container {  
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;  
+  align-items: flex-start; 
+  font-family: var(--blog-font-family); 
 }
 
 .textLinks {
-  font-size: 18px;
+  font-size: 14px;
 }
 
 @media only screen and (max-width: 767px) {

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog RSS Feed]]></title><description><![CDATA[Notes on web development, life, learning and the world.]]></description><link>https://www.riccardocoppola.me</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 13 Aug 2022 17:26:26 GMT</lastBuildDate><item><title><![CDATA[No title]]></title><description><![CDATA[👋 I’m Riccardo Coppola. I write code I am a passionate, detail oriented Team Lead and Full Stack JavaScript developer with over 10 years…]]></description><link>https://www.riccardocoppola.me/resume/about-me/</link><guid isPermaLink="false">https://www.riccardocoppola.me/resume/about-me/</guid><content:encoded>&lt;h1 id=&quot;-im-riccardo-coppola-i-write-code&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#-im-riccardo-coppola-i-write-code&quot; aria-label=&quot; im riccardo coppola i write code permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg height=&quot;20&quot; width=&quot;20&quot; viewBox=&quot;-32 0 512 512&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;&lt;path d=&quot;M440.667 182.109l7.143-40c1.313-7.355-4.342-14.109-11.813-14.109h-74.81l14.623-81.891C377.123 38.754 371.468 32 363.997 32h-40.632a12 12 0 0 0-11.813 9.891L296.175 128H197.54l14.623-81.891C213.477 38.754 207.822 32 200.35 32h-40.632a12 12 0 0 0-11.813 9.891L132.528 128H53.432a12 12 0 0 0-11.813 9.891l-7.143 40C33.163 185.246 38.818 192 46.289 192h74.81L98.242 320H19.146a12 12 0 0 0-11.813 9.891l-7.143 40C-1.123 377.246 4.532 384 12.003 384h74.81L72.19 465.891C70.877 473.246 76.532 480 84.003 480h40.632a12 12 0 0 0 11.813-9.891L151.826 384h98.634l-14.623 81.891C234.523 473.246 240.178 480 247.65 480h40.632a12 12 0 0 0 11.813-9.891L315.472 384h79.096a12 12 0 0 0 11.813-9.891l7.143-40c1.313-7.355-4.342-14.109-11.813-14.109h-74.81l22.857-128h79.096a12 12 0 0 0 11.813-9.891zM261.889 320h-98.634l22.857-128h98.634l-22.857 128z&quot;/&gt;&lt;/svg&gt;&lt;/a&gt;👋 I’m &lt;a href=&quot;mailto:riccardo@onefiniteloop.io&quot;&gt;Riccardo Coppola&lt;/a&gt;. I write code&lt;/h1&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog RSS Feed]]></title><description><![CDATA[Notes on web development, life, learning and the world.]]></description><link>https://www.riccardocoppola.me</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 15 Aug 2022 16:43:27 GMT</lastBuildDate><item><title><![CDATA[No title]]></title><description><![CDATA[👋 I’m Riccardo Coppola. I write code I am a passionate, detail oriented Team Lead and Full Stack JavaScript developer with over 10 years…]]></description><link>https://www.riccardocoppola.me/resume/about-me/</link><guid isPermaLink="false">https://www.riccardocoppola.me/resume/about-me/</guid><content:encoded>&lt;h1 id=&quot;-im-riccardo-coppola-i-write-code&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#-im-riccardo-coppola-i-write-code&quot; aria-label=&quot; im riccardo coppola i write code permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg height=&quot;20&quot; width=&quot;20&quot; viewBox=&quot;-32 0 512 512&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;&lt;path d=&quot;M440.667 182.109l7.143-40c1.313-7.355-4.342-14.109-11.813-14.109h-74.81l14.623-81.891C377.123 38.754 371.468 32 363.997 32h-40.632a12 12 0 0 0-11.813 9.891L296.175 128H197.54l14.623-81.891C213.477 38.754 207.822 32 200.35 32h-40.632a12 12 0 0 0-11.813 9.891L132.528 128H53.432a12 12 0 0 0-11.813 9.891l-7.143 40C33.163 185.246 38.818 192 46.289 192h74.81L98.242 320H19.146a12 12 0 0 0-11.813 9.891l-7.143 40C-1.123 377.246 4.532 384 12.003 384h74.81L72.19 465.891C70.877 473.246 76.532 480 84.003 480h40.632a12 12 0 0 0 11.813-9.891L151.826 384h98.634l-14.623 81.891C234.523 473.246 240.178 480 247.65 480h40.632a12 12 0 0 0 11.813-9.891L315.472 384h79.096a12 12 0 0 0 11.813-9.891l7.143-40c1.313-7.355-4.342-14.109-11.813-14.109h-74.81l22.857-128h79.096a12 12 0 0 0 11.813-9.891zM261.889 320h-98.634l22.857-128h98.634l-22.857 128z&quot;/&gt;&lt;/svg&gt;&lt;/a&gt;👋 I’m &lt;a href=&quot;mailto:riccardo@onefiniteloop.io&quot;&gt;Riccardo Coppola&lt;/a&gt;. I write code&lt;/h1&gt;
 &lt;p&gt;I am a passionate, detail oriented &lt;strong&gt;Team Lead&lt;/strong&gt; and &lt;strong&gt;Full Stack JavaScript developer&lt;/strong&gt; with over 10 years industry experience, extensive knowledge of DevOps practices and Agile methodologies.&lt;/p&gt;
 &lt;p&gt;Passionate about testing, workflow automation, code reusability and team dynamics; I focus on writing state of art, highly maintainable web applications using best practices, design patterns and performance testing, following a TDD/BDD approach.&lt;/p&gt;
 &lt;p&gt;I have hands-on experience in building cross-functional teams on site and in &lt;a href=&quot;https://www.onefiniteloop.io/embrace-distributed-teams-and-be-happy/&quot;&gt;distributed environments&lt;/a&gt;.
@@ -37,6 +37,42 @@ My responsibilities included: gathering user requirements, choosing the right te
 &lt;p&gt;How to be consistent, on the other hand, is a different challenge altogether, because life gets in the way and we need a way to work around it.&lt;/p&gt;
 &lt;p&gt;Consistency needs to be helped.&lt;/p&gt;
 &lt;p&gt;There are few tools or practices that I have found to be as helpful as a Weekly Review and I want to dig deeper into the what and how of it.&lt;/p&gt;
+&lt;p&gt;&lt;figure class=&quot;gatsby-resp-image-figure&quot; style=&quot;&quot;&gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 900px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/1f7780e3f8e54090de69282927d2151b/77090/glenn-carstens-peters-RLw-UC03Gwc-unsplash.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 66.66666666666666%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAANABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAQCA//EABUBAQEAAAAAAAAAAAAAAAAAAAIB/9oADAMBAAIQAxAAAAGl3wbAnI//xAAaEAADAAMBAAAAAAAAAAAAAAABAgMAEjFB/9oACAEBAAEFAlkoy6jRIoV87lHO/wD/xAAXEQEAAwAAAAAAAAAAAAAAAAAAAhES/9oACAEDAQE/Aaai/8QAFhEBAQEAAAAAAAAAAAAAAAAAABEB/9oACAECAQE/Aamv/8QAGxAAAgIDAQAAAAAAAAAAAAAAAAERIQIQMnH/2gAIAQEABj8Cs5nwnKnqGM//xAAZEAEAAwEBAAAAAAAAAAAAAAABABEhMUH/2gAIAQEAAT8h9QkT1RwgXavRag3CGS5Wjhm7P//aAAwDAQACAAMAAAAQ+D//xAAWEQEBAQAAAAAAAAAAAAAAAAARACH/2gAIAQMBAT8QAQ4X/8QAFhEBAQEAAAAAAAAAAAAAAAAAEQAh/9oACAECAQE/EEz63//EABsQAQEBAAIDAAAAAAAAAAAAAAERACFRMUFh/9oACAEBAAE/EEyPWFgatOrVMKljklvWkU8mvzDkbEw04sVXH3f/2Q==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;Plan&quot;
+        title=&quot;Photo by [Glenn Carstens-Peters](https://unsplash.com/@glenncarstenspeters) / [Unsplash](https://unsplash.com)&quot;
+        src=&quot;/static/1f7780e3f8e54090de69282927d2151b/8e1fc/glenn-carstens-peters-RLw-UC03Gwc-unsplash.jpg&quot;
+        srcset=&quot;/static/1f7780e3f8e54090de69282927d2151b/863e1/glenn-carstens-peters-RLw-UC03Gwc-unsplash.jpg 225w,
+/static/1f7780e3f8e54090de69282927d2151b/20e5d/glenn-carstens-peters-RLw-UC03Gwc-unsplash.jpg 450w,
+/static/1f7780e3f8e54090de69282927d2151b/8e1fc/glenn-carstens-peters-RLw-UC03Gwc-unsplash.jpg 900w,
+/static/1f7780e3f8e54090de69282927d2151b/b768e/glenn-carstens-peters-RLw-UC03Gwc-unsplash.jpg 1350w,
+/static/1f7780e3f8e54090de69282927d2151b/d9c39/glenn-carstens-peters-RLw-UC03Gwc-unsplash.jpg 1800w,
+/static/1f7780e3f8e54090de69282927d2151b/77090/glenn-carstens-peters-RLw-UC03Gwc-unsplash.jpg 4256w&quot;
+        sizes=&quot;(max-width: 900px) 100vw, 900px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;
+    &lt;figcaption class=&quot;gatsby-resp-image-figcaption&quot;&gt;&lt;p&gt;Photo by &lt;a href=&quot;https://unsplash.com/@glenncarstenspeters&quot;&gt;Glenn Carstens-Peters&lt;/a&gt; / &lt;a href=&quot;https://unsplash.com&quot;&gt;Unsplash&lt;/a&gt;&lt;/p&gt;&lt;/figcaption&gt;
+  &lt;/figure&gt;&lt;/p&gt;
 &lt;h2 id=&quot;what-is-a-weekly-review&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#what-is-a-weekly-review&quot; aria-label=&quot;what is a weekly review permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg height=&quot;20&quot; width=&quot;20&quot; viewBox=&quot;-32 0 512 512&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;&lt;path d=&quot;M440.667 182.109l7.143-40c1.313-7.355-4.342-14.109-11.813-14.109h-74.81l14.623-81.891C377.123 38.754 371.468 32 363.997 32h-40.632a12 12 0 0 0-11.813 9.891L296.175 128H197.54l14.623-81.891C213.477 38.754 207.822 32 200.35 32h-40.632a12 12 0 0 0-11.813 9.891L132.528 128H53.432a12 12 0 0 0-11.813 9.891l-7.143 40C33.163 185.246 38.818 192 46.289 192h74.81L98.242 320H19.146a12 12 0 0 0-11.813 9.891l-7.143 40C-1.123 377.246 4.532 384 12.003 384h74.81L72.19 465.891C70.877 473.246 76.532 480 84.003 480h40.632a12 12 0 0 0 11.813-9.891L151.826 384h98.634l-14.623 81.891C234.523 473.246 240.178 480 247.65 480h40.632a12 12 0 0 0 11.813-9.891L315.472 384h79.096a12 12 0 0 0 11.813-9.891l7.143-40c1.313-7.355-4.342-14.109-11.813-14.109h-74.81l22.857-128h79.096a12 12 0 0 0 11.813-9.891zM261.889 320h-98.634l22.857-128h98.634l-22.857 128z&quot;/&gt;&lt;/svg&gt;&lt;/a&gt;What is a Weekly Review?&lt;/h2&gt;
 &lt;p&gt;The Weekly Review is a very simple concept and as the name implies, it is a weekly meeting (usually with yourself, but could be with your team or your family, depending on the goals you are trying to achieve) that has the goal of reviewing the work done on the previous week and preparing the work to be done on the following week.&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;It has the power of getting you to zoom out from the day to day grind of completing tasks, to look at the big picture and make sure that you know why you are doing what you are doing and how that aligns to your goals and values.&lt;/em&gt;&lt;/p&gt;
@@ -453,8 +489,8 @@ This way you can keep your big feature within your normal development/delivery f
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;Photo by Isaiah Rustad / Unsplash&quot;
-        title=&quot;Photo by Isaiah Rustad / Unsplash&quot;
+        alt=&quot;Team&quot;
+        title=&quot;Photo by [Isaiah Rustad](https://unsplash.com/@isaiahrustad) / [Unsplash](https://unsplash.com)&quot;
         src=&quot;/static/1ae41ec11ddea80c55199b37a3dc6054/8e1fc/photo-1537907510278-cb33191816f0.jpg&quot;
         srcset=&quot;/static/1ae41ec11ddea80c55199b37a3dc6054/863e1/photo-1537907510278-cb33191816f0.jpg 225w,
 /static/1ae41ec11ddea80c55199b37a3dc6054/20e5d/photo-1537907510278-cb33191816f0.jpg 450w,
@@ -469,7 +505,7 @@ This way you can keep your big feature within your normal development/delivery f
       /&gt;
   &lt;/a&gt;
     &lt;/span&gt;
-    &lt;figcaption class=&quot;gatsby-resp-image-figcaption&quot;&gt;&lt;p&gt;Photo by Isaiah Rustad / Unsplash&lt;/p&gt;&lt;/figcaption&gt;
+    &lt;figcaption class=&quot;gatsby-resp-image-figcaption&quot;&gt;&lt;p&gt;Photo by &lt;a href=&quot;https://unsplash.com/@isaiahrustad&quot;&gt;Isaiah Rustad&lt;/a&gt; / &lt;a href=&quot;https://unsplash.com&quot;&gt;Unsplash&lt;/a&gt;&lt;/p&gt;&lt;/figcaption&gt;
   &lt;/figure&gt;&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;While having remote teams usually brings down the cost considerably, it comes with its own set of everyday challenges that can outweigh the benefits if not properly handled.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;Distributed teams are the subject of active &lt;a href=&quot;https://pdfs.semanticscholar.org/e3b9/57e8c1f6a286ce3b8876c12701a073a8f0c5.pdf&quot;&gt;research&lt;/a&gt; that questions the extent to which face-to-face and in-person communication is necessary for distributed teams to function effectively and why: empirical tests shows that the answer may depend on which team processes and outcomes one is exploring and how distance is measured (Geographical? Cultural? Time zone?).&lt;/p&gt;
@@ -503,8 +539,8 @@ This way you can keep your big feature within your normal development/delivery f
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;Photo by Pavan Trikutam / Unsplash&quot;
-        title=&quot;Photo by Pavan Trikutam / Unsplash&quot;
+        alt=&quot;Vintage telephone on the wall&quot;
+        title=&quot;Photo by [Pavan Trikutam](https://unsplash.com/@ptrikutam) / [Unsplash](https://unsplash.com)&quot;
         src=&quot;/static/649c86f438eed7db0c28b0df5c21ac1e/8e1fc/vintage_telephone_on_the_wall.jpg&quot;
         srcset=&quot;/static/649c86f438eed7db0c28b0df5c21ac1e/863e1/vintage_telephone_on_the_wall.jpg 225w,
 /static/649c86f438eed7db0c28b0df5c21ac1e/20e5d/vintage_telephone_on_the_wall.jpg 450w,
@@ -519,7 +555,7 @@ This way you can keep your big feature within your normal development/delivery f
       /&gt;
   &lt;/a&gt;
     &lt;/span&gt;
-    &lt;figcaption class=&quot;gatsby-resp-image-figcaption&quot;&gt;&lt;p&gt;Photo by Pavan Trikutam / Unsplash&lt;/p&gt;&lt;/figcaption&gt;
+    &lt;figcaption class=&quot;gatsby-resp-image-figcaption&quot;&gt;&lt;p&gt;Photo by &lt;a href=&quot;https://unsplash.com/@ptrikutam&quot;&gt;Pavan Trikutam&lt;/a&gt; / &lt;a href=&quot;https://unsplash.com&quot;&gt;Unsplash&lt;/a&gt;&lt;/p&gt;&lt;/figcaption&gt;
   &lt;/figure&gt;&lt;/p&gt;
 &lt;p&gt;Buy the &lt;strong&gt;right hardware for your meeting rooms:&lt;/strong&gt; if you work with Macs, I found &lt;a href=&quot;https://www.apple.com/uk/tv/&quot;&gt;Apple TV&lt;/a&gt; to be very helpful when it comes to sharing your screen/audio during a call. Another option may be to use &lt;a href=&quot;https://store.google.com/gb/product/chromecast&quot;&gt;Chromecast&lt;/a&gt;. Also related to setting up your rooms, having a &lt;strong&gt;conference speakerphone&lt;/strong&gt; can really make a difference when many people are sat around a table and far from the laptop: &lt;a href=&quot;https://www.jabra.co.uk/business/speakerphones/jabra-speak-series/jabra-speak-410#/#100-43000000-40&quot;&gt;Jabra Speak 410&lt;/a&gt; proved to be effective for this in my experience. And don’t forget a good 1080p webcam!&lt;/p&gt;
 &lt;p&gt;In my experience I found that meetings with everyone in the same room sitting around a microphone are not as effective as meetings when everyone dials in from his/her desk with their headset on: you always end up having issues with people sitting too far from the table and not being heard. My suggestion is for everyone dial in from their desk, regardless of how many people are involved in the call.&lt;/p&gt;
@@ -549,7 +585,7 @@ This way you can keep your big feature within your normal development/delivery f
 &lt;p&gt;In general, embrace simplicity and automate whatever possible: the simpler your projects are and the easier it is to work with them, the more productive developers will be. You want to keep the &lt;a href=&quot;https://en.wikipedia.org/wiki/Cognitive_load&quot;&gt;cognitive load&lt;/a&gt; as low as possible: co-locate documentation with code, create standards for all teams to follow, enforce and document them and let everyone know, organise workshops and “sell” these concepts to everyone.&lt;/p&gt;
 &lt;h2 id=&quot;clearly-define-and-document-roles&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#clearly-define-and-document-roles&quot; aria-label=&quot;clearly define and document roles permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg height=&quot;20&quot; width=&quot;20&quot; viewBox=&quot;-32 0 512 512&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;&lt;path d=&quot;M440.667 182.109l7.143-40c1.313-7.355-4.342-14.109-11.813-14.109h-74.81l14.623-81.891C377.123 38.754 371.468 32 363.997 32h-40.632a12 12 0 0 0-11.813 9.891L296.175 128H197.54l14.623-81.891C213.477 38.754 207.822 32 200.35 32h-40.632a12 12 0 0 0-11.813 9.891L132.528 128H53.432a12 12 0 0 0-11.813 9.891l-7.143 40C33.163 185.246 38.818 192 46.289 192h74.81L98.242 320H19.146a12 12 0 0 0-11.813 9.891l-7.143 40C-1.123 377.246 4.532 384 12.003 384h74.81L72.19 465.891C70.877 473.246 76.532 480 84.003 480h40.632a12 12 0 0 0 11.813-9.891L151.826 384h98.634l-14.623 81.891C234.523 473.246 240.178 480 247.65 480h40.632a12 12 0 0 0 11.813-9.891L315.472 384h79.096a12 12 0 0 0 11.813-9.891l7.143-40c1.313-7.355-4.342-14.109-11.813-14.109h-74.81l22.857-128h79.096a12 12 0 0 0 11.813-9.891zM261.889 320h-98.634l22.857-128h98.634l-22.857 128z&quot;/&gt;&lt;/svg&gt;&lt;/a&gt;Clearly define and document roles&lt;/h2&gt;
 &lt;p&gt;You can expect people from different teams to have never worked together before so it is important that everyone in every teams know exactly the complete hierarchy with names, photos and ways of getting in touch. This way everyone will always know who to get in touch with depending on the issue they’re having or the information they’re seeking.&lt;/p&gt;
-&lt;p&gt;This diagram would also outline a clear *&lt;strong&gt;*escalation path**&lt;/strong&gt; if an issue arises.&lt;/p&gt;
+&lt;p&gt;This diagram would also outline a clear &lt;strong&gt;escalation path&lt;/strong&gt; if an issue arises.&lt;/p&gt;
 &lt;h2 id=&quot;write-everything-down-always&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#write-everything-down-always&quot; aria-label=&quot;write everything down always permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg height=&quot;20&quot; width=&quot;20&quot; viewBox=&quot;-32 0 512 512&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;&lt;path d=&quot;M440.667 182.109l7.143-40c1.313-7.355-4.342-14.109-11.813-14.109h-74.81l14.623-81.891C377.123 38.754 371.468 32 363.997 32h-40.632a12 12 0 0 0-11.813 9.891L296.175 128H197.54l14.623-81.891C213.477 38.754 207.822 32 200.35 32h-40.632a12 12 0 0 0-11.813 9.891L132.528 128H53.432a12 12 0 0 0-11.813 9.891l-7.143 40C33.163 185.246 38.818 192 46.289 192h74.81L98.242 320H19.146a12 12 0 0 0-11.813 9.891l-7.143 40C-1.123 377.246 4.532 384 12.003 384h74.81L72.19 465.891C70.877 473.246 76.532 480 84.003 480h40.632a12 12 0 0 0 11.813-9.891L151.826 384h98.634l-14.623 81.891C234.523 473.246 240.178 480 247.65 480h40.632a12 12 0 0 0 11.813-9.891L315.472 384h79.096a12 12 0 0 0 11.813-9.891l7.143-40c1.313-7.355-4.342-14.109-11.813-14.109h-74.81l22.857-128h79.096a12 12 0 0 0 11.813-9.891zM261.889 320h-98.634l22.857-128h98.634l-22.857 128z&quot;/&gt;&lt;/svg&gt;&lt;/a&gt;Write everything down, always&lt;/h2&gt;
 &lt;p&gt;This is a rule that everyone should follow, whatever the team nature, but it becomes vital when people are not co-located.&lt;/p&gt;
 &lt;p&gt;Important discussions don’t (can’t) always happen during conference calls, decisions are made during a quick lunch, ideas have the tendency to reveal themselves to us at the most peculiar times, but we need all the team to be involved and everyone to know: that is why comments in Jira/Trello are so important as they give everyone visibility over the work that’s being done.&lt;/p&gt;
@@ -574,8 +610,8 @@ This way you can keep your big feature within your normal development/delivery f
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;Tomada en mi oficina Monterrey. Photo by Luis Cortes / Unsplash&quot;
-        title=&quot;Tomada en mi oficina Monterrey. Photo by Luis Cortes / Unsplash&quot;
+        alt=&quot;Clocks on the wall&quot;
+        title=&quot;Tomada en mi oficina Monterrey. Photo by [Luis Cortes](https://unsplash.com/@luiscortestamez) / [Unsplash](https://unsplash.com)&quot;
         src=&quot;/static/37ddaad3910758e92b30540825b50795/8e1fc/tomada_en_mi_oficina_monterrey.jpg&quot;
         srcset=&quot;/static/37ddaad3910758e92b30540825b50795/863e1/tomada_en_mi_oficina_monterrey.jpg 225w,
 /static/37ddaad3910758e92b30540825b50795/20e5d/tomada_en_mi_oficina_monterrey.jpg 450w,
@@ -590,7 +626,7 @@ This way you can keep your big feature within your normal development/delivery f
       /&gt;
   &lt;/a&gt;
     &lt;/span&gt;
-    &lt;figcaption class=&quot;gatsby-resp-image-figcaption&quot;&gt;&lt;p&gt;Tomada en mi oficina Monterrey. Photo by Luis Cortes / Unsplash&lt;/p&gt;&lt;/figcaption&gt;
+    &lt;figcaption class=&quot;gatsby-resp-image-figcaption&quot;&gt;&lt;p&gt;Tomada en mi oficina Monterrey. Photo by &lt;a href=&quot;https://unsplash.com/@luiscortestamez&quot;&gt;Luis Cortes&lt;/a&gt; / &lt;a href=&quot;https://unsplash.com&quot;&gt;Unsplash&lt;/a&gt;&lt;/p&gt;&lt;/figcaption&gt;
   &lt;/figure&gt;&lt;/p&gt;
 &lt;p&gt;Although this definitely represents a challenge, it can also represent an opportunity to prolong the work cycle and increase velocity. In such an environment, blockers can be passed to a fresh pair of eyes at the end of the day and possibly get resolved by next morning, something that would be impossible when following the same working hours.&lt;/p&gt;
 &lt;p&gt;Of course it all comes at a cost, and teams situated in different time zones require more preparation.&lt;/p&gt;
@@ -631,8 +667,8 @@ This way you can keep your big feature within your normal development/delivery f
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;Photo by Anthony DELANOIX / Unsplash&quot;
-        title=&quot;Photo by Anthony DELANOIX / Unsplash&quot;
+        alt=&quot;Party fans raised their hands&quot;
+        title=&quot;Photo by [Anthony DELANOIX](https://unsplash.com/@anthonydelanoix) / [Unsplash](https://unsplash.com)&quot;
         src=&quot;/static/c35da6146737be7a8aa72f648ed8f007/8e1fc/party_fans_raised_their_hands.jpg&quot;
         srcset=&quot;/static/c35da6146737be7a8aa72f648ed8f007/863e1/party_fans_raised_their_hands.jpg 225w,
 /static/c35da6146737be7a8aa72f648ed8f007/20e5d/party_fans_raised_their_hands.jpg 450w,
@@ -647,7 +683,7 @@ This way you can keep your big feature within your normal development/delivery f
       /&gt;
   &lt;/a&gt;
     &lt;/span&gt;
-    &lt;figcaption class=&quot;gatsby-resp-image-figcaption&quot;&gt;&lt;p&gt;Photo by Anthony DELANOIX / Unsplash&lt;/p&gt;&lt;/figcaption&gt;
+    &lt;figcaption class=&quot;gatsby-resp-image-figcaption&quot;&gt;&lt;p&gt;Photo by &lt;a href=&quot;https://unsplash.com/@anthonydelanoix&quot;&gt;Anthony DELANOIX&lt;/a&gt; / &lt;a href=&quot;https://unsplash.com&quot;&gt;Unsplash&lt;/a&gt;&lt;/p&gt;&lt;/figcaption&gt;
   &lt;/figure&gt;&lt;/p&gt;
 &lt;p&gt;If you’re interested in finding out more, &lt;a href=&quot;https://www.infoq.com/articles/culture-distributed-team/&quot;&gt;Managing Cultural Differences in Your Distributed Team&lt;/a&gt; is a good read.&lt;/p&gt;
 &lt;h2 id=&quot;experience-their-culture-in-person-whenever-you-can-aka-invest-in-airfare&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#experience-their-culture-in-person-whenever-you-can-aka-invest-in-airfare&quot; aria-label=&quot;experience their culture in person whenever you can aka invest in airfare permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg height=&quot;20&quot; width=&quot;20&quot; viewBox=&quot;-32 0 512 512&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;&lt;path d=&quot;M440.667 182.109l7.143-40c1.313-7.355-4.342-14.109-11.813-14.109h-74.81l14.623-81.891C377.123 38.754 371.468 32 363.997 32h-40.632a12 12 0 0 0-11.813 9.891L296.175 128H197.54l14.623-81.891C213.477 38.754 207.822 32 200.35 32h-40.632a12 12 0 0 0-11.813 9.891L132.528 128H53.432a12 12 0 0 0-11.813 9.891l-7.143 40C33.163 185.246 38.818 192 46.289 192h74.81L98.242 320H19.146a12 12 0 0 0-11.813 9.891l-7.143 40C-1.123 377.246 4.532 384 12.003 384h74.81L72.19 465.891C70.877 473.246 76.532 480 84.003 480h40.632a12 12 0 0 0 11.813-9.891L151.826 384h98.634l-14.623 81.891C234.523 473.246 240.178 480 247.65 480h40.632a12 12 0 0 0 11.813-9.891L315.472 384h79.096a12 12 0 0 0 11.813-9.891l7.143-40c1.313-7.355-4.342-14.109-11.813-14.109h-74.81l22.857-128h79.096a12 12 0 0 0 11.813-9.891zM261.889 320h-98.634l22.857-128h98.634l-22.857 128z&quot;/&gt;&lt;/svg&gt;&lt;/a&gt;Experience their culture in person whenever you can, aka invest in airfare&lt;/h2&gt;
@@ -703,8 +739,7 @@ This way you can keep your big feature within your normal development/delivery f
 &lt;li&gt;&lt;strong&gt;Rejected/Failed&lt;/strong&gt;: When reviewing the Incoming column I may decide that some actions are not needed after all, or after trying to work on the I may realise that it was a mistake: in that case I’d just drop them into this column&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Done&lt;/strong&gt;: The most satisfactory column: whenever something is done, drag it all the way to the end. This is the reason Done is the last column&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;figure class=&quot;gatsby-resp-image-figure&quot; style=&quot;&quot;&gt;
-    &lt;span
+&lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 900px; &quot;
     &gt;
@@ -736,9 +771,7 @@ This way you can keep your big feature within your normal development/delivery f
         decoding=&quot;async&quot;
       /&gt;
   &lt;/a&gt;
-    &lt;/span&gt;
-    &lt;figcaption class=&quot;gatsby-resp-image-figcaption&quot;&gt;&lt;p&gt;The simple 4-columns layout&lt;/p&gt;&lt;/figcaption&gt;
-  &lt;/figure&gt;&lt;/p&gt;
+    &lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;If you wanted to keep things even easier, you could combine the last two columns into one: &lt;strong&gt;Rejected || Done&lt;/strong&gt; and switch to a 3-columns layout. I’ve had this for a while and worked great too.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Rules&lt;/strong&gt;:&lt;/p&gt;
 &lt;ul&gt;

@@ -27,7 +27,6 @@ const BlogPostTemplate: React.FC<PageProps<BlogPostBySlugQuery>> = ({
         description={post.frontmatter.description || post.excerpt}
       />
       <article
-        className="blog-post"
         itemScope
         itemType="http://schema.org/Article"
       >

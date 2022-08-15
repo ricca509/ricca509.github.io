@@ -3669,6 +3669,13 @@ export type BlogPostBySlugQueryVariables = Exact<{
 
 export type BlogPostBySlugQuery = { site?: { siteMetadata?: { title?: string | null } | null } | null, markdownRemark?: { id: string, excerpt?: string | null, html?: string | null, frontmatter?: { title?: string | null, date?: any | null, description?: string | null } | null } | null, previous?: { fields?: { slug?: string | null } | null, frontmatter?: { title?: string | null } | null } | null, next?: { fields?: { slug?: string | null } | null, frontmatter?: { title?: string | null } | null } | null };
 
+export type PhotoPostBySlugQueryVariables = Exact<{
+  id: Scalars['String'];
+}>;
+
+
+export type PhotoPostBySlugQuery = { site?: { siteMetadata?: { title?: string | null } | null } | null, markdownRemark?: { html?: string | null, frontmatter?: { title?: string | null, date?: any | null, description?: string | null, publication_status?: string | null, photo?: { childImageSharp?: { gatsbyImageData: any } | null } | null } | null, fields?: { slug?: string | null } | null } | null };
+
 export type GatsbyImageSharpFixedFragment = { base64?: string | null, width: number, height: number, src: string, srcSet: string };
 
 export type GatsbyImageSharpFixed_TracedSvgFragment = { tracedSVG?: string | null, width: number, height: number, src: string, srcSet: string };

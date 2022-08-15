@@ -1,6 +1,7 @@
+import { Link } from 'gatsby';
 import { GatsbyImage, getImage, IGatsbyImageData } from 'gatsby-plugin-image';
 import React from 'react';
-import { container } from './PhotoPreview.module.css';
+import { container, title } from './PhotoPreview.module.css';
 export interface PhotoPreviewProps {
   slug: string;
   title: string;
@@ -16,10 +17,10 @@ export const PhotoPreview: React.FC<PhotoPreviewProps> = ({
 
   return (
     <li key={slug} className={container}>
-      <GatsbyImage image={image} alt={title || slug} />
-      <label style={{
-        display: 'block'
-      }}>{title}</label>
+      <Link to={slug || "/photography"} itemProp="url">
+        <GatsbyImage image={image} alt={title || slug} />      
+        <span className={title} itemProp="headline">{title}</span>
+      </Link>      
     </li>
   );
 };

@@ -30,6 +30,7 @@ const PhotographyIndex: React.FC<PageProps<PhotographyIndexQuery>> = ({
       <ul className={list}>
         {photos.map((photo) => {
           return <PhotoPreview
+            key={photo.fields?.slug}
             imagePreview={photo?.frontmatter?.photo}
             slug={photo.fields?.slug!}
             title={photo?.frontmatter?.title!}

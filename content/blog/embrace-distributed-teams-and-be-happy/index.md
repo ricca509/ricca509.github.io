@@ -19,7 +19,7 @@ Hewlett-Packard (HP) uses these teams to meet the demands of local economies acr
 
 _“No Borders” 2005, p. 37_
 
-![Photo by [Isaiah Rustad](https://unsplash.com/@isaiahrustad) / [Unsplash](https://unsplash.com)](./images/photo-1537907510278-cb33191816f0.jpeg)
+![Team](./images/photo-1537907510278-cb33191816f0.jpeg "Photo by [Isaiah Rustad](https://unsplash.com/@isaiahrustad) / [Unsplash](https://unsplash.com)")
 
 _While having remote teams usually brings down the cost considerably, it comes with its own set of everyday challenges that can outweigh the benefits if not properly handled._
 
@@ -49,7 +49,7 @@ Whether people sit in the same office or not, **you need a tool to organise and 
 
 Make sure you invest in **good headsets:** I found [Sennheiser PC 5 CHAT](https://en-uk.sennheiser.com/pc-5-chat) to be cheap and work perfectly for internet calls.
 
-![Photo by [Pavan Trikutam](https://unsplash.com/@ptrikutam) / [Unsplash](https://unsplash.com)](./images/vintage_telephone_on_the_wall.jpeg)
+![Vintage telephone on the wall](./images/vintage_telephone_on_the_wall.jpeg "Photo by [Pavan Trikutam](https://unsplash.com/@ptrikutam) / [Unsplash](https://unsplash.com)")
 
 Buy the **right hardware for your meeting rooms:** if you work with Macs, I found [Apple TV](https://www.apple.com/uk/tv/) to be very helpful when it comes to sharing your screen/audio during a call. Another option may be to use [Chromecast](https://store.google.com/gb/product/chromecast). Also related to setting up your rooms, having a **conference speakerphone** can really make a difference when many people are sat around a table and far from the laptop: [Jabra Speak 410](https://www.jabra.co.uk/business/speakerphones/jabra-speak-series/jabra-speak-410#/#100-43000000-40) proved to be effective for this in my experience. And don't forget a good 1080p webcam!
 
@@ -91,7 +91,7 @@ In general, embrace simplicity and automate whatever possible: the simpler your 
 
 You can expect people from different teams to have never worked together before so it is important that everyone in every teams know exactly the complete hierarchy with names, photos and ways of getting in touch. This way everyone will always know who to get in touch with depending on the issue they're having or the information they're seeking.
 
-This diagram would also outline a clear \***\*escalation path\*\*** if an issue arises.
+This diagram would also outline a clear **escalation path** if an issue arises.
 
 ## Write everything down, always
 
@@ -105,7 +105,7 @@ Use the comments, update stories/cards often and use your product management too
 
 Multinational multicultural distributed teams present opportunities and challenges to organisations: having teams working in different time zones is usually seen as a problem because people have a hard time organising meetings where everyone can attend and issues are resolved slowly because of lack of quick communication.
 
-![Tomada en mi oficina Monterrey. Photo by [Luis Cortes](https://unsplash.com/@luiscortestamez) / [Unsplash](https://unsplash.com)](./images/tomada_en_mi_oficina_monterrey.jpeg)
+![Clocks on the wall](./images/tomada_en_mi_oficina_monterrey.jpeg "Tomada en mi oficina Monterrey. Photo by [Luis Cortes](https://unsplash.com/@luiscortestamez) / [Unsplash](https://unsplash.com)")
 
 
 Although this definitely represents a challenge, it can also represent an opportunity to prolong the work cycle and increase velocity. In such an environment, blockers can be passed to a fresh pair of eyes at the end of the day and possibly get resolved by next morning, something that would be impossible when following the same working hours.
@@ -135,7 +135,7 @@ I always make it a priority to get to know and experience their culture as much 
 
 Knowing people personalities, habits and needs will help you with the daily organisation of work in a way that can improve productivity and boost team morale: people that see their culture respected will inevitably be happier when working with you. This may mean adjusting your communication patterns to use/avoid words or phrases that may be offensive, moving meetings to avoid specific parts of their day.
 
-![Photo by [Anthony DELANOIX](https://unsplash.com/@anthonydelanoix) / [Unsplash](https://unsplash.com)](./images/party_fans_raised_their_hands.jpeg)
+![Party fans raised their hands](./images/party_fans_raised_their_hands.jpeg  "Photo by [Anthony DELANOIX](https://unsplash.com/@anthonydelanoix) / [Unsplash](https://unsplash.com)")
 
 
 If you're interested in finding out more, [Managing Cultural Differences in Your Distributed Team](https://www.infoq.com/articles/culture-distributed-team/) is a good read.

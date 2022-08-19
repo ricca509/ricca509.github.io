@@ -3,6 +3,7 @@ title: "Achieving goals: the importance of the Weekly Review"
 date: "2022-07-27T11:00:00Z"
 description: "The Weekly Review has the power of getting you to zoom out from the day to day grind of completing tasks, to look at the big picture and make sure that you know why you are doing what you are doing and how that aligns to your goals and values."
 publication_status: published
+tags: productivity
 ---
 
 In the quest of [being productive](/blog/on-being-productive/) and achieve goals, one thing that is easily discovered is that consistency is key: this is actually not a big discovery, as it applies to pretty much every area of life that one may try to improve.

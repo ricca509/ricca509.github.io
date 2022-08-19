@@ -5,7 +5,7 @@
  * See: https://www.gatsbyjs.com/docs/use-static-query/
  */
 
-import * as React from "react";
+import React from "react";
 import { Helmet } from "react-helmet";
 import { useStaticQuery, graphql } from "gatsby";
 
@@ -14,6 +14,7 @@ interface SeoProps {
   lang?: string;
   meta?: any[];
   title: string;
+  type: 'blog' | 'about'
 }
 
 export const Seo: React.FC<SeoProps> = ({
@@ -47,11 +48,15 @@ export const Seo: React.FC<SeoProps> = ({
         lang,
       }}
       title={title}
-      titleTemplate={defaultTitle && `%s | ${defaultTitle}`}
+      titleTemplate={defaultTitle && `%s - ${defaultTitle}`}
       meta={[
         {
           name: `description`,
           content: metaDescription,
+        },
+        {
+          property: `og:locale`,
+          content: 'en_US',
         },
         {
           property: `og:title`,

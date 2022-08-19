@@ -11,7 +11,7 @@ import { container } from "./Bio.module.css";
 const Bio = () => {
   return (
     <div className={container}>
-      Notes on web development, life, learning and the world.
+      My notes on programming, life, learning and the world.
     </div>
   );
 };

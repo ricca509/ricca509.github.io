@@ -2,13 +2,15 @@ import type { GatsbyConfig } from "gatsby";
 import path from "path";
 
 const siteUrl = process.env.URL || "https://www.riccardocoppola.me";
+const name = "Riccardo Coppola";
+const description = "My notes on programming, life, learning and the world";
 
 const config: GatsbyConfig = {
   siteMetadata: {
-    title: `Riccardo Coppola`,
-    description: `Notes on web development, life, learning and the world.`,
+    title: name,
+    description,
     author: {
-      name: `Riccardo Coppola`,
+      name: name,
       summary: `I help companies to create better web applications. 
 
       Certified Level 3 Personal trainer, nutrition geek, trained barista and (very) amateur photographer.`,
@@ -111,7 +113,7 @@ const config: GatsbyConfig = {
             resolve: `gatsby-remark-images`,
             options: {
               maxWidth: 900,
-              showCaptions: ['title'],
+              showCaptions: ["title"],
               markdownCaptions: true,
             },
           },
@@ -179,6 +181,7 @@ const config: GatsbyConfig = {
             query: `
               {
                 allMarkdownRemark(
+                  filter: {fields: {slug: {glob: "**/blog/*"}}, frontmatter: {publication_status: {eq: "published"}}},
                   sort: { order: DESC, fields: [frontmatter___date] },
                 ) {
                   nodes {
@@ -196,7 +199,7 @@ const config: GatsbyConfig = {
               }
             `,
             output: "/rss.xml",
-            title: "Gatsby Starter Blog RSS Feed",
+            title: `${description} - ${name}`
           },
         ],
       },
@@ -204,8 +207,8 @@ const config: GatsbyConfig = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Riccardo Coppola`,
-        short_name: `GatsbyJS`,
+        name,
+        short_name: description,
         start_url: `/`,
         background_color: `#ffffff`,
         // This will impact how browsers show your PWA/website

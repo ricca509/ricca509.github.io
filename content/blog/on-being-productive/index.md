@@ -3,6 +3,7 @@ title: On being productive
 date: "2019-07-30T21:16:00Z"
 description: "Our day is bombarded with inputs, things to be done and to be done on time: the more our lives become dynamic, the less can we rely on routine to remember what we need to do, so we need to develop new habits for being 'productive'."
 publication_status: published
+tags: productivity
 ---
 
 Our day is bombarded with inputs, things to be done and to be done on time: the more our lives become dynamic, the less can we rely on routine to remember what we need to do, so we need to develop new habits for being "productive".

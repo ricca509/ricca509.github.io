@@ -6,7 +6,7 @@ const siteUrl = process.env.URL || "https://www.riccardocoppola.me";
 const config: GatsbyConfig = {
   siteMetadata: {
     title: `Riccardo Coppola`,
-    description: `Notes on web development, life, learning and the world.`,
+    description: `Notes on programming, life, learning and the world.`,
     author: {
       name: `Riccardo Coppola`,
       summary: `I help companies to create better web applications. 
@@ -196,7 +196,7 @@ const config: GatsbyConfig = {
               }
             `,
             output: "/rss.xml",
-            title: "Gatsby Starter Blog RSS Feed",
+            title: "My notes on programming, life, learning and the world - Riccardo Coppola",
           },
         ],
       },

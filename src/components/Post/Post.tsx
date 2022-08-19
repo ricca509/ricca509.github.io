@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "gatsby";
-import { postTitle, date } from "./Post.module.css";
+import { postTitle, date, container } from "./Post.module.css";
 
 interface Post {
   excerpt?: string | null;
@@ -9,6 +9,7 @@ interface Post {
     date?: any | null;
     title?: string | null;
     description?: string | null;
+    tags?: string | null;
   } | null;
 }
 
@@ -18,10 +19,11 @@ interface PostProps {
 }
 
 export const Post: React.FC<PostProps> = ({ post, title }) => {
+  const tags = post.frontmatter?.tags?.split(",");
   return (
     <li key={post?.fields?.slug}>
       <article
-        className="post-list-item"
+        className={container}
         itemScope
         itemType="http://schema.org/Article"
       >
@@ -32,6 +34,19 @@ export const Post: React.FC<PostProps> = ({ post, title }) => {
               <span itemProp="headline">{title}</span>
             </Link>
           </h2>
+          {post.frontmatter?.tags && (
+            <div>
+              <span
+                style={{
+                  fontSize: "14px",
+                  color: "var(--purple)",
+                  fontFamily: "var(--blog-font-family)",
+                }}
+              >
+                {tags?.map((tag) => `#${tag.trim()} `)}
+              </span>
+            </div>
+          )}
         </header>
       </article>
     </li>

@@ -42,8 +42,12 @@ const BlogPostTemplate: React.FC<PageProps<BlogPostBySlugQuery>> = ({
           itemProp="articleBody"
         />
         <hr />
-        <footer>
-          <Bio />
+        <footer style={{
+          marginBottom: 30,
+          fontSize: 18,
+          color: 'var(--grey-2)'
+        }}>
+          Heya! I love a good old email: feel free to drop me a line at <a href="mailto:ricca509@gmail.com">ricca509@gmail.com</a>. 
         </footer>
       </article>
       <nav className="blog-post-nav">

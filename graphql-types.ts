@@ -694,8 +694,8 @@ export type Frontmatter = {
   location?: Maybe<Scalars['String']>;
   technologies?: Maybe<Array<Maybe<Scalars['String']>>>;
   order?: Maybe<Scalars['Int']>;
-  photo?: Maybe<Scalars['String']>;
   link?: Maybe<Scalars['String']>;
+  tags?: Maybe<Scalars['String']>;
 };
 
 
@@ -1086,8 +1086,8 @@ export type FrontmatterFilterInput = {
   location?: InputMaybe<StringQueryOperatorInput>;
   technologies?: InputMaybe<StringQueryOperatorInput>;
   order?: InputMaybe<IntQueryOperatorInput>;
-  photo?: InputMaybe<StringQueryOperatorInput>;
   link?: InputMaybe<StringQueryOperatorInput>;
+  tags?: InputMaybe<StringQueryOperatorInput>;
 };
 
 export type FieldsFilterInput = {
@@ -1310,8 +1310,8 @@ export type FileFieldsEnum =
   | 'childrenMarkdownRemark___frontmatter___location'
   | 'childrenMarkdownRemark___frontmatter___technologies'
   | 'childrenMarkdownRemark___frontmatter___order'
-  | 'childrenMarkdownRemark___frontmatter___photo'
   | 'childrenMarkdownRemark___frontmatter___link'
+  | 'childrenMarkdownRemark___frontmatter___tags'
   | 'childrenMarkdownRemark___fields___slug'
   | 'childrenMarkdownRemark___excerpt'
   | 'childrenMarkdownRemark___rawMarkdownBody'
@@ -1377,8 +1377,8 @@ export type FileFieldsEnum =
   | 'childMarkdownRemark___frontmatter___location'
   | 'childMarkdownRemark___frontmatter___technologies'
   | 'childMarkdownRemark___frontmatter___order'
-  | 'childMarkdownRemark___frontmatter___photo'
   | 'childMarkdownRemark___frontmatter___link'
+  | 'childMarkdownRemark___frontmatter___tags'
   | 'childMarkdownRemark___fields___slug'
   | 'childMarkdownRemark___excerpt'
   | 'childMarkdownRemark___rawMarkdownBody'
@@ -3123,8 +3123,8 @@ export type MarkdownRemarkFieldsEnum =
   | 'frontmatter___location'
   | 'frontmatter___technologies'
   | 'frontmatter___order'
-  | 'frontmatter___photo'
   | 'frontmatter___link'
+  | 'frontmatter___tags'
   | 'fields___slug'
   | 'excerpt'
   | 'rawMarkdownBody'
@@ -3502,7 +3502,7 @@ export type ProfileQuery = { file?: { childImageSharp?: { gatsbyImageData: any }
 export type BlogIndexQueryVariables = Exact<{ [key: string]: never; }>;
 
 
-export type BlogIndexQuery = { site?: { siteMetadata?: { title?: string | null } | null } | null, allMarkdownRemark: { nodes: Array<{ excerpt?: string | null, fields?: { slug?: string | null } | null, frontmatter?: { date?: any | null, title?: string | null, description?: string | null } | null }> } };
+export type BlogIndexQuery = { site?: { siteMetadata?: { title?: string | null } | null } | null, allMarkdownRemark: { nodes: Array<{ excerpt?: string | null, fields?: { slug?: string | null } | null, frontmatter?: { date?: any | null, title?: string | null, description?: string | null, tags?: string | null } | null }> } };
 
 export type BlogPostBySlugQueryVariables = Exact<{
   id: Scalars['String'];

@@ -3,6 +3,7 @@ title: Embrace distributed teams and be happy
 date: "2020-01-21T11:00:00Z"
 description: "Although having remote teams usually brings down the cost considerably, it comes with its own set of everyday challenges that can outweigh the benefits if not properly handled."
 publication_status: published
+tags: teamwork
 ---
 
 Remote teams have become the norm, rather than the exception, for many companies requiring software engineering services (and not only).

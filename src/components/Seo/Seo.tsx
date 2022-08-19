@@ -5,7 +5,7 @@
  * See: https://www.gatsbyjs.com/docs/use-static-query/
  */
 
-import * as React from "react";
+import React from "react";
 import { Helmet } from "react-helmet";
 import { useStaticQuery, graphql } from "gatsby";
 
@@ -14,6 +14,12 @@ interface SeoProps {
   lang?: string;
   meta?: any[];
   title: string;
+  /** Used for og:type */
+  type?: string;
+  customMeta?: React.DetailedHTMLProps<
+    React.MetaHTMLAttributes<HTMLMetaElement>,
+    HTMLMetaElement
+  >[];
 }
 
 export const Seo: React.FC<SeoProps> = ({
@@ -21,6 +27,7 @@ export const Seo: React.FC<SeoProps> = ({
   lang = "en",
   meta = [],
   title,
+  type = "website",
 }) => {
   const { site } = useStaticQuery(
     graphql`
@@ -47,11 +54,15 @@ export const Seo: React.FC<SeoProps> = ({
         lang,
       }}
       title={title}
-      titleTemplate={defaultTitle && `%s | ${defaultTitle}`}
+      titleTemplate={defaultTitle && `%s - ${defaultTitle}`}
       meta={[
         {
           name: `description`,
           content: metaDescription,
+        },
+        {
+          property: `og:locale`,
+          content: "en_US",
         },
         {
           property: `og:title`,
@@ -63,7 +74,11 @@ export const Seo: React.FC<SeoProps> = ({
         },
         {
           property: `og:type`,
-          content: `website`,
+          content: type,
+        },
+        {
+          property: `og:site_name`,
+          content: defaultTitle,
         },
         {
           name: `twitter:card`,
@@ -82,8 +97,7 @@ export const Seo: React.FC<SeoProps> = ({
           content: metaDescription,
         },
       ].concat(meta)}
-    >    
-    </Helmet>
+    ></Helmet>
   );
 };
 

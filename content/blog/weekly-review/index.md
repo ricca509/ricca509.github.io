@@ -3,6 +3,7 @@ title: "Achieving goals: the importance of the Weekly Review"
 date: "2022-07-27T11:00:00Z"
 description: "The Weekly Review has the power of getting you to zoom out from the day to day grind of completing tasks, to look at the big picture and make sure that you know why you are doing what you are doing and how that aligns to your goals and values."
 publication_status: published
+featured_image: ./images/plan.jpg
 ---
 
 In the quest of [being productive](/blog/on-being-productive/) and achieve goals, one thing that is easily discovered is that consistency is key: this is actually not a big discovery, as it applies to pretty much every area of life that one may try to improve.
@@ -13,7 +14,7 @@ Consistency needs to be helped.
 
 There are few tools or practices that I have found to be as helpful as a Weekly Review and I want to dig deeper into the what and how of it.
 
-![Plan](./images/glenn-carstens-peters-RLw-UC03Gwc-unsplash.jpg "Photo by [Glenn Carstens-Peters](https://unsplash.com/@glenncarstenspeters) / [Unsplash](https://unsplash.com)")
+![Plan](./images/plan.jpg "Photo by [Glenn Carstens-Peters](https://unsplash.com/@glenncarstenspeters) / [Unsplash](https://unsplash.com)")
 
 ## What is a Weekly Review?
 The Weekly Review is a very simple concept and as the name implies, it is a weekly meeting (usually with yourself, but could be with your team or your family, depending on the goals you are trying to achieve) that has the goal of reviewing the work done on the previous week and preparing the work to be done on the following week. 

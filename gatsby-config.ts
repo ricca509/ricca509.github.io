@@ -3,7 +3,7 @@ import path from "path";
 
 const siteUrl = process.env.URL || "https://www.riccardocoppola.me";
 const name = "Riccardo Coppola";
-const description = "My notes on programming, life, learning and the world";
+const description = "Notes on programming, life, learning and the world";
 
 const config: GatsbyConfig = {
   siteMetadata: {
@@ -167,20 +167,29 @@ const config: GatsbyConfig = {
         `,
         feeds: [
           {
-            serialize: ({ query: { site, allMarkdownRemark } }: any) => {
-              return allMarkdownRemark.nodes.map((node: any) => {
+            serialize: ({ query: { site, blog } }: any) => {
+              return blog.nodes.map((node: any) => {
                 return Object.assign({}, node.frontmatter, {
                   description: node.excerpt,
                   date: node.frontmatter.date,
                   url: site.siteMetadata.siteUrl + node.fields.slug,
                   guid: site.siteMetadata.siteUrl + node.fields.slug,
-                  custom_elements: [{ "content:encoded": node.html }],
+                  custom_elements: [
+                    ...node.frontmatter?.featured_image?.publicURL && {
+                      "media:content": {
+                        _attr: {
+                          url: site.siteMetadata.siteUrl + node.frontmatter?.featured_image?.publicURL
+                        }
+                      }
+                    },
+                    { "content:encoded": node.html }
+                  ],
                 });
               });
             },
             query: `
               {
-                allMarkdownRemark(
+                blog: allMarkdownRemark(
                   filter: {fields: {slug: {glob: "**/blog/*"}}, frontmatter: {publication_status: {eq: "published"}}},
                   sort: { order: DESC, fields: [frontmatter___date] },
                 ) {
@@ -193,6 +202,9 @@ const config: GatsbyConfig = {
                     frontmatter {
                       title
                       date
+                      featured_image {
+                        publicURL
+                      }
                     }
                   }
                 }

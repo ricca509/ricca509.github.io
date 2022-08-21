@@ -24,7 +24,7 @@ export const HeaderNavigation = () => {
           <Link to="/blog">Blog</Link>
         </li>
         <li className={navElement}>
-          <Link to="/photography">Photography</Link>
+          <Link to="/photographs">Photographs</Link>
         </li>
         <li className={navElement}>
           <Link to="/about">About</Link>

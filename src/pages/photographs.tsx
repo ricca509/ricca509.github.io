@@ -5,7 +5,7 @@ import { PhotoPreview } from '../components/PhotoPreview/PhotoPreview';
 import Bio from "../components/Bio";
 import { Layout } from "../components/Layout/Layout";
 import { Seo } from "../components/Seo/Seo";
-import { list } from './photography.module.css'
+import { list } from './photographs.module.css'
 
 const PhotographyIndex: React.FC<PageProps<PhotographyIndexQuery>> = ({
   data,

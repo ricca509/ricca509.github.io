@@ -40,7 +40,10 @@ const PhotoPostTemplate: React.FC<PageProps<PhotoPostBySlugQuery>> = ({
         <section itemProp="articleBody" style={{
           textAlign: 'center'
         }}>
-          <GatsbyImage image={image} alt={photo.frontmatter.title || photo.fields.slug} />      
+          <GatsbyImage image={image} alt={photo.frontmatter.title || photo.fields.slug} style={{
+            boxShadow: '1px 1px 8px 0px #666'
+            // border: '25px solid black'
+          }} />      
 
           <div style={{
             textAlign: 'left'

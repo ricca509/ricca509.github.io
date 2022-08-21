@@ -9,3 +9,7 @@
 .title {
   display: block;
 }
+
+.item {
+  color: var(--grey-2);
+}

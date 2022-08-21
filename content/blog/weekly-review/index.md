@@ -13,6 +13,8 @@ Consistency needs to be helped.
 
 There are few tools or practices that I have found to be as helpful as a Weekly Review and I want to dig deeper into the what and how of it.
 
+![Plan](./images/glenn-carstens-peters-RLw-UC03Gwc-unsplash.jpg "Photo by [Glenn Carstens-Peters](https://unsplash.com/@glenncarstenspeters) / [Unsplash](https://unsplash.com)")
+
 ## What is a Weekly Review?
 The Weekly Review is a very simple concept and as the name implies, it is a weekly meeting (usually with yourself, but could be with your team or your family, depending on the goals you are trying to achieve) that has the goal of reviewing the work done on the previous week and preparing the work to be done on the following week. 
 

@@ -12,8 +12,8 @@ import { Link } from "gatsby";
 const links = [
   ["github", "https://github.com/ricca509"],
   ["linkedin", "https://www.linkedin.com/in/riccardocoppola/"],
-  ["fivehundredpix", "https://500px.com/ricca509"],
   ["mailto", "mailto:riccardo@onefiniteloop.io"],
+  ["rss", "/rss.xml"],
 ];
 
 export const HeaderNavigation = () => {

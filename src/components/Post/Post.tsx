@@ -20,11 +20,7 @@ interface PostProps {
 export const Post: React.FC<PostProps> = ({ post, title }) => {
   return (
     <li key={post?.fields?.slug}>
-      <article
-        className="post-list-item"
-        itemScope
-        itemType="http://schema.org/Article"
-      >
+      <article itemScope itemType="http://schema.org/Article">
         <header>
           <small className={date}>{post?.frontmatter?.date}</small>
           <h2 className={postTitle}>

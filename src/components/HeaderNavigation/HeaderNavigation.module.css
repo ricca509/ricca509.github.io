@@ -1,8 +1,8 @@
 .container {  
   display: flex;
   justify-content: space-between;
-  align-items: flex-start; 
-  font-family: var(--blog-font-family); 
+  align-items: center;  
+  font-family: var(--blog-font-family);
 }
 
 .textLinks {

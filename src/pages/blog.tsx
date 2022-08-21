@@ -15,7 +15,10 @@ const BlogIndex: React.FC<PageProps<BlogIndexQuery>> = ({ data, location }) => {
   if (posts.length === 0) {
     return (
       <Layout location={location} title={siteTitle}>
-        <Seo title="Blog" />
+        <Seo
+          title={data?.site?.siteMetadata?.description || "Blog"}
+          type="article"
+        />
         <Bio />
         <p>Oops, No blog posts found!</p>
       </Layout>
@@ -24,7 +27,10 @@ const BlogIndex: React.FC<PageProps<BlogIndexQuery>> = ({ data, location }) => {
 
   return (
     <Layout showName location={location} title={siteTitle}>
-      <Seo title="Blog" />
+      <Seo
+        title={data?.site?.siteMetadata?.description || "Blog"}
+        type="article"
+      />
       <Bio />
       <ol className={list}>
         {posts.map((post) => {
@@ -46,6 +52,7 @@ export const pageQuery = graphql`
     site {
       siteMetadata {
         title
+        description
       }
     }
     allMarkdownRemark(

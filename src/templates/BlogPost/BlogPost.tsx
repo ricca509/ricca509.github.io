@@ -23,8 +23,19 @@ const BlogPostTemplate: React.FC<PageProps<BlogPostBySlugQuery>> = ({
       className={container}
     >
       <Seo
+        type="article"
         title={post.frontmatter.title}
         description={post.frontmatter.description || post.excerpt}
+        meta={[
+          {
+            property: "article:published_time",
+            content: post.frontmatter.date,
+          },
+          {
+            name: "author",
+            content: data.site.siteMetadata?.author.name,
+          },
+        ]}
       />
       <article
         itemScope
@@ -86,6 +97,9 @@ export const pageQuery = graphql`
     site {
       siteMetadata {
         title
+        author {
+          name
+        }
       }
     }
     markdownRemark(id: { eq: $id }) {

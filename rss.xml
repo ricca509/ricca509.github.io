@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[My notes on programming, life, learning and the world - Riccardo Coppola]]></title><description><![CDATA[My notes on programming, life, learning and the world]]></description><link>https://www.riccardocoppola.me</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 19 Aug 2022 12:39:04 GMT</lastBuildDate><item><title><![CDATA[Achieving goals: the importance of the Weekly Review]]></title><description><![CDATA[In the quest of being productive and achieve goals, one thing that is easily discovered is that consistency is key: this is actually not a…]]></description><link>https://www.riccardocoppola.me/blog/weekly-review/</link><guid isPermaLink="false">https://www.riccardocoppola.me/blog/weekly-review/</guid><pubDate>Wed, 27 Jul 2022 11:00:00 GMT</pubDate><content:encoded>&lt;p&gt;In the quest of &lt;a href=&quot;/blog/on-being-productive/&quot;&gt;being productive&lt;/a&gt; and achieve goals, one thing that is easily discovered is that consistency is key: this is actually not a big discovery, as it applies to pretty much every area of life that one may try to improve.&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Notes on programming, life, learning and the world - Riccardo Coppola]]></title><description><![CDATA[Notes on programming, life, learning and the world]]></description><link>https://www.riccardocoppola.me</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 21 Aug 2022 19:50:15 GMT</lastBuildDate><item><title><![CDATA[Achieving goals: the importance of the Weekly Review]]></title><description><![CDATA[In the quest of being productive and achieve goals, one thing that is easily discovered is that consistency is key: this is actually not a…]]></description><link>https://www.riccardocoppola.me/blog/weekly-review/</link><guid isPermaLink="false">https://www.riccardocoppola.me/blog/weekly-review/</guid><pubDate>Wed, 27 Jul 2022 11:00:00 GMT</pubDate><media:content url="https://www.riccardocoppola.me/static/1f7780e3f8e54090de69282927d2151b/plan.jpg"/><content:encoded>&lt;p&gt;In the quest of &lt;a href=&quot;/blog/on-being-productive/&quot;&gt;being productive&lt;/a&gt; and achieve goals, one thing that is easily discovered is that consistency is key: this is actually not a big discovery, as it applies to pretty much every area of life that one may try to improve.&lt;/p&gt;
 &lt;p&gt;How to be consistent, on the other hand, is a different challenge altogether, because life gets in the way and we need a way to work around it.&lt;/p&gt;
 &lt;p&gt;Consistency needs to be helped.&lt;/p&gt;
 &lt;p&gt;There are few tools or practices that I have found to be as helpful as a Weekly Review and I want to dig deeper into the what and how of it.&lt;/p&gt;
@@ -9,7 +9,7 @@
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/1f7780e3f8e54090de69282927d2151b/77090/glenn-carstens-peters-RLw-UC03Gwc-unsplash.jpg&quot;
+    href=&quot;/static/1f7780e3f8e54090de69282927d2151b/77090/plan.jpg&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -22,13 +22,13 @@
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;Plan&quot;
         title=&quot;Photo by [Glenn Carstens-Peters](https://unsplash.com/@glenncarstenspeters) / [Unsplash](https://unsplash.com)&quot;
-        src=&quot;/static/1f7780e3f8e54090de69282927d2151b/8e1fc/glenn-carstens-peters-RLw-UC03Gwc-unsplash.jpg&quot;
-        srcset=&quot;/static/1f7780e3f8e54090de69282927d2151b/863e1/glenn-carstens-peters-RLw-UC03Gwc-unsplash.jpg 225w,
-/static/1f7780e3f8e54090de69282927d2151b/20e5d/glenn-carstens-peters-RLw-UC03Gwc-unsplash.jpg 450w,
-/static/1f7780e3f8e54090de69282927d2151b/8e1fc/glenn-carstens-peters-RLw-UC03Gwc-unsplash.jpg 900w,
-/static/1f7780e3f8e54090de69282927d2151b/b768e/glenn-carstens-peters-RLw-UC03Gwc-unsplash.jpg 1350w,
-/static/1f7780e3f8e54090de69282927d2151b/d9c39/glenn-carstens-peters-RLw-UC03Gwc-unsplash.jpg 1800w,
-/static/1f7780e3f8e54090de69282927d2151b/77090/glenn-carstens-peters-RLw-UC03Gwc-unsplash.jpg 4256w&quot;
+        src=&quot;/static/1f7780e3f8e54090de69282927d2151b/8e1fc/plan.jpg&quot;
+        srcset=&quot;/static/1f7780e3f8e54090de69282927d2151b/863e1/plan.jpg 225w,
+/static/1f7780e3f8e54090de69282927d2151b/20e5d/plan.jpg 450w,
+/static/1f7780e3f8e54090de69282927d2151b/8e1fc/plan.jpg 900w,
+/static/1f7780e3f8e54090de69282927d2151b/b768e/plan.jpg 1350w,
+/static/1f7780e3f8e54090de69282927d2151b/d9c39/plan.jpg 1800w,
+/static/1f7780e3f8e54090de69282927d2151b/77090/plan.jpg 4256w&quot;
         sizes=&quot;(max-width: 900px) 100vw, 900px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
@@ -1096,7 +1096,7 @@ Regardless of when the tests are completed, these services will keep listening a
 &lt;p&gt;Making the tests execution more reliable and flexible helps a lot with achieving that confidence that is so needed when it comes to functional/e2e tests being used as gatekeepers to production.&lt;/p&gt;
 &lt;p&gt;Part III will look into debugging during execution using the browser running inside the container and saving reports on the CI to be used for port-mortem analysis.&lt;/p&gt;
 &lt;p&gt;You can find a working version of this example on &lt;a href=&quot;https://github.com/ricca509/dockerize-webdriverio/tree/part-2&quot;&gt;Github&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Happy hacking!&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Snapshot testing and why it makes sense]]></title><description><![CDATA[The JavaScript world is ever changing: every day new libraries come out and, as developers, we’re lucky enough to get to try all these new…]]></description><link>https://www.riccardocoppola.me/blog/snapshot-testing-and-why-it-makes-sense/</link><guid isPermaLink="false">https://www.riccardocoppola.me/blog/snapshot-testing-and-why-it-makes-sense/</guid><pubDate>Fri, 24 Feb 2017 10:00:00 GMT</pubDate><content:encoded>&lt;p&gt;The JavaScript world is ever changing: every day new libraries come out and, as developers, we’re lucky enough to get to try all these new ideas in our every day job.&lt;/p&gt;
+&lt;p&gt;Happy hacking!&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Snapshot testing and why it makes sense]]></title><description><![CDATA[The JavaScript world is ever changing: every day new libraries come out and, as developers, we’re lucky enough to get to try all these new…]]></description><link>https://www.riccardocoppola.me/blog/snapshot-testing-and-why-it-makes-sense/</link><guid isPermaLink="false">https://www.riccardocoppola.me/blog/snapshot-testing-and-why-it-makes-sense/</guid><pubDate>Fri, 24 Feb 2017 10:00:00 GMT</pubDate><media:content url="https://www.riccardocoppola.me/static/dfb75522eae42661691dfa4e1ed80fce/snap.jpg"/><content:encoded>&lt;p&gt;The JavaScript world is ever changing: every day new libraries come out and, as developers, we’re lucky enough to get to try all these new ideas in our every day job.&lt;/p&gt;
 &lt;p&gt;Using the right tool for the right job means, in the end, using more tools and this leads us to more configuration, orchestration and maintenance (and, possibly, bugs). All of this goes under the name of &lt;em&gt;JavaScript fatigue&lt;/em&gt;, a name that should represent the effort needed to stay on top of our game.&lt;br&gt;
 JavaScript fatigue is, from my point of view, a blessing and we should embrace it as an opportunity to constantly add quality and improvements to our code base.&lt;/p&gt;
 &lt;p&gt;Of course not every tool or library will add value to the code, but many of them will help build the foundation of the next big thing.&lt;/p&gt;
@@ -1105,6 +1105,40 @@ JavaScript fatigue is, from my point of view, a blessing and we should embrace i
 &lt;p&gt;&lt;a href=&quot;https://facebook.github.io/jest/&quot;&gt;Jest&lt;/a&gt; is the best testing tool that I’ve been using lately.&lt;br&gt;
 It is built on top of Jasmine and developed by Facebook. Like Jasmine, it offers a test runner, assertion and mock methods.&lt;br&gt;
 Its API is very similar to what the combo Mocha/chai offers, so the switch is easy and painless. Among other useful features, Jest offers an advanced system for mocking external dependencies (automatically or manually) and a new concept for testing React components called Snapshot testing.&lt;/p&gt;
+&lt;p&gt;&lt;figure class=&quot;gatsby-resp-image-figure&quot; style=&quot;&quot;&gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 900px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/dfb75522eae42661691dfa4e1ed80fce/6c0a0/snap.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 66.66666666666666%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAANABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAMEAf/EABUBAQEAAAAAAAAAAAAAAAAAAAEA/9oADAMBAAIQAxAAAAFFjtFRMR//xAAaEAEAAwADAAAAAAAAAAAAAAACAAEDERIh/9oACAEBAAEFAsTZmTstae50oeEnddv/xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/AT//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/AT//xAAeEAACAQMFAAAAAAAAAAAAAAAAARECEjEhImGCof/aAAgBAQAGPwJbSpO7sYFNUxwTGrRj0//EABkQAAMBAQEAAAAAAAAAAAAAAAABEUEhcf/aAAgBAQABPyFUqTuwqYqTmPCfCETEm2IVuIYal//aAAwDAQACAAMAAAAQ0/8A/8QAFREBAQAAAAAAAAAAAAAAAAAAECH/2gAIAQMBAT8Qh//EABURAQEAAAAAAAAAAAAAAAAAABAh/9oACAECAQE/EKf/xAAcEAEBAAICAwAAAAAAAAAAAAABEQAxIUFRgaH/2gAIAQEAAT8QvIMi294VpIk7UvgPRixITWGKqU4FAk3lLlJViEPuU84Ztn//2Q==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;Child Girl Camera&quot;
+        title=&quot;Photo from [negativespace](https://negativespace.co/child-girl-camera-photographer-toys-smile/)&quot;
+        src=&quot;/static/dfb75522eae42661691dfa4e1ed80fce/8e1fc/snap.jpg&quot;
+        srcset=&quot;/static/dfb75522eae42661691dfa4e1ed80fce/863e1/snap.jpg 225w,
+/static/dfb75522eae42661691dfa4e1ed80fce/20e5d/snap.jpg 450w,
+/static/dfb75522eae42661691dfa4e1ed80fce/8e1fc/snap.jpg 900w,
+/static/dfb75522eae42661691dfa4e1ed80fce/6c0a0/snap.jpg 1062w&quot;
+        sizes=&quot;(max-width: 900px) 100vw, 900px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;
+    &lt;figcaption class=&quot;gatsby-resp-image-figcaption&quot;&gt;&lt;p&gt;Photo from &lt;a href=&quot;https://negativespace.co/child-girl-camera-photographer-toys-smile/&quot;&gt;negativespace&lt;/a&gt;&lt;/p&gt;&lt;/figcaption&gt;
+  &lt;/figure&gt;&lt;/p&gt;
 &lt;h2 id=&quot;back-to-basics-unit-testing-a-function&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#back-to-basics-unit-testing-a-function&quot; aria-label=&quot;back to basics unit testing a function permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg height=&quot;20&quot; width=&quot;20&quot; viewBox=&quot;-32 0 512 512&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;&lt;path d=&quot;M440.667 182.109l7.143-40c1.313-7.355-4.342-14.109-11.813-14.109h-74.81l14.623-81.891C377.123 38.754 371.468 32 363.997 32h-40.632a12 12 0 0 0-11.813 9.891L296.175 128H197.54l14.623-81.891C213.477 38.754 207.822 32 200.35 32h-40.632a12 12 0 0 0-11.813 9.891L132.528 128H53.432a12 12 0 0 0-11.813 9.891l-7.143 40C33.163 185.246 38.818 192 46.289 192h74.81L98.242 320H19.146a12 12 0 0 0-11.813 9.891l-7.143 40C-1.123 377.246 4.532 384 12.003 384h74.81L72.19 465.891C70.877 473.246 76.532 480 84.003 480h40.632a12 12 0 0 0 11.813-9.891L151.826 384h98.634l-14.623 81.891C234.523 473.246 240.178 480 247.65 480h40.632a12 12 0 0 0 11.813-9.891L315.472 384h79.096a12 12 0 0 0 11.813-9.891l7.143-40c1.313-7.355-4.342-14.109-11.813-14.109h-74.81l22.857-128h79.096a12 12 0 0 0 11.813-9.891zM261.889 320h-98.634l22.857-128h98.634l-22.857 128z&quot;/&gt;&lt;/svg&gt;&lt;/a&gt;Back to basics: unit testing a function&lt;/h2&gt;
 &lt;p&gt;Unit testing is all about isolating the system under test and checking that at every given input corresponds a given, predictable output: what is easier to test than a well thought function?&lt;/p&gt;
 &lt;ol&gt;

@@ -175,7 +175,7 @@ const config: GatsbyConfig = {
                   url: site.siteMetadata.siteUrl + node.fields.slug,
                   guid: site.siteMetadata.siteUrl + node.fields.slug,
                   custom_elements: [
-                    ...node.frontmatter?.featured_image?.publicURL && {
+                    node.frontmatter?.featured_image?.publicURL && {
                       "media:content": {
                         _attr: {
                           url: site.siteMetadata.siteUrl + node.frontmatter?.featured_image?.publicURL

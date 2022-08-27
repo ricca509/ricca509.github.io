@@ -3,6 +3,7 @@ title: "Snapshot testing and why it makes sense"
 date: "2017-02-24T10:00:00.000Z"
 description: "Snapshot testing and why it makes sense"
 publication_status: published
+featured_image: ./images/snap.jpg
 ---
 
 The JavaScript world is ever changing: every day new libraries come out and, as developers, we're lucky enough to get to try all these new ideas in our every day job.
@@ -19,6 +20,8 @@ Selecting the right tools is key.
 [Jest](https://facebook.github.io/jest/) is the best testing tool that I've been using lately.  
 It is built on top of Jasmine and developed by Facebook. Like Jasmine, it offers a test runner, assertion and mock methods.  
 Its API is very similar to what the combo Mocha/chai offers, so the switch is easy and painless. Among other useful features, Jest offers an advanced system for mocking external dependencies (automatically or manually) and a new concept for testing React components called Snapshot testing.
+
+![Child Girl Camera](./images/snap.jpg "Photo from [negativespace](https://negativespace.co/child-girl-camera-photographer-toys-smile/)")
 
 ## Back to basics: unit testing a function
 

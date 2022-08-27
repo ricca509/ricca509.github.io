@@ -11,7 +11,7 @@ const PhotographyIndex: React.FC<PageProps<PhotographyIndexQuery>> = ({
   data,
   location,
 }) => {
-  const siteTitle = data?.site?.siteMetadata?.title || `Photography`;
+  const siteTitle = data?.site?.siteMetadata?.title || `Photographs`;
   const photos = data.photos.nodes;
 
   if (photos.length === 0) {
@@ -26,7 +26,7 @@ const PhotographyIndex: React.FC<PageProps<PhotographyIndexQuery>> = ({
 
   return (
     <Layout showName location={location} title={siteTitle}>
-      <Seo title="Photography" />
+      <Seo title="Photographs" />
       <ul className={list}>
         {photos.map((photo) => {
           return <PhotoPreview
@@ -52,7 +52,7 @@ export const pageQuery = graphql`
     }
     photos: allMarkdownRemark(
       filter: {
-        fields: { slug: { glob: "**/photography/*" } }
+        fields: { slug: { glob: "**/photographs/*" } }
         frontmatter: { publication_status: { eq: "published" } }
       }
       sort: { fields: [frontmatter___date], order: ASC }

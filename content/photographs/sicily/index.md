@@ -5,7 +5,7 @@ publication_status: published
 photo: ./sicily.jpg
 ---
 
-Image Details:
-- Location: Sicily, Italy
-- Film: Kodak Portra 400
-- Camera: Nikon FM2n
+### Details
+- **Location:** Sicily, Italy
+- **Film:** Kodak Portra 400
+- **Camera:** Nikon FM2n

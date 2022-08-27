@@ -75,7 +75,7 @@ const createPhotoPages = async ({ graphql, actions, reporter }) => {
      {
        allMarkdownRemark(
          filter: {
-           fields: { slug: { glob: "**/photography/*" } }
+           fields: { slug: { glob: "**/photographs/*" } }
            frontmatter: { publication_status: { eq: "published" } }
          }
          sort: { fields: [frontmatter___date], order: ASC }

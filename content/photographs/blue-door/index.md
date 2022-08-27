@@ -5,4 +5,8 @@ description: "A door"
 publication_status: published
 photo: ./blue-door.jpg
 ---
+### Details
+- **Location:** London, United Kingdom
+- **Film:** Kodak Portra 160
+- **Camera:** Zenza Bronica SQ-A
 

@@ -3,9 +3,9 @@ import { graphql, PageProps } from "gatsby";
 
 import { Layout } from "@Components/Layout/Layout";
 import { Seo } from "@Components/Seo/Seo";
-import { PhotoPostBySlugQuery } from "../../graphql-types";
+import { PhotoPostBySlugQuery } from "../../../graphql-types";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
-import { container, date, title } from './PhotoPost.module.css';
+import { container, title } from './PhotoPost.module.css';
 
 const PhotoPostTemplate: React.FC<PageProps<PhotoPostBySlugQuery>> = ({
   data,
@@ -41,7 +41,8 @@ const PhotoPostTemplate: React.FC<PageProps<PhotoPostBySlugQuery>> = ({
           textAlign: 'center'
         }}>
           <GatsbyImage image={image} alt={photo.frontmatter.title || photo.fields.slug} style={{
-            boxShadow: '1px 1px 8px 0px #666'
+            boxShadow: '1px 1px 8px 0px #666',
+            margin: 20,
             // border: '25px solid black'
           }} />      
 

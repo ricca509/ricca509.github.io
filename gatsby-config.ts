@@ -52,6 +52,18 @@ const config: GatsbyConfig = {
               }
             }
           }
+          photographsPages: allMarkdownRemark(
+            filter: {fields: {slug: {glob: "**/photographs/*"}}}
+          ) {
+            nodes {
+              frontmatter {
+                date
+              }
+              fields {
+                slug
+              }
+            }
+          }
         }               
         `,
         resolveSiteUrl: () => siteUrl,
@@ -59,17 +71,22 @@ const config: GatsbyConfig = {
           allSitePage: { nodes: allPages },
           blogPages: { nodes: blogPages },
           aboutMePages: { nodes: aboutMePages },
+          photographsPages: { nodes: photographsPages },
         }) => {
-          const pages = [...blogPages, ...aboutMePages].reduce((acc, node) => {
+          const pages = [...blogPages, ...aboutMePages, ...photographsPages].reduce((acc, node) => {
             const { fields } = node;
             acc[fields.slug] = node;
 
             return acc;
           }, {});
 
-          const res = allPages.map((page) => {
-            return { ...page, ...pages[page.path] };
-          });
+          const res = allPages
+            // .filter((page) => {
+            //   return Object.keys(pages).includes(page.path)
+            // })
+            .map((page) => {
+              return { ...page, ...pages[page.path] };
+            });
 
           // console.log(JSON.stringify(res), 'ressss')
 

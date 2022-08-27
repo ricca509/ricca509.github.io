@@ -687,13 +687,13 @@ export type Frontmatter = {
   description?: Maybe<Scalars['String']>;
   date?: Maybe<Scalars['Date']>;
   publication_status?: Maybe<Scalars['String']>;
+  photo?: Maybe<File>;
   company?: Maybe<Scalars['String']>;
   role?: Maybe<Scalars['String']>;
   from_date?: Maybe<Scalars['Date']>;
   to_date?: Maybe<Scalars['Date']>;
   location?: Maybe<Scalars['String']>;
   technologies?: Maybe<Array<Maybe<Scalars['String']>>>;
-  photo?: Maybe<File>;
   featured_image?: Maybe<File>;
   order?: Maybe<Scalars['Int']>;
   link?: Maybe<Scalars['String']>;
@@ -1080,13 +1080,13 @@ export type FrontmatterFilterInput = {
   description?: InputMaybe<StringQueryOperatorInput>;
   date?: InputMaybe<DateQueryOperatorInput>;
   publication_status?: InputMaybe<StringQueryOperatorInput>;
+  photo?: InputMaybe<FileFilterInput>;
   company?: InputMaybe<StringQueryOperatorInput>;
   role?: InputMaybe<StringQueryOperatorInput>;
   from_date?: InputMaybe<DateQueryOperatorInput>;
   to_date?: InputMaybe<DateQueryOperatorInput>;
   location?: InputMaybe<StringQueryOperatorInput>;
   technologies?: InputMaybe<StringQueryOperatorInput>;
-  photo?: InputMaybe<FileFilterInput>;
   featured_image?: InputMaybe<FileFilterInput>;
   order?: InputMaybe<IntQueryOperatorInput>;
   link?: InputMaybe<StringQueryOperatorInput>;
@@ -1350,12 +1350,6 @@ export type FileFieldsEnum =
   | 'childrenMarkdownRemark___frontmatter___description'
   | 'childrenMarkdownRemark___frontmatter___date'
   | 'childrenMarkdownRemark___frontmatter___publication_status'
-  | 'childrenMarkdownRemark___frontmatter___company'
-  | 'childrenMarkdownRemark___frontmatter___role'
-  | 'childrenMarkdownRemark___frontmatter___from_date'
-  | 'childrenMarkdownRemark___frontmatter___to_date'
-  | 'childrenMarkdownRemark___frontmatter___location'
-  | 'childrenMarkdownRemark___frontmatter___technologies'
   | 'childrenMarkdownRemark___frontmatter___photo___sourceInstanceName'
   | 'childrenMarkdownRemark___frontmatter___photo___absolutePath'
   | 'childrenMarkdownRemark___frontmatter___photo___relativePath'
@@ -1394,6 +1388,12 @@ export type FileFieldsEnum =
   | 'childrenMarkdownRemark___frontmatter___photo___childrenImageSharp'
   | 'childrenMarkdownRemark___frontmatter___photo___id'
   | 'childrenMarkdownRemark___frontmatter___photo___children'
+  | 'childrenMarkdownRemark___frontmatter___company'
+  | 'childrenMarkdownRemark___frontmatter___role'
+  | 'childrenMarkdownRemark___frontmatter___from_date'
+  | 'childrenMarkdownRemark___frontmatter___to_date'
+  | 'childrenMarkdownRemark___frontmatter___location'
+  | 'childrenMarkdownRemark___frontmatter___technologies'
   | 'childrenMarkdownRemark___frontmatter___featured_image___sourceInstanceName'
   | 'childrenMarkdownRemark___frontmatter___featured_image___absolutePath'
   | 'childrenMarkdownRemark___frontmatter___featured_image___relativePath'
@@ -1492,12 +1492,6 @@ export type FileFieldsEnum =
   | 'childMarkdownRemark___frontmatter___description'
   | 'childMarkdownRemark___frontmatter___date'
   | 'childMarkdownRemark___frontmatter___publication_status'
-  | 'childMarkdownRemark___frontmatter___company'
-  | 'childMarkdownRemark___frontmatter___role'
-  | 'childMarkdownRemark___frontmatter___from_date'
-  | 'childMarkdownRemark___frontmatter___to_date'
-  | 'childMarkdownRemark___frontmatter___location'
-  | 'childMarkdownRemark___frontmatter___technologies'
   | 'childMarkdownRemark___frontmatter___photo___sourceInstanceName'
   | 'childMarkdownRemark___frontmatter___photo___absolutePath'
   | 'childMarkdownRemark___frontmatter___photo___relativePath'
@@ -1536,6 +1530,12 @@ export type FileFieldsEnum =
   | 'childMarkdownRemark___frontmatter___photo___childrenImageSharp'
   | 'childMarkdownRemark___frontmatter___photo___id'
   | 'childMarkdownRemark___frontmatter___photo___children'
+  | 'childMarkdownRemark___frontmatter___company'
+  | 'childMarkdownRemark___frontmatter___role'
+  | 'childMarkdownRemark___frontmatter___from_date'
+  | 'childMarkdownRemark___frontmatter___to_date'
+  | 'childMarkdownRemark___frontmatter___location'
+  | 'childMarkdownRemark___frontmatter___technologies'
   | 'childMarkdownRemark___frontmatter___featured_image___sourceInstanceName'
   | 'childMarkdownRemark___frontmatter___featured_image___absolutePath'
   | 'childMarkdownRemark___frontmatter___featured_image___relativePath'
@@ -3268,12 +3268,6 @@ export type MarkdownRemarkFieldsEnum =
   | 'frontmatter___description'
   | 'frontmatter___date'
   | 'frontmatter___publication_status'
-  | 'frontmatter___company'
-  | 'frontmatter___role'
-  | 'frontmatter___from_date'
-  | 'frontmatter___to_date'
-  | 'frontmatter___location'
-  | 'frontmatter___technologies'
   | 'frontmatter___photo___sourceInstanceName'
   | 'frontmatter___photo___absolutePath'
   | 'frontmatter___photo___relativePath'
@@ -3352,6 +3346,12 @@ export type MarkdownRemarkFieldsEnum =
   | 'frontmatter___photo___internal___mediaType'
   | 'frontmatter___photo___internal___owner'
   | 'frontmatter___photo___internal___type'
+  | 'frontmatter___company'
+  | 'frontmatter___role'
+  | 'frontmatter___from_date'
+  | 'frontmatter___to_date'
+  | 'frontmatter___location'
+  | 'frontmatter___technologies'
   | 'frontmatter___featured_image___sourceInstanceName'
   | 'frontmatter___featured_image___absolutePath'
   | 'frontmatter___featured_image___relativePath'

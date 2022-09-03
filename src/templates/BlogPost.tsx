@@ -4,7 +4,7 @@ import { Link, graphql, PageProps } from "gatsby";
 import Bio from "@Components/Bio";
 import { Layout } from "@Components/Layout/Layout";
 import { Seo } from "@Components/Seo/Seo";
-import { container, date } from "./BlogPost.module.css";
+import { container, date, last_updated } from "./BlogPost.module.css";
 import { BlogPostBySlugQuery } from "../../graphql-types";
 
 const BlogPostTemplate: React.FC<PageProps<BlogPostBySlugQuery>> = ({
@@ -39,8 +39,13 @@ const BlogPostTemplate: React.FC<PageProps<BlogPostBySlugQuery>> = ({
       />
       <article itemScope itemType="http://schema.org/Article">
         <header>
-          <h1 itemProp="headline">{post.frontmatter.title}</h1>
-          <p className={date}>{post.frontmatter.date}</p>
+          <h1 itemProp="headline">{post.frontmatter.title}</h1>          
+          {post.frontmatter.last_modified && (
+            <div className={last_updated}>
+              This post was updated on {post.frontmatter.last_modified}
+            </div>
+          )}
+          <p className={date}>Published on {post.frontmatter.date}</p>
         </header>
         <section
           dangerouslySetInnerHTML={{ __html: post.html }}
@@ -104,6 +109,7 @@ export const pageQuery = graphql`
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")
+        last_modified(formatString: "MMMM DD, YYYY")
         description
       }
     }

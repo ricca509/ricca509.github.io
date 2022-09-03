@@ -9,6 +9,8 @@ publication_status: published
 
 **― Dr Seuss, I Can Read With My Eyes Shut!**
 
+![Person reading in a library](./images/person-reading-in-library.jpeg "Image created with [NightCafe](https://creator.nightcafe.studio/)")
+
 I am an average reader. In fact, with my 5 or 6 books per year, I thought I was well under the national average until I realised that more than [25% of people in the UK don’t read any book](https://yougov.co.uk/topics/arts/trackers/how-many-books-brits-read?period=1yr).
 
 I went from reading 5/6 books a year to 30/40 and more within a very short time; the tips in this post are here so that I keep track of what I did, and hopefully as a guide and encouragement for anyone looking to read more.

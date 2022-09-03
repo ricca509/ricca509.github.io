@@ -247,6 +247,8 @@ export type DirectoryCtimeArgs = {
 export type Site = Node & {
   buildTime?: Maybe<Scalars['Date']>;
   siteMetadata?: Maybe<SiteSiteMetadata>;
+  port?: Maybe<Scalars['Int']>;
+  host?: Maybe<Scalars['String']>;
   polyfill?: Maybe<Scalars['Boolean']>;
   pathPrefix?: Maybe<Scalars['String']>;
   jsxRuntime?: Maybe<Scalars['String']>;
@@ -694,6 +696,7 @@ export type Frontmatter = {
   featured_image?: Maybe<File>;
   order?: Maybe<Scalars['Int']>;
   link?: Maybe<Scalars['String']>;
+  last_modified?: Maybe<Scalars['Date']>;
 };
 
 
@@ -714,6 +717,14 @@ export type FrontmatterFrom_DateArgs = {
 
 
 export type FrontmatterTo_DateArgs = {
+  formatString?: InputMaybe<Scalars['String']>;
+  fromNow?: InputMaybe<Scalars['Boolean']>;
+  difference?: InputMaybe<Scalars['String']>;
+  locale?: InputMaybe<Scalars['String']>;
+};
+
+
+export type FrontmatterLast_ModifiedArgs = {
   formatString?: InputMaybe<Scalars['String']>;
   fromNow?: InputMaybe<Scalars['Boolean']>;
   difference?: InputMaybe<Scalars['String']>;
@@ -850,6 +861,8 @@ export type QueryAllDirectoryArgs = {
 export type QuerySiteArgs = {
   buildTime?: InputMaybe<DateQueryOperatorInput>;
   siteMetadata?: InputMaybe<SiteSiteMetadataFilterInput>;
+  port?: InputMaybe<IntQueryOperatorInput>;
+  host?: InputMaybe<StringQueryOperatorInput>;
   polyfill?: InputMaybe<BooleanQueryOperatorInput>;
   pathPrefix?: InputMaybe<StringQueryOperatorInput>;
   jsxRuntime?: InputMaybe<StringQueryOperatorInput>;
@@ -1084,6 +1097,7 @@ export type FrontmatterFilterInput = {
   featured_image?: InputMaybe<FileFilterInput>;
   order?: InputMaybe<IntQueryOperatorInput>;
   link?: InputMaybe<StringQueryOperatorInput>;
+  last_modified?: InputMaybe<DateQueryOperatorInput>;
 };
 
 export type FileFilterInput = {
@@ -1390,6 +1404,7 @@ export type FileFieldsEnum =
   | 'childrenMarkdownRemark___frontmatter___featured_image___children'
   | 'childrenMarkdownRemark___frontmatter___order'
   | 'childrenMarkdownRemark___frontmatter___link'
+  | 'childrenMarkdownRemark___frontmatter___last_modified'
   | 'childrenMarkdownRemark___fields___slug'
   | 'childrenMarkdownRemark___excerpt'
   | 'childrenMarkdownRemark___rawMarkdownBody'
@@ -1494,6 +1509,7 @@ export type FileFieldsEnum =
   | 'childMarkdownRemark___frontmatter___featured_image___children'
   | 'childMarkdownRemark___frontmatter___order'
   | 'childMarkdownRemark___frontmatter___link'
+  | 'childMarkdownRemark___frontmatter___last_modified'
   | 'childMarkdownRemark___fields___slug'
   | 'childMarkdownRemark___excerpt'
   | 'childMarkdownRemark___rawMarkdownBody'
@@ -2143,6 +2159,8 @@ export type SiteFieldsEnum =
   | 'siteMetadata___author___summary'
   | 'siteMetadata___siteUrl'
   | 'siteMetadata___social___twitter'
+  | 'port'
+  | 'host'
   | 'polyfill'
   | 'pathPrefix'
   | 'jsxRuntime'
@@ -2278,6 +2296,8 @@ export type SiteGroupConnectionGroupArgs = {
 export type SiteFilterInput = {
   buildTime?: InputMaybe<DateQueryOperatorInput>;
   siteMetadata?: InputMaybe<SiteSiteMetadataFilterInput>;
+  port?: InputMaybe<IntQueryOperatorInput>;
+  host?: InputMaybe<StringQueryOperatorInput>;
   polyfill?: InputMaybe<BooleanQueryOperatorInput>;
   pathPrefix?: InputMaybe<StringQueryOperatorInput>;
   jsxRuntime?: InputMaybe<StringQueryOperatorInput>;
@@ -3268,6 +3288,7 @@ export type MarkdownRemarkFieldsEnum =
   | 'frontmatter___featured_image___internal___type'
   | 'frontmatter___order'
   | 'frontmatter___link'
+  | 'frontmatter___last_modified'
   | 'fields___slug'
   | 'excerpt'
   | 'rawMarkdownBody'
@@ -3654,7 +3675,7 @@ export type BlogPostBySlugQueryVariables = Exact<{
 }>;
 
 
-export type BlogPostBySlugQuery = { site?: { siteMetadata?: { title?: string | null, author?: { name?: string | null } | null } | null } | null, markdownRemark?: { id: string, excerpt?: string | null, html?: string | null, frontmatter?: { title?: string | null, date?: any | null, description?: string | null } | null } | null, previous?: { fields?: { slug?: string | null } | null, frontmatter?: { title?: string | null } | null } | null, next?: { fields?: { slug?: string | null } | null, frontmatter?: { title?: string | null } | null } | null };
+export type BlogPostBySlugQuery = { site?: { siteMetadata?: { title?: string | null, author?: { name?: string | null } | null } | null } | null, markdownRemark?: { id: string, excerpt?: string | null, html?: string | null, frontmatter?: { title?: string | null, date?: any | null, last_modified?: any | null, description?: string | null } | null } | null, previous?: { fields?: { slug?: string | null } | null, frontmatter?: { title?: string | null } | null } | null, next?: { fields?: { slug?: string | null } | null, frontmatter?: { title?: string | null } | null } | null };
 
 export type GatsbyImageSharpFixedFragment = { base64?: string | null, width: number, height: number, src: string, srcSet: string };
 

@@ -24,8 +24,11 @@ export const HeaderNavigation = () => {
           <Link to="/blog">Blog</Link>
         </li>
         <li className={navElement}>
-          <Link to="/about">About</Link>
+          <Link to="/photographs">Photographs</Link>
         </li>
+        <li className={navElement}>
+          <Link to="/about">About</Link>
+        </li>        
       </ul>
       <ul className={[list, iconLinks].join(" ")}>
         {links.map(([network, link]) => (

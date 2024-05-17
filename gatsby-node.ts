@@ -5,7 +5,7 @@ const createBlogPages = async ({ graphql, actions, reporter }) => {
   const { createPage } = actions;
 
   // Define a template for blog post
-  const blogPost = path.resolve(`./src/templates/BlogPost.tsx`);
+  const blogPost = path.resolve(`./src/templates/BlogPost/BlogPost.tsx`);
 
   // Get all markdown blog posts sorted by date
   const result = await graphql(
@@ -63,8 +63,65 @@ const createBlogPages = async ({ graphql, actions, reporter }) => {
   }
 };
 
+const createPhotoPages = async ({ graphql, actions, reporter }) => {
+  const { createPage } = actions;
+
+  // Define a template for blog post
+  const photoPost = path.resolve(`./src/templates/PhotoPost/PhotoPost.tsx`);
+
+  // Get all markdown blog posts sorted by date
+  const result = await graphql(
+    `
+     {
+       allMarkdownRemark(
+         filter: {
+           fields: { slug: { glob: "**/photographs/*" } }
+           frontmatter: { publication_status: { eq: "published" } }
+         }
+         sort: { fields: [frontmatter___date], order: ASC }
+         limit: 1000
+       ) {
+         nodes {
+           id
+           fields {
+             slug
+           }
+         }
+       }
+     }
+   `
+  );
+
+  if (result.errors) {
+    reporter.panicOnBuild(
+      `There was an error loading your photo posts`,
+      result.errors
+    );
+    return;
+  }
+
+  const posts = result.data.allMarkdownRemark.nodes;
+
+  // Create blog posts pages
+  // But only if there's at least one markdown file found at "content/blog" (defined in gatsby-config.js)
+  // `context` is available in the template as a prop and as a variable in GraphQL
+
+  if (posts.length > 0) {
+    posts.forEach((post, index) => {
+      createPage({
+        path: post.fields.slug,
+        component: photoPost,
+        context: {
+          id: post.id          
+        },
+      });
+    });
+  }
+}
+
 exports.createPages = async ({ graphql, actions, reporter }) => {
   await createBlogPages({ graphql, actions, reporter });
+  await createPhotoPages({ graphql, actions, reporter });
 };
 
 exports.onCreateNode = ({ node, actions, getNode }) => {

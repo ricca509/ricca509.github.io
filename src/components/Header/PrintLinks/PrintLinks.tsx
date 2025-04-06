@@ -8,7 +8,7 @@ export const PrintLinks: React.FC<PrintLinkProps> = () => {
   return (
     <ul className={container}>
       <li>
-        <a href="mailto:riccardo@onefiniteloop.io">riccardo@onefiniteloop.io</a>
+        <a href="mailto:hi@riccardocoppola.me">hi@riccardocoppola.me</a>
       </li>
       <li>
         <a href="https://riccardocoppola.me">riccardocoppola.me</a>

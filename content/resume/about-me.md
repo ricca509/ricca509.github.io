@@ -2,7 +2,7 @@
 
 I’m a staff-level full stack engineer with over 15 years of industry experience, currently focused on building scalable systems, improving developer experience, and fostering high-trust engineering cultures.
 
-Over the years, I’ve worked across e-commerce, travel, government, and fashion — leading cross-functional teams in both co-located and [distributed environments](https://www.onefiniteloop.io/embrace-distributed-teams-and-be-happy/). I care deeply about the craft of software engineering: clean code, thoughtful architecture, and workflows that make developers faster and happier.
+Over the years, I’ve worked across e-commerce, travel, government, and fashion — leading cross-functional teams in both co-located and [distributed environments](https://www.riccardocoppola.me/embrace-distributed-teams-and-be-happy/). I care deeply about the craft of software engineering: clean code, thoughtful architecture, and workflows that make developers faster and happier.
 
 My core stack is JavaScript/TypeScript, React, and Node.js, but I’ve worked across many technologies and have strong DevOps and infrastructure experience (Kubernetes, Terraform, CI/CD systems). I’m passionate about testing, automation, and making quality the default. I’ve built design systems from scratch, automated release pipelines, introduced visual regression testing across frontends, and helped teams ship faster with fewer bugs.
 

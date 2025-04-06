@@ -12,7 +12,7 @@ import { Link } from "gatsby";
 const links = [
   ["github", "https://github.com/ricca509"],
   ["linkedin", "https://www.linkedin.com/in/riccardocoppola/"],
-  ["mailto", "mailto:riccardo@onefiniteloop.io"],
+  ["mailto", "mailto:hi@riccardocoppola.me"],
   ["rss", "/rss.xml"],
 ];
 

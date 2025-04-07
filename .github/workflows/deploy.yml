@@ -15,9 +15,9 @@ jobs:
           ref: 'dev'
 
       - name: Setup node
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v4
         with:
-          node-version: 16.15.0
+          node-version: 20.19.0
 
       - name: Install and Build 🔧
         run: |

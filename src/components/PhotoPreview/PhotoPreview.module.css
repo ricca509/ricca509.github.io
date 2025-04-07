@@ -1,0 +1,11 @@
+.container {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: var(--title-font-family);
+  color: var(--grey-2);
+}
+
+.title {
+  display: block;
+}

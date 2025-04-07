@@ -247,6 +247,8 @@ export type DirectoryCtimeArgs = {
 export type Site = Node & {
   buildTime?: Maybe<Scalars['Date']>;
   siteMetadata?: Maybe<SiteSiteMetadata>;
+  port?: Maybe<Scalars['Int']>;
+  host?: Maybe<Scalars['String']>;
   polyfill?: Maybe<Scalars['Boolean']>;
   pathPrefix?: Maybe<Scalars['String']>;
   jsxRuntime?: Maybe<Scalars['String']>;
@@ -685,6 +687,7 @@ export type Frontmatter = {
   description?: Maybe<Scalars['String']>;
   date?: Maybe<Scalars['Date']>;
   publication_status?: Maybe<Scalars['String']>;
+  photo?: Maybe<File>;
   company?: Maybe<Scalars['String']>;
   role?: Maybe<Scalars['String']>;
   from_date?: Maybe<Scalars['Date']>;
@@ -850,6 +853,8 @@ export type QueryAllDirectoryArgs = {
 export type QuerySiteArgs = {
   buildTime?: InputMaybe<DateQueryOperatorInput>;
   siteMetadata?: InputMaybe<SiteSiteMetadataFilterInput>;
+  port?: InputMaybe<IntQueryOperatorInput>;
+  host?: InputMaybe<StringQueryOperatorInput>;
   polyfill?: InputMaybe<BooleanQueryOperatorInput>;
   pathPrefix?: InputMaybe<StringQueryOperatorInput>;
   jsxRuntime?: InputMaybe<StringQueryOperatorInput>;
@@ -1075,6 +1080,7 @@ export type FrontmatterFilterInput = {
   description?: InputMaybe<StringQueryOperatorInput>;
   date?: InputMaybe<DateQueryOperatorInput>;
   publication_status?: InputMaybe<StringQueryOperatorInput>;
+  photo?: InputMaybe<FileFilterInput>;
   company?: InputMaybe<StringQueryOperatorInput>;
   role?: InputMaybe<StringQueryOperatorInput>;
   from_date?: InputMaybe<DateQueryOperatorInput>;
@@ -1344,6 +1350,44 @@ export type FileFieldsEnum =
   | 'childrenMarkdownRemark___frontmatter___description'
   | 'childrenMarkdownRemark___frontmatter___date'
   | 'childrenMarkdownRemark___frontmatter___publication_status'
+  | 'childrenMarkdownRemark___frontmatter___photo___sourceInstanceName'
+  | 'childrenMarkdownRemark___frontmatter___photo___absolutePath'
+  | 'childrenMarkdownRemark___frontmatter___photo___relativePath'
+  | 'childrenMarkdownRemark___frontmatter___photo___extension'
+  | 'childrenMarkdownRemark___frontmatter___photo___size'
+  | 'childrenMarkdownRemark___frontmatter___photo___prettySize'
+  | 'childrenMarkdownRemark___frontmatter___photo___modifiedTime'
+  | 'childrenMarkdownRemark___frontmatter___photo___accessTime'
+  | 'childrenMarkdownRemark___frontmatter___photo___changeTime'
+  | 'childrenMarkdownRemark___frontmatter___photo___birthTime'
+  | 'childrenMarkdownRemark___frontmatter___photo___root'
+  | 'childrenMarkdownRemark___frontmatter___photo___dir'
+  | 'childrenMarkdownRemark___frontmatter___photo___base'
+  | 'childrenMarkdownRemark___frontmatter___photo___ext'
+  | 'childrenMarkdownRemark___frontmatter___photo___name'
+  | 'childrenMarkdownRemark___frontmatter___photo___relativeDirectory'
+  | 'childrenMarkdownRemark___frontmatter___photo___dev'
+  | 'childrenMarkdownRemark___frontmatter___photo___mode'
+  | 'childrenMarkdownRemark___frontmatter___photo___nlink'
+  | 'childrenMarkdownRemark___frontmatter___photo___uid'
+  | 'childrenMarkdownRemark___frontmatter___photo___gid'
+  | 'childrenMarkdownRemark___frontmatter___photo___rdev'
+  | 'childrenMarkdownRemark___frontmatter___photo___ino'
+  | 'childrenMarkdownRemark___frontmatter___photo___atimeMs'
+  | 'childrenMarkdownRemark___frontmatter___photo___mtimeMs'
+  | 'childrenMarkdownRemark___frontmatter___photo___ctimeMs'
+  | 'childrenMarkdownRemark___frontmatter___photo___atime'
+  | 'childrenMarkdownRemark___frontmatter___photo___mtime'
+  | 'childrenMarkdownRemark___frontmatter___photo___ctime'
+  | 'childrenMarkdownRemark___frontmatter___photo___birthtime'
+  | 'childrenMarkdownRemark___frontmatter___photo___birthtimeMs'
+  | 'childrenMarkdownRemark___frontmatter___photo___blksize'
+  | 'childrenMarkdownRemark___frontmatter___photo___blocks'
+  | 'childrenMarkdownRemark___frontmatter___photo___publicURL'
+  | 'childrenMarkdownRemark___frontmatter___photo___childrenMarkdownRemark'
+  | 'childrenMarkdownRemark___frontmatter___photo___childrenImageSharp'
+  | 'childrenMarkdownRemark___frontmatter___photo___id'
+  | 'childrenMarkdownRemark___frontmatter___photo___children'
   | 'childrenMarkdownRemark___frontmatter___company'
   | 'childrenMarkdownRemark___frontmatter___role'
   | 'childrenMarkdownRemark___frontmatter___from_date'
@@ -1448,6 +1492,44 @@ export type FileFieldsEnum =
   | 'childMarkdownRemark___frontmatter___description'
   | 'childMarkdownRemark___frontmatter___date'
   | 'childMarkdownRemark___frontmatter___publication_status'
+  | 'childMarkdownRemark___frontmatter___photo___sourceInstanceName'
+  | 'childMarkdownRemark___frontmatter___photo___absolutePath'
+  | 'childMarkdownRemark___frontmatter___photo___relativePath'
+  | 'childMarkdownRemark___frontmatter___photo___extension'
+  | 'childMarkdownRemark___frontmatter___photo___size'
+  | 'childMarkdownRemark___frontmatter___photo___prettySize'
+  | 'childMarkdownRemark___frontmatter___photo___modifiedTime'
+  | 'childMarkdownRemark___frontmatter___photo___accessTime'
+  | 'childMarkdownRemark___frontmatter___photo___changeTime'
+  | 'childMarkdownRemark___frontmatter___photo___birthTime'
+  | 'childMarkdownRemark___frontmatter___photo___root'
+  | 'childMarkdownRemark___frontmatter___photo___dir'
+  | 'childMarkdownRemark___frontmatter___photo___base'
+  | 'childMarkdownRemark___frontmatter___photo___ext'
+  | 'childMarkdownRemark___frontmatter___photo___name'
+  | 'childMarkdownRemark___frontmatter___photo___relativeDirectory'
+  | 'childMarkdownRemark___frontmatter___photo___dev'
+  | 'childMarkdownRemark___frontmatter___photo___mode'
+  | 'childMarkdownRemark___frontmatter___photo___nlink'
+  | 'childMarkdownRemark___frontmatter___photo___uid'
+  | 'childMarkdownRemark___frontmatter___photo___gid'
+  | 'childMarkdownRemark___frontmatter___photo___rdev'
+  | 'childMarkdownRemark___frontmatter___photo___ino'
+  | 'childMarkdownRemark___frontmatter___photo___atimeMs'
+  | 'childMarkdownRemark___frontmatter___photo___mtimeMs'
+  | 'childMarkdownRemark___frontmatter___photo___ctimeMs'
+  | 'childMarkdownRemark___frontmatter___photo___atime'
+  | 'childMarkdownRemark___frontmatter___photo___mtime'
+  | 'childMarkdownRemark___frontmatter___photo___ctime'
+  | 'childMarkdownRemark___frontmatter___photo___birthtime'
+  | 'childMarkdownRemark___frontmatter___photo___birthtimeMs'
+  | 'childMarkdownRemark___frontmatter___photo___blksize'
+  | 'childMarkdownRemark___frontmatter___photo___blocks'
+  | 'childMarkdownRemark___frontmatter___photo___publicURL'
+  | 'childMarkdownRemark___frontmatter___photo___childrenMarkdownRemark'
+  | 'childMarkdownRemark___frontmatter___photo___childrenImageSharp'
+  | 'childMarkdownRemark___frontmatter___photo___id'
+  | 'childMarkdownRemark___frontmatter___photo___children'
   | 'childMarkdownRemark___frontmatter___company'
   | 'childMarkdownRemark___frontmatter___role'
   | 'childMarkdownRemark___frontmatter___from_date'
@@ -2143,6 +2225,8 @@ export type SiteFieldsEnum =
   | 'siteMetadata___author___summary'
   | 'siteMetadata___siteUrl'
   | 'siteMetadata___social___twitter'
+  | 'port'
+  | 'host'
   | 'polyfill'
   | 'pathPrefix'
   | 'jsxRuntime'
@@ -2278,6 +2362,8 @@ export type SiteGroupConnectionGroupArgs = {
 export type SiteFilterInput = {
   buildTime?: InputMaybe<DateQueryOperatorInput>;
   siteMetadata?: InputMaybe<SiteSiteMetadataFilterInput>;
+  port?: InputMaybe<IntQueryOperatorInput>;
+  host?: InputMaybe<StringQueryOperatorInput>;
   polyfill?: InputMaybe<BooleanQueryOperatorInput>;
   pathPrefix?: InputMaybe<StringQueryOperatorInput>;
   jsxRuntime?: InputMaybe<StringQueryOperatorInput>;
@@ -3182,6 +3268,84 @@ export type MarkdownRemarkFieldsEnum =
   | 'frontmatter___description'
   | 'frontmatter___date'
   | 'frontmatter___publication_status'
+  | 'frontmatter___photo___sourceInstanceName'
+  | 'frontmatter___photo___absolutePath'
+  | 'frontmatter___photo___relativePath'
+  | 'frontmatter___photo___extension'
+  | 'frontmatter___photo___size'
+  | 'frontmatter___photo___prettySize'
+  | 'frontmatter___photo___modifiedTime'
+  | 'frontmatter___photo___accessTime'
+  | 'frontmatter___photo___changeTime'
+  | 'frontmatter___photo___birthTime'
+  | 'frontmatter___photo___root'
+  | 'frontmatter___photo___dir'
+  | 'frontmatter___photo___base'
+  | 'frontmatter___photo___ext'
+  | 'frontmatter___photo___name'
+  | 'frontmatter___photo___relativeDirectory'
+  | 'frontmatter___photo___dev'
+  | 'frontmatter___photo___mode'
+  | 'frontmatter___photo___nlink'
+  | 'frontmatter___photo___uid'
+  | 'frontmatter___photo___gid'
+  | 'frontmatter___photo___rdev'
+  | 'frontmatter___photo___ino'
+  | 'frontmatter___photo___atimeMs'
+  | 'frontmatter___photo___mtimeMs'
+  | 'frontmatter___photo___ctimeMs'
+  | 'frontmatter___photo___atime'
+  | 'frontmatter___photo___mtime'
+  | 'frontmatter___photo___ctime'
+  | 'frontmatter___photo___birthtime'
+  | 'frontmatter___photo___birthtimeMs'
+  | 'frontmatter___photo___blksize'
+  | 'frontmatter___photo___blocks'
+  | 'frontmatter___photo___publicURL'
+  | 'frontmatter___photo___childrenMarkdownRemark'
+  | 'frontmatter___photo___childrenMarkdownRemark___id'
+  | 'frontmatter___photo___childrenMarkdownRemark___excerpt'
+  | 'frontmatter___photo___childrenMarkdownRemark___rawMarkdownBody'
+  | 'frontmatter___photo___childrenMarkdownRemark___fileAbsolutePath'
+  | 'frontmatter___photo___childrenMarkdownRemark___html'
+  | 'frontmatter___photo___childrenMarkdownRemark___htmlAst'
+  | 'frontmatter___photo___childrenMarkdownRemark___excerptAst'
+  | 'frontmatter___photo___childrenMarkdownRemark___headings'
+  | 'frontmatter___photo___childrenMarkdownRemark___timeToRead'
+  | 'frontmatter___photo___childrenMarkdownRemark___tableOfContents'
+  | 'frontmatter___photo___childrenMarkdownRemark___children'
+  | 'frontmatter___photo___childMarkdownRemark___id'
+  | 'frontmatter___photo___childMarkdownRemark___excerpt'
+  | 'frontmatter___photo___childMarkdownRemark___rawMarkdownBody'
+  | 'frontmatter___photo___childMarkdownRemark___fileAbsolutePath'
+  | 'frontmatter___photo___childMarkdownRemark___html'
+  | 'frontmatter___photo___childMarkdownRemark___htmlAst'
+  | 'frontmatter___photo___childMarkdownRemark___excerptAst'
+  | 'frontmatter___photo___childMarkdownRemark___headings'
+  | 'frontmatter___photo___childMarkdownRemark___timeToRead'
+  | 'frontmatter___photo___childMarkdownRemark___tableOfContents'
+  | 'frontmatter___photo___childMarkdownRemark___children'
+  | 'frontmatter___photo___childrenImageSharp'
+  | 'frontmatter___photo___childrenImageSharp___gatsbyImageData'
+  | 'frontmatter___photo___childrenImageSharp___id'
+  | 'frontmatter___photo___childrenImageSharp___children'
+  | 'frontmatter___photo___childImageSharp___gatsbyImageData'
+  | 'frontmatter___photo___childImageSharp___id'
+  | 'frontmatter___photo___childImageSharp___children'
+  | 'frontmatter___photo___id'
+  | 'frontmatter___photo___parent___id'
+  | 'frontmatter___photo___parent___children'
+  | 'frontmatter___photo___children'
+  | 'frontmatter___photo___children___id'
+  | 'frontmatter___photo___children___children'
+  | 'frontmatter___photo___internal___content'
+  | 'frontmatter___photo___internal___contentDigest'
+  | 'frontmatter___photo___internal___description'
+  | 'frontmatter___photo___internal___fieldOwners'
+  | 'frontmatter___photo___internal___ignoreType'
+  | 'frontmatter___photo___internal___mediaType'
+  | 'frontmatter___photo___internal___owner'
+  | 'frontmatter___photo___internal___type'
   | 'frontmatter___company'
   | 'frontmatter___role'
   | 'frontmatter___from_date'
@@ -3647,6 +3811,11 @@ export type BlogIndexQueryVariables = Exact<{ [key: string]: never; }>;
 
 export type BlogIndexQuery = { site?: { siteMetadata?: { title?: string | null, description?: string | null } | null } | null, allMarkdownRemark: { nodes: Array<{ excerpt?: string | null, fields?: { slug?: string | null } | null, frontmatter?: { date?: any | null, title?: string | null, description?: string | null } | null }> } };
 
+export type PhotographyIndexQueryVariables = Exact<{ [key: string]: never; }>;
+
+
+export type PhotographyIndexQuery = { site?: { siteMetadata?: { title?: string | null } | null } | null, photos: { nodes: Array<{ frontmatter?: { title?: string | null, date?: any | null, description?: string | null, publication_status?: string | null, photo?: { childImageSharp?: { gatsbyImageData: any } | null } | null } | null, fields?: { slug?: string | null } | null }> } };
+
 export type BlogPostBySlugQueryVariables = Exact<{
   id: Scalars['String'];
   previousPostId?: InputMaybe<Scalars['String']>;
@@ -3655,6 +3824,13 @@ export type BlogPostBySlugQueryVariables = Exact<{
 
 
 export type BlogPostBySlugQuery = { site?: { siteMetadata?: { title?: string | null, author?: { name?: string | null } | null } | null } | null, markdownRemark?: { id: string, excerpt?: string | null, html?: string | null, frontmatter?: { title?: string | null, date?: any | null, description?: string | null } | null } | null, previous?: { fields?: { slug?: string | null } | null, frontmatter?: { title?: string | null } | null } | null, next?: { fields?: { slug?: string | null } | null, frontmatter?: { title?: string | null } | null } | null };
+
+export type PhotoPostBySlugQueryVariables = Exact<{
+  id: Scalars['String'];
+}>;
+
+
+export type PhotoPostBySlugQuery = { site?: { siteMetadata?: { title?: string | null } | null } | null, markdownRemark?: { html?: string | null, frontmatter?: { title?: string | null, date?: any | null, description?: string | null, publication_status?: string | null, photo?: { childImageSharp?: { gatsbyImageData: any } | null } | null } | null, fields?: { slug?: string | null } | null } | null };
 
 export type GatsbyImageSharpFixedFragment = { base64?: string | null, width: number, height: number, src: string, srcSet: string };
 

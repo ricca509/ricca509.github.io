@@ -8,7 +8,7 @@
     "@fontsource/inconsolata": "^4.5.7",
     "@fontsource/poppins": "^4.5.9",
     "@fontsource/roboto": "^4.5.8",
-    "gatsby": "^4.25.9",
+    "gatsby": "^5.14.2",
     "gatsby-plugin-canonical-urls": "^4.20.0",
     "gatsby-plugin-feed": "^4.10.2",
     "gatsby-plugin-gatsby-cloud": "^4.10.1",

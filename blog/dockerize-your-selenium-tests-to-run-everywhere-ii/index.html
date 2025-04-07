@@ -104,7 +104,7 @@ The solution to this problem is to pre-build the image and then run commands fro
 
 <span class="token assign-left variable">DOCKER_IMAGE</span><span class="token operator">=</span><span class="token string">"integration-tests:<span class="token variable">${BUILD_COUNTER<span class="token operator">:-</span>0}</span>"</span>
 
-<span class="token function">docker</span> build --rm -t <span class="token variable">${DOCKER_IMAGE}</span> <span class="token builtin class-name">.</span> <span class="token operator">&amp;&amp;</span> <span class="token function">docker-compose</span> up</code></pre></div>
+<span class="token function">docker</span> build <span class="token parameter variable">--rm</span> <span class="token parameter variable">-t</span> <span class="token variable">${DOCKER_IMAGE}</span> <span class="token builtin class-name">.</span> <span class="token operator">&amp;&amp;</span> <span class="token function">docker-compose</span> up</code></pre></div>
 <ol>
 <li>I am declaring what the name of the image will be (note that I’m assuming that a <code class="language-text">BUILD_COUNTER</code> env variable is available, in case it’s not it’ll fallback to zero).</li>
 <li>I’m building the image, tagging it with the name chosen in point 1. If the build is succesfull, the stack is started.</li>
@@ -282,7 +282,7 @@ Regardless of when the tests are completed, these services will keep listening a
 
 <span class="token builtin class-name">echo</span> DOCKER_IMAGE: <span class="token variable">${DOCKER_IMAGE}</span>
 
-<span class="token function">docker</span> build --rm -t <span class="token variable">${DOCKER_IMAGE}</span> <span class="token builtin class-name">.</span>
+<span class="token function">docker</span> build <span class="token parameter variable">--rm</span> <span class="token parameter variable">-t</span> <span class="token variable">${DOCKER_IMAGE}</span> <span class="token builtin class-name">.</span>
 <span class="token function">docker-compose</span> up --exit-code-from tests
 <span class="token function">docker-compose</span> down</code></pre></div>
 <p><em><strong>Note</strong>: I added <code class="language-text">docker-compose down</code> to cleanup after everything’s done.</em></p>

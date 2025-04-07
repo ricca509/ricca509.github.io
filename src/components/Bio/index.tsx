@@ -11,7 +11,7 @@ import { container } from "./Bio.module.css";
 const Bio = () => {
   return (
     <div className={container}>
-      Notes on web development, life, learning and the world.
+		Reflections on thoughtful engineering, focused work, and the systems that shape our work, life, and learning.
     </div>
   );
 };

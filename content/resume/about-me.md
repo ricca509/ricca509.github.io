@@ -1,4 +1,4 @@
-# 👋 I'm [Riccardo Coppola](mailto:hi@riccardocoppola.me). I am an engineer
+# 👋 I'm [Riccardo](mailto:hi@riccardocoppola.me). I am an engineer.
 
 I’m a staff-level full stack engineer with over 15 years of industry experience, currently focused on building scalable systems, improving developer experience, and fostering high-trust engineering cultures.
 

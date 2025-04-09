@@ -3,7 +3,7 @@ import path from "path";
 
 const siteUrl = process.env.URL || "https://www.riccardocoppola.me";
 const name = "Riccardo Coppola";
-const description = "Notes on programming, life, learning and the world";
+const description = "Reflections on thoughtful engineering and the systems that shape our work, life, and learning.";
 
 const config: GatsbyConfig = {
   siteMetadata: {
@@ -11,7 +11,7 @@ const config: GatsbyConfig = {
     description,
     author: {
       name: name,
-      summary: `I help companies to create better web applications. 
+      summary: `I help companies to create better web applications.
 
       Certified Level 3 Personal trainer, nutrition geek, trained barista and (very) amateur photographer.`,
     },
@@ -46,13 +46,13 @@ const config: GatsbyConfig = {
           aboutMePages: allMarkdownRemark(
             filter: {fields: {slug: {glob: "**/resume/*"}}}
           ) {
-            nodes {              
+            nodes {
               fields {
                 slug
               }
             }
           }
-        }               
+        }
         `,
         resolveSiteUrl: () => siteUrl,
         resolvePages: ({

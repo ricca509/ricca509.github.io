@@ -11,7 +11,7 @@ import { container } from "./Bio.module.css";
 const Bio = () => {
   return (
     <div className={container}>
-		Reflections on thoughtful engineering, focused work, and the systems that shape our work, life, and learning.
+		Reflections on thoughtful engineering and the systems that shape our work, life, and learning.
     </div>
   );
 };

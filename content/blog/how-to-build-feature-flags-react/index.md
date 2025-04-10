@@ -1,6 +1,7 @@
 ---
 title: "Build feature flags in React using the Context API: how to"
 date: "2020-03-29T09:30:00Z"
+last_modified: "2022-09-10T11:00:00Z"
 description: "Learn how to build and leverage feature flags (or feature toggles) in React to improve both the development/release workflow and the user experience."
 publication_status: published
 ---

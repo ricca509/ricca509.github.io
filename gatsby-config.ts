@@ -79,7 +79,7 @@ const config: GatsbyConfig = {
           const page = JSON.parse(JSON.stringify(rest));
           return {
             url: path,
-            lastmod: page?.frontmatter?.date || new Date().toISOString(),
+            lastmod: page?.frontmatter?.last_modified || page?.frontmatter?.date || new Date().toISOString(),
           };
         },
       },
